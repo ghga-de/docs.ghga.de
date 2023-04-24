@@ -1,0 +1,1 @@
+# The GHGA Metadata Model
