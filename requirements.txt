@@ -1,4 +1,6 @@
-# requirements for complete installation
-
-# the ".[all]" states that requirements including the "all" extra are taken from setup.cfg
-.[all]
+mkdocs
+mkdocs-material
+pygments
+markdown
+pymdown-extensions
+mkdocs-git-revision-date-localized-plugin

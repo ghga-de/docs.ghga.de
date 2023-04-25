@@ -1,4 +1,5 @@
 #!/bin/bash
 
 # adapt to package name
-my-microservice
+cd /workspace
+mkdocs serve
