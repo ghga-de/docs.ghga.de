@@ -83,3 +83,5 @@ nav:
       - metadata/concepts.md
       - metadata/modules.md
       - "Entities & Attributes": metadata/entities.md
+  - "Tools":
+      - "GHGA Validator": validator/validator.md
