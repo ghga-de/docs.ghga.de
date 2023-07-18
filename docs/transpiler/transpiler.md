@@ -41,7 +41,7 @@ Options:
 
 1. To transpile `/work_directory/metadata.xlsx`:
 ```
-ghga-transpiler /work_directory/metadata.xlsx /work_directory/output.json
+ghga-transpiler metadata.xlsx metadata.json
 ```
 2. To use the same output name (`/work_directory/output.json`) in another run:
 ```
