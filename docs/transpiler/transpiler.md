@@ -40,7 +40,7 @@ Options:
 
 :bulb: Example data can be downloaded from https://github.com/ghga-de/example-data/ 
 
-1. To transpile `/work_directory/metadata.xlsx`:
+1. To transpile `metadata.xlsx`:
 ```
 ghga-transpiler metadata.xlsx metadata.json
 ```
