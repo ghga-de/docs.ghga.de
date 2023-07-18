@@ -83,4 +83,5 @@ nav:
       - metadata/concepts.md
       - metadata/modules.md
       - "Entities & Attributes": metadata/entities.md
-  - "GHGA Transpiler": transpiler/transpiler.md
+  - "Tools":
+    - "GHGA Transpiler": transpiler/transpiler.md
