@@ -46,8 +46,8 @@ ghga-transpiler metadata.xlsx metadata.json
 ```
 2. To use the same output name (`/work_directory/output.json`) in another run:
 ```
-ghga-transpiler --force /work_directory/another_metadata.xlsx /work_directory/output.json
-ghga-transpiler -f /work_directory/another_metadata.xlsx /work_directory/output.json
+ghga-transpiler --force another_metadata.xlsx another_metadata.json
+ghga-transpiler -f another_metadata.xlsx another_metadata.json
 ```
 3. To display help message:
 ```
