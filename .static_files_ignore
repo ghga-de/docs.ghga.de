@@ -17,3 +17,4 @@ setup.py
 .github/workflows/cd.yaml
 .pre-commit-config.yaml
 .readme_template.md
+.github/workflows/check_readme.yaml
