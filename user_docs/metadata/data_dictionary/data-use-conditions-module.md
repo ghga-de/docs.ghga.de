@@ -1,10 +1,14 @@
 # **Data Use Conditions Module**
 
-The **Data Use Conditions** captures the following entities and properties:
-- [**Data Use Conditions Module**](#data-use-conditions-module)
-  - [**Data Access Policy**](#data-access-policy)
-    - [**data use permission**](#data-use-permission)
-    - [**data use modifier**](#data-use-modifier)
+The **Data Use Conditions Module** captures the following entities and properties:
+
+- Data Access Policy
+    - [data use permission](#data-use-permission)
+    - [data use modifier](#data-use-modifier)
+
+- Data Access Committee
+    - institute
+    - email
 
 ## **Data Access Policy**
 

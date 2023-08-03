@@ -1,14 +1,21 @@
 # **Sample Module**
 
 The **Sample Module** captures the following entities and properties:
-- [**Sample Module**](#sample-module)
-  - [**Sample**](#sample)
-    - [**isolation**](#isolation)
-    - [**storage**](#storage)
-  - [**Condition**](#condition)
-    - [**mutant or wildtype**](#mutant-or-wildtype)
-    - [**disease or healthy**](#disease-or-healthy)
-    - [**case control status**](#case-control-status)
+
+- Sample
+    - name
+    - description
+    - type
+    - [isolation](#isolation)
+    - [storage](#storage)
+
+- Condition
+    - title
+    - name
+    - description
+    - [mutant or wildtype](#mutant-or-wildtype)
+    - [disease or healthy](#disease-or-healthy)
+    - [case control status](#case-control-status)
 
 ## **Sample**
 

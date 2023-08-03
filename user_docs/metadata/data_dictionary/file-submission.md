@@ -1,6 +1,7 @@
 # **File Submission**
 
 The **File Submission** captures the following entities and properties:
+
 - File
     - name
     - [format](#file-format)

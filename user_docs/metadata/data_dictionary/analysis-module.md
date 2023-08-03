@@ -1,6 +1,7 @@
 # **Analysis Module**
 
 The **Analysis Module** captures the following entities and properties:
+
 - Analysis
     - title
     - description

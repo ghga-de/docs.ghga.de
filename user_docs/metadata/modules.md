@@ -1,5 +1,4 @@
 # **Modules in the GHGA Metadata Model**
-we have a modular model because we can
 
 - **Basic Module**: The Basic Module is the fundamental module in the GHGA Metadata Schema. It covers the minimal amount of information that must be included in a successful submission.
 

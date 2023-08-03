@@ -2,18 +2,27 @@
 
 The **Phenotype Module** captures the following entities and properties:
 
-- [**Phenotype Module**](#phenotype-module)
-  - [**Biospecimen**](#biospecimen)
-    - [**isolation**](#isolation)
-    - [**storage**](#storage)
-    - [**vital status at sampling**](#vital-status-at-sampling)
-    - [**age at sampling**](#age-at-sampling)
-  - [**Individual**](#individual)
-    - [**sex**](#sex)
-    - [**phenotypic feature**](#phenotypic-feature)
-    - [**individual karyotype**](#individual-karyotype)
-    - [**individual geographical region**](#individual-geographical-region)
-    - [**individual ancestry**](#individual-ancestry)
+- Biospecimen
+    - type
+    - name
+    - description
+    - tissue
+    - [isolation](#isolation)
+    - [storage](#storage)
+    - [vital status at sampling](#vital-status-at-sampling)
+    - [age at sampling](#age-at-sampling)
+
+- Individual
+    - [sex](#sex)
+    - [phenotypic feature](#phenotypic-feature)
+    - [karyotype](#karyotype)
+    - [geographical region](#geographical-region)
+    - [ancestry](#ancestry)
+
+- Trio
+    - mother
+    - father
+    - child
 
 
 ## **Biospecimen**
@@ -87,7 +96,7 @@ The **Phenotype Module** captures the following entities and properties:
 | MONDO Terms                          |                                                 https://www.ebi.ac.uk/ols/ontologies/mondo                                                  |             |
 | ICD10 Terms                          |                                                          https://www.icd-code.de/                                                           |             |
 
-### **individual karyotype**
+### **karyotype**
 
 | Controlled Vocabulary | Ontology Term | Description                                                                |
 | :-------------------- | :-----------: | :------------------------------------------------------------------------- |
@@ -95,13 +104,13 @@ The **Phenotype Module** captures the following entities and properties:
 | 46,XX                 | [GSSO:009558] | A karyotype in which every cell has two X chromosomes.                     |
 | other                 |               |                                                                            |
 
-### **individual geographical region**
+### **geographical region**
 
 | Controlled Vocabulary                    |                                                                    Ontology Term                                                                     | Description                                                                                                                                                                                                         |
 | :--------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | terms from HANCESTRO terms for "Country" | https://www.ebi.ac.uk/ols/ontologies/hancestro/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FHANCESTRO_0003&lang=en&viewMode=All&siblings=false | A collective generic term that refers here to a wide variety of dependencies, areas of special sovereignty, uninhabited islands, and other entities in addition to the traditional countries or independent states. |
 
-### **individual ancestry**
+### **ancestry**
 
 | Controlled Vocabulary                              |                                                                    Ontology Term                                                                     | Description                                                                                         |
 | :------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------- |

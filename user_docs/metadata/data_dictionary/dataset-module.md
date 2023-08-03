@@ -1,9 +1,11 @@
 # **Dataset Module**
 
 The **Dataset Module** captures the following entities and properties:
-- [**Dataset Module**](#dataset-module)
-  - [**Dataset**](#dataset)
-    - [**type**](#type)
+
+- Dataset
+    - title
+    - description
+    - [type](#type)
 
 ## **Dataset**
 

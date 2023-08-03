@@ -80,8 +80,18 @@ nav:
   - "Overview": index.md
   - "GHGA Metadata Model":
       - "Overview": metadata/overview.md
+      - "Standards": metadata/standards.md
       - metadata/concepts.md
       - metadata/modules.md
       - "Entities & Attributes": metadata/entities.md
+      - "Data Dictionary":
+          - "Analysis Module": metadata/data_dictionary/analysis-module.md
+          - "Basic Module": metadata/data_dictionary/basic-module.md
+          - "Data Use Conditions Module": metadata/data_dictionary/data-use-conditions-module.md
+          - "Dataset Module": metadata/data_dictionary/dataset-module.md
+          - "Phenotype Module": metadata/data_dictionary/phenotype-module.md
+          - "Sample Module": metadata/data_dictionary/sample-module.md
+          - "Sequencing Module": metadata/data_dictionary/sequencing-module.md
+          - "File Submission": metadata/data_dictionary/file-submission.md
   - "Tools":
       - "GHGA Transpiler": transpiler/transpiler.md

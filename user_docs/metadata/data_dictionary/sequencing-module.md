@@ -1,7 +1,3 @@
-# **Ontology Mapping for the GHGA Metadata Schema v.1.0.0**
-
-The ontology mapping is divided in subsections corresponding to the seven modules used to submit data to GHGA. Within the module, the ontology mapping is further divided according to property names.
-
 # **Sequencing Module**
 
 The **Sequencing Module** captures the following entities and properties:
@@ -21,7 +17,7 @@ The **Sequencing Module** captures the following entities and properties:
     - sequencing machine id
     - sequencing lane id
 
-- [Library Preparation Protocol](#library-preparation-protocol)
+- Library Preparation Protocol
     - description
     - library name
     - library preparation kit retail name
@@ -36,7 +32,7 @@ The **Sequencing Module** captures the following entities and properties:
     - rnaseq strandedness
     - target regions
 
-- [Sequencing Protocol](#sequencing-protocol)
+- Sequencing Protocol
     - type
     - description
     - [instrument model](#instrument-model)
