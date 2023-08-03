@@ -1,1 +1,0 @@
-# GHGA User Documentation
