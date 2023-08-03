@@ -19,7 +19,7 @@ site_name: GHGA User Documentation
 site_description: Public documentation of the German Human Genome-Phenome Archive.
 site_author: The GHGA Team
 site_url: https://docs.ghga-dev.de
-
+docs_dir: user_docs
 # Repository
 repo_name: GHGA User Documentation
 repo_url: https://github.com/ghga-de/docs/
@@ -84,4 +84,4 @@ nav:
       - metadata/modules.md
       - "Entities & Attributes": metadata/entities.md
   - "Tools":
-    - "GHGA Transpiler": transpiler/transpiler.md
+      - "GHGA Transpiler": transpiler/transpiler.md

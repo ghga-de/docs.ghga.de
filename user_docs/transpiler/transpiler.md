@@ -38,7 +38,7 @@ Options:
 
 ## Examples
 
-:bulb: Example data can be downloaded from https://github.com/ghga-de/example-data/ 
+:bulb: Example data can be downloaded from https://github.com/ghga-de/example-data/
 
 1. To transpile `metadata.xlsx`:
 ```
