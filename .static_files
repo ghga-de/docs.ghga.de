@@ -15,14 +15,11 @@
 scripts/script_utils/__init__.py
 scripts/script_utils/cli.py
 
-scripts/__init__.py
-scripts/update_all.py
 scripts/license_checker.py
 scripts/get_package_name.py
 scripts/update_config_docs.py
 scripts/update_template_files.py
 scripts/update_openapi_docs.py
-scripts/update_readme.py
 scripts/README.md
 
 .github/workflows/check_config_docs.yaml
@@ -30,7 +27,6 @@ scripts/README.md
 .github/workflows/static_code_analysis.yaml
 .github/workflows/unit_and_int_tests.yaml
 .github/workflows/check_openapi_spec.yaml
-.github/workflows/check_readme.yaml
 .github/workflows/cd.yaml
 
 example_data/README.md
@@ -48,6 +44,3 @@ LICENSE
 requirements.txt
 requirements-dev-common.txt
 setup.py
-
-.readme_template.md
-readme_generation.md
