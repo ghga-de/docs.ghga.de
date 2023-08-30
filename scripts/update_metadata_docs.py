@@ -17,12 +17,12 @@
 """Script to generate user-facing metadata schema documentation"""
 
 from pathlib import Path
-from typing import Callable
+from typing import Callable, Union
 
 import requests
 import yaml
 from jinja2 import Environment, FileSystemLoader
-from linkml_runtime.utils.schemaview import SchemaView  # type: ignore
+from linkml_runtime.utils.schemaview import SchemaView
 from pydantic import BaseModel, Field
 
 HERE = Path(__file__).parent.resolve()
@@ -30,7 +30,7 @@ ROOT = HERE.parent
 DOCS_DIR = ROOT / "docs" / "metadata" / "worksheets"
 CONFIG_PATH = ROOT / ".workbook_config.yaml"
 
-TEMPLATE = ".sheet_documentation_template.md"
+TEMPLATE = ".sheet_documentation_template.md.jinja"
 
 SCHEMA_URL = "https://raw.githubusercontent.com/ghga-de/ghga-metadata-schema/main/src/schema/submission.yaml"  # pylint: disable=line-too-long
 
@@ -47,58 +47,6 @@ class MainSheetNotIdentified(Exception):
 
 class SchemaNotLoaded(Exception):
     """custom error to raise if the schema request return any response code other than 200"""
-
-
-def load_config(config_path=CONFIG_PATH) -> dict:
-    """Loads config file"""
-
-    try:
-        with open(config_path, "r", encoding="utf8") as config_file:
-            return yaml.safe_load(config_file)
-    except FileNotFoundError as exc:
-        raise WorkbookConfigurationNotFound(
-            f"Workbook configuration not found at: {config_path}"
-        ) from exc
-
-
-def load_schema(schema_url=SCHEMA_URL):
-    """Loads schema"""
-
-    schema_config = requests.get(schema_url, timeout=3)
-    if schema_config.status_code == 200:
-        return SchemaView(schema_config.text)
-    raise SchemaNotLoaded(f"Schema could not be loaded from {SCHEMA_URL}")
-
-
-def extract_slots_from(schema: SchemaView, sheet_name: str) -> list[dict]:
-    """Extracts slot information of a given class"""
-
-    return [
-        {
-            "name": definition.name,
-            "alias": definition.alias,
-            "description": definition.description,
-            "data_type": definition.range,
-            "required": definition.required,
-        }
-        for definition in schema.class_induced_slots(sheet_name)
-    ]
-
-
-def generate_workbook(
-    schema: SchemaView,
-    sheets: list[str],
-    get_slots: Callable[[SchemaView, str], list[dict]],
-) -> list[dict]:
-    """Assembles the content of classes and their slots"""
-    return [
-        {
-            "name": sheet,
-            "description": schema.get_class(sheet).description,
-            "slots": get_slots(schema, sheet),
-        }
-        for sheet in sheets
-    ]
 
 
 class WorkbookConfig(BaseModel):
@@ -122,6 +70,69 @@ class Config(BaseModel):
             raise MainSheetNotIdentified(
                 f"No workbook configuration is found for {MAIN_WORKBOOK}"
             )
+
+
+def load_config(config_path=CONFIG_PATH) -> dict:
+    """Loads config file"""
+
+    try:
+        with open(config_path, "r", encoding="utf8") as config_file:
+            return yaml.safe_load(config_file)
+    except FileNotFoundError as exc:
+        raise WorkbookConfigurationNotFound(
+            f"Workbook configuration not found at: {config_path}"
+        ) from exc
+
+
+def load_schema(schema_url=SCHEMA_URL):
+    """Loads schema"""
+
+    schema_config = requests.get(schema_url, timeout=5)
+    if schema_config.status_code == 200:
+        return SchemaView(schema_config.text)
+    raise SchemaNotLoaded(f"Schema could not be loaded from {SCHEMA_URL}")
+
+
+def extract_permissible_values(schema: SchemaView, slot_range: Union[str, None]):
+    """function toe get slot range if it is an enum"""
+    enum = schema.get_enum(slot_range)
+    if enum:
+        return enum.permissible_values
+    return slot_range
+
+
+def extract_slots_from(schema: SchemaView, sheet_name: str) -> list[dict]:
+    """Extracts slot information of a given class"""
+
+    return [
+        {
+            "name": slot.name,
+            "alias": slot.alias,
+            "description": slot.description,
+            "data_type": {
+                "range": slot.range,
+                "enum": extract_permissible_values(schema, slot.range),
+            },
+            "required": slot.required,
+        }
+        for slot in schema.class_induced_slots(sheet_name)
+    ]
+
+
+def generate_workbook(
+    schema: SchemaView,
+    sheets: list[str],
+    get_slots: Callable[[SchemaView, str], list[dict]],
+) -> list[dict]:
+    """Assembles the content of classes and their slots"""
+    return [
+        {
+            "name": sheet,
+            "description": schema.get_class(sheet).description,
+            "slots": get_slots(schema, sheet),
+        }
+        for sheet in sheets
+    ]
 
 
 def generate_markdown(content: dict) -> str:
@@ -152,6 +163,8 @@ def main():
 
     for sheet in workbook:
         create_doc_file(DOCS_DIR, sheet["name"], generate_markdown(sheet))
+    # print(schema.get_enum("KaryotypeEnum"))
+    # print(schema.all_enums().keys())
 
 
 if __name__ == "__main__":

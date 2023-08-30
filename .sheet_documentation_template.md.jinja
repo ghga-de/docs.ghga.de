@@ -8,8 +8,6 @@
 
 {% for slot in slots %}
 **{{ slot.name }}** : {{ slot.description }}
-**alias** : {{ slot.alias }}
-**data type** : {{ slot.data_type }}
+{% if 'Enum' in slot.data_type.range  %}**data type** : Controlled Vocabulary{% else %}**data type** : {{ slot.data_type.range }}{% endif %}
 **required** : {{ slot.required }}
-
 {% endfor %}
