@@ -94,14 +94,29 @@ def load_schema(schema_url=SCHEMA_URL):
 
 
 def extract_permissible_values(schema: SchemaView, slot_range: Union[str, None]):
-    """function toe get slot range if it is an enum"""
+    """enum"""
     enum = schema.get_enum(slot_range)
     if enum:
-        return enum.permissible_values
-    return slot_range
+        return {
+            "enum": enum.name,
+            "description": enum.description,
+            "permissible_values": [
+                {"name": key, "description": val.description}  # type: ignore
+                if enum.permissible_values
+                else None
+                for key, val in enum.permissible_values.items()  # type: ignore
+            ],
+        }
+    return None
 
 
-def extract_slots_from(schema: SchemaView, sheet_name: str) -> list[dict]:
+def extract_slots_from(
+    schema: SchemaView,
+    sheet_name: str,
+    add_enum: Callable[
+        [SchemaView, Union[str, None]], Union[dict, None]
+    ] = extract_permissible_values,
+) -> list[dict]:
     """Extracts slot information of a given class"""
 
     return [
@@ -111,7 +126,7 @@ def extract_slots_from(schema: SchemaView, sheet_name: str) -> list[dict]:
             "description": slot.description,
             "data_type": {
                 "range": slot.range,
-                "enum": extract_permissible_values(schema, slot.range),
+                "enum": add_enum(schema, slot.range),
             },
             "required": slot.required,
         }
@@ -138,7 +153,7 @@ def generate_workbook(
 def generate_markdown(content: dict) -> str:
     """Generates the markdown text by rendering the content into the template"""
 
-    env = Environment(loader=FileSystemLoader(ROOT))
+    env = Environment(loader=FileSystemLoader(ROOT), trim_blocks=True)
     template = env.get_template(TEMPLATE)
     return template.render(content)
 
@@ -162,9 +177,9 @@ def main():
     workbook = generate_workbook(schema, worksheet_names, extract_slots_from)
 
     for sheet in workbook:
+        # print(sheet)
+        # print("\n\n")
         create_doc_file(DOCS_DIR, sheet["name"], generate_markdown(sheet))
-    # print(schema.get_enum("KaryotypeEnum"))
-    # print(schema.all_enums().keys())
 
 
 if __name__ == "__main__":

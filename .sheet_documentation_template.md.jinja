@@ -7,7 +7,20 @@
 ## Fields
 
 {% for slot in slots %}
-**{{ slot.name }}** : {{ slot.description }}
-{% if 'Enum' in slot.data_type.range  %}**data type** : Controlled Vocabulary{% else %}**data type** : {{ slot.data_type.range }}{% endif %}
-**required** : {{ slot.required }}
+**{{ slot.name }}** : {{ slot.description }}<br>
+**required** : {{ slot.required }}<br>
+{% if 'Enum' in slot.data_type.range  %}
+**data type** : Controlled Vocabulary <br>
+{% else %}
+**data type** : {{ slot.data_type.range }} <br>
+{% endif %}
+
+{% if slot.data_type.enum %}
+| Permissible Values | Description |
+| --- | --- |
+{% for val in slot.data_type.enum.permissible_values%}
+| `{{ val.name }}` | `{{ val.description }}` |
+{% endfor %} {{ '\n' }}
+{% endif %}
+
 {% endfor %}

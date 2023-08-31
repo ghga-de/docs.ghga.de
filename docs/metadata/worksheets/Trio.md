@@ -6,19 +6,21 @@ A trio is defined by three individuals representing an individual and their pare
 
 ## Fields
 
+**mother** : The mother of an individual.<br>
+**required** : True<br>
+**data type** : Individual <br>
 
-**mother** : The mother of an individual.
-**data type** : Individual
-**required** : True
 
-**father** : The father of an individual.
-**data type** : Individual
-**required** : True
+**father** : The father of an individual.<br>
+**required** : True<br>
+**data type** : Individual <br>
 
-**child** : The child of two individuals.
-**data type** : Individual
-**required** : True
 
-**alias** : The alias for an entity at the time of submission.
-**data type** : string
-**required** : True
+**child** : The child of two individuals.<br>
+**required** : True<br>
+**data type** : Individual <br>
+
+
+**alias** : The alias for an entity at the time of submission.<br>
+**required** : True<br>
+**data type** : string <br>

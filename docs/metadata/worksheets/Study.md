@@ -6,27 +6,51 @@ Studies are experimental investigations of a particular phenomenon. It involves 
 
 ## Fields
 
+**title** : A comprehensive title for the study.<br>
+**required** : True<br>
+**data type** : string <br>
 
-**title** : A comprehensive title for the study.
-**data type** : string
-**required** : True
 
-**description** : A detailed description (abstract) that describes the goals of this Study.
-**data type** : string
-**required** : True
+**description** : A detailed description (abstract) that describes the goals of this Study.<br>
+**required** : True<br>
+**data type** : string <br>
 
-**type** : The type of Study. For example, 'Cancer Genomics', 'Epigenetics', 'Exome Sequencing'.
-**data type** : Controlled Vocabulary
-**required** : True
 
-**affiliations** : The Institution(s) associated with an entity.
-**data type** : string
-**required** : True
+**type** : The type of Study. For example, 'Cancer Genomics', 'Epigenetics', 'Exome Sequencing'.<br>
+**required** : True<br>
+**data type** : Controlled Vocabulary <br>
 
-**attributes** : Custom key/value pairs that further characterizes the Study. (e.g.: approaches - single-cell,_bulk_etc)
-**data type** : Attribute
-**required** : False
+| Permissible Values | Description |
+| --- | --- |
+| `CANCER_GENOMICS` | `None` |
+| `EPIGENETICS` | `None` |
+| `EXOME_SEQUENCING` | `None` |
+| `FORENSIC_GENETICS` | `None` |
+| `PALEO_GENOMICS` | `None` |
+| `GENE_REGULATION_STUDY` | `None` |
+| `METAGENOMICS` | `None` |
+| `OTHER` | `None` |
+| `POOLED_CLONE_SEQUENCING` | `None` |
+| `POPULATION_GENOMICS` | `None` |
+| `RNASEQ` | `None` |
+| `RESEQUENCING` | `None` |
+| `SYNTHETIC_GENOMICS` | `None` |
+| `TRANSCRIPTOME_ANALYSIS` | `None` |
+| `WHOLE_GENOME_SEQUENCING` | `None` |
+| `GWAS` | `None` |
 
-**alias** : The alias for an entity at the time of submission.
-**data type** : string
-**required** : True
+
+
+**affiliations** : The Institution(s) associated with an entity.<br>
+**required** : True<br>
+**data type** : string <br>
+
+
+**attributes** : Custom key/value pairs that further characterizes the Study. (e.g.: approaches - single-cell,_bulk_etc)<br>
+**required** : False<br>
+**data type** : Attribute <br>
+
+
+**alias** : The alias for an entity at the time of submission.<br>
+**required** : True<br>
+**data type** : string <br>

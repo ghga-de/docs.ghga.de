@@ -6,15 +6,16 @@ A group of members that are delegated to grant access to one or more datasets af
 
 ## Fields
 
+**email** : Email of a person.<br>
+**required** : True<br>
+**data type** : string <br>
 
-**email** : Email of a person.
-**data type** : string
-**required** : True
 
-**institute** : The institute a person is affiliated with.
-**data type** : string
-**required** : True
+**institute** : The institute a person is affiliated with.<br>
+**required** : True<br>
+**data type** : string <br>
 
-**alias** : The alias for an entity at the time of submission.
-**data type** : string
-**required** : True
+
+**alias** : The alias for an entity at the time of submission.<br>
+**required** : True<br>
+**data type** : string <br>

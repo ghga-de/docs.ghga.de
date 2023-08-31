@@ -6,31 +6,36 @@ An sequencing experiment is an investigation that consists of a coordinated set 
 
 ## Fields
 
+**title** : Name for the experiment (eg: GHGAE_PBMC_RNAseq).<br>
+**required** : None<br>
+**data type** : string <br>
 
-**title** : Name for the experiment (eg: GHGAE_PBMC_RNAseq).
-**data type** : string
-**required** : None
 
-**description** : A detailed description of the Experiment.
-**data type** : string
-**required** : True
+**description** : A detailed description of the Experiment.<br>
+**required** : True<br>
+**data type** : string <br>
 
-**type** : The type of sequencing experiment.
-**data type** : string
-**required** : False
 
-**sequencing_protocol** : The sequencing protocol associated with an entity.
-**data type** : SequencingProtocol
-**required** : True
+**type** : The type of sequencing experiment.<br>
+**required** : False<br>
+**data type** : string <br>
 
-**library_preparation_protocol** : The library_preparation Protocol associated with an entity.
-**data type** : LibraryPreparationProtocol
-**required** : True
 
-**attributes** : Key/value pairs corresponding to an entity.
-**data type** : Attribute
-**required** : False
+**sequencing_protocol** : The sequencing protocol associated with an entity.<br>
+**required** : True<br>
+**data type** : SequencingProtocol <br>
 
-**alias** : The alias for an entity at the time of submission.
-**data type** : string
-**required** : True
+
+**library_preparation_protocol** : The library_preparation Protocol associated with an entity.<br>
+**required** : True<br>
+**data type** : LibraryPreparationProtocol <br>
+
+
+**attributes** : Key/value pairs corresponding to an entity.<br>
+**required** : False<br>
+**data type** : Attribute <br>
+
+
+**alias** : The alias for an entity at the time of submission.<br>
+**required** : True<br>
+**data type** : string <br>

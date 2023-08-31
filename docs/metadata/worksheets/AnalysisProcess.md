@@ -6,23 +6,26 @@ None
 
 ## Fields
 
+**analysis** : The Analysis the AnalysisProcess was part of<br>
+**required** : True<br>
+**data type** : Analysis <br>
 
-**analysis** : The Analysis the AnalysisProcess was part of
-**data type** : Analysis
-**required** : True
 
-**study_input_files** : The StudyFile associated used as an input for an entity.
-**data type** : StudyFile
-**required** : False
+**study_input_files** : The StudyFile associated used as an input for an entity.<br>
+**required** : False<br>
+**data type** : StudyFile <br>
 
-**sample_input_files** : The SampleFile associated used as an input for an entity.
-**data type** : SampleFile
-**required** : False
 
-**sequencing_process_input_files** : The SequencingProcessFile associated used as an input for an entity.
-**data type** : SequencingProcessFile
-**required** : False
+**sample_input_files** : The SampleFile associated used as an input for an entity.<br>
+**required** : False<br>
+**data type** : SampleFile <br>
 
-**alias** : The alias for an entity at the time of submission.
-**data type** : string
-**required** : True
+
+**sequencing_process_input_files** : The SequencingProcessFile associated used as an input for an entity.<br>
+**required** : False<br>
+**data type** : SequencingProcessFile <br>
+
+
+**alias** : The alias for an entity at the time of submission.<br>
+**required** : True<br>
+**data type** : string <br>
