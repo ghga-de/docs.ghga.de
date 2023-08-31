@@ -6,24 +6,25 @@ An condition that is linked to comparable samples.
 
 ## Fields
 
-**title** : The title that describes an entity.<br>
+### ***title***<br>
+**description** : The title that describes an entity.<br>
 **required** : None<br>
 **data type** : string <br>
-
-
+### ***description***<br>
 **description** : Description of an entity.<br>
 **required** : True<br>
 **data type** : string <br>
-
-
-**name** : The name for an entity.<br>
+### ***name***<br>
+**description** : The name for an entity.<br>
 **required** : True<br>
 **data type** : string <br>
-
-
-**disease_or_healthy** : Whether a condition corresponds to a disease or a healthy state.<br>
+### ***disease_or_healthy***<br>
+**description** : Whether a condition corresponds to a disease or a healthy state.<br>
 **required** : True<br>
 **data type** : Controlled Vocabulary <br>
+
+<details>
+<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
 
 | Permissible Values | Description |
 | --- | --- |
@@ -32,10 +33,15 @@ An condition that is linked to comparable samples.
 | `NOT_APPLICABLE` | `The distinction is not applicaple.` |
 
 
+</details>
 
-**case_control_status** : Whether a condition corresponds to a treatment or a control.<br>
+### ***case_control_status***<br>
+**description** : Whether a condition corresponds to a treatment or a control.<br>
 **required** : True<br>
 **data type** : Controlled Vocabulary <br>
+
+<details>
+<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
 
 | Permissible Values | Description |
 | --- | --- |
@@ -47,10 +53,15 @@ An condition that is linked to comparable samples.
 | `UNABLE_TO_ASSESS_CASE_OR_CONTROL_STATUS` | `None` |
 
 
+</details>
 
-**mutant_or_wildtype** : Whether a condition corresponds to a mutant or a wildtype.<br>
+### ***mutant_or_wildtype***<br>
+**description** : Whether a condition corresponds to a mutant or a wildtype.<br>
 **required** : True<br>
 **data type** : Controlled Vocabulary <br>
+
+<details>
+<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
 
 | Permissible Values | Description |
 | --- | --- |
@@ -59,17 +70,17 @@ An condition that is linked to comparable samples.
 | `NOT_APPLICABLE` | `The distinction is not applicaple.` |
 
 
+</details>
 
-**study** : The study associated with an entity.<br>
+### ***study***<br>
+**description** : The study associated with an entity.<br>
 **required** : True<br>
 **data type** : Study <br>
-
-
-**attributes** : Key/value pairs corresponding to an entity.<br>
+### ***attributes***<br>
+**description** : Key/value pairs corresponding to an entity.<br>
 **required** : False<br>
 **data type** : Attribute <br>
-
-
-**alias** : The alias for an entity at the time of submission.<br>
+### ***alias***<br>
+**description** : The alias for an entity at the time of submission.<br>
 **required** : True<br>
 **data type** : string <br>

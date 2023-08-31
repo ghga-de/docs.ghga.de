@@ -6,19 +6,21 @@ Information about the library_preparation of an sequencing experiment.
 
 ## Fields
 
+### ***description***<br>
 **description** : Description about how a sequencing library was prepared (eg: Library construction method).<br>
 **required** : True<br>
 **data type** : string <br>
-
-
-**library_name** : A short name identifying the library to potential users. The same name may refer to multiple versions of the same continually updated library.<br>
+### ***library_name***<br>
+**description** : A short name identifying the library to potential users. The same name may refer to multiple versions of the same continually updated library.<br>
 **required** : True<br>
 **data type** : string <br>
-
-
-**library_layout** : Describe whether the library was sequenced in single-end (forward or reverse) or paired-end mode<br>
+### ***library_layout***<br>
+**description** : Describe whether the library was sequenced in single-end (forward or reverse) or paired-end mode<br>
 **required** : True<br>
 **data type** : Controlled Vocabulary <br>
+
+<details>
+<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
 
 | Permissible Values | Description |
 | --- | --- |
@@ -26,10 +28,15 @@ Information about the library_preparation of an sequencing experiment.
 | `PE` | `None` |
 
 
+</details>
 
-**library_type** : Describe the level of omics analysis (eg: Metagenome, transcriptome, etc)<br>
+### ***library_type***<br>
+**description** : Describe the level of omics analysis (eg: Metagenome, transcriptome, etc)<br>
 **required** : True<br>
 **data type** : Controlled Vocabulary <br>
+
+<details>
+<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
 
 | Permissible Values | Description |
 | --- | --- |
@@ -45,10 +52,15 @@ Information about the library_preparation of an sequencing experiment.
 | `CHROMOSOME_CONFORMATION_CAPTURE` | `None` |
 
 
+</details>
 
-**library_selection** : Whether any method was used to select for or against, enrich, or screen the material being sequenced. library_selection method (e.g. random, PCA, cDNA, etc )<br>
+### ***library_selection***<br>
+**description** : Whether any method was used to select for or against, enrich, or screen the material being sequenced. library_selection method (e.g. random, PCA, cDNA, etc )<br>
 **required** : True<br>
 **data type** : Controlled Vocabulary <br>
+
+<details>
+<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
 
 | Permissible Values | Description |
 | --- | --- |
@@ -85,15 +97,19 @@ Information about the library_preparation of an sequencing experiment.
 | `OTHER` | `None` |
 
 
+</details>
 
-**library_preparation** : The general method for sequencing library_preparation (e.g. KAPA PCR-free).<br>
+### ***library_preparation***<br>
+**description** : The general method for sequencing library_preparation (e.g. KAPA PCR-free).<br>
 **required** : True<br>
 **data type** : string <br>
-
-
-**library_preparation_kit_retail_name** : A unique identifier for the kit used to construct a genomic library. This may include the vendor name, kit name and kit version (e.g. Agilent sure select Human Exome V8, Twist RefSeq Exome, etc.)<br>
+### ***library_preparation_kit_retail_name***<br>
+**description** : A unique identifier for the kit used to construct a genomic library. This may include the vendor name, kit name and kit version (e.g. Agilent sure select Human Exome V8, Twist RefSeq Exome, etc.)<br>
 **required** : False<br>
 **data type** : Controlled Vocabulary <br>
+
+<details>
+<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
 
 | Permissible Values | Description |
 | --- | --- |
@@ -172,15 +188,19 @@ Information about the library_preparation of an sequencing experiment.
 | `ULTRALOW_METHYL_SEQ_WITH_TRUE_METHYL_OX_BS_MODULE` | `None` |
 
 
+</details>
 
-**library_preparation_kit_manufacturer** : Manufacturer of library_preparation kit<br>
+### ***library_preparation_kit_manufacturer***<br>
+**description** : Manufacturer of library_preparation kit<br>
 **required** : False<br>
 **data type** : string <br>
-
-
-**primer** : The type of primer used for reverse transcription, e.g. 'oligo-dT' or 'random' primer. This allows users to identify content of the cDNA library input e.g. enriched for mRNA.<br>
+### ***primer***<br>
+**description** : The type of primer used for reverse transcription, e.g. 'oligo-dT' or 'random' primer. This allows users to identify content of the cDNA library input e.g. enriched for mRNA.<br>
 **required** : False<br>
 **data type** : Controlled Vocabulary <br>
+
+<details>
+<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
 
 | Permissible Values | Description |
 | --- | --- |
@@ -190,10 +210,15 @@ Information about the library_preparation of an sequencing experiment.
 | `OTHER` | `None` |
 
 
+</details>
 
-**end_bias** : The end of the cDNA molecule that is preferentially sequenced, e.g. 3/5 prime tag or end, or the full-length transcript.<br>
+### ***end_bias***<br>
+**description** : The end of the cDNA molecule that is preferentially sequenced, e.g. 3/5 prime tag or end, or the full-length transcript.<br>
 **required** : False<br>
 **data type** : Controlled Vocabulary <br>
+
+<details>
+<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
 
 | Permissible Values | Description |
 | --- | --- |
@@ -202,15 +227,19 @@ Information about the library_preparation of an sequencing experiment.
 | `FULL_LENGTH` | `None` |
 
 
+</details>
 
-**target_regions** : Subset of genes or specific regions of the genome, which are most likely to be involved in the phenotype under study.<br>
+### ***target_regions***<br>
+**description** : Subset of genes or specific regions of the genome, which are most likely to be involved in the phenotype under study.<br>
 **required** : False<br>
 **data type** : string <br>
-
-
-**rnaseq_strandedness** : The strandedness of the library, whether reads come from both strands of the cDNA or only from the first (antisense) or the second (sense) strand.<br>
+### ***rnaseq_strandedness***<br>
+**description** : The strandedness of the library, whether reads come from both strands of the cDNA or only from the first (antisense) or the second (sense) strand.<br>
 **required** : False<br>
 **data type** : Controlled Vocabulary <br>
+
+<details>
+<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
 
 | Permissible Values | Description |
 | --- | --- |
@@ -219,12 +248,13 @@ Information about the library_preparation of an sequencing experiment.
 | `BOTH` | `None` |
 
 
+</details>
 
-**attributes** : One or more attributes that further characterizes this library_preparation Protocol.<br>
+### ***attributes***<br>
+**description** : One or more attributes that further characterizes this library_preparation Protocol.<br>
 **required** : False<br>
 **data type** : Attribute <br>
-
-
-**alias** : The alias for an entity at the time of submission.<br>
+### ***alias***<br>
+**description** : The alias for an entity at the time of submission.<br>
 **required** : True<br>
 **data type** : string <br>

@@ -6,14 +6,17 @@ A sample is a limited quantity of something to be used for testing, analysis, in
 
 ## Fields
 
-**name** : Name of the sample (eg:GHGAS_Blood_Sample1 or GHGAS_PBMC_RNAseq_S1).<br>
+### ***name***<br>
+**description** : Name of the sample (eg:GHGAS_Blood_Sample1 or GHGAS_PBMC_RNAseq_S1).<br>
 **required** : True<br>
 **data type** : string <br>
-
-
-**type** : The type of sample.<br>
+### ***type***<br>
+**description** : The type of sample.<br>
 **required** : False<br>
 **data type** : Controlled Vocabulary <br>
+
+<details>
+<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
 
 | Permissible Values | Description |
 | --- | --- |
@@ -31,42 +34,37 @@ A sample is a limited quantity of something to be used for testing, analysis, in
 | `TOTAL_RNA` | `None` |
 
 
+</details>
 
+### ***description***<br>
 **description** : Short textual description of the sample (How the sample was collected, sample source, Protocol followed for processing the sample etc).<br>
 **required** : True<br>
 **data type** : string <br>
-
-
-**isolation** : Method or device employed for collecting/isolating a biospecimen or a sample.<br>
+### ***isolation***<br>
+**description** : Method or device employed for collecting/isolating a biospecimen or a sample.<br>
 **required** : False<br>
 **data type** : string <br>
-
-
-**storage** : Methods by which a biospecimen or a sample is stored (e.g. frozen in liquid nitrogen).<br>
+### ***storage***<br>
+**description** : Methods by which a biospecimen or a sample is stored (e.g. frozen in liquid nitrogen).<br>
 **required** : False<br>
 **data type** : string <br>
-
-
-**biospecimen** : The Biospecimen from which this Sample was prepared from.<br>
+### ***biospecimen***<br>
+**description** : The Biospecimen from which this Sample was prepared from.<br>
 **required** : False<br>
 **data type** : Biospecimen <br>
-
-
-**condition** : The condition associated with an entity.<br>
+### ***condition***<br>
+**description** : The condition associated with an entity.<br>
 **required** : True<br>
 **data type** : Condition <br>
-
-
-**xref** : One or more cross-references for this Sample. For example, this Sample may have an EBI BioSamples accession or an EGA Sample accession.<br>
+### ***xref***<br>
+**description** : One or more cross-references for this Sample. For example, this Sample may have an EBI BioSamples accession or an EGA Sample accession.<br>
 **required** : False<br>
 **data type** : string <br>
-
-
-**attributes** : Key/value pairs corresponding to an entity.<br>
+### ***attributes***<br>
+**description** : Key/value pairs corresponding to an entity.<br>
 **required** : False<br>
 **data type** : Attribute <br>
-
-
-**alias** : The alias for an entity at the time of submission.<br>
+### ***alias***<br>
+**description** : The alias for an entity at the time of submission.<br>
 **required** : True<br>
 **data type** : string <br>

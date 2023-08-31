@@ -6,19 +6,21 @@ Information about the sequencing of a sample.
 
 ## Fields
 
+### ***description***<br>
 **description** : Description about the sequencing Protocol (eg: mRNA-seq, Whole exome long-read sequencing etc).<br>
 **required** : True<br>
 **data type** : string <br>
-
-
-**type** : Type of the sequencing Protocol (eg: mRNA-seq, Whole exome long-read sequencing etc).<br>
+### ***type***<br>
+**description** : Type of the sequencing Protocol (eg: mRNA-seq, Whole exome long-read sequencing etc).<br>
 **required** : None<br>
 **data type** : string <br>
-
-
-**instrument_model** : The name and model of the technology platform used to perform sequencing.<br>
+### ***instrument_model***<br>
+**description** : The name and model of the technology platform used to perform sequencing.<br>
 **required** : True<br>
 **data type** : Controlled Vocabulary <br>
+
+<details>
+<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
 
 | Permissible Values | Description |
 | --- | --- |
@@ -67,30 +69,31 @@ Information about the sequencing of a sample.
 | `OTHER` | `None` |
 
 
+</details>
 
-**sequencing_center** : Center where sample was sequenced.<br>
+### ***sequencing_center***<br>
+**description** : Center where sample was sequenced.<br>
 **required** : False<br>
 **data type** : string <br>
-
-
-**sequencing_read_length** : Length of sequencing reads (eg: Long or short or actual number of the read length etc). The number of nucleotides successfully ordered from each side of a nucleic acid fragment obtained after the completion of a sequencing process<br>
+### ***sequencing_read_length***<br>
+**description** : Length of sequencing reads (eg: Long or short or actual number of the read length etc). The number of nucleotides successfully ordered from each side of a nucleic acid fragment obtained after the completion of a sequencing process<br>
 **required** : False<br>
 **data type** : string <br>
-
-
-**target_coverage** : Mean coverage for whole genome sequencing, or mean target coverage for whole exome and targeted sequencing. The number of times a particular locus (site, nucleotide, amplicon, region) was sequenced.<br>
+### ***target_coverage***<br>
+**description** : Mean coverage for whole genome sequencing, or mean target coverage for whole exome and targeted sequencing. The number of times a particular locus (site, nucleotide, amplicon, region) was sequenced.<br>
 **required** : False<br>
 **data type** : string <br>
-
-
-**flow_cell_id** : Flow Cell ID (eg: Experiment ID_Cell 1_Lane_1). The barcode assigned to a flow cell used in nucleotide sequencing.<br>
+### ***flow_cell_id***<br>
+**description** : Flow Cell ID (eg: Experiment ID_Cell 1_Lane_1). The barcode assigned to a flow cell used in nucleotide sequencing.<br>
 **required** : False<br>
 **data type** : string <br>
-
-
-**flow_cell_type** : Type of flow cell used (e.g. S4, S2 for NovaSeq; PromethION, Flongle for Nanopore). Aparatus in the fluidic subsystem where the sheath and sample meet. Can be one of several types; jet-in-air, quartz cuvette, or a hybrid of the two. The sample flows through the center of a fluid column of sheath fluid in the flow cell.<br>
+### ***flow_cell_type***<br>
+**description** : Type of flow cell used (e.g. S4, S2 for NovaSeq; PromethION, Flongle for Nanopore). Aparatus in the fluidic subsystem where the sheath and sample meet. Can be one of several types; jet-in-air, quartz cuvette, or a hybrid of the two. The sample flows through the center of a fluid column of sheath fluid in the flow cell.<br>
 **required** : False<br>
 **data type** : Controlled Vocabulary <br>
+
+<details>
+<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
 
 | Permissible Values | Description |
 | --- | --- |
@@ -103,10 +106,15 @@ Information about the sequencing of a sample.
 | `OTHER` | `None` |
 
 
+</details>
 
-**umi_barcode_read** : The type of read that contains the UMI barcode (Eg: index1/index2/read1/read2).<br>
+### ***umi_barcode_read***<br>
+**description** : The type of read that contains the UMI barcode (Eg: index1/index2/read1/read2).<br>
 **required** : False<br>
 **data type** : Controlled Vocabulary <br>
+
+<details>
+<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
 
 | Permissible Values | Description |
 | --- | --- |
@@ -116,20 +124,23 @@ Information about the sequencing of a sample.
 | `READ2` | `None` |
 
 
+</details>
 
-**umi_barcode_offset** : The offset in sequence of the UMI identifying barcode. (E.g. '16').<br>
+### ***umi_barcode_offset***<br>
+**description** : The offset in sequence of the UMI identifying barcode. (E.g. '16').<br>
 **required** : False<br>
 **data type** : string <br>
-
-
-**umi_barcode_size** : The size of the UMI identifying barcode (Eg. '10').<br>
+### ***umi_barcode_size***<br>
+**description** : The size of the UMI identifying barcode (Eg. '10').<br>
 **required** : False<br>
 **data type** : string <br>
-
-
-**cell_barcode_read** : The type of read that contains the cell barcode (eg: index1/index2/read1/read2).<br>
+### ***cell_barcode_read***<br>
+**description** : The type of read that contains the cell barcode (eg: index1/index2/read1/read2).<br>
 **required** : False<br>
 **data type** : Controlled Vocabulary <br>
+
+<details>
+<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
 
 | Permissible Values | Description |
 | --- | --- |
@@ -139,20 +150,23 @@ Information about the sequencing of a sample.
 | `READ2` | `None` |
 
 
+</details>
 
-**cell_barcode_offset** : The offset in sequence of the cell identifying barcode. (Eg. '0').<br>
+### ***cell_barcode_offset***<br>
+**description** : The offset in sequence of the cell identifying barcode. (Eg. '0').<br>
 **required** : False<br>
 **data type** : string <br>
-
-
-**cell_barcode_size** : The size of the cell identifying barcode (E.g. '16').<br>
+### ***cell_barcode_size***<br>
+**description** : The size of the cell identifying barcode (E.g. '16').<br>
 **required** : False<br>
 **data type** : string <br>
-
-
-**sample_barcode_read** : The type of read that contains the sample barcode (eg: index1/index2/read1/read2).<br>
+### ***sample_barcode_read***<br>
+**description** : The type of read that contains the sample barcode (eg: index1/index2/read1/read2).<br>
 **required** : False<br>
 **data type** : Controlled Vocabulary <br>
+
+<details>
+<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
 
 | Permissible Values | Description |
 | --- | --- |
@@ -161,12 +175,13 @@ Information about the sequencing of a sample.
 | `OTHER` | `None` |
 
 
+</details>
 
-**attributes** : One or more attributes that further characterizes this Sequencing Protocol.<br>
+### ***attributes***<br>
+**description** : One or more attributes that further characterizes this Sequencing Protocol.<br>
 **required** : False<br>
 **data type** : Attribute <br>
-
-
-**alias** : The alias for an entity at the time of submission.<br>
+### ***alias***<br>
+**description** : The alias for an entity at the time of submission.<br>
 **required** : True<br>
 **data type** : string <br>

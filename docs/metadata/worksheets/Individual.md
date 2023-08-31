@@ -6,9 +6,13 @@ An Individual is a Person who is participating in a Study.
 
 ## Fields
 
-**sex** : The assemblage of physical properties or qualities by which male is distinguished from female; the physical difference between male and female; the distinguishing peculiarity of male or female.<br>
+### ***sex***<br>
+**description** : The assemblage of physical properties or qualities by which male is distinguished from female; the physical difference between male and female; the distinguishing peculiarity of male or female.<br>
 **required** : True<br>
 **data type** : Controlled Vocabulary <br>
+
+<details>
+<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
 
 | Permissible Values | Description |
 | --- | --- |
@@ -19,10 +23,15 @@ An Individual is a Person who is participating in a Study.
 | `UNKNOWN_SEX_FOR_CLINICAL_USE` | `None` |
 
 
+</details>
 
-**karyotype** : The karyotype of an individual if defined.<br>
+### ***karyotype***<br>
+**description** : The karyotype of an individual if defined.<br>
 **required** : False<br>
 **data type** : Controlled Vocabulary <br>
+
+<details>
+<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
 
 | Permissible Values | Description |
 | --- | --- |
@@ -31,22 +40,21 @@ An Individual is a Person who is participating in a Study.
 | `OTHER` | `None` |
 
 
+</details>
 
-**geographical_region** : The geographical region where the Individual is located. Any demarcated area of the Earth; may be determined by both natural and human boundaries.<br>
+### ***geographical_region***<br>
+**description** : The geographical region where the Individual is located. Any demarcated area of the Earth; may be determined by both natural and human boundaries.<br>
 **required** : False<br>
 **data type** : string <br>
-
-
-**ancestries** : A person's descent or lineage, from a person or from a population.<br>
+### ***ancestries***<br>
+**description** : A person's descent or lineage, from a person or from a population.<br>
 **required** : False<br>
 **data type** : string <br>
-
-
-**phenotypic_features** : The Phenotypic Feature entity that is associated with this Biospecimen at the time of retrieval from the organism. Typically, a concept from Human Phenotype Ontology. For example, 'HP:0100244' indicates that the Individual - from_which_the_Biospecimen was extracted from - exhibits_'Fibrosarcoma'_as_one_of_its_phenotype.<br>
+### ***phenotypic_features***<br>
+**description** : The Phenotypic Feature entity that is associated with this Biospecimen at the time of retrieval from the organism. Typically, a concept from Human Phenotype Ontology. For example, 'HP:0100244' indicates that the Individual - from_which_the_Biospecimen was extracted from - exhibits_'Fibrosarcoma'_as_one_of_its_phenotype.<br>
 **required** : False<br>
 **data type** : string <br>
-
-
-**alias** : The alias for an entity at the time of submission.<br>
+### ***alias***<br>
+**description** : The alias for an entity at the time of submission.<br>
 **required** : True<br>
 **data type** : string <br>

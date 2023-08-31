@@ -72,25 +72,39 @@ class Config(BaseModel):
             )
 
 
-def load_config(config_path=CONFIG_PATH) -> dict:
-    """Loads config file"""
+class IOOperations:
+    """bundles input operation functions"""
 
-    try:
-        with open(config_path, "r", encoding="utf8") as config_file:
-            return yaml.safe_load(config_file)
-    except FileNotFoundError as exc:
-        raise WorkbookConfigurationNotFound(
-            f"Workbook configuration not found at: {config_path}"
-        ) from exc
+    config_path: Path = CONFIG_PATH
+    schema_url: str = SCHEMA_URL
+    output_dir: Path = DOCS_DIR
 
+    @property
+    def load_config(self) -> dict:
+        """Loads config file"""
 
-def load_schema(schema_url=SCHEMA_URL):
-    """Loads schema"""
+        try:
+            with open(self.config_path, "r", encoding="utf8") as config_file:
+                return yaml.safe_load(config_file)
+        except FileNotFoundError as exc:
+            raise WorkbookConfigurationNotFound(
+                f"Workbook configuration not found at: {self.config_path}"
+            ) from exc
 
-    schema_config = requests.get(schema_url, timeout=5)
-    if schema_config.status_code == 200:
-        return SchemaView(schema_config.text)
-    raise SchemaNotLoaded(f"Schema could not be loaded from {SCHEMA_URL}")
+    @property
+    def load_schema(self):
+        """Loads schema"""
+
+        schema_config = requests.get(self.schema_url, timeout=5)
+        if schema_config.status_code == 200:
+            return SchemaView(schema_config.text)
+        raise SchemaNotLoaded(f"Schema could not be loaded from {self.schema_url}")
+
+    def create_doc_file(self, name: str, content: str) -> None:
+        """Creates a markdown file for a given sheet and content"""
+
+        with open(self.output_dir / (name + ".md"), mode="w", encoding="utf8") as file:
+            file.write(content)
 
 
 def extract_permissible_values(schema: SchemaView, slot_range: Union[str, None]):
@@ -122,7 +136,6 @@ def extract_slots_from(
     return [
         {
             "name": slot.name,
-            "alias": slot.alias,
             "description": slot.description,
             "data_type": {
                 "range": slot.range,
@@ -158,28 +171,20 @@ def generate_markdown(content: dict) -> str:
     return template.render(content)
 
 
-def create_doc_file(out_dir: Path, name: str, content: str) -> None:
-    """Creates a markdown file for a given sheet and content"""
-
-    with open(out_dir / (name + ".md"), mode="w", encoding="utf8") as file:
-        file.write(content)
-
-
 def main():
     """Patches things together"""
-
-    config = Config.model_validate(load_config())
+    io_ops = IOOperations()
+    config = Config.model_validate(io_ops.load_config)
     if config.main_workbook is None:
         raise MainSheetNotIdentified
     worksheet_names = config.main_workbook.worksheets
 
-    schema = load_schema()
-    workbook = generate_workbook(schema, worksheet_names, extract_slots_from)
+    workbook = generate_workbook(
+        io_ops.load_schema, worksheet_names, extract_slots_from
+    )
 
     for sheet in workbook:
-        # print(sheet)
-        # print("\n\n")
-        create_doc_file(DOCS_DIR, sheet["name"], generate_markdown(sheet))
+        IOOperations.create_doc_file(io_ops, sheet["name"], generate_markdown(sheet))
 
 
 if __name__ == "__main__":

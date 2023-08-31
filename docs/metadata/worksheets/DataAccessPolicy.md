@@ -6,34 +6,33 @@ A Data Access Policy specifies under which circumstances, legal or otherwise, a 
 
 ## Fields
 
-**name** : A name for the Data Access Policy.<br>
+### ***name***<br>
+**description** : A name for the Data Access Policy.<br>
 **required** : True<br>
 **data type** : string <br>
-
-
+### ***description***<br>
 **description** : A short description for the Data Access Policy.<br>
 **required** : True<br>
 **data type** : string <br>
-
-
-**policy_text** : The terms of data use and policy verbiage should be captured here.<br>
+### ***policy_text***<br>
+**description** : The terms of data use and policy verbiage should be captured here.<br>
 **required** : True<br>
 **data type** : string <br>
-
-
-**policy_url** : URL for the policy, if available. This is useful if the terms of the policy is made available online at a resolvable URL.<br>
+### ***policy_url***<br>
+**description** : URL for the policy, if available. This is useful if the terms of the policy is made available online at a resolvable URL.<br>
 **required** : False<br>
 **data type** : string <br>
-
-
-**data_access_committee** : The Data Access Committee linked to this policy.<br>
+### ***data_access_committee***<br>
+**description** : The Data Access Committee linked to this policy.<br>
 **required** : True<br>
 **data type** : DataAccessCommittee <br>
-
-
-**data_use_permission** : Data use permission associated with a policy. Typically one or more terms from DUO and should be descendants of 'DUO:0000001 data use permission'.<br>
+### ***data_use_permission***<br>
+**description** : Data use permission associated with a policy. Typically one or more terms from DUO and should be descendants of 'DUO:0000001 data use permission'.<br>
 **required** : True<br>
 **data type** : Controlled Vocabulary <br>
+
+<details>
+<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
 
 | Permissible Values | Description |
 | --- | --- |
@@ -44,10 +43,15 @@ A Data Access Policy specifies under which circumstances, legal or otherwise, a 
 | `population origins or ancestry research only` | `None` |
 
 
+</details>
 
-**data_use_modifiers** : Modifier for Data use permission associated with a policy. Should be descendants of 'DUO:0000017 data use modifier'<br>
+### ***data_use_modifiers***<br>
+**description** : Modifier for Data use permission associated with a policy. Should be descendants of 'DUO:0000017 data use modifier'<br>
 **required** : False<br>
 **data type** : Controlled Vocabulary <br>
+
+<details>
+<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
 
 | Permissible Values | Description |
 | --- | --- |
@@ -71,7 +75,9 @@ A Data Access Policy specifies under which circumstances, legal or otherwise, a 
 | `population origins or ancestry research prohibited` | `None` |
 
 
+</details>
 
-**alias** : The alias for an entity at the time of submission.<br>
+### ***alias***<br>
+**description** : The alias for an entity at the time of submission.<br>
 **required** : True<br>
 **data type** : string <br>

@@ -6,39 +6,37 @@ A Biospecimen is any natural material taken from a biological entity (usually a 
 
 ## Fields
 
-**name** : The name for an entity.<br>
+### ***name***<br>
+**description** : The name for an entity.<br>
 **required** : False<br>
 **data type** : string <br>
-
-
-**type** : The type of Biospecimen.<br>
+### ***type***<br>
+**description** : The type of Biospecimen.<br>
 **required** : False<br>
 **data type** : string <br>
-
-
+### ***description***<br>
 **description** : Description of an entity.<br>
 **required** : False<br>
 **data type** : string <br>
-
-
-**isolation** : Method or device employed for collecting/isolating a biospecimen or a sample.<br>
+### ***isolation***<br>
+**description** : Method or device employed for collecting/isolating a biospecimen or a sample.<br>
 **required** : False<br>
 **data type** : string <br>
-
-
-**storage** : Methods by which a biospecimen or a sample is stored (e.g. frozen in liquid nitrogen).<br>
+### ***storage***<br>
+**description** : Methods by which a biospecimen or a sample is stored (e.g. frozen in liquid nitrogen).<br>
 **required** : False<br>
 **data type** : string <br>
-
-
-**individual** : The Individual entity from which this Biospecimen was derived.<br>
+### ***individual***<br>
+**description** : The Individual entity from which this Biospecimen was derived.<br>
 **required** : True<br>
 **data type** : Individual <br>
-
-
-**age_at_sampling** : Age of an individual.<br>
+### ***age_at_sampling***<br>
+**description** : Age of an individual.<br>
 **required** : True<br>
 **data type** : Controlled Vocabulary <br>
+
+<details>
+<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
 
 | Permissible Values | Description |
 | --- | --- |
@@ -62,10 +60,15 @@ A Biospecimen is any natural material taken from a biological entity (usually a 
 | `UNKNOWN` | `Age range unknown.` |
 
 
+</details>
 
-**vital_status_at_sampling** : Vital Status of an Individual at the point of sampling (eg:'Alive', 'Deceased').<br>
+### ***vital_status_at_sampling***<br>
+**description** : Vital Status of an Individual at the point of sampling (eg:'Alive', 'Deceased').<br>
 **required** : False<br>
 **data type** : Controlled Vocabulary <br>
+
+<details>
+<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
 
 | Permissible Values | Description |
 | --- | --- |
@@ -74,12 +77,13 @@ A Biospecimen is any natural material taken from a biological entity (usually a 
 | `UNKNOWN` | `Vital status is unknown.` |
 
 
+</details>
 
-**tissue** : None<br>
+### ***tissue***<br>
+**description** : None<br>
 **required** : True<br>
 **data type** : string <br>
-
-
-**alias** : The alias for an entity at the time of submission.<br>
+### ***alias***<br>
+**description** : The alias for an entity at the time of submission.<br>
 **required** : True<br>
 **data type** : string <br>

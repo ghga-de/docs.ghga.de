@@ -6,19 +6,21 @@ Studies are experimental investigations of a particular phenomenon. It involves 
 
 ## Fields
 
-**title** : A comprehensive title for the study.<br>
+### ***title***<br>
+**description** : A comprehensive title for the study.<br>
 **required** : True<br>
 **data type** : string <br>
-
-
+### ***description***<br>
 **description** : A detailed description (abstract) that describes the goals of this Study.<br>
 **required** : True<br>
 **data type** : string <br>
-
-
-**type** : The type of Study. For example, 'Cancer Genomics', 'Epigenetics', 'Exome Sequencing'.<br>
+### ***type***<br>
+**description** : The type of Study. For example, 'Cancer Genomics', 'Epigenetics', 'Exome Sequencing'.<br>
 **required** : True<br>
 **data type** : Controlled Vocabulary <br>
+
+<details>
+<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
 
 | Permissible Values | Description |
 | --- | --- |
@@ -40,17 +42,17 @@ Studies are experimental investigations of a particular phenomenon. It involves 
 | `GWAS` | `None` |
 
 
+</details>
 
-**affiliations** : The Institution(s) associated with an entity.<br>
+### ***affiliations***<br>
+**description** : The Institution(s) associated with an entity.<br>
 **required** : True<br>
 **data type** : string <br>
-
-
-**attributes** : Custom key/value pairs that further characterizes the Study. (e.g.: approaches - single-cell,_bulk_etc)<br>
+### ***attributes***<br>
+**description** : Custom key/value pairs that further characterizes the Study. (e.g.: approaches - single-cell,_bulk_etc)<br>
 **required** : False<br>
 **data type** : Attribute <br>
-
-
-**alias** : The alias for an entity at the time of submission.<br>
+### ***alias***<br>
+**description** : The alias for an entity at the time of submission.<br>
 **required** : True<br>
 **data type** : string <br>

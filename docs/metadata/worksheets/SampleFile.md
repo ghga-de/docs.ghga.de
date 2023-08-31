@@ -6,19 +6,21 @@ A SampleFile is a File that is associated with a Sample.
 
 ## Fields
 
-**sample** : The sample associated with an entity.<br>
+### ***sample***<br>
+**description** : The sample associated with an entity.<br>
 **required** : True<br>
 **data type** : Sample <br>
-
-
-**name** : The given filename.<br>
+### ***name***<br>
+**description** : The given filename.<br>
 **required** : True<br>
 **data type** : string <br>
-
-
-**format** : The format of the file: BAM, SAM, CRAM, BAI, etc.<br>
+### ***format***<br>
+**description** : The format of the file: BAM, SAM, CRAM, BAI, etc.<br>
 **required** : True<br>
 **data type** : Controlled Vocabulary <br>
+
+<details>
+<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
 
 | Permissible Values | Description |
 | --- | --- |
@@ -50,20 +52,23 @@ A SampleFile is a File that is associated with a Sample.
 | `WIG` | `None` |
 
 
+</details>
 
-**size** : The size of a file in bytes.<br>
+### ***size***<br>
+**description** : The size of a file in bytes.<br>
 **required** : True<br>
 **data type** : integer <br>
-
-
-**checksum** : A computed value which depends on the contents of a block of data and which is transmitted or stored along with the data in order to detect corruption of the data. The receiving system recomputes the checksum based upon the received data and compares this value with the one sent with the data. If the two values are the same, the receiver has some confidence that the data was received correctly.<br>
+### ***checksum***<br>
+**description** : A computed value which depends on the contents of a block of data and which is transmitted or stored along with the data in order to detect corruption of the data. The receiving system recomputes the checksum based upon the received data and compares this value with the one sent with the data. If the two values are the same, the receiver has some confidence that the data was received correctly.<br>
 **required** : True<br>
 **data type** : string <br>
-
-
-**forward_or_reverse** : Denotes whether a submitted FASTQ file contains forward (R1) or reverse (R2) reads for paired-end sequencing. The number that identifies each read direction in a paired-end nucleotide sequencing reaction.<br>
+### ***forward_or_reverse***<br>
+**description** : Denotes whether a submitted FASTQ file contains forward (R1) or reverse (R2) reads for paired-end sequencing. The number that identifies each read direction in a paired-end nucleotide sequencing reaction.<br>
 **required** : False<br>
 **data type** : Controlled Vocabulary <br>
+
+<details>
+<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
 
 | Permissible Values | Description |
 | --- | --- |
@@ -71,17 +76,17 @@ A SampleFile is a File that is associated with a Sample.
 | `REVERSE` | `The reads are reverse (R2) reads` |
 
 
+</details>
 
-**checksum_type** : The type of algorithm used to generate the checksum of a file.<br>
+### ***checksum_type***<br>
+**description** : The type of algorithm used to generate the checksum of a file.<br>
 **required** : True<br>
 **data type** : string <br>
-
-
-**dataset** : The Dataset associated with an entity.<br>
+### ***dataset***<br>
+**description** : The Dataset associated with an entity.<br>
 **required** : True<br>
 **data type** : Dataset <br>
-
-
-**alias** : The alias for an entity at the time of submission.<br>
+### ***alias***<br>
+**description** : The alias for an entity at the time of submission.<br>
 **required** : True<br>
 **data type** : string <br>
