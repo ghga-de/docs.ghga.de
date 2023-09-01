@@ -81,7 +81,7 @@ nav:
   - "GHGA Metadata Model":
       - "Overview": metadata/overview.md
       - metadata/concepts.md
-      - metadata/modules.md
       - "Entities & Attributes": metadata/entities.md
+      - "Metadata Submission": metadata/submission/submission.md
   - "Tools":
     - "GHGA Transpiler": transpiler/transpiler.md

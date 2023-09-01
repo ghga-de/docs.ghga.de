@@ -28,7 +28,7 @@ from pydantic import BaseModel, Field
 HERE = Path(__file__).parent.resolve()
 ROOT = HERE.parent
 SHEET_DIR = ROOT / "docs" / "metadata" / "worksheets"
-SUBMISSION_DIR = ROOT / "docs" / "metadata"
+SUBMISSION_DIR = ROOT / "docs" / "metadata" / "submission"
 CONFIG_PATH = ROOT / ".workbook_config.yaml"
 TEMPLATE_DIR = ROOT / "docs" / "templates"
 
@@ -203,7 +203,7 @@ def generate_submission_doc(config: Config, load_ops: LoadOperations):
 
     create_doc_file(
         SUBMISSION_DIR,
-        "submission",
+        "submission_sheets",
         generate_markdown(
             load_ops, ".submission_documentation_template.md.jinja", submission_content
         ),
