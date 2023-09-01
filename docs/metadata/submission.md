@@ -1,6 +1,5 @@
 # Submission
 
-
 ## ghga_submission_full.xlsx<br>
 
 Submission components:
@@ -107,7 +106,6 @@ Publication worksheet:
 * [https://ghga-de.github.io/docs/metadata/overviewworksheets/Publication.md](https://ghga-de.github.io/docs/metadata/overviewworksheets/Publication.md)<br>
 
 
-
 ## ghga_submission_minimal.xlsx<br>
 
 Submission components:
@@ -142,7 +140,6 @@ DataAccessCommittee worksheet:
 Publication worksheet:
 
 * [https://ghga-de.github.io/docs/metadata/overviewworksheets/Publication.md](https://ghga-de.github.io/docs/metadata/overviewworksheets/Publication.md)<br>
-
 
 
 ## ghga_submission_sample.xlsx<br>
@@ -194,7 +191,6 @@ DataAccessCommittee worksheet:
 Publication worksheet:
 
 * [https://ghga-de.github.io/docs/metadata/overviewworksheets/Publication.md](https://ghga-de.github.io/docs/metadata/overviewworksheets/Publication.md)<br>
-
 
 
 ## ghga_submission_individual.xlsx<br>
@@ -261,7 +257,6 @@ DataAccessCommittee worksheet:
 Publication worksheet:
 
 * [https://ghga-de.github.io/docs/metadata/overviewworksheets/Publication.md](https://ghga-de.github.io/docs/metadata/overviewworksheets/Publication.md)<br>
-
 
 
 ## ghga_submission_seq.xlsx<br>

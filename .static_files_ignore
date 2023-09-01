@@ -2,8 +2,6 @@
 # but are allowed to have different content in the current repository
 
 pytest.ini
-scripts/update_config_docs.py
-scripts/update_openapi_docs.py
 requirements.txt
 example_data/README.md
 .devcontainer/dev_install
@@ -15,3 +13,11 @@ setup.py
 .github/workflows/static_code_analysis.yaml
 .github/workflows/cd.yaml
 .pre-commit-config.yaml
+
+.readme_template.md
+readme_generation.md
+
+scripts/get_package_name.py
+scripts/update_config_docs.py
+scripts/update_openapi_docs.py
+scripts/update_readme.py

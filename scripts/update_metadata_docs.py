@@ -200,7 +200,6 @@ def generate_submission_doc(config: Config, load_ops: LoadOperations):
     """fn"""
 
     submission_content = config.model_dump()
-    print(submission_content)
 
     create_doc_file(
         SUBMISSION_DIR,
