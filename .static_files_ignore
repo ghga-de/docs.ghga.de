@@ -11,6 +11,8 @@ setup.py
 .github/workflows/unit_and_int_tests.yaml
 .github/workflows/check_openapi_spec.yaml
 .github/workflows/static_code_analysis.yaml
+.github/workflows/check_readme.yaml
+
 .github/workflows/cd.yaml
 .pre-commit-config.yaml
 
