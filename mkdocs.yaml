@@ -82,6 +82,13 @@ nav:
       - "Overview": metadata/overview.md
       - metadata/concepts.md
       - "Entities & Attributes": metadata/entities.md
-      - "Metadata Submission": metadata/submission/submission.md
+  - "Metadata Submission":
+    - "Submission Overview": metadata/submission/submission.md
+    - "Submission Spreadsheets":
+      - "GHGA Full Submission":  metadata/submission/ghga_submission_full.xlsx.md
+      - "GHGA Minimal Submission":  metadata/submission/ghga_submission_minimal.xlsx.md
+      - "GHGA Individual Submission":  metadata/submission/ghga_submission_individual.xlsx.md
+      - "GHGA Sample Submission":  metadata/submission/ghga_submission_sample.xlsx.md
+      - "GHGA Sequence Submission":  metadata/submission/ghga_submission_seq.xlsx.md
   - "Tools":
     - "GHGA Transpiler": transpiler/transpiler.md

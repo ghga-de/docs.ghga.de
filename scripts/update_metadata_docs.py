@@ -199,15 +199,16 @@ def generate_sheet_docs(config: Config, load_ops: LoadOperations):
 def generate_submission_doc(config: Config, load_ops: LoadOperations):
     """fn"""
 
-    submission_content = config.model_dump()
-
-    create_doc_file(
-        SUBMISSION_DIR,
-        "submission_sheets",
-        generate_markdown(
-            load_ops, ".submission_documentation_template.md.jinja", submission_content
-        ),
-    )
+    for workbook in config.workbooks:
+        create_doc_file(
+            SUBMISSION_DIR,
+            workbook.file_name,
+            generate_markdown(
+                load_ops,
+                ".submission_documentation_template.md.jinja",
+                workbook.model_dump(),
+            ),
+        )
 
 
 def main():
