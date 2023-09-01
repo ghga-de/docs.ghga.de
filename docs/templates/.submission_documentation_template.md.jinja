@@ -1,0 +1,17 @@
+# Submission
+
+{% for workbook in workbooks %}
+## {{ workbook.file_name }}<br>
+
+Submission components:
+----------------------
+
+{% for sheet in workbook.worksheets %}
+
+{{ sheet }} worksheet:
+
+* [https://ghga-de.github.io/docs/metadata/overviewworksheets/{{ sheet }}.md](https://ghga-de.github.io/docs/metadata/overviewworksheets/{{ sheet }}.md)<br>
+
+{% endfor %}
+
+{% endfor %}

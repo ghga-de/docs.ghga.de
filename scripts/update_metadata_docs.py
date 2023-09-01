@@ -27,10 +27,11 @@ from pydantic import BaseModel, Field
 
 HERE = Path(__file__).parent.resolve()
 ROOT = HERE.parent
-DOCS_DIR = ROOT / "docs" / "metadata" / "worksheets"
+SHEET_DIR = ROOT / "docs" / "metadata" / "worksheets"
+SUBMISSION_DIR = ROOT / "docs" / "metadata"
 CONFIG_PATH = ROOT / ".workbook_config.yaml"
+TEMPLATE_DIR = ROOT / "docs" / "templates"
 
-TEMPLATE = ".sheet_documentation_template.md.jinja"
 
 SCHEMA_URL = "https://raw.githubusercontent.com/ghga-de/ghga-metadata-schema/main/src/schema/submission.yaml"  # pylint: disable=line-too-long
 
@@ -72,12 +73,12 @@ class Config(BaseModel):
             )
 
 
-class IOOperations:
+class LoadOperations:
     """bundles input operation functions"""
 
     config_path: Path = CONFIG_PATH
     schema_url: str = SCHEMA_URL
-    output_dir: Path = DOCS_DIR
+    template_dir: Path = TEMPLATE_DIR
 
     @property
     def load_config(self) -> dict:
@@ -100,11 +101,21 @@ class IOOperations:
             return SchemaView(schema_config.text)
         raise SchemaNotLoaded(f"Schema could not be loaded from {self.schema_url}")
 
-    def create_doc_file(self, name: str, content: str) -> None:
-        """Creates a markdown file for a given sheet and content"""
 
-        with open(self.output_dir / (name + ".md"), mode="w", encoding="utf8") as file:
+def create_doc_file(output_dir: Path, name: str, content: Union[str, None]) -> None:
+    """Creates a markdown file for a given sheet and content"""
+
+    if content:
+        with open(output_dir / (name + ".md"), mode="w", encoding="utf8") as file:
             file.write(content)
+
+
+def generate_markdown(load_ops: LoadOperations, template_name: str, content: dict):
+    """Generates the markdown text by rendering the content into the template"""
+
+    env = Environment(loader=FileSystemLoader(load_ops.template_dir), trim_blocks=True)
+    template = env.get_template(template_name)
+    return template.render(content)
 
 
 def extract_permissible_values(schema: SchemaView, slot_range: Union[str, None]):
@@ -163,28 +174,51 @@ def generate_workbook(
     ]
 
 
-def generate_markdown(content: dict) -> str:
-    """Generates the markdown text by rendering the content into the template"""
+def generate_sheet_docs(config: Config, load_ops: LoadOperations):
+    """fn"""
 
-    env = Environment(loader=FileSystemLoader(ROOT), trim_blocks=True)
-    template = env.get_template(TEMPLATE)
-    return template.render(content)
-
-
-def main():
-    """Patches things together"""
-    io_ops = IOOperations()
-    config = Config.model_validate(io_ops.load_config)
     if config.main_workbook is None:
         raise MainSheetNotIdentified
     worksheet_names = config.main_workbook.worksheets
 
+    # Generate worksheet documentation of the main workbook
     workbook = generate_workbook(
-        io_ops.load_schema, worksheet_names, extract_slots_from
+        load_ops.load_schema, worksheet_names, extract_slots_from
     )
 
     for sheet in workbook:
-        IOOperations.create_doc_file(io_ops, sheet["name"], generate_markdown(sheet))
+        create_doc_file(
+            SHEET_DIR,
+            sheet["name"],
+            generate_markdown(
+                load_ops, ".sheet_documentation_template.md.jinja", sheet
+            ),
+        )
+
+
+def generate_submission_doc(config: Config, load_ops: LoadOperations):
+    """fn"""
+
+    submission_content = config.model_dump()
+    print(submission_content)
+
+    create_doc_file(
+        SUBMISSION_DIR,
+        "submission",
+        generate_markdown(
+            load_ops, ".submission_documentation_template.md.jinja", submission_content
+        ),
+    )
+
+
+def main():
+    """Patches things together"""
+    load_ops = LoadOperations()
+    config = Config.model_validate(load_ops.load_config)
+
+    generate_sheet_docs(config, load_ops)
+
+    generate_submission_doc(config, load_ops)
 
 
 if __name__ == "__main__":
