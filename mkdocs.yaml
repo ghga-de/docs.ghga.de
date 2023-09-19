@@ -85,3 +85,4 @@ nav:
       - "Entities & Attributes": metadata/entities.md
   - "Tools":
       - "GHGA Validator": validator/validator.md
+      - "GHGA Transpiler": transpiler/transpiler.md
