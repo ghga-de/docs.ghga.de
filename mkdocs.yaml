@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+docs_dir: user_docs
+
 # Project information
 site_name: GHGA User Documentation
 site_description: Public documentation of the German Human Genome-Phenome Archive.
