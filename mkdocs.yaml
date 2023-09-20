@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+docs_dir: user_docs
+
 # Project information
 site_name: GHGA User Documentation
 site_description: Public documentation of the German Human Genome-Phenome Archive.
@@ -94,4 +96,5 @@ nav:
           - "Sequencing Module": metadata/data_dictionary/sequencing-module.md
           - "File Submission": metadata/data_dictionary/file-submission.md
   - "Tools":
+      - "GHGA Validator": validator/validator.md
       - "GHGA Transpiler": transpiler/transpiler.md

@@ -1,5 +1,0 @@
-#!/bin/bash
-
-# adapt to package name
-cd /workspace
-mkdocs serve
