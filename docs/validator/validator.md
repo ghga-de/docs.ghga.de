@@ -1,6 +1,6 @@
 # GHGA Validator
 
-GHGA Validator is a command line utility to validate metadata w.r.t. its compliance to the GHGA Metadata Model. It takes metadata encoded in JSON of YAML format and produces a validation report in JSON format.
+GHGA Validator is a command line utility to validate metadata w.r.t. its compliance to the GHGA Metadata Model. It takes metadata encoded in JSON or YAML format and produces a validation report in JSON format.
 
 There is a possibility to indicate the root class for validation. In case it was not specified, it will induced from the schema.
 
@@ -49,15 +49,17 @@ Options:
 
 ## Examples
 
+:bulb: Example data can be downloaded from https://github.com/ghga-de/example-data/
 
-1. To validate `/work_directory/data.json` against the schema `/work_directory/schema.yaml` and store the validation report into the file `/work_directory/report.json`:
+:bulb: The latest version of the GHGA metadata schema (`submission.yaml`) can be downloaded from https://github.com/ghga-de/ghga-metadata-schema/releases/latest
+
+1. To validate `data.json` against the schema `submission.yaml` and store the validation report into the file `report.json`:
 ```
-ghga-validator --input /work_directory/schema.json --schema /work_directory/schema.yaml --report /work_directory/report.json
-ghga-validator -i /work_directory/schema.json -s /work_directory/schema.yaml -r /work_directory/report.json
+ghga-validator --input schema.json --schema submission.yaml --report report.json
 ```
 2. To validate with providing the root class `Submission` for validation:
 ```
-ghga-validator --input /work_directory/schema.json --schema /work_directory/schema.yaml --report /work_directory/report.json --target-class Submission
+ghga-validator --input schema.json --schema submission.yaml --report report.json --target-class Submission
 ```
 3. To display help message:
 ```
