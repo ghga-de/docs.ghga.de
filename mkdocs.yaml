@@ -42,6 +42,16 @@ plugins:
   - search
   - git-revision-date-localized
 
+# Additional configuration
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ghga-de
+    - icon: fontawesome/brands/mastodon
+      link: https://genomic.social/@ghga
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/ghga_DE
+
 # Extensions
 markdown_extensions:
   - admonition
