@@ -17,10 +17,10 @@
 docs_dir: user_docs
 
 # Project information
-site_name: GHGA User Documentation
+site_name: User Documentation
 site_description: Public documentation of the German Human Genome-Phenome Archive.
 site_author: The GHGA Team
-site_url: https://docs.ghga-dev.de
+site_url: https://docs.ghga.de
 docs_dir: user_docs
 # Repository
 repo_name: GHGA User Documentation
@@ -33,6 +33,11 @@ copyright: 2023 The GHGA Team
 # Theming, Configuration
 theme:
   name: material
+  logo: logo.svg
+  font: false
+  palette:
+    primary: custom
+
 strict: false
 extra_css:
   - css/extra.css
@@ -44,6 +49,13 @@ plugins:
 
 # Additional configuration
 extra:
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/ghga-de

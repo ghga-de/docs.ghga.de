@@ -20,3 +20,24 @@
     display: block;
     margin: 0 auto;
 }
+
+:root {
+    --md-primary-fg-color: #00393F;
+    --md-primary-fg-color--light: #ECB7B7;
+    --md-primary-fg-color--dark: #90030C;
+}
+
+@font-face {
+    font-family: "Lexend";
+    src: "Lexend.ttf"
+}
+
+@font-face {
+    font-family: "RobotoMono";
+    src: "RobotoMono.ttf"
+}
+
+:root {
+    --md-text-font: "Lexend";
+    --md-code-font: "RobotoMono";
+}
