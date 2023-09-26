@@ -75,7 +75,7 @@ GHGA will provide data analysis of the raw files deposited at GHGA by a data sub
 
 ### **Analysis metadata properties**
 
-The data submitter is required to provide an analysis alias, the aliases for the input and output files, as well as the link to a study and the reference genome or chromosome(s) used for the analysis. Optional properties include a description of the analysis and the analysis type. Additionally, users can submit an *Analysis Process*, which captures the workflow steps that were performed to analyze data obtained from sequencing experiments
+The data submitter is required to provide an analysis alias, the aliases for the input and output files, as well as the link to a study and the reference genome or chromosome(s) used for the analysis. Optional properties include a description of the analysis steps and the analysis type.
 
 ## **Dataset**
 
@@ -85,7 +85,7 @@ GHGA presents its content to potential data requesters and submitters with the *
 
 The *Dataset* entity is aimed at capturing relevant information about a dataset itself. The data submitter can provide a description and a title for the dataset. The main purpose of this entity is to link a dataset to the related study, experiments, samples, analysis, files and data access policies. These links must be provided on the submission of data, either through automatic linking with respect to the *Data Access Committee*, or the data submitter.
 
-All properties captured in the *Dataset* entity are required for the functionality of GHGA and are therefore mandatory. The only exception is the analysis alias, which only needs to be provided if an analysis is to be submitted. A title and description can be indexed by the database in order to make the GHGA Data Portal searchable for a specific dataset. In addition, the links to study, experiment, samples, analysis (if available) and files are necessary to provide a data requester with all relevant data and metadata associated with a dataset. This also ensures reusability in the light of the FAIR Data Principles.
+All properties captured in the *Dataset* entity are required for the functionality of GHGA and are therefore mandatory. The only exception is the analysis alias, which only needs to be provided if an analysis is to be submitted. A title and description can be indexed by the database in order to make the GHGA Data Portal searchable for a specific dataset. In addition, the links to study, experiment, samples, analysis (if avalaible) and files are necessary to provide a data requester with all relevant data and metadata associated with a dataset. This also ensures reusability in the light of the FAIR Data Principles.
 
 ## **Data Access Policy and Committee**
 

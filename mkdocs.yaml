@@ -14,12 +14,14 @@
 # limitations under the License.
 #
 
+docs_dir: user_docs
+
 # Project information
 site_name: GHGA User Documentation
-site_description: Public documentation of the German Human Genome-Phenome Archive.
+site_description: Public documentation for users of the German Human Genome-Phenome Archive.
 site_author: The GHGA Team
-site_url: https://docs.ghga-dev.de
-
+site_url: https://docs.ghga.de
+docs_dir: user_docs
 # Repository
 repo_name: GHGA User Documentation
 repo_url: https://github.com/ghga-de/docs/
@@ -31,6 +33,11 @@ copyright: 2023 The GHGA Team
 # Theming, Configuration
 theme:
   name: material
+  logo: logo.svg
+  font: false
+  palette:
+    primary: custom
+
 strict: false
 extra_css:
   - css/extra.css
@@ -40,8 +47,26 @@ plugins:
   - search
   - git-revision-date-localized
 
+# Additional configuration
+extra:
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ghga-de
+    - icon: fontawesome/brands/mastodon
+      link: https://genomic.social/@ghga
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/ghga_DE
+
 # Extensions
 markdown_extensions:
+  - admonition
   - attr_list
   - markdown.extensions.admonition
   - markdown.extensions.codehilite:
@@ -80,6 +105,7 @@ nav:
   - "Overview": index.md
   - "GHGA Metadata Model":
       - "Overview": metadata/overview.md
+      - "Standards": metadata/standards.md
       - metadata/concepts.md
       - "Entities & Attributes": metadata/entities.md
   - "Metadata Submission":
@@ -91,4 +117,6 @@ nav:
       - "GHGA Sample Submission":  metadata/submission/ghga_submission_sample.xlsx.md
       - "GHGA Sequence Submission":  metadata/submission/ghga_submission_seq.xlsx.md
   - "Tools":
-    - "GHGA Transpiler": transpiler/transpiler.md
+      - "GHGA Validator": validator/validator.md
+      - "GHGA Transpiler": transpiler/transpiler.md
+  - "Glossary": glossary/glossary.md
