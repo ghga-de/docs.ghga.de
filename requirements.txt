@@ -4,3 +4,6 @@ pygments
 markdown
 pymdown-extensions
 mkdocs-git-revision-date-localized-plugin
+pydantic
+jinja2
+linkml-runtime

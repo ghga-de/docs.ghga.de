@@ -51,7 +51,7 @@ plugins:
 extra:
   consent:
     title: Cookie consent
-    description: >- 
+    description: >-
       We use cookies to recognize your repeated visits and preferences, as well
       as to measure the effectiveness of our documentation and whether users
       find what they're searching for. With your consent, you're helping us to
@@ -107,17 +107,15 @@ nav:
       - "Overview": metadata/overview.md
       - "Standards": metadata/standards.md
       - metadata/concepts.md
-      - metadata/modules.md
       - "Entities & Attributes": metadata/entities.md
-      - "Data Dictionary":
-          - "Analysis Module": metadata/data_dictionary/analysis-module.md
-          - "Basic Module": metadata/data_dictionary/basic-module.md
-          - "Data Use Conditions Module": metadata/data_dictionary/data-use-conditions-module.md
-          - "Dataset Module": metadata/data_dictionary/dataset-module.md
-          - "Phenotype Module": metadata/data_dictionary/phenotype-module.md
-          - "Sample Module": metadata/data_dictionary/sample-module.md
-          - "Sequencing Module": metadata/data_dictionary/sequencing-module.md
-          - "File Submission": metadata/data_dictionary/file-submission.md
+  - "Metadata Submission":
+    - "Submission Overview": metadata/submission/submission.md
+    - "Submission Spreadsheets":
+      - "GHGA Full Submission":  metadata/submission/ghga_submission_full.xlsx.md
+      - "GHGA Minimal Submission":  metadata/submission/ghga_submission_minimal.xlsx.md
+      - "GHGA Individual Submission":  metadata/submission/ghga_submission_individual.xlsx.md
+      - "GHGA Sample Submission":  metadata/submission/ghga_submission_sample.xlsx.md
+      - "GHGA Sequence Submission":  metadata/submission/ghga_submission_seq.xlsx.md
   - "Tools":
       - "GHGA Validator": validator/validator.md
       - "GHGA Transpiler": transpiler/transpiler.md
