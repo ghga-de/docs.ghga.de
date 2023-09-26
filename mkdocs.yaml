@@ -17,8 +17,8 @@
 docs_dir: user_docs
 
 # Project information
-site_name: User Documentation
-site_description: Public documentation of the German Human Genome-Phenome Archive.
+site_name: GHGA User Documentation
+site_description: Public documentation for users of the German Human Genome-Phenome Archive.
 site_author: The GHGA Team
 site_url: https://docs.ghga.de
 docs_dir: user_docs
