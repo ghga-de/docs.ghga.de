@@ -1,6 +1,6 @@
 # GHGA User Documentation
 
-A built version of this documentation is available at [https://ghga-de.github.io/docs](https://ghga-de.github.io/docs).
+A built version of this documentation is available at [https://docs.ghga.de](https://docs.ghga.de).
 ## Development
 
 Open the project in Visual Studio Code inside the devcontainer.
