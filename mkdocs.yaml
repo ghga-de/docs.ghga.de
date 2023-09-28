@@ -108,6 +108,7 @@ nav:
       - "Standards": metadata/standards.md
       - metadata/concepts.md
       - metadata/modules.md
+      - "Submitter Guide": Submitter_guide/Initial.md
       - "Entities & Attributes": metadata/entities.md
       - "Data Dictionary":
           - "Analysis Module": metadata/data_dictionary/analysis-module.md
