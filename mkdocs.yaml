@@ -122,4 +122,6 @@ nav:
   - "Tools":
       - "GHGA Validator": validator/validator.md
       - "GHGA Transpiler": transpiler/transpiler.md
+      - "GHGA Connector": connector/connector.md
+  - "Access Data and Download": download/download.md
   - "Glossary": glossary/glossary.md
