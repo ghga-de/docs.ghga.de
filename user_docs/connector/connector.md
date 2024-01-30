@@ -1,38 +1,20 @@
 # GHGA Connector
 
-The GHGA Connector is a Python library and command line facilitating interaction with the file storage infrastructure of GHGA. Currently, it provides functionality for downloading and decrypting files, with the capability to interact with the RESTful APIs exposed by the Download Controller Service (https://github.com/ghga-de/download-controller-service).
+The GHGA Connector is a command line tool and Python library facilitating interaction with the file storage infrastructure of GHGA. Currently, it provides functionality for downloading and decrypting files.
 
 
 ## Installation and Upgrade
 
-We recommend installing the latest version of the GHGA connector using pip.
+We recommend installing / upgrading to the latest version of the GHGA connector using pip.
 
-Install:
-```
-pip install ghga-connector==0.3.15
-```
-
-Upgrade:
-```
-pip install --upgrade ghga-connector
-```
-
-:warning: Please note that the installation instructions currently require you install a specific version of the GHGA Connector rather than the latest available version. This is due to a current change in how we manage package versions and dependencies. This will be resolved soon and this documentation will be updated.
+Install or upgrade:
+    pip install --upgrade ghga-connector
 
 
-## Configuration
-
-GHGA Connector requires a connection to the backend service API. Please set the following environment variable correctly in your shell before using the CLI.
-
-```bash
-export ghga_connector_wkvs_api_url="https://<CHANGE-HERE>" 
-```
-
-For further details about configuration, please visit the [GHGA Connector](https://github.com/ghga-de/ghga-connector) GitHub page.
 
 ### Crypt4gh Keys
 
-GHGA Connector requires your [Crypt4GH](https://crypt4gh.readthedocs.io/en/latest/) keys to encrypt downloaded data, ensuring that only you can access it. Please create a pair of Crypt4GH keys if you don't already have one, which you will also need for the process of download token creation.
+GHGA Connector requires a [Crypt4GH](https://crypt4gh.readthedocs.io/en/latest/) key pair to download data. Please create a pair of Crypt4GH keys if you don't already have one. The public key is also needed for the creation of the download token through the Data Portal.
 
 By default, GHGA Connector looks for the keys at ./key.pub and ./key.sec. You can either place your keys there or use CLI options to specify your key locations.
 
@@ -61,7 +43,7 @@ The _`download`_ command is used to download files. In order to download files, 
 
 ### Download Token
 
-GHGA Connector requires a download token to authenticate and process your request against GHGA Central. Each download request is represented by a download token, which should be created via the GHGA Data Portal. For further information on how to create a download token, please read the [Data Access and Download](../download/download.md) document.
+GHGA Connector requires a download token to authenticate and process your request against GHGA Central. Each download request - which may comprise multiple files - is represented by a download token, which should be created via the GHGA Data Portal. For further information on how to create a download token, please read the [Data Access and Download](../download/download.md) document.
 
 ### Download Examples
 
@@ -69,11 +51,11 @@ GHGA Connector requires a download token to authenticate and process your reques
 ```bash
 ghga-connector download --output-dir <OUTPUT-DIR>
 ```
-Command will prompt:
+You will then be asked to provide the download token:
 ```
 Please paste the complete download token that you copied from the GHGA data portal: 
 ```
-Paste the *download token* you created via the GHGA data portal, and download process will be initiated.
+Paste the *download token* you created via the GHGA data portal and the download process will be initiated.
 
 Download command usage:
 ```
