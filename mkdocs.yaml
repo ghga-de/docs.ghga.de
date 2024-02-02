@@ -119,9 +119,10 @@ nav:
           - "Sample Module": metadata/data_dictionary/sample-module.md
           - "Sequencing Module": metadata/data_dictionary/sequencing-module.md
           - "File Submission": metadata/data_dictionary/file-submission.md
-  - "Tools":
+  - "CLI Tools":
       - "GHGA Validator": validator/validator.md
       - "GHGA Transpiler": transpiler/transpiler.md
       - "GHGA Connector": connector/connector.md
-  - "Access Data and Download": download/download.md
+  - "Data Portal":
+    - "Access Data and Download": download/download.md
   - "Glossary": glossary/glossary.md
