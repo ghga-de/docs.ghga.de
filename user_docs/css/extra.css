@@ -27,6 +27,9 @@
     --md-primary-fg-color--dark: #90030C;
 }
 
+.md-content {
+   --md-typeset-a-color: #E84614;
+}
 @font-face {
     font-family: "Lexend";
     src: "Lexend.ttf"
