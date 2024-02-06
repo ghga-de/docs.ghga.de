@@ -7,7 +7,7 @@ Downloading data from datasets you have been granted access to is a two stage pr
   the dataset. At the end of this process, a download token is generated and
   shown to the user.
 
-* Subsequently, the CLI tool [GHGA Connector](../connector/connector.md) is used
+* Subsequently, the CLI tool [GHGA Connector](../cli_tools/connector.md) is used
   to perform the actual file download using the previously generated download
   token and the user's Crypt4GH key pair.
 
@@ -52,4 +52,4 @@ file storage infrastructure of GHGA. Data downloading is carried out using the
 GHGA Connector.
 
 For further information on how to use the command-line tool, please refer to the
-[GHGA Connector](../connector/connector.md) documentation.
+[GHGA Connector](../cli_tools/connector.md) documentation.
