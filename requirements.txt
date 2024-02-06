@@ -4,3 +4,4 @@ pygments
 markdown
 pymdown-extensions
 mkdocs-git-revision-date-localized-plugin
+mkdocs-include-dir-to-nav
