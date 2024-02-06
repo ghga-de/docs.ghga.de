@@ -27,7 +27,7 @@ token can be generated to download either a single or multiple files from a
 dataset. The download token is then passed on to the CLI tool GHGA Connector to
 perform the actual download.
 
-1. Navigate to the [GHGA Data Portal](https://data.staging.ghga.dev/download).
+1. Navigate to the [GHGA Data Portal](https://data.ghga.de/).
 
 2. Visit your profile page to see the datasets you have access to.
 
