@@ -46,6 +46,7 @@ extra_css:
 plugins:
   - search
   - git-revision-date-localized
+  - include_dir_to_nav
 
 # Additional configuration
 extra:
@@ -83,8 +84,8 @@ markdown_extensions:
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.magiclink:
@@ -107,16 +108,18 @@ nav:
       - "Overview": metadata/overview.md
       - "Standards": metadata/standards.md
       - metadata/concepts.md
+      - metadata/modules.md
+      - "Submitter Guide": Submitter_guide/Initial.md
       - "Entities & Attributes": metadata/entities.md
-  - "Metadata Submission":
-    - "Submission Overview": metadata/submission/submission.md
-    - "Submission Spreadsheets":
-      - "GHGA Full Submission":  metadata/submission/ghga_submission_full.xlsx.md
-      - "GHGA Minimal Submission":  metadata/submission/ghga_submission_minimal.xlsx.md
-      - "GHGA Individual Submission":  metadata/submission/ghga_submission_individual.xlsx.md
-      - "GHGA Sample Submission":  metadata/submission/ghga_submission_sample.xlsx.md
-      - "GHGA Sequence Submission":  metadata/submission/ghga_submission_seq.xlsx.md
-  - "Tools":
-      - "GHGA Validator": validator/validator.md
-      - "GHGA Transpiler": transpiler/transpiler.md
+      - "Data Dictionary":
+          - "Analysis Module": metadata/data_dictionary/analysis-module.md
+          - "Basic Module": metadata/data_dictionary/basic-module.md
+          - "Data Use Conditions Module": metadata/data_dictionary/data-use-conditions-module.md
+          - "Dataset Module": metadata/data_dictionary/dataset-module.md
+          - "Phenotype Module": metadata/data_dictionary/phenotype-module.md
+          - "Sample Module": metadata/data_dictionary/sample-module.md
+          - "Sequencing Module": metadata/data_dictionary/sequencing-module.md
+          - "File Submission": metadata/data_dictionary/file-submission.md
+  - "CLI Tools": cli_tools
+  - "Data Portal": data_portal
   - "Glossary": glossary/glossary.md
