@@ -55,13 +55,13 @@ Options:
 
 1. To validate `data.json` against the schema `submission.yaml` and store the validation report into the file `report.json`:
 ```
-ghga-validator --input schema.json --schema submission.yaml --report report.json
+ghga_validator --input data.json --schema submission.yaml --report report.json
 ```
 2. To validate with providing the root class `Submission` for validation:
 ```
-ghga-validator --input schema.json --schema submission.yaml --report report.json --target-class Submission
+ghga_validator --input data.json --schema submission.yaml --report report.json --target-class Submission
 ```
 3. To display help message:
 ```
-ghga-validator --help
+ghga_validator --help
 ```
