@@ -7,8 +7,13 @@
 ## General
 For the usage of the services of the GHGA Data Portal, a Life Science Login / LS ID is necessary. Life Science Login is an authentication service from EOSC-Life, for details see [lifescience-ri.eu/ls-login/](https://lifescience-ri.eu/ls-login/).
 
-# Specification of LS IDs in  Usage of LS ID in GHGA
-To be able to processing [Data Processing Contracts](../glossary/glossary.md#data-processing-contract-dpc) and for others uses, GHGA users need to specify details of their LS ID to GHGA. The following information is needed:
+ 
+## Specification of LS IDs for usage in contracts
+
+!!! note "Section currently only relevant for data submitters and approved data requesters"
+   It is only needed for data submissions or after approval of data access requests.
+
+To be able to process [Data Processing Contracts](../glossary/glossary.md#data-processing-contract-dpc) and for others uses, GHGA users need to specify details of their LS ID to GHGA. The following information is needed:
 
 | Field | Explanation  |
 |---|---|
