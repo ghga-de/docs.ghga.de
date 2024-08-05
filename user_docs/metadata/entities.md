@@ -64,7 +64,7 @@ The *Research Data File* entity is generated as a result of a direct measurement
 
 ### **Research Data File metadata properties**
 
-The *Research Data File* entity requires a data submitter to provide information about file format, technical replicate, experiment, name, dataset and whether the file is included in the submission. It is also recommended to provide information about sequencing lane. Optional property include ega accession.
+The *Research Data File* entity requires a data submitter to provide information about the file format, technical replicate, the *Experiment* that generated this *Research Data File*, the file name, the *Dataset* and whether the file is included in the submission. It is also recommended to provide information about the sequencing lane. The EGA accession ID is an optional property.
 
 ## **Analysis**
 
