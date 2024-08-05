@@ -84,7 +84,7 @@ The *Analysis Method* entity describes the computational workflow that created *
 
 For this submission, the data submitter is required to provide information about the *Analysis Method* name, a description, type, the workflow name, workflow repository and workflow DOI. Furthermore, it is also recommended to provide information about the workflow version, workflow tasks, parameters and software versions.
 
-## **Analysis Methods Supporting File**
+## **Analysis Method Supporting File**
 
 For any additional information pertaining to the *Analysis Methods* entity, the data submitter can use the *Analysis Method Supporting File*.
 
