@@ -68,7 +68,7 @@ The *Research Data File* entity requires a data submitter to provide information
 
 ## **Analysis**
 
-The *Analysis* entity permutates research data files into processed data files through a computational workflow. 
+The *Analysis* entity permutates a *Research Data File* into a *Process Data File* through a computational workflow. 
 
 The *Analysis* entity is linked to *Experiment* via *Research Data File* and also linked to *Analysis method* 
 
