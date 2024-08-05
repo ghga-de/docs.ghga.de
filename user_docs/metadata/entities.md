@@ -128,7 +128,7 @@ All data deposited at GHGA is subject to a specific study, under which relevant 
 
 ### **Study metadata properties**
 
-In order to describe a *Study*, data submitters are required to provide information about the study affiliation(s), title, description and type and optionally provide ega accession.
+In order to describe a *Study*, data submitters are required to provide information about the study affiliation(s), the title, a description and the study type. Optionally, they can provide an EGA accession ID.
 
 ## **Publication**
 
