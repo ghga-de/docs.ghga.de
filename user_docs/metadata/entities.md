@@ -10,7 +10,7 @@ The Research Metadata focuses on the reusability and FAIRness of the data. The R
 
 ## **Individual**
 
-The *Individual* entity collects non-personal metadata about the underlying source of  patient from which the samples were collected. The content of the individual entity is crucial to identify cohorts of interest and gives valuable insight on the target group of an experiment. 
+The *Individual* entity collects non-personal metadata about the *Individual* from which the samples were collected. The content of the *Individual* entity is crucial to identify cohorts of interest and gives valuable insight on the target group of an experiment. 
 
 ### **Individual metadata properties**
 
