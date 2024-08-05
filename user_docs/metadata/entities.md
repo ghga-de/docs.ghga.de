@@ -94,7 +94,7 @@ For additional information about analysis methods, the data submitter is require
 
 ## **Process Data File**
 
-The *Process Data File* entity is a generated outcome of an analysis, alignment or  processing of a research data file. The process data file entity is linked to *Dataset* entity that is associated with the file and *Analysis* entity that produced this processed file. 
+The *Process Data File* entity is a generated outcome of an analysis, alignment or  processing of a *Research Data File*. The *Process Data File* entity is linked to the *Dataset* that is associated with the file and the *Analysis* that produced this *Process Data File*.
 
 ### **Process Data File metadata properties**
 
