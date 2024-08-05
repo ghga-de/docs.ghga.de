@@ -98,7 +98,7 @@ The *Process Data File* entity is a generated outcome of an analysis, alignment 
 
 ### **Process Data File metadata properties**
 
-The *process data file* entity requires the data submitter to provide information about file format, analysis, name, size, checksum, checksum type and dataset. Additionally, its also possible to submit optional information such as ega accession.
+The *Process Data File* entity requires the data submitter to provide information about the file format, the *Analysis* from which this file originated, the file name, and the *Dataset*. Additionally, it is also possible to submit an optional EGA accession ID.
 
 The submission process allows submission of processed data file alone but this is discouraged as it requires creation of empty Experiment class.
 
