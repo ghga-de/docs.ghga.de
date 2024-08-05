@@ -52,7 +52,7 @@ The *Experiment Method* entity captures information about the protocol that was 
 
 ### **Experiment Method metadata properties**
 
-The data submitter is required to provide the following information for fulfilling the Experiment methods pertaining to an omics experiment such as name, description, type, library type, library selection methods, library preparation, instrument model and sequencing layout. Furthermore, the data submitters are also recommended to provide information about library preparation kit retail name, library preparation kit manufacturer, primer, end bias, flow cell id, flow cell type, rna seq strandedness, sample barcode read and sequencing center. The optional properties include target region, target coverage and ega accession id.
+The data submitter is required to provide information about the name, description, library type, selection methods, preparation, the instrument model and sequencing layout to fulfil the *Experiment Method* pertaining to an omics experiment. Furthermore, it is recommended to provide information about the library preparation kit name and manufacturer, the primer, end bias, flow cell ID and type, rna seq strandedness, sample barcode read and sequencing center. The optional properties include target region, target coverage and EGA accession ID.
 
 ## **Experiment Method Supporting File**
 
