@@ -28,7 +28,7 @@ The *Biospecimen/Sample* describes the extracted sample and tissue for an experi
 
 A *Biospecimen* is defined in GHGAs metadata as any natural material taken from a biological entity for testing, diagnostics, treatment or research purposes. The *Biospecimen* is linked to the *Individual* entity from which the biospecimen itself has been derived.
 
-The *Biospecimen/Sample* is linked to the *Individual* entity describing how the biological material was collected from them.
+The *Biospecimen/Sample* is linked to the *Individual* entity describing the collection of biological material. Further, it is linked to the *Experiment*.```
 
 ### **Biospecimen/Sample metadata properties**
 
