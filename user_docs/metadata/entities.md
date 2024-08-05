@@ -76,7 +76,7 @@ The *Analysis* entity is linked to *Experiment* via *Research Data File* and als
 
 The data submitter is required to provide information about the *Analysis* title, the *Analysis Method* that is associated with this *Analysis* and the *Research Data Files* that this *Analysis* used as input to generate *Process Data Files*.
 
-### **Analysis Methods**
+### **Analysis Method**
 
 The *Analysis Method* entity describes the computational workflow that created *Process Data Files* in more detail. 
 
