@@ -19,6 +19,9 @@ The properties and the values in the GDC data dictionary contain references to e
 ## **Metadata standards**
 Metadata provides context and provenance to raw data and methods and are essential to both discovery and validation. It can be classified as a high level document which establishes a common way of structuring and understanding data by including principles and implementation issues utilizing the standard. Metadata standards offer conventions for the generation and description of research data. They specify and define the structure of metadata.
 
+### **Minimum Information about a high-throughput Nucleotide Sequencing Experiment (MINSEQE)**
+[MINSEQE](https://fairsharing.org/FAIRsharing.a55z32) describes the minimum information about a high-throughput nucleotide sequencing experiment that is needed to enable the unambiguous interpretation and facilitate reproduction of the results of the experiment. By analogy to the [MIAME](https://fairsharing.org/FAIRsharing.32b10v) guidelines for microarray experiments, adherence to the [MINSEQE](https://fairsharing.org/FAIRsharing.a55z32) guidelines will improve integration of multiple experiments across different modalities, thereby maximizing the value of high-throughput research. The five main elements of experimental description to be [MINSEQUE](https://fairsharing.org/FAIRsharing.a55z32) compliant include - description of the experiment and sample under study, sequence read data for each assay, final processed data for the study, information about experiment-sample relationship, experiment and sample processing protocol.
+
 ## **Ontologies**
 
 To ensure that the metadata that is collected in GHGA is of high quality, we support a selection of ontologies for certain properties where their values can be one or more concept terms from these ontologies. The ontologies were chosen based on their suitability to represent the knowledge specific to genomic medicine. They have a wide adoption and community support, which increases their interoperability and reusability.
@@ -43,9 +46,3 @@ The [Mondo Disease Ontology (Mondo)](https://obofoundry.org/ontology/mondo) prov
 
 ### **National Cancer Institute Thesaurus**
 The [National Cancer Institute Thesaurus (NCIt)](https://obofoundry.org/ontology/ncit.html ) is a reference terminology covering the cancer domain, including diseases, abnormalities, anatomy, drugs, genes, and more. It provides granular and consistent terminology in certain areas like cancer diseases and combination chemotherapies. The terminology is a combination from numerous cancer research domains and enables integration of information through semantic relationships. We recommend the use of concepts from NCIt to represent the case or control status associated with a Sample. For example, instead of using free text ‘True Case Status’ to represent the case status of a sample, we would recommend using the appropriate concept **NCIT:C99269 True Case Status**.
-
-### **Systematic Nomenclature of Medicine Clinical Terms**
-[SNOMED Clinical Terms (SNOMED CT)](https://www.ebi.ac.uk/ols/ontologies/snomed) is a computerized repository of medical terms that are systematically organized for easy processing. This collection includes codes, terms, synonyms, and definitions that are commonly used in clinical documentation and reporting. We recommend the use of concepts from SNOMED CT to represent a sampling method associated with a Biospecimen and/or a Sample. For example, instead of using free text ‘Bone marrow sampling’ to represent the method used to isolate a sample, we would recommend using the appropriate concept **SNOMEDCT:234326005 Bone marrow sampling**.
-
-
-
