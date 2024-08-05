@@ -78,7 +78,7 @@ The data submitter is required to provide information about the *Analysis* title
 
 ## **Analysis Methods**
 
-The *Analysis Methods* entity describes the computational workflow that created processed data in more detail. 
+The *Analysis Method* entity describes the computational workflow that created *Process Data Files* in more detail. 
 
 ### **Analysis Methods metadata properties**
 
