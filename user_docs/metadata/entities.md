@@ -112,7 +112,7 @@ GHGA presents its content to potential data requesters and submitters with the *
 
 #### **Dataset metadata properties**
 
-The *Dataset* entity is aimed at capturing relevant information about a dataset itself. The mandatory information required for *Dataset* entity includes title, description, type, data access policy and Study. Optionally, the data submitter could also provide information about the ega accession.
+The *Dataset* entity is aimed at capturing relevant information about a dataset itself. The mandatory information required for *Dataset* entity includes title, description, type, the *Data Access Policy* that regulates this *Dataset* and the *Study*. Optionally, the data submitter could also provide information about an EGA accession.
 
 ### **Data Access Policy and Committee**
 
