@@ -18,6 +18,7 @@ This documentation serves as the description and reasoning behind the Metadata M
 Classes in the schema can be grouped into **Research Metadata** and **Administrative Metadata** based on the information they capture. The **Research Metadata** aims at maximising the reusability and FAIRness of the data, while the **Administrative Metadata** focuses on managing the resources, such as creation or acquisition of the data, rights management, and disposition. The Research Metadata classes include *Individual*, *Biospcimen/Sample*, *Experiment*, *Experiment Method*, *Analysis* and *Analysis Method*. The Administrative Metadata captures *Dataset*, *Data Access Policy*, *Data Access Committee*, *Publication*, and *Study*.  
 
 The model also differentiates between three file types:
+
 - **Research Data File**: A file which results from the omics experiment, such as sequencing of a sample.
 - **Process Data File**: A file that is generated as output from an analysis performed on a *Research Data File*, such as alignment or processing.
 - **Supporting File**: A file that provides further information about an *Individual*, *Experiment Method* or *Analysis Method*. These could be unstructured protocols or structured information, such as Phenopackets or BioCompute Objects.

@@ -20,7 +20,10 @@ The Individual entity is linked to the *Sample* entity.
 
 ### **Individual Supporting File**
 
-If the data submitters have additional information to provide about the *Individual*, then they can make use of the *Individual Supporting File* class which requires the following information -  file format, file name, dataset associated with this file as well as if the file is included as part of the submission. 
+If the data submitters have additional information to provide about the *Individual*, then they can make use of the *Individual Supporting File* class. 
+
+#### **Individual Supporting File metadata properties**
+The **Individual Supporting File** requires the following information: file format, file name, dataset associated with this file as well as if the file is included as part of the submission.
 
 ### **Biospecimen/Sample**
 
@@ -28,7 +31,7 @@ The *Biospecimen/Sample* describes the extracted sample and tissue for an experi
 
 A *Biospecimen* is defined in GHGAs metadata as any natural material taken from a biological entity for testing, diagnostics, treatment or research purposes. The *Biospecimen* is linked to the *Individual* entity from which the biospecimen itself has been derived.
 
-The *Biospecimen/Sample* is linked to the *Individual* entity describing the collection of biological material. Further, it is linked to the *Experiment*.```
+The *Biospecimen/Sample* is linked to the *Individual* entity describing the collection of biological material. Further, it is linked to the *Experiment*.
 
 #### **Biospecimen/Sample metadata properties**
 
@@ -46,7 +49,7 @@ The *Experiment* entity is linked to the *Sample* which implies one or more samp
 
 The *Experiment* entity requires the data submitters to provide information about experiment method, title, description and sample information.
 
-### **Experiment Methods**
+### **Experiment Method**
 
 The *Experiment Method* entity captures information about the protocol that was followed to perform the omics experiment.
 
@@ -56,7 +59,10 @@ The data submitter is required to provide information about the name, descriptio
 
 ### **Experiment Method Supporting File**
 
-Any additional information pertaining to the *Experiment Method* can be provided here. The submitter is required to provide information about the file format, the *Experiment Method* this file supports, the file name, the *Dataset* associated with this file and whether this file is included as part of the submission.
+Any additional information pertaining to the *Experiment Method* can be provided as *Experiment Method Supporting File*. 
+
+#### **Experiment Method Supporting File metadata properties**
+The submitter is required to provide information about the file format, the *Experiment Method* this file supports, the file name, the *Dataset* associated with this file and whether this file is included as part of the submission.
 
 ### **Research Data File**
 
@@ -80,7 +86,7 @@ The data submitter is required to provide information about the *Analysis* title
 
 The *Analysis Method* entity describes the computational workflow that created *Process Data Files* in more detail. 
 
-#### **Analysis Methods metadata properties**
+#### **Analysis Method metadata properties**
 
 For this submission, the data submitter is required to provide information about the *Analysis Method* name, a description, type, the workflow name, workflow repository and workflow DOI. Furthermore, it is also recommended to provide information about the workflow version, workflow tasks, parameters and software versions.
 
@@ -144,12 +150,14 @@ The data submitter is required to provide information about the *Study* associat
 
 ## **Submission Spreadsheet**
 
-The Submission Spreadsheet for GHGA Archive captures the above-mentioned metadata in an ordered fashion. The submission process is tailored to replicate a “front-to-end” workflow: 
+The Submission Spreadsheet for GHGA Archive captures the above-mentioned metadata in an ordered fashion. The submission process is tailored to replicate a “front-to-end” workflow:
+
 - Which individuals are subject to investigation?
-- Which biologicla material was collected and how?
+- Which biological material was collected and how?
 - Which experiment was performed and how? Which files were generated as result?
 - Which analysis was performed and how? Which output files were generated from which input files?
 - How can this data be shared in meaningful datasets? Which conditions apply and who governs them?
+
 The submitter can also make use of the supporting files to enrich their data with additional information, such as experimental protocols for the *Experiment* class or workflow parameter files for the *Analysis* class. The supporting files can contain structured metadata, such as Phenopackets or PED files for the *Individual* class. Since supplementary files are encrypted and inaccessible without DAC approval, this allows submissions of clinical or personal metadata that can only be accessed by requesters after signing a Data Transfer Agreement. Hence, the metadata model can only indicate the presence of supplementary files for classes and signify that a submission contains additional information but not process their content.
 This results in a submission process, which will appear much more natural to submitters, while maintaining a high degree of flexibility to adapt to different omics types.
 
