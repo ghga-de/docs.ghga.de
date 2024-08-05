@@ -88,7 +88,7 @@ For this submission, the data submitter is required to provide information about
 
 For any additional information pertaining to the *Analysis Methods* entity, the data submitter can use the *Analysis Method Supporting File*.
 
-### **Analysis Methods Supporting File properties**
+### **Analysis Method Supporting File properties**
 
 For additional information about analysis methods, the data submitter is required to provide information about the file format, analysis method, file name, file size, checksum, checksum type and dataset associated with this file.
 
