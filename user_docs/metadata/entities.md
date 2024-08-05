@@ -56,7 +56,7 @@ The data submitter is required to provide information about the name, descriptio
 
 ## **Experiment Method Supporting File**
 
-Any additional information pertaining to the *Experiment Method* can be provided here. The submitter is required to provide information about format, experiment method associated with an entity, file name, dataset associated with this file and whether this file is included as part of the submission.
+Any additional information pertaining to the *Experiment Method* can be provided here. The submitter is required to provide information about the file format, the *Experiment Method* this file supports, the file name, the *Dataset* associated with this file and whether this file is included as part of the submission.
 
 ## **Research Data File**
 
