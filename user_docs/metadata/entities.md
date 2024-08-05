@@ -32,7 +32,9 @@ The *Biospecimen/Sample* is linked to the *Individual* entity describing the col
 
 ### **Biospecimen/Sample metadata properties**
 
-The *Sample* entity requires data submitters to provide the name, description, case control status of the sample, as well as the alias to the individual from which the sample was derived. In addition to the mandatory information, the data submitter is recommended to provide information about the sample storage, disease or healthy referring to the conditional state of the sample, and biological replicate information. Other optional fields includes sample type and ega accession ids. The *Biospecimen* entity requires data submitters to provide information about biospecimen age at sampling, biospecimen tissue term and id. The recommended properties include biospecimen name, biospecimen type, vital status at sampling, isolation and storage.   
+The *Sample* entity requires data submitters to provide the name, description, whether the sample is case or control, as well as the alias to the *Individual* from which the *Sample* was derived. In addition to the mandatory information, the data submitter is recommended to provide information about the storage, whether the sample can be classified as  diseased or healthy, and biological replicate information. Other optional fields include the type of the sample and an EGA accession ID. 
+
+The *Biospecimen* entity requires data submitters to provide information about the age of the individual at the time of sampling and the biospecimen tissue. The recommended properties include a name for the biospecimen, its type, the vital status of the individual at the time of sampling, and the biospecimen isolation and storage.
 
 ## **Experiment**
 
