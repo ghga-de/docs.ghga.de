@@ -14,7 +14,7 @@ The *Individual* entity collects non-personal metadata about the underlying sour
 
 ### **Individual metadata properties**
 
-In order to describe an *Individual*, data submitters are required to provide information about sex and are recommended to provide information about phenotypic features id, phenotypic features terms, diagnostic ids and diagnostic terms respectively. Additional information about geographical region and ancestries can also be provided.
+In order to describe an *Individual*, data submitters are required to provide information about sex and are recommended to provide information about phenotypic features and diagnoses. Additional information about the geographical region and ancestries can also be provided.
 
 The Individual entity is linked to the *Sample* entity.
 
