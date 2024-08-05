@@ -6,7 +6,7 @@ A breakdown of each metadata element described in the different entities will pr
 
 ## **Research Metadata**
 
-The research metadata focusses on the reusability and FAIRness of the data. The Research Metadata encapsulates a set of classes that shape the model in accordance to the performed experiment ensuring reproducibility and scalability. The classes include Individual, Biospecimen/Sample, Experiment, Experiment methods, Analysis, Analysis methods.
+The Research Metadata focuses on the reusability and FAIRness of the data. The Research Metadata encapsulates a set of classes that shape the model in accordance to the performed experiment ensuring reproducibility and scalability. The classes include *Individual*, *Biospecimen/Sample*, *Experiment*, *Experiment Method*, *Analysis* and *Analysis Method*.
 
 ## **Individual**
 
