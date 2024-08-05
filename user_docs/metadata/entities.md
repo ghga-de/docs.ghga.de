@@ -74,7 +74,7 @@ The *Analysis* entity is linked to *Experiment* via *Research Data File* and als
 
 ### **Analysis metadata properties**
 
-The data submitter is required to provide information about title, analysis method that is associated with this analysis and the research data files that this analysis used as input to generate the process data files.
+The data submitter is required to provide information about the *Analysis* title, the *Analysis Method* that is associated with this *Analysis* and the *Research Data Files* that this *Analysis* used as input to generate *Process Data Files*.
 
 ## **Analysis Methods**
 
