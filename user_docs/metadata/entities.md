@@ -142,7 +142,12 @@ The data submitter is required to provide information about the *Study* associat
 
 ## **Submission Spreadsheet**
 
-The Submission Spreadsheet for GHGA Archive captures the above-mentioned metadata in an ordered fashion. The submission process is tailored to replicate “front-to-end” workflow starting by first describing the individuals that are subject to investigation, followed by describing how the biological material was collected from them, how the experiment and measurement were performed and research data acquired, how this data was analyzed and the resulting output files created. Towards the end of the submission, the data submitter is requested to defined how this data should be shared in datasets which are governed by by a data access committee and described by a data access policy.
+The Submission Spreadsheet for GHGA Archive captures the above-mentioned metadata in an ordered fashion. The submission process is tailored to replicate a “front-to-end” workflow: 
+- Which individuals are subject to investigation?
+- Which biologicla material was collected and how?
+- Which experiment was performed and how? Which files were generated as result?
+- Which analysis was performed and how? Which output files were generated from which input files?
+- How can this data be shared in meaningful datasets? Which conditions apply and who governs them?
 The submitter can also make use of the supporting files to enrich their data with additional information, such as experimental protocols for the *Experiment* class or workflow parameter files for the *Analysis* class. The supporting files can contain structured metadata, such as Phenopackets or PED files for the *Individual* class. Since supplementary files are encrypted and inaccessible without DAC approval, this allows submissions of clinical or personal metadata that can only be accessed by requesters after signing a Data Transfer Agreement. Hence, the metadata model can only indicate the presence of supplementary files for classes and signify that a submission contains additional information but not process their content.
 This results in a submission process, which will appear much more natural to submitters, while maintaining a high degree of flexibility to adapt to different omics types.
 
