@@ -138,7 +138,7 @@ The *Publication* entity is linked to *Study*.
 
 ### **Publication metadata properties**
 
-The data submitter is required to provide information about the study associated with this publication. Optionally, the data submitter can also provide information about the publication title, abstract, author, year, journal and doi.
+The data submitter is required to provide information about the *Study* associated with this publication. Optionally, the data submitter can also provide information about the publication title, abstract, author, year, journal and DOI.
 
 ## **Submission Spreadsheet**
 
