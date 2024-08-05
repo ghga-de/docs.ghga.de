@@ -122,7 +122,7 @@ Depositing data at GHGA requires a data submitter to provide a *Data Access Comm
 
 A *DAP* is directly linked to the *DAC* and *Dataset* entity, thus providing  the condition under which the data deposited at GHGA can be re-used by a data requester. The submitter must provide an alias, name, description and either the policy text for the *DAP* or the URL where the *DAP* is stored, data use permission and modifier using the Data Use Ontology, and the *DAC* that governs this *DAP*.
 
-A *DAC* is linked directly to *DAP* and requires information about email and institute and optionally about ega accession.
+A *DAC* is linked directly to *DAP* and requires information about the DAC email and institute and optionally about an EGA accession.
 
 ### **Study**
 
