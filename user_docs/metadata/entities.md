@@ -104,7 +104,7 @@ The submission process allows submission of processed data file alone but this i
 
 ## **Administrative Metadata**
 
-The administrative metadata focusses on managing the resources such as creation or acquisition of the data, rights management, and disposition. 
+The Administrative Metadata focuses on managing the resources such as creation or acquisition of the data, rights management, and disposition. 
 
 ### **Dataset**
 
