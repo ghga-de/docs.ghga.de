@@ -48,7 +48,7 @@ The *Experiment* entity requires the data submitters to provide information abou
 
 ## **Experiment Methods**
 
-The *Experiment Methods* entity are specific and tailored to the performed 'omics' or other experiment types and describe data acquisition in more detail.
+The *Experiment Method* entity captures information about the protocol that was followed to perform the omics experiment.
 
 ### **Experiment methods metadata properties**
 
