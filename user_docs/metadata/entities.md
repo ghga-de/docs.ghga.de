@@ -126,7 +126,7 @@ A *DAC* is linked directly to *DAP* and requires information about the DAC email
 
 ### **Study**
 
-All data deposited at GHGA is subject to a specific study, under which relevant data has been aggregated. A *Study* is an experimental investigation of a particular phenomenon and involves a detailed examination and analysis of a subject to learn more about the phenomenon being studied. A detailed description of a study can guide data requesters to identify the most relevant datasets for their own research.  The *Study* entity is linked to *Dataset*.
+All data deposited at GHGA is subject to a specific study, under which relevant data has been aggregated. A *Study* is an experimental investigation of a particular phenomenon and involves a detailed examination and analysis of a subject to learn more about the phenomenon being studied. A detailed description of a study can guide data requesters to identify the most relevant datasets for their own research.  The *Study* entity is linked to *Dataset* and optionally to *Publication*.
 
 #### **Study metadata properties**
 
