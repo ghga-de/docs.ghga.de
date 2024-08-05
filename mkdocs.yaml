@@ -107,7 +107,6 @@ nav:
   - "GHGA Metadata Model":
       - "Overview": metadata/overview.md
       - "Standards": metadata/standards.md
-      - "Submitter Guide": Submitter_guide/Initial.md
       - "Entities & Attributes": metadata/entities.md
   - "CLI Tools": cli_tools
   - "Data Portal": data_portal
