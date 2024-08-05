@@ -86,7 +86,7 @@ For this submission, the data submitter is required to provide information about
 
 ### **Analysis Method Supporting File**
 
-For any additional information pertaining to the *Analysis Methods* entity, the data submitter can use the *Analysis Method Supporting File*.
+For any additional information pertaining to the *Analysis Method* entity, the data submitter can use the *Analysis Method Supporting File*.
 
 #### **Analysis Method Supporting File properties**
 
