@@ -60,7 +60,7 @@ Any additional information pertaining to the *Experiment Method* can be provided
 
 ## **Research Data File**
 
-The *Research Data File* entity is generated as a result of a direct measurement or sequencing of a sample or in other words the raw files that were generated while carrying out an Experiment. This entity is linked to *Experiment* that produced this file as well as *Dataset* that is associated with this file. The GHGA metadata model emphasizes on the submission of a research data file alone or accompanied by processed data files for enabling reconstruction of the analytical process representing a submission.
+The *Research Data File* entity is generated as a result of a direct measurement or sequencing of a sample. They are the raw files that were generated while carrying out an *Experiment*. This entity is linked to the *Experiment* that produced this file as well as the *Dataset* that is associated with this file. The GHGA metadata model emphasizes on the submission of a *Research Data File* alone or accompanied by *Process Data Files* for enabling reconstruction of the analytical process representing a submission.
 
 ### **Research Data File metadata properties**
 
