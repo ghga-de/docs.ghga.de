@@ -82,7 +82,7 @@ The *Analysis Method* entity describes the computational workflow that created *
 
 ### **Analysis Methods metadata properties**
 
-For this submission, the data submitter is required to provide information about name, description, type, workflow name, workflow repository and workflow doi. Furthermore, it is also recommended to provide information about workflow version, workflow tasks, parameters and software versions.
+For this submission, the data submitter is required to provide information about the *Analysis Method* name, a description, type, the workflow name, workflow repository and workflow DOI. Furthermore, it is also recommended to provide information about the workflow version, workflow tasks, parameters and software versions.
 
 ## **Analysis Methods Supporting File**
 
