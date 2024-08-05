@@ -20,7 +20,7 @@ The Individual entity is linked to the *Sample* entity.
 
 ### **Individual Supporting File**
 
-If the data submitters have additional information to provide about the individual, then they can make use of the Individual supporting file class which requires the following information -  file format, file name, dataset associated with this file as well as if the file is included as part of the submission. 
+If the data submitters have additional information to provide about the *Individual*, then they can make use of the *Individual Supporting File* class which requires the following information -  file format, file name, dataset associated with this file as well as if the file is included as part of the submission. 
 
 ### **Biospecimen/Sample**
 
