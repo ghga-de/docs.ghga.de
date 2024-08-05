@@ -108,7 +108,7 @@ The Administrative Metadata focuses on managing the resources such as creation o
 
 ### **Dataset**
 
-GHGA presents its content to potential data requesters and submitters with the *Dataset* entity, which focuses on sharing functionality by describing the contents at a high level. Each dataset is linked to a *Data Access Policy*, which builds the legal basis for the sharing of data. One dataset has links to *Experiment* via *Research Data File*, and to  *Analysis* entities via *Process Data File*. The dataset is also linked to *Analysis Methods* and *Experiment methods* via *Analysis Methods Supporing Files* and *Experiment Methods Supporing Files* respectively. The *Dataset* entity is also linked to *Study*.
+GHGA presents its content to potential data requesters and submitters with the *Dataset* entity, which focuses on sharing functionality by describing the contents at a high level. Each *Dataset* is linked to a *Data Access Policy*, which builds the legal basis for the sharing of data. One *Dataset* has links to *Experiment* via *Research Data File*, and to  *Analysis* via *Process Data File*. The *Dataset* is also indirectly linked to *Analysis Method*, *Experiment Method* and the *Individual* via *Analysis Method Supporing File*, *Experiment Method Supporing File* and *Individual Supporting File*, respectively. The *Dataset* entity is also linked to *Study*.
 
 #### **Dataset metadata properties**
 
