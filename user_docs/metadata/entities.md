@@ -40,7 +40,7 @@ The *Biospecimen* entity requires data submitters to provide information about t
 
 An *Experiment* is an investigation that consists of a coordinated set of actions and observations designed to generate data with the goal of verifying, falsifying, or establishing the validity of a hypothesis. The *Experiment* entity describes the experimental setup or a protocol used for performing an omics experiment. 
 
-The *Experiment* entity is linked to the *Sample* which implies one or more samples associated with this Experiment and the *Experimental Method* which implies one or more Experimental methods associated with this Experiment. The outcome of an *Experiment* results in *Research Data File*.
+The *Experiment* entity is linked to the *Sample* which implies one or more samples associated with this Experiment and the *Experiment Method* which implies one or more experiment methods associated with this Experiment. The outcome of an *Experiment* results in *Research Data File*.
 
 #### **Experiment metadata properties**
 
