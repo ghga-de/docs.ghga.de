@@ -90,7 +90,7 @@ For any additional information pertaining to the *Analysis Methods* entity, the 
 
 ### **Analysis Method Supporting File properties**
 
-For additional information about analysis methods, the data submitter is required to provide information about the file format, analysis method, file name, file size, checksum, checksum type and dataset associated with this file.
+For supporting information about the *Analysis Method*, the data submitter is required to provide information about the file format, the *Analysis Method* this file supports, the file name, and the *Dataset* associated with this file.
 
 ## **Process Data File**
 
