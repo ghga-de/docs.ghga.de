@@ -2,7 +2,11 @@
 
 Welcome to the GHGA User Documentation. On these pages you will find relevant information on services provided by [GHGA - the German Human Genome-Phenome Archive](https://www.ghga.de). 
 
-# Other Documents relevant to GHGA Users
+## Key Instructions to get started
+
+* [Submitter Guide](metadata/submitter_guide.md) - quick introduction on how to prepare submissions to GHGA.
+
+## Other Documents relevant to GHGA Users
 The following documents should be consulted if you are planning to use GHGA:
 
 * [**GHGA Terms of Use**](https://www.ghga.de/Downloads/Terms_of_Use_-_GHGA_Data_Infrastructure_V1.0.pdf): The Terms of Use for GHGA define the services offered by the GHGA Consortium and the performance levels of those services that users can expect. They also define the conditions that apply to users when using GHGA.
