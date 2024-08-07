@@ -15,7 +15,9 @@ The GHGA metadata model aims at facilitating comprehensive submissions that maxi
 
 ### Research Metadata
 
-Similar to an experimental procedure, [**Individuals**](https://docs.ghga.de/metadata/entities/#individual) that are subject to investigation should be defined first. In order to describe an individual, data submitters are required to provide information about sex and are recommended to provide information about phenotypic features and diagnoses. To maximize the FAIRness of the provided metadata, phenotypic features uses the [Human Phenotype Ontology (HPO)](https://hpo.jax.org/) and diagnosis [ICD-10](https://www.bfarm.de/EN/Code-systems/Classifications/ICD/ICD-10-WHO/_node.html).
+Similar to an experimental procedure, [**Individuals**](https://docs.ghga.de/metadata/entities/#individual) that are subject to investigation should be defined first. 
+In order to describe an individual, data submitters are required to provide information about sex and are recommended to provide information about phenotypic features and diagnoses. 
+To maximize the FAIRness of the provided metadata, phenotypic features shoulde be entered using the [Human Phenotype Ontology (HPO)](https://hpo.jax.org/) and diagnosis via [ICD-10](https://www.bfarm.de/EN/Code-systems/Classifications/ICD/ICD-10-WHO/_node.html).
 
 In the next step, the collection of biological material from individuals is described via [**Sample and Biospecimen**](https://docs.ghga.de/metadata/entities/#biospecimensample). Biospecimen is defined in GHGAs metadata as any natural material taken from a biological entity for testing, diagnostics, treatment or research purposes. The sample is linked to the individual and defined as a limited quantity of something to be used for testing, analysis, inspection, investigation, demonstration, or trial use. 
 
