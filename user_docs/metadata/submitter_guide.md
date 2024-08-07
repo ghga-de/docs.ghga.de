@@ -36,7 +36,7 @@ This allows submission of metadata that should not be publicly visible **as it c
 ### Administrative Metadata
 Once the experimental and analytic approach as well as the file generation have been described, the submitter can define the conditions on how to share the data.
 
-Therefore, all submitted file types are linked to and presented in [**Datasets**](https://docs.ghga.de/metadata/entities/#dataset) that allow submitters to provide a high-level description of its content and define under which data use conditions the content of the dataset can be shared by providing [Data Use Ontology (DUO) codes](https://www.ga4gh.org/product/data-use-ontology-duo/). 
+For this, all submitted file types are linked to and presented in [**Datasets**](https://docs.ghga.de/metadata/entities/#dataset) that allow submitters to provide a high-level description of its content and define under which data use conditions the content of the dataset can be shared by providing [Data Use Ontology (DUO) codes](https://www.ga4gh.org/product/data-use-ontology-duo/). 
 
 Each dataset is managed by a **Data Access Committee** that defines a [**Data Access Policy**](https://docs.ghga.de/metadata/entities/#data-access-policy-and-committee) to describe clear guidelines for data requesters to access the data. The Data Access Committee should consist of multiple members and provide a non-personal mail address that forwards mail to each member of the DAC to decrease the risks of abandoned or unresponsive DACs.
 
