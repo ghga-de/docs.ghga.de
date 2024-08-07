@@ -4,7 +4,11 @@
     This page is a draft and currently a work in progress. The content is subject to change as we continue to improve and update it. 
 
 ## 1. Initiation of a submission
-To initiate a submission of data to GHGA, please contact us via the [contact form](https://www.ghga.de/about-us/contact) by using the topic *“Data Submission”*. A GHGA Data Steward will be assigned and guide you through the process of signing a [Data Processing Contract](https://www.ghga.de/Downloads/GHGA_Data_Processing_Contract.pdf), file submission and preparation of the non-personal metadata.
+To initiate a submission of data to GHGA, please contact us via the [contact form](https://www.ghga.de/about-us/contact) by using the topic *“Data Submission”*. A GHGA Data Steward will be assigned and guide you through the process, which consists of the following steps:
+
+1. Signing of a [Data Processing Contract](https://www.ghga.de/Downloads/GHGA_Data_Processing_Contract.pdf)
+1. Preparation of the non-personal metadata
+1. File submission
 
 ## 2. Metadata preparation
 The GHGA metadata model aims at facilitating comprehensive submissions that maximize the amount of collected metadata in a FAIR manner. To provide a streamlined submission of metadata, the model is designed to closely resemble a bottom-up-omics experiment. Submissions can be either prepared in JSON format or by using a [submission spreadsheet](https://github.com/ghga-de/ghga-metadata-schema/tree/main/spreadsheets). An example submission can be found in our [Github repository containing example data](https://github.com/ghga-de/example-data). The provided metadata are categorized as **Research Metadata** and **Administrative Metadata**, whereas the former collect information about the experimental and data acquisition process and the latter about data access, rights management and disposition.
