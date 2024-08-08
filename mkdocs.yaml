@@ -111,4 +111,5 @@ nav:
       - "Submitter Guide": metadata/submitter_guide.md
   - "CLI Tools": cli_tools
   - "Data Portal": data_portal
+  - "FAQ": faq.md
   - "Glossary": glossary/glossary.md
