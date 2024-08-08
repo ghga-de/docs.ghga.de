@@ -6,7 +6,7 @@
 
 ## What are the functions of the GHGA Data Portal?
 
-The GHGA Data Portal allows users to browse, search, and filter omics datasets submitted to the GHGA. It uses the [GHGA Metadata Model](../metadata/overview.md).
+The GHGA Data Portal allows users to browse, search, and download omics datasets submitted to the GHGA. It uses the [GHGA Metadata Model](../metadata/overview.md).
 
 ## What data can be found on GHGA Data Portal?
 
