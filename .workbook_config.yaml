@@ -2,77 +2,17 @@ workbooks:
   - file_name: ghga_submission_full.xlsx
     worksheets:
       - Study
-      - StudyFile
-      - Sample
-      - SampleFile
-      - Condition
-      - Biospecimen
       - Individual
-      - Trio
-      - LibraryPreparationProtocol
-      - SequencingProtocol
-      - SequencingExperiment
-      - SequencingProcess
-      - SequencingProcessFile
+      - IndividualSupportingFile
+      - Sample
+      - ExperimentMethod
+      - ExperimentMethodSupportingFile
+      - Experiment
+      - ResearchDataFile
+      - AnalysisMethod
+      - AnalysisMethodSupportingFile
       - Analysis
-      - AnalysisProcess
-      - AnalysisProcessOutputFile
-      - Dataset
-      - DataAccessPolicy
-      - DataAccessCommittee
-      - Publication
-
-  - file_name: ghga_submission_minimal.xlsx
-    worksheets:
-      - Study
-      - StudyFile
-      - Dataset
-      - DataAccessPolicy
-      - DataAccessCommittee
-      - Publication
-
-  - file_name: ghga_submission_sample.xlsx
-    worksheets:
-      - Study
-      - StudyFile
-      - Sample
-      - SampleFile
-      - Condition
-      - Dataset
-      - DataAccessPolicy
-      - DataAccessCommittee
-      - Publication
-
-  - file_name: ghga_submission_individual.xlsx
-    worksheets:
-      - Study
-      - StudyFile
-      - Sample
-      - SampleFile
-      - Condition
-      - Biospecimen
-      - Individual
-      - Trio
-      - Dataset
-      - DataAccessPolicy
-      - DataAccessCommittee
-      - Publication
-
-  - file_name: ghga_submission_seq.xlsx
-    worksheets:
-      - Study
-      - StudyFile
-      - Sample
-      - SampleFile
-      - Condition
-      - Biospecimen
-      - Individual
-      - Trio
-      - LibraryPreparationProtocol
-      - SequencingProtocol
-      - SequencingExperiment
-      - SequencingProcess
-      - SequencingProcessFile
+      - ProcessDataFile
       - Dataset
       - DataAccessPolicy
       - DataAccessCommittee

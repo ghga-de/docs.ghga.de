@@ -6,8 +6,24 @@ An Individual is a Person who is participating in a Study.
 
 ## Fields
 
+### ***phenotypic_features_terms***<br>
+**description** : The phenotypic feature concepts that the entity is associated with at the time of retrieval from the organism. The Phenotypic Feature is captured using a concept from the Human Phenotype Ontology (e.g., Lymph node hypoplasia, Cough, Hypotension).<br>
+**required** : False<br>
+**data type** : string <br>
+### ***phenotypic_features_ids***<br>
+**description** : The corresponding ID to the HPO vocabulary (e.g., HP:0002732, HP:0012735, HP:0002615).<br>
+**required** : False<br>
+**data type** : string <br>
+### ***diagnosis_ids***<br>
+**description** : One or more diagnoses that the entity is associated with at the time of retrieval from the organism. The diagnosis is captured using a code from ICD-10 (WHO version). Please restrict the ICD code to the chapter letter and two digits for the main diagnosis (e.g., E10, C01).<br>
+**required** : False<br>
+**data type** : string <br>
+### ***diagnosis_terms***<br>
+**description** : The ICD-10 terms corresponding to the ICD-10 codes (e.g., Type 1 diabetes mellitus, Malignant neoplasm of base of tongue).<br>
+**required** : False<br>
+**data type** : string <br>
 ### ***sex***<br>
-**description** : The assemblage of physical properties or qualities by which male is distinguished from female; the physical difference between male and female; the distinguishing peculiarity of male or female.<br>
+**description** : The genotypic sex of the Individual (e.g., female).<br>
 **required** : True<br>
 **data type** : Controlled Vocabulary <br>
 
@@ -16,42 +32,28 @@ An Individual is a Person who is participating in a Study.
 
 | Permissible Values | Description |
 | --- | --- |
-| `FEMALE_SEX_FOR_CLINICAL_USE` | `None` |
-| `IMAGING_SEX` | `None` |
-| `MALE_SEX_FOR_CLINICAL_USE` | `None` |
-| `SPECIFIED_SEX_FOR_CLINICAL_USE` | `None` |
-| `UNKNOWN_SEX_FOR_CLINICAL_USE` | `None` |
-
-
-</details>
-
-### ***karyotype***<br>
-**description** : The karyotype of an individual if defined.<br>
-**required** : False<br>
-**data type** : Controlled Vocabulary <br>
-
-<details>
-<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
-
-| Permissible Values | Description |
-| --- | --- |
-| `46_XY` | `None` |
-| `46_XX` | `None` |
-| `OTHER` | `None` |
-
+| `FEMALE` | `A sex for clinical use value in which stereotypically or statistically "female" values apply to an individual in a given medical context, such as for a procedure, process, algorithm, hormone level, genetic composition, organ inventory.` |
+| `MALE` | `A sex for clinical use value in which stereotypically or statistically "male" values apply to an individual in a given medical context, such as for a procedure, process, algorithm, hormone level, genetic composition, organ inventory.` |
+| `UNKNOWN` | `A sex for clinical use value in which the stereotypical or statistical known values do not apply, cannot be determined, or are not sufficient for determination of a another value.` |
+| `OTHER` | `A sex not captured by the controlled vocabulary.` |
+ 
 
 </details>
 
-### ***geographical_region***<br>
-**description** : The geographical region where the Individual is located. Any demarcated area of the Earth; may be determined by both natural and human boundaries.<br>
+### ***geographical_region_term***<br>
+**description** : The geographical region where the Individual is located.<br>
 **required** : False<br>
 **data type** : string <br>
-### ***ancestries***<br>
-**description** : A person's descent or lineage, from a person or from a population.<br>
+### ***geographical_region_id***<br>
+**description** : The geographical region where the Individual is located.<br>
 **required** : False<br>
 **data type** : string <br>
-### ***phenotypic_features***<br>
-**description** : The Phenotypic Feature entity that is associated with this Biospecimen at the time of retrieval from the organism. Typically, a concept from Human Phenotype Ontology. For example, 'HP:0100244' indicates that the Individual - from_which_the_Biospecimen was extracted from - exhibits_'Fibrosarcoma'_as_one_of_its_phenotype.<br>
+### ***ancestry_terms***<br>
+**description** : A person's descent or lineage from a population.<br>
+**required** : False<br>
+**data type** : string <br>
+### ***ancestry_ids***<br>
+**description** : A person's descent or lineage from a population.<br>
 **required** : False<br>
 **data type** : string <br>
 ### ***alias***<br>

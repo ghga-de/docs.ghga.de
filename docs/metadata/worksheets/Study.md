@@ -2,20 +2,20 @@
 
 ## Description
 
-Studies are experimental investigations of a particular phenomenon. It involves a detailed examination and analysis of a subject to learn more about the phenomenon being studied.
+A Study is an experimental investigation of a particular phenomenon. It involves a detailed examination and analysis of a subject to learn more about the phenomenon being studied.
 
 ## Fields
 
 ### ***title***<br>
-**description** : A comprehensive title for the study.<br>
+**description** : A comprehensive title for this Study.<br>
 **required** : True<br>
 **data type** : string <br>
 ### ***description***<br>
 **description** : A detailed description (abstract) that describes the goals of this Study.<br>
 **required** : True<br>
 **data type** : string <br>
-### ***type***<br>
-**description** : The type of Study. For example, 'Cancer Genomics', 'Epigenetics', 'Exome Sequencing'.<br>
+### ***types***<br>
+**description** : One or more types of this Study (e.g., Cancer Genomics, Epigenetics, Exome Sequencing).<br>
 **required** : True<br>
 **data type** : Controlled Vocabulary <br>
 
@@ -24,32 +24,55 @@ Studies are experimental investigations of a particular phenomenon. It involves 
 
 | Permissible Values | Description |
 | --- | --- |
-| `CANCER_GENOMICS` | `None` |
-| `EPIGENETICS` | `None` |
-| `EXOME_SEQUENCING` | `None` |
-| `FORENSIC_GENETICS` | `None` |
-| `PALEO_GENOMICS` | `None` |
-| `GENE_REGULATION_STUDY` | `None` |
-| `METAGENOMICS` | `None` |
-| `OTHER` | `None` |
-| `POOLED_CLONE_SEQUENCING` | `None` |
-| `POPULATION_GENOMICS` | `None` |
-| `RNASEQ` | `None` |
-| `RESEQUENCING` | `None` |
-| `SYNTHETIC_GENOMICS` | `None` |
-| `TRANSCRIPTOME_ANALYSIS` | `None` |
-| `WHOLE_GENOME_SEQUENCING` | `None` |
-| `GWAS` | `None` |
-
+| `CANCER_GENOMICS` | `Cancer genomics` |
+| `EPIGENETICS` | `Epigenetics` |
+| `EXOME_SEQUENCING` | `Exome sequencing` |
+| `FORENSIC_GENETICS` | `Forensic genetics` |
+| `PALEO_GENOMICS` | `Paleo genomics` |
+| `GENE_REGULATION_STUDY` | `Gene regulation study` |
+| `METAGENOMICS` | `Metagenomics` |
+| `POOLED_CLONE_SEQUENCING` | `Pooled clone sequencing` |
+| `POPULATION_GENOMICS` | `Population genomics` |
+| `RNASEQ` | `RNA sequencing` |
+| `RESEQUENCING` | `Resequencing` |
+| `SYNTHETIC_GENOMICS` | `Synthetic genomics` |
+| `TRANSCRIPTOME_ANALYSIS` | `Transcriptome analysis` |
+| `WHOLE_GENOME_SEQUENCING` | `Whole genome sequencing` |
+| `GWAS` | `Genome Wide Association Study` |
+| `RARE_DISEASE` | `Rare disease study` |
+| `CANCER` | `Cancer study` |
+| `COMMON_DISEASE` | `Common disease study` |
+| `NEURODEGENERATIVE_DISEASE` | `Neurodegenerative disease study` |
+| `CASE_CONTROL` | `Case-control study` |
+| `FAMILY` | `Family study` |
+| `HEREDITARY_DISEASE` | `Hereditary disease study` |
+| `GENOMICS` | `Genomics study` |
+| `EPIGENOMICS` | `Epigenomics study` |
+| `TRANSCRIPTOMICS` | `Transcriptomics study` |
+| `SINGLE_CELL_SEQUENCING` | `Single-cell sequencing study` |
+| `SINGLE_CENTER` | `Single-center study` |
+| `MULTI_CENTER` | `Multi-center study` |
+| `COHORT` | `Cohort study` |
+| `LONGITUDINAL` | `Longitudinal study` |
+| `TIME_SERIES` | `Time series study` |
+| `INTERVENTIONAL` | `Interventional study` |
+| `NON_INTERVENTIONAL` | `Non-interventional study` |
+| `COMMUNITY_BASED` | `Community-based study` |
+| `OTHER` | `A study type not captured by the above mentioned.` |
+ 
 
 </details>
 
+### ***ega_accession***<br>
+**description** : The EGA accession ID of an entity.<br>
+**required** : False<br>
+**data type** : string <br>
 ### ***affiliations***<br>
-**description** : The Institution(s) associated with an entity.<br>
+**description** : The affiliations associated with this Study.<br>
 **required** : True<br>
 **data type** : string <br>
 ### ***attributes***<br>
-**description** : Custom key/value pairs that further characterizes the Study. (e.g.: approaches - single-cell,_bulk_etc)<br>
+**description** : One or more attributes that further characterize this Study.<br>
 **required** : False<br>
 **data type** : Attribute <br>
 ### ***alias***<br>

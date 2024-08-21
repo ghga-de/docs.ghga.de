@@ -2,30 +2,34 @@
 
 ## Description
 
-An Analysis is a data transformation that transforms input data to output data. The workflow used to achieve this transformation and the individual steps are also captured.
+An Analysis is a data transformation that transforms input data to output data.
 
 ## Fields
 
+### ***analysis_method***<br>
+**description** : The alias of the Analysis Method that is associated with this Analysis.<br>
+**required** : True<br>
+**data type** : AnalysisMethod <br>
 ### ***title***<br>
 **description** : The title that describes an entity.<br>
-**required** : None<br>
+**required** : True<br>
 **data type** : string <br>
 ### ***description***<br>
-**description** : Describing how an Analysis was carried out. (e.g.: computational tools, settings, etc.).<br>
+**description** : A description summarizing how this Analysis was carried out (e.g., description of computational tools, pipelines, workflows).<br>
 **required** : False<br>
 **data type** : string <br>
 ### ***type***<br>
-**description** : The type of the Analysis. Either Reference Alignment (BAM) or Sequence Variation (VCF)<br>
+**description** : The type of this Analysis.<br>
 **required** : False<br>
 **data type** : string <br>
-### ***reference_genome***<br>
-**description** : A published genetic sequence that is used as a reference sequence against which other sequences are compared. Reference genome(s) or annotation(s) used for prior analyses (eg: GRCh38.p13).<br>
-**required** : True<br>
+### ***ega_accession***<br>
+**description** : The EGA accession of the 'Analysis' entity (EGAZ).<br>
+**required** : False<br>
 **data type** : string <br>
-### ***reference_chromosome***<br>
-**description** : The reference chromosome used for this Analysis.<br>
+### ***research_data_files***<br>
+**description** : One or more aliases of the Research Data Files that this Analysis used as input to create Process Data Files.<br>
 **required** : True<br>
-**data type** : string <br>
+**data type** : ResearchDataFile <br>
 ### ***alias***<br>
 **description** : The alias for an entity at the time of submission.<br>
 **required** : True<br>

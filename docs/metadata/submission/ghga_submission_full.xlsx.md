@@ -10,64 +10,48 @@ Study worksheet:
 * [https://ghga-de.github.io/docs/metadata/worksheets/Study.md](https://ghga-de.github.io/docs/metadata/worksheets/Study.md)<br>
 
 
-StudyFile worksheet:
-* [https://ghga-de.github.io/docs/metadata/worksheets/StudyFile.md](https://ghga-de.github.io/docs/metadata/worksheets/StudyFile.md)<br>
+Individual worksheet:
+* [https://ghga-de.github.io/docs/metadata/worksheets/Individual.md](https://ghga-de.github.io/docs/metadata/worksheets/Individual.md)<br>
+
+
+IndividualSupportingFile worksheet:
+* [https://ghga-de.github.io/docs/metadata/worksheets/IndividualSupportingFile.md](https://ghga-de.github.io/docs/metadata/worksheets/IndividualSupportingFile.md)<br>
 
 
 Sample worksheet:
 * [https://ghga-de.github.io/docs/metadata/worksheets/Sample.md](https://ghga-de.github.io/docs/metadata/worksheets/Sample.md)<br>
 
 
-SampleFile worksheet:
-* [https://ghga-de.github.io/docs/metadata/worksheets/SampleFile.md](https://ghga-de.github.io/docs/metadata/worksheets/SampleFile.md)<br>
+ExperimentMethod worksheet:
+* [https://ghga-de.github.io/docs/metadata/worksheets/ExperimentMethod.md](https://ghga-de.github.io/docs/metadata/worksheets/ExperimentMethod.md)<br>
 
 
-Condition worksheet:
-* [https://ghga-de.github.io/docs/metadata/worksheets/Condition.md](https://ghga-de.github.io/docs/metadata/worksheets/Condition.md)<br>
+ExperimentMethodSupportingFile worksheet:
+* [https://ghga-de.github.io/docs/metadata/worksheets/ExperimentMethodSupportingFile.md](https://ghga-de.github.io/docs/metadata/worksheets/ExperimentMethodSupportingFile.md)<br>
 
 
-Biospecimen worksheet:
-* [https://ghga-de.github.io/docs/metadata/worksheets/Biospecimen.md](https://ghga-de.github.io/docs/metadata/worksheets/Biospecimen.md)<br>
+Experiment worksheet:
+* [https://ghga-de.github.io/docs/metadata/worksheets/Experiment.md](https://ghga-de.github.io/docs/metadata/worksheets/Experiment.md)<br>
 
 
-Individual worksheet:
-* [https://ghga-de.github.io/docs/metadata/worksheets/Individual.md](https://ghga-de.github.io/docs/metadata/worksheets/Individual.md)<br>
+ResearchDataFile worksheet:
+* [https://ghga-de.github.io/docs/metadata/worksheets/ResearchDataFile.md](https://ghga-de.github.io/docs/metadata/worksheets/ResearchDataFile.md)<br>
 
 
-Trio worksheet:
-* [https://ghga-de.github.io/docs/metadata/worksheets/Trio.md](https://ghga-de.github.io/docs/metadata/worksheets/Trio.md)<br>
+AnalysisMethod worksheet:
+* [https://ghga-de.github.io/docs/metadata/worksheets/AnalysisMethod.md](https://ghga-de.github.io/docs/metadata/worksheets/AnalysisMethod.md)<br>
 
 
-LibraryPreparationProtocol worksheet:
-* [https://ghga-de.github.io/docs/metadata/worksheets/LibraryPreparationProtocol.md](https://ghga-de.github.io/docs/metadata/worksheets/LibraryPreparationProtocol.md)<br>
-
-
-SequencingProtocol worksheet:
-* [https://ghga-de.github.io/docs/metadata/worksheets/SequencingProtocol.md](https://ghga-de.github.io/docs/metadata/worksheets/SequencingProtocol.md)<br>
-
-
-SequencingExperiment worksheet:
-* [https://ghga-de.github.io/docs/metadata/worksheets/SequencingExperiment.md](https://ghga-de.github.io/docs/metadata/worksheets/SequencingExperiment.md)<br>
-
-
-SequencingProcess worksheet:
-* [https://ghga-de.github.io/docs/metadata/worksheets/SequencingProcess.md](https://ghga-de.github.io/docs/metadata/worksheets/SequencingProcess.md)<br>
-
-
-SequencingProcessFile worksheet:
-* [https://ghga-de.github.io/docs/metadata/worksheets/SequencingProcessFile.md](https://ghga-de.github.io/docs/metadata/worksheets/SequencingProcessFile.md)<br>
+AnalysisMethodSupportingFile worksheet:
+* [https://ghga-de.github.io/docs/metadata/worksheets/AnalysisMethodSupportingFile.md](https://ghga-de.github.io/docs/metadata/worksheets/AnalysisMethodSupportingFile.md)<br>
 
 
 Analysis worksheet:
 * [https://ghga-de.github.io/docs/metadata/worksheets/Analysis.md](https://ghga-de.github.io/docs/metadata/worksheets/Analysis.md)<br>
 
 
-AnalysisProcess worksheet:
-* [https://ghga-de.github.io/docs/metadata/worksheets/AnalysisProcess.md](https://ghga-de.github.io/docs/metadata/worksheets/AnalysisProcess.md)<br>
-
-
-AnalysisProcessOutputFile worksheet:
-* [https://ghga-de.github.io/docs/metadata/worksheets/AnalysisProcessOutputFile.md](https://ghga-de.github.io/docs/metadata/worksheets/AnalysisProcessOutputFile.md)<br>
+ProcessDataFile worksheet:
+* [https://ghga-de.github.io/docs/metadata/worksheets/ProcessDataFile.md](https://ghga-de.github.io/docs/metadata/worksheets/ProcessDataFile.md)<br>
 
 
 Dataset worksheet:
@@ -84,3 +68,4 @@ DataAccessCommittee worksheet:
 
 Publication worksheet:
 * [https://ghga-de.github.io/docs/metadata/worksheets/Publication.md](https://ghga-de.github.io/docs/metadata/worksheets/Publication.md)<br>
+
