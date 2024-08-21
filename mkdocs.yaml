@@ -46,6 +46,7 @@ extra_css:
 plugins:
   - search
   - git-revision-date-localized
+  - include_dir_to_nav
 
 # Additional configuration
 extra:
@@ -83,8 +84,8 @@ markdown_extensions:
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.magiclink:
@@ -105,18 +106,10 @@ nav:
   - "Overview": index.md
   - "GHGA Metadata Model":
       - "Overview": metadata/overview.md
-      - "Standards": metadata/standards.md
-      - metadata/concepts.md
       - "Entities & Attributes": metadata/entities.md
-  - "Metadata Submission":
-    - "Submission Overview": metadata/submission/submission.md
-    - "Submission Spreadsheets":
-      - "GHGA Full Submission":  metadata/submission/ghga_submission_full.xlsx.md
-      - "GHGA Minimal Submission":  metadata/submission/ghga_submission_minimal.xlsx.md
-      - "GHGA Individual Submission":  metadata/submission/ghga_submission_individual.xlsx.md
-      - "GHGA Sample Submission":  metadata/submission/ghga_submission_sample.xlsx.md
-      - "GHGA Sequence Submission":  metadata/submission/ghga_submission_seq.xlsx.md
-  - "Tools":
-      - "GHGA Validator": validator/validator.md
-      - "GHGA Transpiler": transpiler/transpiler.md
+      - "Standards": metadata/standards.md
+      - "Submitter Guide": metadata/submitter_guide.md
+  - "CLI Tools": cli_tools
+  - "Data Portal": data_portal
+  - "FAQ": faq.md
   - "Glossary": glossary/glossary.md
