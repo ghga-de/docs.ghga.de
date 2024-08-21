@@ -1,62 +1,56 @@
 # Individual
 
 ## Description
-
 An Individual is a Person who is participating in a Study.
 
 ## Fields
-
-### ***phenotypic_features_terms***<br>
+### ***phenotypic_features_terms***
 **description** : The phenotypic feature concepts that the entity is associated with at the time of retrieval from the organism. The Phenotypic Feature is captured using a concept from the Human Phenotype Ontology (e.g., Lymph node hypoplasia, Cough, Hypotension).<br>
 **required** : False<br>
 **data type** : string <br>
-### ***phenotypic_features_ids***<br>
+### ***phenotypic_features_ids***
 **description** : The corresponding ID to the HPO vocabulary (e.g., HP:0002732, HP:0012735, HP:0002615).<br>
 **required** : False<br>
 **data type** : string <br>
-### ***diagnosis_ids***<br>
+### ***diagnosis_ids***
 **description** : One or more diagnoses that the entity is associated with at the time of retrieval from the organism. The diagnosis is captured using a code from ICD-10 (WHO version). Please restrict the ICD code to the chapter letter and two digits for the main diagnosis (e.g., E10, C01).<br>
 **required** : False<br>
 **data type** : string <br>
-### ***diagnosis_terms***<br>
+### ***diagnosis_terms***
 **description** : The ICD-10 terms corresponding to the ICD-10 codes (e.g., Type 1 diabetes mellitus, Malignant neoplasm of base of tongue).<br>
 **required** : False<br>
 **data type** : string <br>
-### ***sex***<br>
+### ***sex***
 **description** : The genotypic sex of the Individual (e.g., female).<br>
 **required** : True<br>
 **data type** : Controlled Vocabulary <br>
 
-<details>
-<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
-
+/// details | Permissible Values
 | Permissible Values | Description |
 | --- | --- |
 | `FEMALE` | `A sex for clinical use value in which stereotypically or statistically "female" values apply to an individual in a given medical context, such as for a procedure, process, algorithm, hormone level, genetic composition, organ inventory.` |
 | `MALE` | `A sex for clinical use value in which stereotypically or statistically "male" values apply to an individual in a given medical context, such as for a procedure, process, algorithm, hormone level, genetic composition, organ inventory.` |
 | `UNKNOWN` | `A sex for clinical use value in which the stereotypical or statistical known values do not apply, cannot be determined, or are not sufficient for determination of a another value.` |
 | `OTHER` | `A sex not captured by the controlled vocabulary.` |
- 
+///
 
-</details>
-
-### ***geographical_region_term***<br>
+### ***geographical_region_term***
 **description** : The geographical region where the Individual is located.<br>
 **required** : False<br>
 **data type** : string <br>
-### ***geographical_region_id***<br>
+### ***geographical_region_id***
 **description** : The geographical region where the Individual is located.<br>
 **required** : False<br>
 **data type** : string <br>
-### ***ancestry_terms***<br>
+### ***ancestry_terms***
 **description** : A person's descent or lineage from a population.<br>
 **required** : False<br>
 **data type** : string <br>
-### ***ancestry_ids***<br>
+### ***ancestry_ids***
 **description** : A person's descent or lineage from a population.<br>
 **required** : False<br>
 **data type** : string <br>
-### ***alias***<br>
+### ***alias***
 **description** : The alias for an entity at the time of submission.<br>
 **required** : True<br>
 **data type** : string <br>

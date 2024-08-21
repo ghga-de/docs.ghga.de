@@ -1,31 +1,27 @@
 # ExperimentMethod
 
 ## Description
-
 The Experiment Method captures technical metadata describing the parameters used to generate output from the Sample.
 
 ## Fields
-
-### ***name***<br>
+### ***name***
 **description** : A short name identifying this Experiment Method.<br>
 **required** : True<br>
 **data type** : string <br>
-### ***description***<br>
+### ***description***
 **description** : A short description of this Experiment Method.<br>
 **required** : True<br>
 **data type** : string <br>
-### ***type***<br>
+### ***type***
 **description** : The type associated with this Experiment Method.<br>
 **required** : True<br>
 **data type** : string <br>
-### ***library_type***<br>
+### ***library_type***
 **description** : Describe the level of omics analysis (e.g., WGS, ATAC).<br>
 **required** : True<br>
 **data type** : Controlled Vocabulary <br>
 
-<details>
-<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
-
+/// details | Permissible Values
 | Permissible Values | Description |
 | --- | --- |
 | `WGS` | `Whole genome sequencing library` |
@@ -40,18 +36,14 @@ The Experiment Method captures technical metadata describing the parameters used
 | `CHROMOSOME_CONFORMATION_CAPTURE` | `Chromosome conformation capture library` |
 | `CHIP_SEQ` | `A combination of chromatin immunoprecipitation with DNA sequencing.` |
 | `OTHER` | `A library type not captured by the above vocabulary.` |
- 
+///
 
-</details>
-
-### ***library_selection_methods***<br>
+### ***library_selection_methods***
 **description** : One or more methods used to select for or against, enrich, or screen the material being sequenced (e.g., random, PCA, cDNA).<br>
 **required** : True<br>
 **data type** : Controlled Vocabulary <br>
 
-<details>
-<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
-
+/// details | Permissible Values
 | Permissible Values | Description |
 | --- | --- |
 | `5_METHYLCYTIDINE_ANTIBODY_METHOD` | `Selection of methylated DNA fragments using an antibody raised against 5-methylcytosine or 5-methylcytidine (m5C).` |
@@ -79,22 +71,18 @@ The Experiment Method captures technical metadata describing the parameters used
 | `SIZE_FRACTIONATION_METHOD` | `Physical selection of size appropriate targets.` |
 | `UNSPECIFIED` | `The library selection cannot be specified.` |
 | `OTHER` | `Other library enrichment, screening, or selection process.` |
- 
+///
 
-</details>
-
-### ***library_preparation***<br>
+### ***library_preparation***
 **description** : The general method for preparation of the sequencing library (e.g., KAPA PCR-free).<br>
 **required** : True<br>
 **data type** : string <br>
-### ***library_preparation_kit_retail_name***<br>
+### ***library_preparation_kit_retail_name***
 **description** : The retail name for the kit used to construct a genomic library. This may include the vendor name, kit name and kit version (e.g., Agilent sure select Human Exome V8, Twist RefSeq Exome).<br>
 **required** : False<br>
 **data type** : Controlled Vocabulary <br>
 
-<details>
-<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
-
+/// details | Permissible Values
 | Permissible Values | Description |
 | --- | --- |
 | `10X_GENOMICS_CHROMIUM_SINGLE_CELL_3_V2` | `10X Genomics Chromium Single Cell 3' v2 Reagent Kit` |
@@ -259,78 +247,62 @@ The Experiment Method captures technical metadata describing the parameters used
 | `TWIST_HUMAN_CORE_EXOME_PLUS_KIT` | `Twist Human Core Exome Plus Kit` |
 | `ULTRALOW_METHYL_SEQ_WITH_TRUE_METHYL_OX_BS` | `TECAN Ultralow Methyl-Seq with TrueMethyl oxBS` |
 | `OTHER` | `A Library Preparation Kit not captured by the controlled vocabulary.` |
- 
+///
 
-</details>
-
-### ***library_preparation_kit_manufacturer***<br>
+### ***library_preparation_kit_manufacturer***
 **description** : The manufacturer of the kit used for library preparation.<br>
 **required** : False<br>
 **data type** : string <br>
-### ***primer***<br>
+### ***primer***
 **description** : The type of primer used for reverse transcription (e.g., oligo-dT or random).<br>
 **required** : False<br>
 **data type** : Controlled Vocabulary <br>
 
-<details>
-<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
-
+/// details | Permissible Values
 | Permissible Values | Description |
 | --- | --- |
 | `OLIGO_D_T` | `An oligonucleotide primer consisting of thymidine bases only. It is used to target messenger RNA molecules with poly-adenosine 3' end.` |
 | `RANDOM` | `An oligonucleotide primer with random sequence.` |
 | `GENE_SPECIFIC` | `Ready-to-use, usually commercially prepared primers that are used to detect specific genes.` |
 | `OTHER` | `A primer not captured by the controlled vocabulary.` |
- 
+///
 
-</details>
-
-### ***end_bias***<br>
+### ***end_bias***
 **description** : The end of the cDNA molecule that is preferentially sequenced (e.g., 3/5 prime end, full-length).<br>
 **required** : False<br>
 **data type** : Controlled Vocabulary <br>
 
-<details>
-<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
-
+/// details | Permissible Values
 | Permissible Values | Description |
 | --- | --- |
 | `3_PRIME_END` | `The sequencing method preferentially captures the nucleic acids towards the 3 prime end of the targeted molecule.` |
 | `5_PRIME_END` | `The sequencing method preferentially captures the nucleic acids towards the 5 prime end of the targeted molecule.` |
 | `FULL_LENGTH` | `Captures the full length of the targeted molecule.` |
- 
+///
 
-</details>
-
-### ***target_regions***<br>
+### ***target_regions***
 **description** : Subset of genes or specific regions of the genome, which are most likely to be involved in the phenotype under study.<br>
 **required** : False<br>
 **data type** : string <br>
-### ***rnaseq_strandedness***<br>
+### ***rnaseq_strandedness***
 **description** : The strandedness of the library, whether reads come from both strands of the cDNA or only from the first (antisense) or the second (sense) strand.<br>
 **required** : False<br>
 **data type** : Controlled Vocabulary <br>
 
-<details>
-<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
-
+/// details | Permissible Values
 | Permissible Values | Description |
 | --- | --- |
 | `SENSE` | `Having a DNA sequence identical to that of a messenger RNA molecule; the coding strand in double-stranded DNA.` |
 | `ANTISENSE` | `Having a DNA sequence complementary to that of a messenger RNA molecule; the non-coding strand in double-stranded DNA.` |
 | `UNSTRANDED` | `Non-directional sequencing, where the reads can map from either the transcript strand or its complement.` |
- 
+///
 
-</details>
-
-### ***instrument_model***<br>
+### ***instrument_model***
 **description** : The name and model of the technology platform used to perform sequencing.<br>
 **required** : True<br>
 **data type** : Controlled Vocabulary <br>
 
-<details>
-<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
-
+/// details | Permissible Values
 | Permissible Values | Description |
 | --- | --- |
 | `454_GS` | `454 GS` |
@@ -399,50 +371,42 @@ The Experiment Method captures technical metadata describing the parameters used
 | `UG_100` | `UG 100` |
 | `UNSPECIFIED` | `Instrument model is unspecified.` |
 | `OTHER` | `Other instrument model than mentioned above.` |
- 
+///
 
-</details>
-
-### ***sequencing_center***<br>
+### ***sequencing_center***
 **description** : Center where sample was sequenced.<br>
 **required** : False<br>
 **data type** : string <br>
-### ***sequencing_read_length***<br>
+### ***sequencing_read_length***
 **description** : Length of sequencing reads (e.g., long or short or actual number of the read length).<br>
 **required** : False<br>
 **data type** : string <br>
-### ***sequencing_layout***<br>
+### ***sequencing_layout***
 **description** : Describe whether the library was sequenced in single-end (forward or reverse) or paired-end mode.<br>
 **required** : True<br>
 **data type** : Controlled Vocabulary <br>
 
-<details>
-<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
-
+/// details | Permissible Values
 | Permissible Values | Description |
 | --- | --- |
 | `SE` | `Single end sequencing.` |
 | `PE` | `Paired end sequencing.` |
- 
+///
 
-</details>
-
-### ***target_coverage***<br>
+### ***target_coverage***
 **description** : Mean coverage for whole genome sequencing, or mean target coverage for whole exome and targeted sequencing, (i.e. the number of times a particular locus was sequenced).<br>
 **required** : False<br>
 **data type** : string <br>
-### ***flow_cell_id***<br>
+### ***flow_cell_id***
 **description** : Flow cell ID (e.g., Experiment ID_Cell 1_Lane_1).<br>
 **required** : False<br>
 **data type** : string <br>
-### ***flow_cell_type***<br>
+### ***flow_cell_type***
 **description** : Type of flow cell used (e.g., S4, S2 for NovaSeq; PromethION, Flongle for Nanopore).<br>
 **required** : False<br>
 **data type** : Controlled Vocabulary <br>
 
-<details>
-<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
-
+/// details | Permissible Values
 | Permissible Values | Description |
 | --- | --- |
 | `ILLUMINA_NOVA_SEQ_S2` | `Usage of Illumina NovaSeq S2 flow cell.` |
@@ -452,36 +416,30 @@ The Experiment Method captures technical metadata describing the parameters used
 | `MINION` | `Usage of MinION flow cell.` |
 | `GRIDION` | `Usage of GridION flow cell.` |
 | `OTHER` | `Usage of a flow cell not captured by the controlled vocabulary.` |
- 
+///
 
-</details>
-
-### ***sample_barcode_read***<br>
+### ***sample_barcode_read***
 **description** : The type of read that contains the sample barcode (e.g., index1, index2, read1, read2).<br>
 **required** : False<br>
 **data type** : Controlled Vocabulary <br>
 
-<details>
-<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
-
+/// details | Permissible Values
 | Permissible Values | Description |
 | --- | --- |
 | `INDEX1` | `Sample barcode read location is in Index 1.` |
 | `INDEX1_AND_INDEX2` | `Sample barcode read location is in Index 1 and Index 2.` |
 | `OTHER` | `Sample barcode read is neither in Index 1 or Index 1 and Index 2.` |
- 
+///
 
-</details>
-
-### ***ega_accession***<br>
+### ***ega_accession***
 **description** : The EGA accession of the 'Experiment' entity (EGAX).<br>
 **required** : False<br>
 **data type** : string <br>
-### ***attributes***<br>
+### ***attributes***
 **description** : One or more attributes that further characterize this Experiment Method.<br>
 **required** : False<br>
 **data type** : Attribute <br>
-### ***alias***<br>
+### ***alias***
 **description** : The alias for an entity at the time of submission.<br>
 **required** : True<br>
 **data type** : string <br>

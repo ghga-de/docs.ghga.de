@@ -1,35 +1,31 @@
 # DataAccessPolicy
 
 ## Description
-
 A Data Access Policy specifies under which circumstances, legal or otherwise, a user can have access to one or more Datasets belonging to one or more Studies.
 
 ## Fields
-
-### ***name***<br>
+### ***name***
 **description** : A name for this Data Access Policy.<br>
 **required** : True<br>
 **data type** : string <br>
-### ***description***<br>
+### ***description***
 **description** : A short description for this Data Access Policy.<br>
 **required** : True<br>
 **data type** : string <br>
-### ***policy_text***<br>
+### ***policy_text***
 **description** : The complete text for the Data Access Policy.<br>
 **required** : True<br>
 **data type** : string <br>
-### ***policy_url***<br>
+### ***policy_url***
 **description** : An alternative to the Data Access Policy text is to provide the URL for the policy. This is useful if the terms of the policy are available online at a resolvable URL.<br>
 **required** : False<br>
 **data type** : string <br>
-### ***data_use_permission_term***<br>
+### ***data_use_permission_term***
 **description** : The Data Use Permission associated with this Data Use Policy. The used term should be a descendant of 'DUO:0000001: data use permission' (e.g., no restriction).<br>
 **required** : True<br>
 **data type** : Controlled Vocabulary <br>
 
-<details>
-<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
-
+/// details | Permissible Values
 | Permissible Values | Description |
 | --- | --- |
 | `GENERAL_RESEARCH_USE` | `This data use permission indicates that use is allowed for general research use for any research purpose.` |
@@ -37,22 +33,18 @@ A Data Access Policy specifies under which circumstances, legal or otherwise, a 
 | `DISEASE_SPECIFIC_RESEARCH` | `This data use permission indicates that use is allowed provided it is related to the specified disease.` |
 | `NO_RESTRICTION` | `This data use permission indicates there is no restriction on use.` |
 | `POPULATION_ORIGINS_OR_ANCESTRY_RESEARCH_ONLY` | `This data use permission indicates that use of the data is limited to the study of population origins or ancestry.` |
- 
+///
 
-</details>
-
-### ***data_use_permission_id***<br>
+### ***data_use_permission_id***
 **description** : The DUO ID corresponding to the Data Use Permission term (e.g., DUO:0000004).<br>
 **required** : True<br>
 **data type** : string <br>
-### ***data_use_modifier_terms***<br>
+### ***data_use_modifier_terms***
 **description** : One or more Data Use Modifiers for the Data Use Permission associated with this Data Use Policy. The used terms should be descendants of 'DUO:0000017: data use modifier' (e.g., clinical care use). Please use 'USER_SPECIFIC_RESTRICTION' if no other modifier applies.<br>
 **required** : False<br>
 **data type** : Controlled Vocabulary <br>
 
-<details>
-<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
-
+/// details | Permissible Values
 | Permissible Values | Description |
 | --- | --- |
 | `CLINICAL_CARE_USE` | `This data use modifier indicates that use is allowed for clinical use and care.  Clinical Care is defined as Health care or services provided at home, in a healthcare facility or hospital. Data may be used for clinical decision making.` |
@@ -73,23 +65,21 @@ A Data Access Policy specifies under which circumstances, legal or otherwise, a 
 | `NO_GENERAL_METHODS_RESEARCH` | `This data use modifier indicates that use does not allow methods development research (e.g., development of software or algorithms).` |
 | `RESEARCH_SPECIFIC_RESTRICTIONS` | `This data use modifier indicates that use is limited to studies of a certain research type.` |
 | `POPULATION_ORIGINS_OR_ANCESTRY_RESEARCH_PROHIBITED` | `This data use modifier indicates use for purposes of population, origin, or ancestry research is prohibited.` |
- 
+///
 
-</details>
-
-### ***data_use_modifier_ids***<br>
+### ***data_use_modifier_ids***
 **description** : The DUO IDs corresponding to the Data Use Modifier terms (e.g., DUO:0000043).<br>
 **required** : False<br>
 **data type** : string <br>
-### ***ega_accession***<br>
+### ***ega_accession***
 **description** : The EGA accession ID of an entity.<br>
 **required** : False<br>
 **data type** : string <br>
-### ***data_access_committee***<br>
+### ***data_access_committee***
 **description** : The Data Access Committee linked to this Data Use Policy.<br>
 **required** : True<br>
 **data type** : DataAccessCommittee <br>
-### ***alias***<br>
+### ***alias***
 **description** : The alias for an entity at the time of submission.<br>
 **required** : True<br>
 **data type** : string <br>

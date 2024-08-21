@@ -1,19 +1,15 @@
 # ResearchDataFile
 
 ## Description
-
 A Research Data File is a File that contains raw data originating from an Experiment.
 
 ## Fields
-
-### ***format***<br>
+### ***format***
 **description** : The file format of the Research Data File (e.g., FASTQ, uBAM, FASTA).<br>
 **required** : True<br>
 **data type** : Controlled Vocabulary <br>
 
-<details>
-<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
-
+/// details | Permissible Values
 | Permissible Values | Description |
 | --- | --- |
 | `FASTA` | `FASTA format including NCBI-style IDs.` |
@@ -25,39 +21,37 @@ A Research Data File is a File that contains raw data originating from an Experi
 | `MZML` | `mzML format for mass spectrometry proteomics data.` |
 | `MZDATA` | `mzData for mass spectrometry proteomics data.` |
 | `OTHER` | `A file format not captured by the controlled vocabulary.` |
- 
+///
 
-</details>
-
-### ***technical_replicate***<br>
+### ***technical_replicate***
 **description** : An integer to indicate the technical replicate of this File.<br>
 **required** : True<br>
 **data type** : integer <br>
-### ***sequencing_lane_id***<br>
+### ***sequencing_lane_id***
 **description** : The identifier of a sequencing lane.<br>
 **required** : False<br>
 **data type** : string <br>
-### ***experiments***<br>
+### ***experiments***
 **description** : The aliases of the Experiments that produced this Research Data File.<br>
 **required** : True<br>
 **data type** : Experiment <br>
-### ***name***<br>
+### ***name***
 **description** : The given filename.<br>
 **required** : True<br>
 **data type** : string <br>
-### ***dataset***<br>
+### ***dataset***
 **description** : The Dataset alias associated with this File.<br>
 **required** : True<br>
 **data type** : Dataset <br>
-### ***ega_accession***<br>
+### ***ega_accession***
 **description** : The EGA accession ID of an entity.<br>
 **required** : False<br>
 **data type** : string <br>
-### ***included_in_submission***<br>
+### ***included_in_submission***
 **description** : Whether a File is included in the Submission or not.<br>
 **required** : True<br>
 **data type** : boolean <br>
-### ***alias***<br>
+### ***alias***
 **description** : The alias for an entity at the time of submission.<br>
 **required** : True<br>
 **data type** : string <br>

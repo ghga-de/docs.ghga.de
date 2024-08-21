@@ -27,8 +27,8 @@ from pydantic import BaseModel, Field
 
 HERE = Path(__file__).parent.resolve()
 ROOT = HERE.parent
-SHEET_DIR = ROOT / "docs" / "metadata" / "worksheets"
-SUBMISSION_DIR = ROOT / "docs" / "metadata" / "submission"
+SHEET_DIR = ROOT / "user_docs" / "metadata" / "data_dictionary"
+SUBMISSION_DIR = ROOT / "user_docs" / "metadata"
 CONFIG_PATH = ROOT / ".workbook_config.yaml"
 TEMPLATE_DIR = ROOT / "docs" / "templates"
 

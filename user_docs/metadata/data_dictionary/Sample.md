@@ -1,27 +1,23 @@
 # Sample
 
 ## Description
-
 A Sample is a limited quantity of something to be used for testing, analysis, inspection, investigation, demonstration, or trial use.  It is prepared from a Biospecimen.
 
 ## Fields
-
-### ***individual***<br>
+### ***individual***
 **description** : The alias of the Individual entity from which this Biospecimen or Sample was derived.<br>
 **required** : True<br>
 **data type** : Individual <br>
-### ***name***<br>
+### ***name***
 **description** : A descriptive name of this Sample (e.g., GHGAS_Blood_Sample1 or GHGAS_PBMC_RNAseq_S1). This property must not include any personally identifiable data.<br>
 **required** : True<br>
 **data type** : string <br>
-### ***type***<br>
+### ***type***
 **description** : The type of the Sample.<br>
 **required** : False<br>
 **data type** : Controlled Vocabulary <br>
 
-<details>
-<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
-
+/// details | Permissible Values
 | Permissible Values | Description |
 | --- | --- |
 | `CF_DNA` | `Cell Free (CF), circulating DNA was used for sequencing.` |
@@ -37,26 +33,22 @@ A Sample is a limited quantity of something to be used for testing, analysis, in
 | `SINGLE_CELL_NUCLEI` | `RNA originating from single cell nuclei was used for sequencing.` |
 | `SMALL_RNA` | `Small RNA was used for sequencing.` |
 | `TOTAL_RNA` | `Total RNA was used for sequencing.` |
- 
+///
 
-</details>
-
-### ***biological_replicate***<br>
+### ***biological_replicate***
 **description** : An integer to indicate the number of a biological replicate.<br>
 **required** : None<br>
 **data type** : integer <br>
-### ***description***<br>
+### ***description***
 **description** : A concise description about the Sample source, the collection method, and the protocol which was followed to process this Sample.<br>
 **required** : True<br>
 **data type** : string <br>
-### ***storage***<br>
+### ***storage***
 **description** : Methods by which a Sample is stored.<br>
 **required** : False<br>
 **data type** : Controlled Vocabulary <br>
 
-<details>
-<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
-
+/// details | Permissible Values
 | Permissible Values | Description |
 | --- | --- |
 | `REFRIGERATOR` | `The sample / biospecimen was stored in a refrigerator at 2°C to 5°C.` |
@@ -66,73 +58,61 @@ A Sample is a limited quantity of something to be used for testing, analysis, in
 | `NONE` | `The sample / biospecimen was not stored.` |
 | `OTHER` | `The sample / biospecimen was stored with a method differing from the available options.` |
 | `UNKNOWN` | `The storage method is unknown.` |
- 
+///
 
-</details>
-
-### ***disease_or_healthy***<br>
+### ***disease_or_healthy***
 **description** : Whether a Condition corresponds to a disease or a healthy state.<br>
 **required** : False<br>
 **data type** : Controlled Vocabulary <br>
 
-<details>
-<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
-
+/// details | Permissible Values
 | Permissible Values | Description |
 | --- | --- |
 | `DISEASE` | `Disease state.` |
 | `HEALTHY` | `Healthy state.` |
 | `NOT_APPLICABLE` | `The distinction is not applicaple.` |
- 
+///
 
-</details>
-
-### ***case_control_status***<br>
+### ***case_control_status***
 **description** : Whether a Condition corresponds to a treatment or a control.<br>
 **required** : True<br>
 **data type** : Controlled Vocabulary <br>
 
-<details>
-<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
-
+/// details | Permissible Values
 | Permissible Values | Description |
 | --- | --- |
 | `CASE` | `The participant is a true case for the phenotype under consideration.` |
 | `CONTROL` | `The participant is a true control for the phenotype under consideration.` |
 | `OTHER` | `The participant's status is neither case nor control.` |
 | `UNKNOWN` | `The participant's status is not known.` |
- 
+///
 
-</details>
-
-### ***ega_accession***<br>
+### ***ega_accession***
 **description** : The EGA accession ID of an entity.<br>
 **required** : False<br>
 **data type** : string <br>
-### ***xref***<br>
+### ***xref***
 **description** : One or more cross-references for this Sample (e.g., this Sample may have an EBI BioSamples accession ID).<br>
 **required** : False<br>
 **data type** : string <br>
-### ***biospecimen_name***<br>
+### ***biospecimen_name***
 **description** : A descriptive name of this Biospecimen (e.g., GHGAB_caudate_nucleus_biospecimen). This property must not include any personally identifiable data.<br>
 **required** : False<br>
 **data type** : string <br>
-### ***biospecimen_type***<br>
+### ***biospecimen_type***
 **description** : The type of Biospecimen.<br>
 **required** : False<br>
 **data type** : string <br>
-### ***biospecimen_description***<br>
+### ***biospecimen_description***
 **description** : A concise description about the Biospecimen source, the collection method, and the protocol which was followed to process this Biospecimen.<br>
 **required** : False<br>
 **data type** : string <br>
-### ***biospecimen_age_at_sampling***<br>
+### ***biospecimen_age_at_sampling***
 **description** : The age of the Individual at the time of isolating this biospecimen.<br>
 **required** : True<br>
 **data type** : Controlled Vocabulary <br>
 
-<details>
-<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
-
+/// details | Permissible Values
 | Permissible Values | Description |
 | --- | --- |
 | `0_TO_5` | `Age between 0 to 5.` |
@@ -153,61 +133,49 @@ A Sample is a limited quantity of something to be used for testing, analysis, in
 | `76_TO_80` | `Age between 76 to 80.` |
 | `81_OR_OLDER` | `Age above 80.` |
 | `UNKNOWN` | `Age range unknown.` |
- 
+///
 
-</details>
-
-### ***biospecimen_vital_status_at_sampling***<br>
+### ***biospecimen_vital_status_at_sampling***
 **description** : Vital Status of the Individual at the time of isolating this biospecimen (e.g., alive).<br>
 **required** : False<br>
 **data type** : Controlled Vocabulary <br>
 
-<details>
-<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
-
+/// details | Permissible Values
 | Permissible Values | Description |
 | --- | --- |
 | `ALIVE` | `Showing characteristics of life; displaying signs of life.` |
 | `DECEASED` | `The cessation of life.` |
 | `UNKNOWN` | `Vital status is unknown.` |
- 
+///
 
-</details>
-
-### ***biospecimen_tissue_term***<br>
+### ***biospecimen_tissue_term***
 **description** : The tissue this Biospecimen originated from. Should be a term from the BRENDA Tissue Ontology vocabulary (e.g., kidney, blood, melanoma cell).<br>
 **required** : True<br>
 **data type** : string <br>
-### ***biospecimen_tissue_id***<br>
+### ***biospecimen_tissue_id***
 **description** : The corresponding ontology ID for the biospecimen_tissue_term (e.g., BTO:0000671, BTO:0000089, BTO:0000848).<br>
 **required** : True<br>
 **data type** : string <br>
-### ***biospecimen_isolation***<br>
+### ***biospecimen_isolation***
 **description** : Method or device employed for collecting/isolating this Biospecimen.<br>
 **required** : False<br>
 **data type** : Controlled Vocabulary <br>
 
-<details>
-<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
-
+/// details | Permissible Values
 | Permissible Values | Description |
 | --- | --- |
 | `BLOOD_DRAW` | `Extraction of a blood specimen.` |
 | `SURGICAL_REMOVAL` | `Extraction of a sample or part of an organ in a surgical procedure.` |
 | `SALIVA_COLLECTION` | `Collection of saliva.` |
 | `BUCCAL_SWAB` | `Sample collection using a buccal swab.` |
- 
+///
 
-</details>
-
-### ***biospecimen_storage***<br>
+### ***biospecimen_storage***
 **description** : Methods by which this Biospecimen is stored.<br>
 **required** : False<br>
 **data type** : Controlled Vocabulary <br>
 
-<details>
-<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
-
+/// details | Permissible Values
 | Permissible Values | Description |
 | --- | --- |
 | `REFRIGERATOR` | `The sample / biospecimen was stored in a refrigerator at 2°C to 5°C.` |
@@ -217,15 +185,13 @@ A Sample is a limited quantity of something to be used for testing, analysis, in
 | `NONE` | `The sample / biospecimen was not stored.` |
 | `OTHER` | `The sample / biospecimen was stored with a method differing from the available options.` |
 | `UNKNOWN` | `The storage method is unknown.` |
- 
+///
 
-</details>
-
-### ***attributes***<br>
+### ***attributes***
 **description** : Key/value pairs corresponding to an entity.<br>
 **required** : False<br>
 **data type** : Attribute <br>
-### ***alias***<br>
+### ***alias***
 **description** : The alias for an entity at the time of submission.<br>
 **required** : True<br>
 **data type** : string <br>

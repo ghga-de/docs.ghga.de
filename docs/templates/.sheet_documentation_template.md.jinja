@@ -1,13 +1,11 @@
 # {{name}}
 
 ## Description
-
 {{ description }}
 
 ## Fields
-
 {% for slot in slots %}
-### ***{{ slot.name }}***<br>
+### ***{{ slot.name }}***
 **description** : {{ slot.description }}<br>
 **required** : {{ slot.required }}<br>
 {% if 'Enum' in slot.data_type.range  %}
@@ -17,15 +15,13 @@
 {% endif %}
 {% if slot.data_type.enum %}
 
-<details>
-<summary> <span style="color:#DAF7A6">Permissible Values</span> </summary>
-
+/// details | Permissible Values
 | Permissible Values | Description |
 | --- | --- |
 {% for val in slot.data_type.enum.permissible_values%}
 | `{{ val.name }}` | `{{ val.description }}` |
-{% endfor %} {{ '\n' }}
-</details>
+{% endfor %}
+///
 
 {% endif %}
 {% endfor %}
