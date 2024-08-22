@@ -1,0 +1,19 @@
+workbooks:
+  - file_name: ghga_submission_full.xlsx
+    worksheets:
+      - Study
+      - Individual
+      - IndividualSupportingFile
+      - Sample
+      - ExperimentMethod
+      - ExperimentMethodSupportingFile
+      - Experiment
+      - ResearchDataFile
+      - AnalysisMethod
+      - AnalysisMethodSupportingFile
+      - Analysis
+      - ProcessDataFile
+      - Dataset
+      - DataAccessPolicy
+      - DataAccessCommittee
+      - Publication

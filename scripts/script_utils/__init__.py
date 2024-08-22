@@ -14,4 +14,4 @@
 # limitations under the License.
 #
 
-"""Scripts and utils used during development or in CI pipelines."""
+"""A collection of utilities used by scripts."""

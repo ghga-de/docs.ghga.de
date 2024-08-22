@@ -6,7 +6,7 @@
 
 ## What are the functions of the GHGA Data Portal?
 
-The GHGA Data Portal allows users to browse, search, and download omics datasets submitted to the GHGA. It uses the [GHGA Metadata Model](../metadata/overview.md).
+The GHGA Data Portal allows users to browse, search, and download omics datasets submitted to the GHGA. It uses the [GHGA Metadata Model](metadata/overview.md).
 
 ## What data can be found on GHGA Data Portal?
 
@@ -18,4 +18,4 @@ Currently GHGA is still in an early phase of the project and is therefore only a
 
 ## How to get data access?
 
-The GHGA Data Portal allows users to request access to data through the portal. Identify your dataset of interest using the browse and filter functions of the GHGA Data Portal. Click on the "Request access" button. This will direct you to a data access request form. Complete the form with the necessary information and submit it to request access to the dataset. The data access request will be sent to the [Research Data Controller](../glossary/glossary.md##research-data-controller-rdc), who will will review your request and respond accordingly. Please note that GHGA is not involved in the further process of negotiating the data access.
+The GHGA Data Portal allows users to request access to data through the portal. Identify your dataset of interest using the browse and filter functions of the GHGA Data Portal. Click on the "Request access" button. This will direct you to a data access request form. Complete the form with the necessary information and submit it to request access to the dataset. The data access request will be sent to the [Research Data Controller](glossary/glossary.md##research-data-controller-rdc), who will will review your request and respond accordingly. Please note that GHGA is not involved in the further process of negotiating the data access.

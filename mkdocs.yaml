@@ -52,7 +52,7 @@ plugins:
 extra:
   consent:
     title: Cookie consent
-    description: >- 
+    description: >-
       We use cookies to recognize your repeated visits and preferences, as well
       as to measure the effectiveness of our documentation and whether users
       find what they're searching for. With your consent, you're helping us to
@@ -69,6 +69,7 @@ extra:
 markdown_extensions:
   - admonition
   - attr_list
+  - markdown.extensions.tables
   - markdown.extensions.admonition
   - markdown.extensions.codehilite:
       guess_lang: false
@@ -82,7 +83,7 @@ markdown_extensions:
       smart_enable: all
   - pymdownx.caret
   - pymdownx.critic
-  - pymdownx.details
+  - pymdownx.blocks.details
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -99,7 +100,7 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
   - pymdownx.tabbed
-  - pymdownx.superfences
+
 
 # Page tree
 nav:
@@ -109,6 +110,7 @@ nav:
       - "Entities & Attributes": metadata/entities.md
       - "Standards": metadata/standards.md
       - "Submitter Guide": metadata/submitter_guide.md
+      - "Data Dictionary": metadata/data_dictionary
   - "CLI Tools": cli_tools
   - "Data Portal": data_portal
   - "FAQ": faq.md

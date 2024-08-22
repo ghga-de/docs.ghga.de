@@ -14,4 +14,30 @@
 # limitations under the License.
 #
 
-"""Scripts and utils used during development or in CI pipelines."""
+"""A collection of CLI utilities"""
+
+import typer
+
+
+def echo_success(message: str):
+    """Print a success message."""
+
+    styled_message = typer.style(text=message, fg=typer.colors.GREEN)
+    typer.echo(styled_message)
+
+
+def echo_warning(message: str):
+    """Print a warning message."""
+
+    styled_message = typer.style(text=message, fg=typer.colors.YELLOW)
+    typer.echo(styled_message)
+
+
+def echo_failure(message: str):
+    """Print a failure message."""
+
+    styled_message = typer.style(text=message, fg=typer.colors.RED)
+    typer.echo(styled_message)
+
+
+run = typer.run
