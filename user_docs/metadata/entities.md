@@ -25,19 +25,17 @@ If the data submitters have additional information to provide about the *Individ
 #### **Individual Supporting File metadata properties**
 The **Individual Supporting File** requires the following information: file format, file name, dataset associated with this file as well as if the file is included as part of the submission.
 
-### **Biospecimen/Sample**
+### **Sample**
 
-The *Biospecimen/Sample* describes the extracted sample and tissue for an experimental process. Furthermore, a *Sample* is defined as a limited quantity of something to be used for testing, analysis, inspection, investigation, demonstration, or trial use. A sample is prepared from a biospecimen (isolate or tissue).
+The *Sample* describes the extracted sample and tissue for an experimental process. Furthermore, the *Sample* is defined as a limited quantity of something to be used for testing, analysis, inspection, investigation, demonstration, or trial use. A sample is prepared from a biospecimen (isolate or tissue). The *Sample* entity includes slots describing the *Biospecimen* from which the sample was prepared, which are highlighted with a "*biospecimen_*" -prefix. The *Biospecimen* is defined as any natural material taken from a biological entity for testing, diagnostics, treatment or research purposes.
 
-A *Biospecimen* is defined in GHGAs metadata as any natural material taken from a biological entity for testing, diagnostics, treatment or research purposes. The *Biospecimen* is linked to the *Individual* entity from which the biospecimen itself has been derived.
+The *Sample* is linked to the *Individual* entity describing the collection of biological material. Further, it is linked to the *Experiment*.
 
-The *Biospecimen/Sample* is linked to the *Individual* entity describing the collection of biological material. Further, it is linked to the *Experiment*.
-
-#### **Biospecimen/Sample metadata properties**
+#### **Sample metadata properties**
 
 The *Sample* entity requires data submitters to provide the name, description, whether the sample is case or control, as well as the alias to the *Individual* from which the *Sample* was derived. In addition to the mandatory information, the data submitter is recommended to provide information about the storage, whether the sample can be classified as  diseased or healthy, and biological replicate information. Other optional fields include the type of the sample and an EGA accession ID. 
 
-The *Biospecimen* entity requires data submitters to provide information about the age of the individual at the time of sampling and the biospecimen tissue. The recommended properties include a name for the biospecimen, its type, the vital status of the individual at the time of sampling, and the biospecimen isolation and storage.
+To further describe the *Biospecimen* from which the sample was prepared, data submitters are required to provide information about the age of the individual at the time of sampling and the biospecimen tissue. The recommended properties include a name for the biospecimen, its type, the vital status of the individual at the time of sampling, and the biospecimen isolation and storage.
 
 ### **Experiment**
 
