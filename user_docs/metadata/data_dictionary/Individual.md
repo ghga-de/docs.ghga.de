@@ -35,19 +35,19 @@ An Individual is a Person who is participating in a Study.
 ///
 
 ### ***geographical_region_term***
-**description** : The geographical region where the Individual is located.<br>
+**description** : The geographical region where the Individual is located. The Geographical Region is captured using a concept from the NCIT "country" class (NCIT:C25464) (e.g., Austria, Germany, Italy).<br>
 **required** : False<br>
 **data type** : string <br>
 ### ***geographical_region_id***
-**description** : The geographical region where the Individual is located.<br>
+**description** : The corresponding ID to the NCIT vocabulary (e.g., NCIT:C16312, NCIT:C16636, NCIT:C16761).<br>
 **required** : False<br>
 **data type** : string <br>
 ### ***ancestry_terms***
-**description** : A person's descent or lineage from a population.<br>
+**description** : A person's descent or lineage from a population. The Ancestry is captured using a concept from the Human Ancestry Ontology "ancestry category" (HANCESTRO:0004) branch (e.g., African, European, Oceanian).<br>
 **required** : False<br>
 **data type** : string <br>
 ### ***ancestry_ids***
-**description** : A person's descent or lineage from a population.<br>
+**description** : The corresponding ID to the HANCESTRO vocabulary (e.g., HANCESTRO:0010, HANCESTRO:0005, HANCESTRO:0017).<br>
 **required** : False<br>
 **data type** : string <br>
 ### ***alias***
