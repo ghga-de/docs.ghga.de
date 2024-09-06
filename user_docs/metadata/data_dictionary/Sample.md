@@ -150,11 +150,11 @@ A Sample is a limited quantity of something to be used for testing, analysis, in
 
 ### ***biospecimen_tissue_term***
 **description** : The tissue this Biospecimen originated from. Should be a term from the BRENDA Tissue Ontology vocabulary (e.g., kidney, blood, melanoma cell).<br>
-**required** : True<br>
+**required** : False<br>
 **data type** : string <br>
 ### ***biospecimen_tissue_id***
 **description** : The corresponding ontology ID for the biospecimen_tissue_term (e.g., BTO:0000671, BTO:0000089, BTO:0000848).<br>
-**required** : True<br>
+**required** : False<br>
 **data type** : string <br>
 ### ***biospecimen_isolation***
 **description** : Method or device employed for collecting/isolating this Biospecimen.<br>
