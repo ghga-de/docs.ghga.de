@@ -105,6 +105,10 @@ markdown_extensions:
 # Page tree
 nav:
   - "Overview": index.md
+  - "User Stories":
+      - "Browsing Data": user_stories/browsing_data.md
+      - "Accessing Data": user_stories/accessing_data.md
+      - "Submitting Data": user_stories/submitting_data.md
   - "GHGA Metadata Model":
       - "Overview": metadata/overview.md
       - "Entities & Attributes": metadata/entities.md
