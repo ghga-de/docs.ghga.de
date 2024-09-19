@@ -2,15 +2,17 @@
 
 Welcome to the GHGA User Documentation. On these pages you will find relevant information on services provided by [GHGA - the German Human Genome-Phenome Archive](https://www.ghga.de). 
 
-## Key Instructions to get started
+## Getting Started - User Stories
+To get started with this documentation, please visit the following pages describing the main user stories for GHGA:
 
-* [Submitter Guide](metadata/submitter_guide.md) - quick introduction on how to prepare submissions to GHGA.
+1. [Browsing data on the GHGA Data Portal](user_stories/browsing_data.md)
+1. [Accessing data available on GHGA](user_stories/accessing_data.md)
+1. [Submitting data to GHGA](user_stories/submitting_data.md)
 
-## Other Documents relevant to GHGA Users
-The following documents should be consulted if you are planning to use GHGA:
 
-* [**GHGA Terms of Use**](https://www.ghga.de/Downloads/Terms_of_Use_-_GHGA_Data_Infrastructure_V1.0.pdf): The Terms of Use for GHGA define the services offered by the GHGA Consortium and the performance levels of those services that users can expect. They also define the conditions that apply to users when using GHGA.
-* [**GHGA Data Processing Contract**](https://www.ghga.de/Downloads/GHGA_Data_Processing_Contract.pdf): A Data Processing Contract is agreed between GHGA Central and institutions that submit data. It sets out how GHGA may process the data, and what the Data Submitters’ responsibilities are. It has been designed to conform with Art. 28 GDPR.
+## GHGA Terms of Use
+
+The [**GHGA Terms of Use**](https://www.ghga.de/Downloads/Terms_of_Use_-_GHGA_Data_Infrastructure_V1.0.pdf) define the services offered by the GHGA Consortium and the performance levels of those services that users can expect. They also define the conditions that apply to users when using GHGA.
 
 ## Contact
 Please reach out to the [GHGA Helpdesk](mailto:helpdesk@ghga.de) for any questions on GHGA.
