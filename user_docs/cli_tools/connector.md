@@ -65,7 +65,7 @@ Options:
 
 ### Download Token
 
-GHGA Connector requires a download token to authenticate and process your request against GHGA Central. Each download request - which may comprise multiple files - is represented by a download token, which should be created via the GHGA Data Portal. For further information on how to create a download token, please refer to the [Data Download](../data_portal/data_download.md) documentation.
+GHGA Connector requires a download token to authenticate and process your request against GHGA Central. Each download request - which may comprise multiple files - is represented by a download token, which should be created via the GHGA Data Portal. For further information on how to create a download token, please refer to the [Data Download](../user_stories/data_download.md) documentation.
 
 ### Download Examples
 
