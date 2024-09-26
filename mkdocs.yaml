@@ -108,12 +108,15 @@ nav:
   - "User Stories":
       - "Browsing Data": user_stories/browsing_data.md
       - "Accessing Data": user_stories/accessing_data.md
-      - "Submitting Data": user_stories/submitting_data.md
+      - "Submitting Data": 
+        - "Overview": user_stories/submission/submitting_data.md
+        - "Preparing a Data Processing Contract": user_stories/submission/dpc_preparation.md
+        - "Data Preparation Guide": user_stories/submission/submitter_guide.md
   - "GHGA Metadata Model":
       - "Overview": metadata/overview.md
       - "Entities & Attributes": metadata/entities.md
       - "Standards": metadata/standards.md
-      - "Submitter Guide": metadata/submitter_guide.md
+      - "Data Preparation Guide": user_stories/submission/submitter_guide.md
       - "Data Dictionary": metadata/data_dictionary
   - "CLI Tools": cli_tools
   - "FAQ": faq.md

@@ -7,7 +7,7 @@ To get started with this documentation, please visit the following pages describ
 
 1. [Browsing data on the GHGA Data Portal](user_stories/browsing_data.md)
 1. [Accessing data available on GHGA](user_stories/accessing_data.md)
-1. [Submitting data to GHGA](user_stories/submitting_data.md)
+1. [Submitting data to GHGA](user_stories/submission/submitting_data.md)
 
 
 ## GHGA Terms of Use
