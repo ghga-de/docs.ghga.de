@@ -1,4 +1,4 @@
-# **Submitter Guide for GHGA Archive**
+# Data Preparation Guide
 
 !!! info "Draft"
     This page is a draft and currently a work in progress. The content is subject to change as we continue to improve and update it. 
