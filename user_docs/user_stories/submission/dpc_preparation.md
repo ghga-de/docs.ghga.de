@@ -1,12 +1,19 @@
-# Preparation of a Data Processing Contract for submission to GHGA Archive
+# Preparation of a GHGA Data Processing Contract for submission to GHGA Archive
 
 **WORK IN PROGRESS**
 
 ## Legal Prerequisites
 
- - [**GHGA Data Processing Contract**](https://www.ghga.de/Downloads/GHGA_Data_Processing_Contract.pdf): A Data Processing Contract is agreed between GHGA Central and institutions that submit data. It sets out how GHGA may process the data, and what the Data Submitters’ responsibilities are. It has been designed to conform with Art. 28 GDPR.
+ - [**GHGA Data Processing Contract**](https://www.ghga.de/Downloads/GHGA_Data_Processing_Contract.pdf)
 
+## Introduction
 
+A GHGA Data Processing Contract (DPC) is signed by GHGA Central and an institution this is the Data Controller for data that is to be submitted to GHGA. The DPC sets out how GHGA may process the data, the role of the GHGA Data Hubs, and what the Data Submitters’ responsibilities are. 
+
+The DPC creates a controller to processor relationship between the institution and GHGA Central. It has been designed to conform with [Art. 28 GDPR Nr. 3](https://gdpr-info.eu/art-28-gdpr/).
+
+!!! note "Difference between Data Controller and Data Submitter"
+   The GDPR defines a Data Controller as the party which "determines the purposes and means of the processing of personal data". In the context of GHGA, we also refer to the Data Submitter to mean the person or institution which is submitting data to GHGA.  
 
 ## Specification of LS IDs for usage in contracts
 
