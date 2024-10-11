@@ -15,13 +15,13 @@ The DPC creates a controller-to-processor relationship between the institution a
 
 ## The GHGA Data Processing Contract
 
-The DPC is structured in two parts. The first part, comprised of the sections *Premable* to *§7 - Signing*, focuses on the services that GHGA offers to the Data Controller once they have signed a DPC. The second part of the DPC are the annexes which focus on the data protection aspects that relate to the different data types which are processed under the DPC. There are sections within the annexes for which the Data Controller must provide information.
+The DPC is structured in two parts. The first part, comprised of the sections *Preamble* to *§7 - Signing*, focuses on the services that GHGA offers to the Data Controller once they have signed a DPC. The second part of the DPC are the annexes which focus on the data protection aspects that relate to the different data types which are processed under the DPC. There are sections within the annexes for which the Data Controller must provide information.
 
 ### Sections of the First Part
 
 A brief summary of these sections is presented below.
 
-*Premable* - This section introduces GHGA and the objectives of the project.
+*Preamble* - This section introduces GHGA and the objectives of the project.
 
 *§1 - Definitions* - This section defines the specific GHGA-related terms used within the DPC.
 
