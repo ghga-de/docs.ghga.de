@@ -116,7 +116,6 @@ nav:
       - "Overview": metadata/overview.md
       - "Entities & Attributes": metadata/entities.md
       - "Standards": metadata/standards.md
-      - "Data Preparation Guide": user_stories/submission/submitter_guide.md
       - "Data Dictionary": metadata/data_dictionary
   - "CLI Tools": cli_tools
   - "FAQ": faq.md
