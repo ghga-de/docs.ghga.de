@@ -12,7 +12,7 @@ To get started with this documentation, please visit the following pages describ
 
 ## GHGA Terms of Use
 
-The [**GHGA Terms of Use**](https://www.ghga.de/Downloads/Terms_of_Use_-_GHGA_Data_Infrastructure_V1.0.pdf) define the services offered by the GHGA Consortium and the performance levels of those services that users can expect. They also define the conditions that apply to users when using GHGA.
+The [**GHGA Terms of Use**](https://doi.org/10.5281/zenodo.11146387) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11146387.svg)](https://doi.org/10.5281/zenodo.11146387) define the services offered by the GHGA Consortium and the performance levels of those services that users can expect. They also define the conditions that apply to users when using GHGA.
 
 ## Contact
 Please reach out to the [GHGA Helpdesk](mailto:helpdesk@ghga.de) for any questions on GHGA.
