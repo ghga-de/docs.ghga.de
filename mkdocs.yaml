@@ -33,6 +33,7 @@ copyright: 2023 The GHGA Team
 # Theming, Configuration
 theme:
   name: material
+  custom_dir: overrides
   logo: logo.svg
   font: false
   palette:
