@@ -10,6 +10,10 @@ To get started with this documentation, please visit the following pages describ
 1. [Submitting data to GHGA](user_stories/submission/submitting_data.md)
 
 
+!!! info "Limitations on External Submissions"
+
+    GHGA has only recently launched the functionality of the GHGA Data Portal. Our ongoing efforts concentrate on improving the data upload processes and the overall user experience for external submissions. In general, data upload by external users is not yet possible as it includes manual steps. See also this section in our [FAQ](faq.md#how-to-upload-your-data-to-the-ghga-data-portal) and the [respective user story](user_stories/submission/submitting_data.md).
+
 ## GHGA Terms of Use
 
 The [**GHGA Terms of Use**](https://doi.org/10.5281/zenodo.11146387) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11146387.svg)](https://doi.org/10.5281/zenodo.11146387) define the services offered by the GHGA Consortium and the performance levels of those services that users can expect. They also define the conditions that apply to users when using GHGA.
