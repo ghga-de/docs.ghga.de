@@ -10,4 +10,4 @@ A submission of data contains the two main steps, please follow the links for fu
 
 !!! info "Limitations on External Submissions"
 
-    GHGA has only recently launched the functionality of the GHGA Data Portal. Our ongoing efforts concentrate on improving the data upload processes and the overall user experience for external submissions. Since data upload currently includes manual steps by GHGA data stewards, data upload by external users is not yet possible. See also this section in our [FAQ](../../faq.md#how-to-upload-your-data-to-the-ghga-data-portal).
+    GHGA has only recently launched the functionality of the GHGA Data Portal. Our ongoing efforts concentrate on improving the data upload processes and the overall user experience for external submissions. In general, data upload by external users is not yet possible as it includes manual steps. See also this section in our [FAQ](../../faq.md#how-to-upload-your-data-to-the-ghga-data-portal).
