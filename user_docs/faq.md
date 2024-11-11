@@ -14,7 +14,7 @@ Please visit the [GHGA Data Portal browse page](https://data.ghga.de/browse) and
 
 ## How to upload your data to the GHGA Data Portal?
 
-Currently GHGA is still in an early phase of the project and is therefore only accepting data submissions from partner institutions. If you would like to submit human omics data to GHGA, please contact the [GHGA Helpdesk](mailto:contact@ghga.de). To stay informed on new feature releases and updates to GHGA, please sign up for our [GHGA Newsletter](https://tbaa572aa.emailsys1a.net/23/6075/28001ae512/subscribe/form.html?_g=1646818058). 
+Currently GHGA is still in an early phase of the project and is therefore in general only accepting data submissions from partner institutions. If you would like to submit human omics data to GHGA, please contact the [GHGA Helpdesk](mailto:contact@ghga.de). To stay informed on new feature releases and updates to GHGA, please sign up for our [GHGA Newsletter](https://tbaa572aa.emailsys1a.net/23/6075/28001ae512/subscribe/form.html?_g=1646818058). 
 
 To find out more about how to prepare for a submission, please visit the [respective user story](user_stories/submission/submitting_data.md).
 
