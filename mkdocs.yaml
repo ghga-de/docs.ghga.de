@@ -50,7 +50,7 @@ plugins:
   - git-revision-date-localized
   - include_dir_to_nav
   - ezglossary: #glossary plugin - see https://realtimeprojects.github.io/mkdocs-ezglossary/
-#      tooltip: full # deactivated as the tooltips do not work for entries where the entries itself contain glossary terms
+      tooltip: full # adds tooltips on hover
 
 
 # Additional configuration
