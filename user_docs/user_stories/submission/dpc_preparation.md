@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A [GHGA Data Processing Contract (DPC)](../../glossary/glossary.md#data-processing-contract-dpc) is signed by [GHGA Central](../../glossary/glossary.md#ghga-central) and an institution that is the [Data Controller](../../glossary/glossary.md#research-data-controller-rdc) when they wish to submit data to GHGA. The DPC sets out how GHGA may process the data, the role of the [GHGA Data Hubs](../../glossary/glossary.md#ghga-data-hub), and what the Data Controllers’ responsibilities are. 
+A <general:Data Processing Contract (DPC)> is signed by <general:GHGA Central> and an institution that is the <general:Research Data Controller (RDC)> when they wish to submit data to GHGA. The DPC sets out how GHGA may process the data, the role of the <general:GHGA Data Hub|GHGA Data Hubs>, and what the Data Controllers’ responsibilities are. 
 
 :octicons-info-24:: The DPC is available [here :octicons-download-24:](https://www.ghga.de/Downloads/GHGA_Data_Processing_Contract.pdf) for download.
 
@@ -82,7 +82,7 @@ The GHGA Data Protection Framework explains the data protection principles that 
 
 ## Specification of LS Login IDs for usage in contracts
 
-To be able to process [Data Processing Contracts](../../glossary/glossary.md#data-processing-contract-dpc) and for others uses, GHGA users need to specify details of their LS Login ID to GHGA. The following information is needed:
+To be able to process <general:Data Processing Contract (DPC)> and for others uses, GHGA users need to specify details of their LS Login ID to GHGA. The following information is needed:
 
 | Field | Explanation  |
 |---|---|
