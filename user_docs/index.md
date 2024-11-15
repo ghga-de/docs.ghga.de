@@ -22,4 +22,4 @@ The [**GHGA Terms of Use**](https://doi.org/10.5281/zenodo.11146387) [![DOI](htt
 Please reach out to the [GHGA Helpdesk](mailto:helpdesk@ghga.de) for any questions on GHGA.
 
 !!! info "Funding"
-    The [GHGA Consortium](glossary/glossary.md#ghga-consortium) is not an independent legal entity but an association of research institutions from all over Germany. It is funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) as part of  GHGA – The German Human Genome-Phenome Archive (www.ghga.de, Grant Number [441914366](https://gepris.dfg.de/gepris/projekt/441914366?context=projekt&task=showDetail&id=441914366&) (NFDI 1/1)).
+    The <general:GHGA Consortium> is not an independent legal entity but an association of research institutions from all over Germany. It is funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) as part of  GHGA – The German Human Genome-Phenome Archive (www.ghga.de, Grant Number [441914366](https://gepris.dfg.de/gepris/projekt/441914366?context=projekt&task=showDetail&id=441914366&) (NFDI 1/1)).

@@ -49,6 +49,9 @@ plugins:
   - search
   - git-revision-date-localized
   - include_dir_to_nav
+  - ezglossary: #glossary plugin - see https://realtimeprojects.github.io/mkdocs-ezglossary/
+      tooltip: full # adds tooltips on hover
+
 
 # Additional configuration
 extra:
@@ -121,4 +124,4 @@ nav:
       - "Data Dictionary": metadata/data_dictionary
   - "CLI Tools": cli_tools
   - "FAQ": faq.md
-  - "Glossary": glossary/glossary.md
+  - "Glossary": glossary.md
