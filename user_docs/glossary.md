@@ -34,6 +34,9 @@ general:Data Steward
 general:Data Submitters 
 :   Users who are depositing data with GHGA Central (and includes the Data Controller, if not the same person(s), as defined in the Data Processing Contract). The Data Controllers will regularly operate one or several Data Access Committees (DACs) facilitating decision-making regarding access to the research data shared via the GHGA Data Infrastructure.
 
+general:Data Transfer Agreement (DTA)
+:   An agreement signed between a Research Data Controller and a Data Requester before a Data Access Request is approved. GHGA is not involved in the contractual relationship here, but is informed by the Research Data Controller once an appropriate agreement is in place. Please note: Depending on the institutions, this is sometimes also referred to as a Data Access Agreement (DAA) or Data Use Agreement (DUA). 
+
 general:European Genome-phenome Archive (EGA) 
 :   The European Genome-Phenome Archive (EGA) provides archiving and sharing support for personally identifiable genetic and phenotypic data. It is operated jointly by the European Molecular Biology Laboratory - European Bioinformatics Institute (EMBL-EBI), an intergovernmental organisation, and the Centre for Genomic Regulation in Barcelona (CRG). The EGA is developing a federated model through which national nodes will take on the archiving of genomic-phenomic data for their country; this federated network of institutions will be referred to as the federated EGA (fEGA). EGA will take over the coordinating function as operator of EGA-Central, GHGA is planned as the national node for Germany.
 
