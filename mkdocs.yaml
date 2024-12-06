@@ -105,6 +105,8 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
   - pymdownx.tabbed
+  - pymdownx.snippets:
+        base_path: user_docs/snippets
 
 
 # Page tree
