@@ -65,7 +65,7 @@ general:GHGA Data Infrastructure
 :   *GHGA Central*, together with the *GHGA Operations Consortium*, will operate an IT infrastructure to enable FAIR (findable, accessible, interoperable and reusable) data sharing of human omics data for scientific research purposes as defined by the Joint Controller Contract ((Appendix 3 to the GHGA Data Hub Cooperation Agreement)) and the Bilateral Contracts.
 
 general:GHGA Helpdesk 
-:   The GHGA Helpdesk will be operated by staff from each institution that operates a *GHGA Data Hub*. The GHGA Helpdesk will be the main point of contact for service users. The helpdesk software is operated by the DKFZ as *GHGA Central*.
+:   The GHGA Helpdesk is the main point of contact for service users. To open a ticket send a mail to helpdesk@ghga.de The helpdesk software is operated by the DKFZ as *GHGA Central* and is also available via [helpdesk.ghga.de](https://helpdesk.ghga.de)
 
 general:GHGA Operations Consortium Board 
 :   The GHGA Operations Consortium Board shall meet bimonthly to take decisions regarding the operation of the GHGA Operations Consortium and GHGA Data Infrastructure. It will also provide advice and guidance to GHGA Central on data processing matters.
