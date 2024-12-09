@@ -7,7 +7,8 @@ A Research Data File is a File that contains raw data originating from an Experi
 ### ***format***
 **description** : The file format of the Research Data File (e.g., FASTQ, uBAM, FASTA).<br>
 **required** : True<br>
-**data type** : Controlled Vocabulary <br>
+**importance** : required<br>
+**data_type** : Controlled Vocabulary<br>
 
 /// details | Permissible Values
 | Permissible Values | Description |
@@ -23,35 +24,52 @@ A Research Data File is a File that contains raw data originating from an Experi
 | `OTHER` | `A file format not captured by the controlled vocabulary.` |
 ///
 
+
 ### ***technical_replicate***
 **description** : An integer to indicate the technical replicate of this File.<br>
 **required** : True<br>
-**data type** : integer <br>
+**importance** : required<br>
+**data_type** : integer<br>
+
 ### ***sequencing_lane_id***
 **description** : The identifier of a sequencing lane.<br>
 **required** : False<br>
-**data type** : string <br>
+**importance** : recommended<br>
+**data_type** : string<br>
+
 ### ***experiments***
 **description** : The aliases of the Experiments that produced this Research Data File.<br>
 **required** : True<br>
-**data type** : Experiment <br>
+**importance** : required<br>
+**data_type** : Experiment<br>
+
 ### ***name***
 **description** : The given filename.<br>
 **required** : True<br>
-**data type** : string <br>
+**importance** : required<br>
+**data_type** : string<br>
+
 ### ***dataset***
 **description** : The Dataset alias associated with this File.<br>
 **required** : True<br>
-**data type** : Dataset <br>
+**importance** : required<br>
+**data_type** : Dataset<br>
+
 ### ***ega_accession***
 **description** : The EGA accession ID of an entity.<br>
 **required** : False<br>
-**data type** : string <br>
+**importance** : optional<br>
+**data_type** : string<br>
+
 ### ***included_in_submission***
 **description** : Whether a File is included in the Submission or not.<br>
 **required** : True<br>
-**data type** : boolean <br>
+**importance** : required<br>
+**data_type** : boolean<br>
+
 ### ***alias***
 **description** : The alias for an entity at the time of submission.<br>
 **required** : True<br>
-**data type** : string <br>
+**importance** : required<br>
+**data_type** : string<br>
+

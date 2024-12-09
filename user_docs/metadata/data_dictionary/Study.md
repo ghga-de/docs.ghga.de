@@ -7,15 +7,20 @@ A Study is an experimental investigation of a particular phenomenon. It involves
 ### ***title***
 **description** : A comprehensive title for this Study.<br>
 **required** : True<br>
-**data type** : string <br>
+**importance** : required<br>
+**data_type** : string<br>
+
 ### ***description***
 **description** : A detailed description (abstract) that describes the goals of this Study.<br>
 **required** : True<br>
-**data type** : string <br>
+**importance** : required<br>
+**data_type** : string<br>
+
 ### ***types***
 **description** : One or more types of this Study (e.g., Cancer Genomics, Epigenetics, Exome Sequencing).<br>
 **required** : True<br>
-**data type** : Controlled Vocabulary <br>
+**importance** : required<br>
+**data_type** : Controlled Vocabulary<br>
 
 /// details | Permissible Values
 | Permissible Values | Description |
@@ -57,19 +62,28 @@ A Study is an experimental investigation of a particular phenomenon. It involves
 | `OTHER` | `A study type not captured by the above mentioned.` |
 ///
 
+
 ### ***ega_accession***
 **description** : The EGA accession ID of an entity.<br>
 **required** : False<br>
-**data type** : string <br>
+**importance** : optional<br>
+**data_type** : string<br>
+
 ### ***affiliations***
 **description** : The affiliations associated with this Study.<br>
 **required** : True<br>
-**data type** : string <br>
+**importance** : required<br>
+**data_type** : string<br>
+
 ### ***attributes***
 **description** : One or more attributes that further characterize this Study.<br>
 **required** : False<br>
-**data type** : Attribute <br>
+**importance** : optional<br>
+**data_type** : Attribute<br>
+
 ### ***alias***
 **description** : The alias for an entity at the time of submission.<br>
 **required** : True<br>
-**data type** : string <br>
+**importance** : required<br>
+**data_type** : string<br>
+
