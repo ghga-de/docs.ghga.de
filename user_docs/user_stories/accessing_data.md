@@ -11,7 +11,7 @@
 
 ## Data Download
 
-Downloading data from datasets you have been granted access to is a two stage process:
+Downloading data from datasets you have been granted access to is a two-stage process:
 
 * The download is prepared through the *Data Portal*. The corresponding dataset
   is selected and the download potentially restricted to individual files from
