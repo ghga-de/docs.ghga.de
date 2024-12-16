@@ -2,7 +2,7 @@
 
 !!! info "Draft"
     This page is a draft and currently a work in progress. The content is subject to change as we continue to improve and update it. 
-
+Here is a random change
 ## 1. Initiation of a submission
 To initiate a submission of data to GHGA, please contact us via the [contact form](https://www.ghga.de/about-us/contact) by using the topic *“Data Submission”*. A GHGA Data Steward will be assigned and guide you through the process, which consists of the following steps:
 
