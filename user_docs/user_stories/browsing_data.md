@@ -1,6 +1,6 @@
 # Browsing Data
 
-The GHGA Data Portal is a secure national infrastructure for human omics data available under controlled access. To browse data, please visit the GHGA Data Portal at [data.ghga.de/](https://data.ghga.de/) and got to the ["Browse" page.](https://data.ghga.de/browse).
+The GHGA Data Portal is a secure national infrastructure for human omics data available under controlled access. To browse data, please visit the GHGA Data Portal at [data.ghga.de/](https://data.ghga.de/) and go to the ["Browse" page.](https://data.ghga.de/browse).
 
 ## Views
 ### Overview
@@ -8,8 +8,8 @@ The first view shows you an overview of all available datasets on GHGA.
 
 #### Filtering
 - On the left various filter options are available to filter for desired properties of datasets.
-    - Select filters and click "Filter" on the bottom-left to apply the filters to the list of datasets shown on the right.
-    - This will lead to a reduced number of datasets shown in the listing on the right. Filters can be removed by just clicking the "x" on the applied filters on the top of the list.
+    - Select filters and click "Filter" on the bottom left to apply the filters to the list of datasets shown on the right.
+    - This will lead to fewer datasets shown in the listing on the right. Filters can be removed by just clicking the "x" on the applied filters on the top of the list.
 
     ![Filter View](../assets/img/filter_view.png)
 
