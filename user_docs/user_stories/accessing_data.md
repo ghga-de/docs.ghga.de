@@ -14,7 +14,7 @@
 Downloading data from datasets you have been granted access to is a two stage process:
 
 * The download is prepared through the *Data Portal*. The corresponding dataset
-  is selected and the download potentially restricted to individual files from
+  is selected and the download is potentially restricted to individual files from
   the dataset. At the end of this process, a download token is generated and
   shown to the user.
 
