@@ -7,32 +7,28 @@ A Data Access Policy specifies under which circumstances, legal or otherwise, a 
 ### ***name***
 **description** : A name for this Data Access Policy.<br>
 **required** : True<br>
-**importance** : required<br>
-**data_type** : string<br>
-
+**significance** : required<br>
+**data type** : string <br>
 ### ***description***
 **description** : A short description for this Data Access Policy.<br>
 **required** : True<br>
-**importance** : required<br>
-**data_type** : string<br>
-
+**significance** : required<br>
+**data type** : string <br>
 ### ***policy_text***
 **description** : The complete text for the Data Access Policy.<br>
 **required** : True<br>
-**importance** : required<br>
-**data_type** : string<br>
-
+**significance** : required<br>
+**data type** : string <br>
 ### ***policy_url***
 **description** : An alternative to the Data Access Policy text is to provide the URL for the policy. This is useful if the terms of the policy are available online at a resolvable URL.<br>
 **required** : False<br>
-**importance** : recommended<br>
-**data_type** : string<br>
-
+**significance** : recommended<br>
+**data type** : string <br>
 ### ***data_use_permission_term***
 **description** : The Data Use Permission associated with this Data Use Policy. The used term should be a descendant of 'DUO:0000001: data use permission' (e.g., no restriction).<br>
 **required** : True<br>
-**importance** : required<br>
-**data_type** : Controlled Vocabulary<br>
+**significance** : required<br>
+**data type** : Controlled Vocabulary <br>
 
 /// details | Permissible Values
 | Permissible Values | Description |
@@ -44,18 +40,16 @@ A Data Access Policy specifies under which circumstances, legal or otherwise, a 
 | `POPULATION_ORIGINS_OR_ANCESTRY_RESEARCH_ONLY` | `This data use permission indicates that use of the data is limited to the study of population origins or ancestry.` |
 ///
 
-
 ### ***data_use_permission_id***
 **description** : The DUO ID corresponding to the Data Use Permission term (e.g., DUO:0000004).<br>
 **required** : True<br>
-**importance** : required<br>
-**data_type** : string<br>
-
+**significance** : required<br>
+**data type** : string <br>
 ### ***data_use_modifier_terms***
 **description** : One or more Data Use Modifiers for the Data Use Permission associated with this Data Use Policy. The used terms should be descendants of 'DUO:0000017: data use modifier' (e.g., clinical care use). Please use 'USER_SPECIFIC_RESTRICTION' if no other modifier applies.<br>
 **required** : False<br>
-**importance** : recommended<br>
-**data_type** : Controlled Vocabulary<br>
+**significance** : recommended<br>
+**data type** : Controlled Vocabulary <br>
 
 /// details | Permissible Values
 | Permissible Values | Description |
@@ -80,28 +74,23 @@ A Data Access Policy specifies under which circumstances, legal or otherwise, a 
 | `POPULATION_ORIGINS_OR_ANCESTRY_RESEARCH_PROHIBITED` | `This data use modifier indicates use for purposes of population, origin, or ancestry research is prohibited.` |
 ///
 
-
 ### ***data_use_modifier_ids***
 **description** : The DUO IDs corresponding to the Data Use Modifier terms (e.g., DUO:0000043).<br>
 **required** : False<br>
-**importance** : recommended<br>
-**data_type** : string<br>
-
+**significance** : recommended<br>
+**data type** : string <br>
 ### ***ega_accession***
 **description** : The EGA accession ID of an entity.<br>
 **required** : False<br>
-**importance** : optional<br>
-**data_type** : string<br>
-
+**significance** : optional<br>
+**data type** : string <br>
 ### ***data_access_committee***
 **description** : The Data Access Committee linked to this Data Use Policy.<br>
 **required** : True<br>
-**importance** : required<br>
-**data_type** : DataAccessCommittee<br>
-
+**significance** : required<br>
+**data type** : DataAccessCommittee <br>
 ### ***alias***
 **description** : The alias for an entity at the time of submission.<br>
 **required** : True<br>
-**importance** : required<br>
-**data_type** : string<br>
-
+**significance** : required<br>
+**data type** : string <br>
