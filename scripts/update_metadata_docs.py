@@ -142,7 +142,22 @@ def extract_slots_from(
         [SchemaView, Union[str, None]], Union[dict, None]
     ] = extract_permissible_values,
 ) -> list[dict]:
+    """Extract slot information of a given class. Additionally add the slot significance which takes one the 3 values: required, recommended and optional.
+    """
 
+    return [
+        {
+            "name": slot.name,
+            "description": slot.description,
+            "data_type": {
+                "range": slot.range,
+                "enum": add_enum(schema, slot.range),
+            },
+            "required": slot.required,
+            "significance": "required" if slot.required else "recommended" if slot.recommended else "optional"
+        }
+        for slot in schema.class_induced_slots(sheet_name)
+    ]
     """ add the slot significance which takes one the 3 values: required, recommended and optional"""
     for slot in schema.class_induced_slots(sheet_name):
         slot.significance = "required" if slot.required else "recommended" if slot.recommended else "optional"
