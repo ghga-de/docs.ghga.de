@@ -7,8 +7,14 @@
 {% for slot in slots %}
 ### ***{{ slot.name }}***
 **description** : {{ slot.description }}<br>
-**required** : {{ slot.required }}<br>
-**significance** : {{ slot.significance }}<br>
+{% if slot.requirement == "required" %}
+**requirement**: <span style="color: red;">required</span>
+{% elif slot.requirement == "recommended" %}
+**requirement**: <span style="color: blue;">recommended</span>
+{% else %}
+**requirement**: <span style="color: green;">optional</span>
+{% endif %}
+
 {% if 'Enum' in slot.data_type.range  %}
 **data type** : Controlled Vocabulary <br>
 {% else %}

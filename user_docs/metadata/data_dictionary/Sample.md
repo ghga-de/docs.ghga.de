@@ -6,18 +6,18 @@ A Sample is a limited quantity of something to be used for testing, analysis, in
 ## Fields
 ### ***individual***
 **description** : The alias of the Individual entity from which this Biospecimen or Sample was derived.<br>
-**required** : True<br>
-**significance** : required<br>
+**requirement**: <span style="color: red;">required</span>
+
 **data type** : Individual <br>
 ### ***name***
 **description** : A descriptive name of this Sample (e.g., GHGAS_Blood_Sample1 or GHGAS_PBMC_RNAseq_S1). This property must not include any personally identifiable data.<br>
-**required** : True<br>
-**significance** : required<br>
+**requirement**: <span style="color: red;">required</span>
+
 **data type** : string <br>
 ### ***type***
 **description** : The type of the Sample.<br>
-**required** : False<br>
-**significance** : optional<br>
+**requirement**: <span style="color: green;">optional</span>
+
 **data type** : Controlled Vocabulary <br>
 
 /// details | Permissible Values
@@ -40,18 +40,18 @@ A Sample is a limited quantity of something to be used for testing, analysis, in
 
 ### ***biological_replicate***
 **description** : An integer to indicate the number of a biological replicate.<br>
-**required** : None<br>
-**significance** : recommended<br>
+**requirement**: <span style="color: blue;">recommended</span>
+
 **data type** : integer <br>
 ### ***description***
 **description** : A concise description about the Sample source, the collection method, and the protocol which was followed to process this Sample.<br>
-**required** : True<br>
-**significance** : required<br>
+**requirement**: <span style="color: red;">required</span>
+
 **data type** : string <br>
 ### ***storage***
 **description** : Methods by which a Sample is stored.<br>
-**required** : False<br>
-**significance** : recommended<br>
+**requirement**: <span style="color: blue;">recommended</span>
+
 **data type** : Controlled Vocabulary <br>
 
 /// details | Permissible Values
@@ -68,8 +68,8 @@ A Sample is a limited quantity of something to be used for testing, analysis, in
 
 ### ***disease_or_healthy***
 **description** : Whether a Condition corresponds to a disease or a healthy state.<br>
-**required** : False<br>
-**significance** : recommended<br>
+**requirement**: <span style="color: blue;">recommended</span>
+
 **data type** : Controlled Vocabulary <br>
 
 /// details | Permissible Values
@@ -82,8 +82,8 @@ A Sample is a limited quantity of something to be used for testing, analysis, in
 
 ### ***case_control_status***
 **description** : Whether a Condition corresponds to a treatment or a control.<br>
-**required** : True<br>
-**significance** : required<br>
+**requirement**: <span style="color: red;">required</span>
+
 **data type** : Controlled Vocabulary <br>
 
 /// details | Permissible Values
@@ -97,33 +97,33 @@ A Sample is a limited quantity of something to be used for testing, analysis, in
 
 ### ***ega_accession***
 **description** : The EGA accession ID of an entity.<br>
-**required** : False<br>
-**significance** : optional<br>
+**requirement**: <span style="color: green;">optional</span>
+
 **data type** : string <br>
 ### ***xref***
 **description** : One or more cross-references for this Sample (e.g., this Sample may have an EBI BioSamples accession ID).<br>
-**required** : False<br>
-**significance** : optional<br>
+**requirement**: <span style="color: green;">optional</span>
+
 **data type** : string <br>
 ### ***biospecimen_name***
 **description** : A descriptive name of this Biospecimen (e.g., GHGAB_caudate_nucleus_biospecimen). This property must not include any personally identifiable data.<br>
-**required** : False<br>
-**significance** : recommended<br>
+**requirement**: <span style="color: blue;">recommended</span>
+
 **data type** : string <br>
 ### ***biospecimen_type***
 **description** : The type of Biospecimen.<br>
-**required** : False<br>
-**significance** : recommended<br>
+**requirement**: <span style="color: blue;">recommended</span>
+
 **data type** : string <br>
 ### ***biospecimen_description***
 **description** : A concise description about the Biospecimen source, the collection method, and the protocol which was followed to process this Biospecimen.<br>
-**required** : False<br>
-**significance** : optional<br>
+**requirement**: <span style="color: green;">optional</span>
+
 **data type** : string <br>
 ### ***biospecimen_age_at_sampling***
 **description** : The age of the Individual at the time of isolating this biospecimen.<br>
-**required** : True<br>
-**significance** : required<br>
+**requirement**: <span style="color: red;">required</span>
+
 **data type** : Controlled Vocabulary <br>
 
 /// details | Permissible Values
@@ -151,8 +151,8 @@ A Sample is a limited quantity of something to be used for testing, analysis, in
 
 ### ***biospecimen_vital_status_at_sampling***
 **description** : Vital Status of the Individual at the time of isolating this biospecimen (e.g., alive).<br>
-**required** : False<br>
-**significance** : recommended<br>
+**requirement**: <span style="color: blue;">recommended</span>
+
 **data type** : Controlled Vocabulary <br>
 
 /// details | Permissible Values
@@ -165,18 +165,18 @@ A Sample is a limited quantity of something to be used for testing, analysis, in
 
 ### ***biospecimen_tissue_term***
 **description** : The tissue this Biospecimen originated from. Should be a term from the BRENDA Tissue Ontology vocabulary (e.g., kidney, blood, melanoma cell).<br>
-**required** : False<br>
-**significance** : recommended<br>
+**requirement**: <span style="color: blue;">recommended</span>
+
 **data type** : string <br>
 ### ***biospecimen_tissue_id***
 **description** : The corresponding ontology ID for the biospecimen_tissue_term (e.g., BTO:0000671, BTO:0000089, BTO:0000848).<br>
-**required** : False<br>
-**significance** : recommended<br>
+**requirement**: <span style="color: blue;">recommended</span>
+
 **data type** : string <br>
 ### ***biospecimen_isolation***
 **description** : Method or device employed for collecting/isolating this Biospecimen.<br>
-**required** : False<br>
-**significance** : recommended<br>
+**requirement**: <span style="color: blue;">recommended</span>
+
 **data type** : Controlled Vocabulary <br>
 
 /// details | Permissible Values
@@ -190,8 +190,8 @@ A Sample is a limited quantity of something to be used for testing, analysis, in
 
 ### ***biospecimen_storage***
 **description** : Methods by which this Biospecimen is stored.<br>
-**required** : False<br>
-**significance** : recommended<br>
+**requirement**: <span style="color: blue;">recommended</span>
+
 **data type** : Controlled Vocabulary <br>
 
 /// details | Permissible Values
@@ -208,11 +208,11 @@ A Sample is a limited quantity of something to be used for testing, analysis, in
 
 ### ***attributes***
 **description** : Key/value pairs corresponding to an entity.<br>
-**required** : False<br>
-**significance** : optional<br>
+**requirement**: <span style="color: green;">optional</span>
+
 **data type** : Attribute <br>
 ### ***alias***
 **description** : The alias for an entity at the time of submission.<br>
-**required** : True<br>
-**significance** : required<br>
+**requirement**: <span style="color: red;">required</span>
+
 **data type** : string <br>

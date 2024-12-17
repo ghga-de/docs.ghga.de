@@ -153,31 +153,10 @@ def extract_slots_from(
                 "range": slot.range,
                 "enum": add_enum(schema, slot.range),
             },
-            "required": slot.required,
-            "significance": "required" if slot.required else "recommended" if slot.recommended else "optional"
+            "requirement": "required" if slot.required else "recommended" if slot.recommended else "optional"
         }
         for slot in schema.class_induced_slots(sheet_name)
     ]
-    """ add the slot significance which takes one the 3 values: required, recommended and optional"""
-    for slot in schema.class_induced_slots(sheet_name):
-        slot.significance = "required" if slot.required else "recommended" if slot.recommended else "optional"
-    
-    """Extracts slot information of a given class"""
-
-    return [
-        {
-            "name": slot.name,
-            "description": slot.description,
-            "data_type": {
-                "range": slot.range,
-                "enum": add_enum(schema, slot.range),
-            },
-            "required": slot.required,
-            "significance": slot.significance
-        }
-        for slot in schema.class_induced_slots(sheet_name)
-    ]
-
 
 def generate_workbook(
     schema: SchemaView,
