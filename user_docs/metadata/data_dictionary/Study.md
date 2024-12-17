@@ -3,21 +3,20 @@
 ## Description
 A Study is an experimental investigation of a particular phenomenon. It involves a detailed examination and analysis of a subject to learn more about the phenomenon being studied.
 
+$\color{green}{test}$
+
 ## Fields
 ### ***title***
 **description** : A comprehensive title for this Study.<br>
-**requirement**: <span style="color: red;">required</span>
-
+**requirement**:  $\color{red}{required}$
 **data type** : string <br>
 ### ***description***
 **description** : A detailed description (abstract) that describes the goals of this Study.<br>
-**requirement**: <span style="color: red;">required</span>
-
+**requirement**:  $\color{red}{required}$
 **data type** : string <br>
 ### ***types***
 **description** : One or more types of this Study (e.g., Cancer Genomics, Epigenetics, Exome Sequencing).<br>
-**requirement**: <span style="color: red;">required</span>
-
+**requirement**:  $\color{red}{required}$
 **data type** : Controlled Vocabulary <br>
 
 /// details | Permissible Values
@@ -62,21 +61,17 @@ A Study is an experimental investigation of a particular phenomenon. It involves
 
 ### ***ega_accession***
 **description** : The EGA accession ID of an entity.<br>
-**requirement**: <span style="color: green;">optional</span>
-
+**requirement**:  $\color{green}{optional}$
 **data type** : string <br>
 ### ***affiliations***
 **description** : The affiliations associated with this Study.<br>
-**requirement**: <span style="color: red;">required</span>
-
+**requirement**:  $\color{red}{required}$
 **data type** : string <br>
 ### ***attributes***
 **description** : One or more attributes that further characterize this Study.<br>
-**requirement**: <span style="color: green;">optional</span>
-
+**requirement**:  $\color{green}{optional}$
 **data type** : Attribute <br>
 ### ***alias***
 **description** : The alias for an entity at the time of submission.<br>
-**requirement**: <span style="color: red;">required</span>
-
+**requirement**:  $\color{red}{required}$
 **data type** : string <br>

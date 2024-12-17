@@ -3,26 +3,24 @@
 ## Description
 The Experiment Method captures technical metadata describing the parameters used to generate output from the Sample.
 
+$\color{green}{test}$
+
 ## Fields
 ### ***name***
 **description** : A short name identifying this Experiment Method.<br>
-**requirement**: <span style="color: red;">required</span>
-
+**requirement**:  $\color{red}{required}$
 **data type** : string <br>
 ### ***description***
 **description** : A short description of this Experiment Method.<br>
-**requirement**: <span style="color: red;">required</span>
-
+**requirement**:  $\color{red}{required}$
 **data type** : string <br>
 ### ***type***
 **description** : The type associated with this Experiment Method.<br>
-**requirement**: <span style="color: red;">required</span>
-
+**requirement**:  $\color{red}{required}$
 **data type** : string <br>
 ### ***library_type***
 **description** : Describe the level of omics analysis (e.g., WGS, ATAC).<br>
-**requirement**: <span style="color: red;">required</span>
-
+**requirement**:  $\color{red}{required}$
 **data type** : Controlled Vocabulary <br>
 
 /// details | Permissible Values
@@ -44,8 +42,7 @@ The Experiment Method captures technical metadata describing the parameters used
 
 ### ***library_selection_methods***
 **description** : One or more methods used to select for or against, enrich, or screen the material being sequenced (e.g., random, PCA, cDNA).<br>
-**requirement**: <span style="color: red;">required</span>
-
+**requirement**:  $\color{red}{required}$
 **data type** : Controlled Vocabulary <br>
 
 /// details | Permissible Values
@@ -80,13 +77,11 @@ The Experiment Method captures technical metadata describing the parameters used
 
 ### ***library_preparation***
 **description** : The general method for preparation of the sequencing library (e.g., KAPA PCR-free).<br>
-**requirement**: <span style="color: red;">required</span>
-
+**requirement**:  $\color{red}{required}$
 **data type** : string <br>
 ### ***library_preparation_kit_retail_name***
 **description** : The retail name for the kit used to construct a genomic library. This may include the vendor name, kit name and kit version (e.g., Agilent sure select Human Exome V8, Twist RefSeq Exome).<br>
-**requirement**: <span style="color: blue;">recommended</span>
-
+**requirement**:  $\color{blue}{recommended}$
 **data type** : Controlled Vocabulary <br>
 
 /// details | Permissible Values
@@ -258,13 +253,11 @@ The Experiment Method captures technical metadata describing the parameters used
 
 ### ***library_preparation_kit_manufacturer***
 **description** : The manufacturer of the kit used for library preparation.<br>
-**requirement**: <span style="color: blue;">recommended</span>
-
+**requirement**:  $\color{blue}{recommended}$
 **data type** : string <br>
 ### ***primer***
 **description** : The type of primer used for reverse transcription (e.g., oligo-dT or random).<br>
-**requirement**: <span style="color: blue;">recommended</span>
-
+**requirement**:  $\color{blue}{recommended}$
 **data type** : Controlled Vocabulary <br>
 
 /// details | Permissible Values
@@ -278,8 +271,7 @@ The Experiment Method captures technical metadata describing the parameters used
 
 ### ***end_bias***
 **description** : The end of the cDNA molecule that is preferentially sequenced (e.g., 3/5 prime end, full-length).<br>
-**requirement**: <span style="color: blue;">recommended</span>
-
+**requirement**:  $\color{blue}{recommended}$
 **data type** : Controlled Vocabulary <br>
 
 /// details | Permissible Values
@@ -292,13 +284,11 @@ The Experiment Method captures technical metadata describing the parameters used
 
 ### ***target_regions***
 **description** : Subset of genes or specific regions of the genome, which are most likely to be involved in the phenotype under study.<br>
-**requirement**: <span style="color: green;">optional</span>
-
+**requirement**:  $\color{green}{optional}$
 **data type** : string <br>
 ### ***rnaseq_strandedness***
 **description** : The strandedness of the library, whether reads come from both strands of the cDNA or only from the first (antisense) or the second (sense) strand.<br>
-**requirement**: <span style="color: blue;">recommended</span>
-
+**requirement**:  $\color{blue}{recommended}$
 **data type** : Controlled Vocabulary <br>
 
 /// details | Permissible Values
@@ -311,8 +301,7 @@ The Experiment Method captures technical metadata describing the parameters used
 
 ### ***instrument_model***
 **description** : The name and model of the technology platform used to perform sequencing.<br>
-**requirement**: <span style="color: red;">required</span>
-
+**requirement**:  $\color{red}{required}$
 **data type** : Controlled Vocabulary <br>
 
 /// details | Permissible Values
@@ -388,18 +377,15 @@ The Experiment Method captures technical metadata describing the parameters used
 
 ### ***sequencing_center***
 **description** : Center where sample was sequenced.<br>
-**requirement**: <span style="color: blue;">recommended</span>
-
+**requirement**:  $\color{blue}{recommended}$
 **data type** : string <br>
 ### ***sequencing_read_length***
 **description** : Length of sequencing reads (e.g., long or short or actual number of the read length).<br>
-**requirement**: <span style="color: green;">optional</span>
-
+**requirement**:  $\color{green}{optional}$
 **data type** : string <br>
 ### ***sequencing_layout***
 **description** : Describe whether the library was sequenced in single-end (forward or reverse) or paired-end mode.<br>
-**requirement**: <span style="color: red;">required</span>
-
+**requirement**:  $\color{red}{required}$
 **data type** : Controlled Vocabulary <br>
 
 /// details | Permissible Values
@@ -411,18 +397,15 @@ The Experiment Method captures technical metadata describing the parameters used
 
 ### ***target_coverage***
 **description** : Mean coverage for whole genome sequencing, or mean target coverage for whole exome and targeted sequencing, (i.e. the number of times a particular locus was sequenced).<br>
-**requirement**: <span style="color: green;">optional</span>
-
+**requirement**:  $\color{green}{optional}$
 **data type** : string <br>
 ### ***flow_cell_id***
 **description** : Flow cell ID (e.g., Experiment ID_Cell 1_Lane_1).<br>
-**requirement**: <span style="color: blue;">recommended</span>
-
+**requirement**:  $\color{blue}{recommended}$
 **data type** : string <br>
 ### ***flow_cell_type***
 **description** : Type of flow cell used (e.g., S4, S2 for NovaSeq; PromethION, Flongle for Nanopore).<br>
-**requirement**: <span style="color: blue;">recommended</span>
-
+**requirement**:  $\color{blue}{recommended}$
 **data type** : Controlled Vocabulary <br>
 
 /// details | Permissible Values
@@ -439,8 +422,7 @@ The Experiment Method captures technical metadata describing the parameters used
 
 ### ***sample_barcode_read***
 **description** : The type of read that contains the sample barcode (e.g., index1, index2, read1, read2).<br>
-**requirement**: <span style="color: blue;">recommended</span>
-
+**requirement**:  $\color{blue}{recommended}$
 **data type** : Controlled Vocabulary <br>
 
 /// details | Permissible Values
@@ -453,16 +435,13 @@ The Experiment Method captures technical metadata describing the parameters used
 
 ### ***ega_accession***
 **description** : The EGA accession of the 'Experiment' entity (EGAX).<br>
-**requirement**: <span style="color: green;">optional</span>
-
+**requirement**:  $\color{green}{optional}$
 **data type** : string <br>
 ### ***attributes***
 **description** : One or more attributes that further characterize this Experiment Method.<br>
-**requirement**: <span style="color: green;">optional</span>
-
+**requirement**:  $\color{green}{optional}$
 **data type** : Attribute <br>
 ### ***alias***
 **description** : The alias for an entity at the time of submission.<br>
-**requirement**: <span style="color: red;">required</span>
-
+**requirement**:  $\color{red}{required}$
 **data type** : string <br>

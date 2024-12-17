@@ -3,11 +3,12 @@
 ## Description
 An Experiment Method Supporting File is a File that contains additional information relevant for the Experiment Method, such as (unstructured) protocols.
 
+$\color{green}{test}$
+
 ## Fields
 ### ***format***
 **description** : The file format of the Supporting File (e.g., TXT, JSON).<br>
-**requirement**: <span style="color: red;">required</span>
-
+**requirement**:  $\color{red}{required}$
 **data type** : Controlled Vocabulary <br>
 
 /// details | Permissible Values
@@ -24,31 +25,25 @@ An Experiment Method Supporting File is a File that contains additional informat
 
 ### ***experiment_method***
 **description** : The Experiment Method associated with an entity.<br>
-**requirement**: <span style="color: red;">required</span>
-
+**requirement**:  $\color{red}{required}$
 **data type** : ExperimentMethod <br>
 ### ***name***
 **description** : The given filename.<br>
-**requirement**: <span style="color: red;">required</span>
-
+**requirement**:  $\color{red}{required}$
 **data type** : string <br>
 ### ***dataset***
 **description** : The Dataset alias associated with this File.<br>
-**requirement**: <span style="color: red;">required</span>
-
+**requirement**:  $\color{red}{required}$
 **data type** : Dataset <br>
 ### ***ega_accession***
 **description** : The EGA accession ID of an entity.<br>
-**requirement**: <span style="color: green;">optional</span>
-
+**requirement**:  $\color{green}{optional}$
 **data type** : string <br>
 ### ***included_in_submission***
 **description** : Whether a File is included in the Submission or not.<br>
-**requirement**: <span style="color: red;">required</span>
-
+**requirement**:  $\color{red}{required}$
 **data type** : boolean <br>
 ### ***alias***
 **description** : The alias for an entity at the time of submission.<br>
-**requirement**: <span style="color: red;">required</span>
-
+**requirement**:  $\color{red}{required}$
 **data type** : string <br>

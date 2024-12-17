@@ -3,18 +3,19 @@
 ## Description
 {{ description }}
 
+$\color{green}{test}$
+
 ## Fields
 {% for slot in slots %}
 ### ***{{ slot.name }}***
 **description** : {{ slot.description }}<br>
 {% if slot.requirement == "required" %}
-**requirement**: <span style="color: red;">required</span>
+**requirement**:  $\color{red}{required}$
 {% elif slot.requirement == "recommended" %}
-**requirement**: <span style="color: blue;">recommended</span>
+**requirement**:  $\color{blue}{recommended}$
 {% else %}
-**requirement**: <span style="color: green;">optional</span>
+**requirement**:  $\color{green}{optional}$
 {% endif %}
-
 {% if 'Enum' in slot.data_type.range  %}
 **data type** : Controlled Vocabulary <br>
 {% else %}
