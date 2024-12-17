@@ -3,12 +3,10 @@
 ## Description
 A Research Data File is a File that contains raw data originating from an Experiment.
 
-$\color{green}{test}$
-
 ## Fields
 ### ***format***
 **description** : The file format of the Research Data File (e.g., FASTQ, uBAM, FASTA).<br>
-**requirement**:  $\color{red}{required}$
+**requirement**:  $\color{red}{\textbf{required}}$<br> 
 **data type** : Controlled Vocabulary <br>
 
 /// details | Permissible Values
@@ -27,33 +25,33 @@ $\color{green}{test}$
 
 ### ***technical_replicate***
 **description** : An integer to indicate the technical replicate of this File.<br>
-**requirement**:  $\color{red}{required}$
+**requirement**:  $\color{red}{\textbf{required}}$<br> 
 **data type** : integer <br>
 ### ***sequencing_lane_id***
 **description** : The identifier of a sequencing lane.<br>
-**requirement**:  $\color{blue}{recommended}$
+**requirement**:  $\color{blue}{\textbf{recommended}}$<br>
 **data type** : string <br>
 ### ***experiments***
 **description** : The aliases of the Experiments that produced this Research Data File.<br>
-**requirement**:  $\color{red}{required}$
+**requirement**:  $\color{red}{\textbf{required}}$<br> 
 **data type** : Experiment <br>
 ### ***name***
 **description** : The given filename.<br>
-**requirement**:  $\color{red}{required}$
+**requirement**:  $\color{red}{\textbf{required}}$<br> 
 **data type** : string <br>
 ### ***dataset***
 **description** : The Dataset alias associated with this File.<br>
-**requirement**:  $\color{red}{required}$
+**requirement**:  $\color{red}{\textbf{required}}$<br> 
 **data type** : Dataset <br>
 ### ***ega_accession***
 **description** : The EGA accession ID of an entity.<br>
-**requirement**:  $\color{green}{optional}$
+**requirement**:  $\color{green}{\textbf{optional}}$<br>
 **data type** : string <br>
 ### ***included_in_submission***
 **description** : Whether a File is included in the Submission or not.<br>
-**requirement**:  $\color{red}{required}$
+**requirement**:  $\color{red}{\textbf{required}}$<br> 
 **data type** : boolean <br>
 ### ***alias***
 **description** : The alias for an entity at the time of submission.<br>
-**requirement**:  $\color{red}{required}$
+**requirement**:  $\color{red}{\textbf{required}}$<br> 
 **data type** : string <br>

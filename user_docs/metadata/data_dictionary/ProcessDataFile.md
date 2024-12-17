@@ -3,12 +3,10 @@
 ## Description
 A Process Data File is a File that contains data produced by an Analysis or workflow.
 
-$\color{green}{test}$
-
 ## Fields
 ### ***format***
 **description** : The file format of the Process Data File (e.g., CRAM, BAM).<br>
-**requirement**:  $\color{red}{required}$
+**requirement**:  $\color{red}{\textbf{required}}$<br> 
 **data type** : Controlled Vocabulary <br>
 
 /// details | Permissible Values
@@ -29,25 +27,25 @@ $\color{green}{test}$
 
 ### ***analysis***
 **description** : The alias of the Analysis that produced this Process Data File.<br>
-**requirement**:  $\color{red}{required}$
+**requirement**:  $\color{red}{\textbf{required}}$<br> 
 **data type** : Analysis <br>
 ### ***name***
 **description** : The given filename.<br>
-**requirement**:  $\color{red}{required}$
+**requirement**:  $\color{red}{\textbf{required}}$<br> 
 **data type** : string <br>
 ### ***dataset***
 **description** : The Dataset alias associated with this File.<br>
-**requirement**:  $\color{red}{required}$
+**requirement**:  $\color{red}{\textbf{required}}$<br> 
 **data type** : Dataset <br>
 ### ***ega_accession***
 **description** : The EGA accession ID of an entity.<br>
-**requirement**:  $\color{green}{optional}$
+**requirement**:  $\color{green}{\textbf{optional}}$<br>
 **data type** : string <br>
 ### ***included_in_submission***
 **description** : Whether a File is included in the Submission or not.<br>
-**requirement**:  $\color{red}{required}$
+**requirement**:  $\color{red}{\textbf{required}}$<br> 
 **data type** : boolean <br>
 ### ***alias***
 **description** : The alias for an entity at the time of submission.<br>
-**requirement**:  $\color{red}{required}$
+**requirement**:  $\color{red}{\textbf{required}}$<br> 
 **data type** : string <br>
