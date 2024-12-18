@@ -111,19 +111,19 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - "Overview": index.md
-  - "User Stories":
-      - "Browsing Data": user_stories/browsing_data.md
-      - "Accessing Data": user_stories/accessing_data.md
-      - "Submitting Data": 
-        - "Overview": user_stories/submission/submitting_data.md
-        - "Preparing a Data Processing Contract": user_stories/submission/dpc_preparation.md
-        - "Data Preparation Guide": user_stories/submission/submitter_guide.md
-  - "GHGA Metadata Model":
-      - "Overview": metadata/overview.md
-      - "Entities & Attributes": metadata/entities.md
-      - "Standards": metadata/standards.md
-      - "Data Dictionary": metadata/data_dictionary
-  - "CLI Tools": cli_tools
+  - "Home": index.md
+  - "Browsing Data": user_stories/browsing_data.md
+  - "Accessing Data": user_stories/accessing_data.md
+  - "Submitting Data":
+    - "Overview": user_stories/submission/submitting_data.md
+    - "Preparing a Data Processing Contract": user_stories/submission/dpc_preparation.md
+    - "Data Preparation Guide": user_stories/submission/submitter_guide.md
+  - "Resources":
+    - "GHGA Metadata Model":
+        - "Overview": metadata/overview.md
+        - "Entities & Attributes": metadata/entities.md
+        - "Standards": metadata/standards.md
+        - "Data Dictionary": metadata/data_dictionary
+    - "CLI Tools": cli_tools
+    - "Glossary": glossary.md
   - "FAQ": faq.md
-  - "Glossary": glossary.md
