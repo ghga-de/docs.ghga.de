@@ -8,12 +8,16 @@ To initiate a submission of data to GHGA, please contact us via the [contact for
 
 1. Signing of a Data Processing Contract, see [here](dpc_preparation.md).
 1. Preparation of the non-personal metadata
-1. File submission
+1. Research Data File submission
 
 The signing of a DPC has to be finalized before a Data Steward is allowed to interact with the non-personal metadata. Preparation of the metadata and file submission can be done on the submitter side in parallel.
 
 ## 2. Metadata preparation
-The GHGA metadata model aims at facilitating comprehensive submissions that maximize the amount of collected metadata in a FAIR manner. To provide a streamlined submission of metadata, the model is designed to closely resemble a bottom-up-omics experiment. Submissions can be either prepared in JSON format or by using a [submission spreadsheet](https://github.com/ghga-de/ghga-metadata-schema/tree/main/spreadsheets). An example submission can be found in our [Github repository containing example data](https://github.com/ghga-de/example-data). The provided metadata are categorized as **Research Metadata** and **Administrative Metadata**, whereas the former collect information about the experimental and data acquisition process and the latter about data access, rights management and disposition.
+The GHGA metadata model aims at facilitating comprehensive submissions that maximize the amount of collected metadata in a FAIR manner. To provide a streamlined submission of metadata, the model is designed to closely resemble a bottom-up-omics experiment. 
+
+    ![OmicsWF](../../assets/img/OmicsWF.png){ width="500" }
+
+Submissions can be either prepared in JSON format or by using a [submission spreadsheet](https://github.com/ghga-de/ghga-metadata-schema/tree/main/spreadsheets). An example submission can be found in our [Github repository containing example data](https://github.com/ghga-de/example-data). The provided metadata are categorized as **Research Metadata** and **Administrative Metadata**, whereas the former collect information about the experimental and data acquisition process and the latter about data access, rights management and disposition.
 
 ### Research Metadata
 
