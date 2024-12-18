@@ -13,11 +13,11 @@ To initiate a submission of data to GHGA, please contact us via the [contact for
 The signing of a DPC has to be finalized before a Data Steward is allowed to interact with the non-personal metadata. Preparation of the metadata and file submission can be done on the submitter side in parallel.
 
 ## 2. Metadata preparation
-The GHGA metadata model aims at facilitating comprehensive submissions that maximize the amount of collected metadata in a FAIR manner. To provide a streamlined submission of metadata, the model is designed to closely resemble a bottom-up-omics experiment. 
+The GHGA metadata model aims at facilitating comprehensive submissions that maximize the amount of collected metadata in a FAIR manner. To provide a streamlined submission of metadata, the model is designed to closely resemble a bottom-up-omics experiment:
 
-    ![OmicsWF](../../assets/img/OmicsWF.png){ width="500" }
+  ![OmicsWF](../../assets/img/OmicsWF.png){ width="500" }
 
-Submissions can be either prepared in JSON format or by using a [submission spreadsheet](https://github.com/ghga-de/ghga-metadata-schema/tree/main/spreadsheets). An example submission can be found in our [Github repository containing example data](https://github.com/ghga-de/example-data). The provided metadata are categorized as **Research Metadata** and **Administrative Metadata**, whereas the former collect information about the experimental and data acquisition process and the latter about data access, rights management and disposition.
+Submissions can be either prepared in JSON format or by using a [submission spreadsheet](https://github.com/ghga-de/ghga-metadata-schema/tree/main/spreadsheets). An example submission can be found in our [Github repository containing example data](https://github.com/ghga-de/example-data). The provided metadata are categorized as **Research Metadata** and **Administrative Metadata**, whereas the former collect information about the experimental and data acquisition process and the latter about data access, rights management and disposition. It is crucial, that only non-personal metadata are submitted to GHGA.
 
 ### Research Metadata
 
