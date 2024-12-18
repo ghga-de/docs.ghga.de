@@ -44,6 +44,11 @@ strict: false
 extra_css:
   - css/extra.css
 
+# Validation https://www.mkdocs.org/user-guide/configuration/#validation
+validation:
+  links:
+    absolute_links: relative_to_docs  # Or 'relative_to_docs' - new in MkDocs 1.6
+
 # Plugins
 plugins:
   - search
