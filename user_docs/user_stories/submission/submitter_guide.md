@@ -47,6 +47,35 @@ Each dataset is managed by a **Data Access Committee** that defines a [**Data Ac
 
 Lastly, a [**Study**](https://docs.ghga.de/metadata/entities/#study) is defined to outline the research intent of the submission. For this, study title, abstract and information about the journal where the study is published (if available) are collected. An alias for the study has to be defined, to link the datasets of the submission. If present, also the [**Publication**](https://docs.ghga.de/metadata/entities/#publication) in which the data is referred can be described.
 
+### Use case examples
+
+The GHGA metadata model v1.2. enables submitters to represent a wide range of experimental and analytic approaches of omics studies. Different experimental methods require different entities in the classes, whereas only the relevant ones are exposed to the submitter via different spreadsheets. The “core set” of classes in contrast stays immutable and describes approach- agnostic metadata that can be used to describe the general experiment design. The following tables show a set of common use-cases linearized to the long format for the submitted files:
+
+#### Studies with case/control samples:
+[Table 1](https://docs.google.com/spreadsheets/d/10bTG8TwisxZf_tCOlQc0HunXmDKPsvPkqA6rZG766dY/)
+
+Case or control is an entity on the sample level and is linked to files via experiment.
+
+#### Studies with technical and biological replicates
+
+[Table 2](https://docs.google.com/spreadsheets/d/1xiID3i0sIav79DdmffvTHMJ3kAIfo-jBxrywjZ2BwMI)
+
+Biological replicate information can be collected similarly on the sample level, technical replicates on file level.
+
+#### Studies with composition of technical and biological replicates in a time series
+
+[Table 3](https://docs.google.com/spreadsheets/d/12yr8NGENaf6X-Ma5mhTGieoNc-lbzmKTW-9mVhsgbEA)
+
+Different compositions between technical and biological replicates can be encoded on the research data file and sample level. Specific information like time series can be modeled by annotating the samples in name, description and attribute.
+
+#### Study with research data, processed data and supplementary data
+
+[Table 4](https://docs.google.com/spreadsheets/d/1IpY0LWnzA_DDDrNVM39XliRhrtyA8kLmGZoQ-tt1guA) 
+
+Processed files, such as for alignment and variant calling can be added and additional phenotypic information can be submitted alongside the research data/processed files in form of supplementary files. For individuals, it can be indicated that further supplementary information exists that is accessible upon decryption of data.
+
+The shown examples show only the relevant parts of the metadata model in the long format, Linking to samples, experiment, analysis via aliases has been inferred.
+
 ## 3. Metadata validation
 The GHGA Data Steward assists in case of any questions about the GHGA metadata schema. Once the metadata spreadsheet is finalized, it should be sent to the GHGA helpdesk. To validate the submission, the GHGA Data Steward will use the [**GHGA Transpiler**](https://docs.ghga.de/cli_tools/transpiler/) to generate a JSON of the submission. Should the linkage between entities contain structural or logical issues, they would be identified at this step. If a JSON can be generated from the submission, the [**GHGA Validator**](https://docs.ghga.de/cli_tools/validator/) is used to validate the content of the submission. A report is generated that indicates errors issues with the submitted metadata, such as misalignments with controlled vocabularies or ontologies. This report is sent back by the Data Steward with recommendations on how to fix the issues. 
 
