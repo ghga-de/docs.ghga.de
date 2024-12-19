@@ -1,6 +1,6 @@
 # GHGA User Documentation
 
-Welcome to the GHGA User Documentation. On these pages you will find relevant information on services provided by [GHGA - the German Human Genome-Phenome Archive](https://www.ghga.de). 
+Welcome to the GHGA User Documentation. On these pages you will find relevant information on services provided by [GHGA - the German Human Genome-Phenome Archive](https://www.ghga.de)[^1][^2]. 
 
  
 <style>
@@ -15,8 +15,7 @@ table, td, th {
 | How to <br/> [browse](user_stories/browsing_data.md) data |How to <br/> [access](user_stories/accessing_data.md) data|How to <br/> [submit](user_stories/submitting_data.md) data|
 
 
-
 Please reach out to the [GHGA Helpdesk](mailto:helpdesk@ghga.de) for any questions on GHGA.
 
-!!! info "Funding"
-    The <general:GHGA Consortium> is not an independent legal entity but an association of research institutions from all over Germany. It is funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) as part of  GHGA – The German Human Genome-Phenome Archive (www.ghga.de, Grant Number [441914366](https://gepris.dfg.de/gepris/projekt/441914366?context=projekt&task=showDetail&id=441914366&) (NFDI 1/1)).
+[^1]: [**GHGA Terms of Use**](https://doi.org/10.5281/zenodo.11146387)
+[^2]: The <general:GHGA Consortium> is not an independent legal entity but an association of research institutions from all over Germany. It is funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) as part of  GHGA – The German Human Genome-Phenome Archive (www.ghga.de, Grant Number [441914366](https://gepris.dfg.de/gepris/projekt/441914366?context=projekt&task=showDetail&id=441914366&) (NFDI 1/1)).
