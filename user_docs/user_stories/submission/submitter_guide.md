@@ -49,7 +49,7 @@ Lastly, a [**Study**](https://docs.ghga.de/metadata/entities/#study) is defined 
 
 ### Use case examples
 
-The GHGA metadata model enables submitters to represent a wide range of experimental and analytic approaches of omics studies. Different experimental methods require different entities in the classes, whereas only the relevant ones are exposed to the submitter via different spreadsheets. The “core set” of classes in contrast stays immutable and describes approach- agnostic metadata that can be used to describe the general experiment design. The following tables show a set of common use-cases linearized to the long format for the submitted files:
+The GHGA metadata model enables submitters to represent a wide range of experimental and analytic approaches of omics studies. Different experimental methods require different entities in the classes, whereas only the relevant ones are exposed to the submitter via different spreadsheets. The “core set” of classes in contrast stays immutable and describes approach- agnostic metadata that can be used to describe the general experiment design. The following tables show a set of common use-cases linearized to the long format for the submitted files for better readability:
 
 #### Studies with case/control samples:
 [Table 1](https://docs.google.com/spreadsheets/d/10bTG8TwisxZf_tCOlQc0HunXmDKPsvPkqA6rZG766dY/)
@@ -74,7 +74,7 @@ Different compositions between technical and biological replicates can be encode
 
 Processed files, such as for alignment and variant calling can be added and additional phenotypic information can be submitted alongside the research data/processed files in form of supplementary files. For individuals, it can be indicated that further supplementary information exists that is accessible upon decryption of data.
 
-The shown examples show only the relevant parts of the metadata model in the long format, Linking to samples, experiment, analysis via aliases has been inferred.
+The shown examples show only the relevant parts of the metadata model in the long format, linking to samples, experiment, analysis via aliases has been inferred.
 
 ## 3. Metadata validation
 The GHGA Data Steward assists in case of any questions about the GHGA metadata schema. Once the metadata spreadsheet is finalized, it should be sent to the GHGA helpdesk. To validate the submission, the GHGA Data Steward will use the [**GHGA Transpiler**](https://docs.ghga.de/cli_tools/transpiler/) to generate a JSON of the submission. Should the linkage between entities contain structural or logical issues, they would be identified at this step. If a JSON can be generated from the submission, the [**GHGA Validator**](https://docs.ghga.de/cli_tools/validator/) is used to validate the content of the submission. A report is generated that indicates errors issues with the submitted metadata, such as misalignments with controlled vocabularies or ontologies. This report is sent back by the Data Steward with recommendations on how to fix the issues. 
