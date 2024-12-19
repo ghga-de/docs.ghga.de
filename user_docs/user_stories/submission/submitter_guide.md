@@ -68,7 +68,7 @@ Biological replicate information can be collected similarly on the sample level,
 
 Different compositions between technical and biological replicates can be encoded on the research data file and sample level. Specific information like time series can be modeled by annotating the samples in name, description and attribute.
 
-#### Study with research data, processed data and supplementary data
+#### Study with research data, processed data and supplementary data files
 
 [Table 4](https://docs.google.com/spreadsheets/d/1IpY0LWnzA_DDDrNVM39XliRhrtyA8kLmGZoQ-tt1guA) 
 
