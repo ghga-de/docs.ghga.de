@@ -4,7 +4,7 @@
 
 The purpose of this document is to provide <general:Research Data Controller (RDC)|Research Data Controllers> with guidance on how to make decisions about <general:Data Access Request (DAR)> for data they have archived in GHGA. The document identifies ethical and organisational standards regarding operating procedures and decision-making criteria.
 
-Please refer to the [Glossary](../glossary.md)GHGA for definitions of capitalised terms.
+Please refer to the [glossary](../glossary.md) for definitions of capitalised terms.
 
 ## Introduction
 
