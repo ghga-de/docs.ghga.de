@@ -100,7 +100,11 @@ markdown_extensions:
       repo: mkdocs-material
   - pymdownx.mark
   - pymdownx.smartsymbols
-  - pymdownx.superfences
+  - pymdownx.superfences:
+        custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
@@ -119,6 +123,7 @@ nav:
         - "Overview": user_stories/submission/submitting_data.md
         - "Preparing a Data Processing Contract": user_stories/submission/dpc_preparation.md
         - "Data Preparation Guide": user_stories/submission/submitter_guide.md
+      - "Data Use and Access Guide": user_stories/dua-guideline.md
   - "GHGA Metadata Model":
       - "Overview": metadata/overview.md
       - "Entities & Attributes": metadata/entities.md
