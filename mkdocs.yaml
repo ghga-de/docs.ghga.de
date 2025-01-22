@@ -119,7 +119,6 @@ nav:
         - "Overview": user_stories/submission/submitting_data.md
         - "Preparing a Data Processing Contract": user_stories/submission/dpc_preparation.md
         - "Data Preparation Guide": user_stories/submission/submitter_guide.md
-        - "How to create a DAC": user_stories/submission/how_to_create_a_DAC.md        
   - "GHGA Metadata Model":
       - "Overview": metadata/overview.md
       - "Entities & Attributes": metadata/entities.md
