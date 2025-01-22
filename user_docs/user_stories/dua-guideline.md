@@ -145,5 +145,4 @@ A critical aspect of processing a Data Access Request is the assessment of the d
 
 The aim of the data protection assessment is to ensure that granting data access to a Data Requester aligns with legal standards and that the rights of individuals are respected. Each institution operating a DAC should have a designated Data Protection Officer.
 
-If the request involves complex issues, or is not clearly regulated in terms of data protection, the DAC should consult a review or advisory board that provides guidance on data protection issues at the Research Data Controller's institution or, if no such board exists, an external board. This board can support the DAC in taking a decision by weighing the potential risk of data security against the scientific and societal benefit it may have. Many research institutions have already implemented such an overarching Review Board.
-
+If the request involves complex issues, or is not clearly regulated in terms of data protection, the DAC’s institution, in consultation with the DPO, may create a board to deal with such edge cases and to carry out a documented balancing of legal and other interests together with the DAC.
