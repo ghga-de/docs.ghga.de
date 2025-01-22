@@ -141,7 +141,9 @@ Before access is granted, the Research Data Controller needs to ensure that the 
 
 ## Data Protection Assessment {#data-protection-assessment}
 
-A critical aspect of processing a Data Access Request is the assessment of data protection aspects. This assessment focuses on the compliance with the General Data Protection Regulation (GDPR), especially regarding an acceptable legal basis for data processing. The aim is to ensure that granting data access to a Data Requester aligns with legal standards and that the rights of individuals are respected. Each institution operating a DAC should have a designated Data Protection Officer.
+A critical aspect of processing a Data Access Request is the assessment of the data protection aspects of the proposed sharing. This assessment focuses on compliance with the General Data Protection Regulation (GDPR), especially regarding an appropriate legal basis for data processing. If a Data Processing Impact Assessment (DPIA) has been conducted in accordance with Art. 35 GDPR, care should be taken that the risks that may emerge from data sharing have also been considered. GHGA has performed a risk assessment and produced a related report of the potentials risks that could emerge within the scope of its processing, and these can be made available upon request.   
+
+The aim of the data protection assessment is to ensure that granting data access to a Data Requester aligns with legal standards and that the rights of individuals are respected. Each institution operating a DAC should have a designated Data Protection Officer.
 
 If the request involves complex issues, or is not clearly regulated in terms of data protection, the DAC should consult a review or advisory board that provides guidance on data protection issues at the Research Data Controller's institution or, if no such board exists, an external board. This board can support the DAC in taking a decision by weighing the potential risk of data security against the scientific and societal benefit it may have. Many research institutions have already implemented such an overarching Review Board.
 
