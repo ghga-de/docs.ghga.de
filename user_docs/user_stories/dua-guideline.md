@@ -16,7 +16,7 @@ Please refer to the [glossary](../glossary.md) for definitions of capitalised te
 
 <general:Data Requester (DR)|Data Requesters> wishing to access datasets stored by GHGA must first make a <general:Data Access Request (DAR)|Data Access Request> that specifies their proposed research project, its purpose and aims, the responsible persons, and the datasets to be used. These requests are forwarded to the <general:Research Data Controller (RDC)> for the datasets in question (usually identical with the <general:Data Submitters| Data Submitter>).
 
-Data Access Requests are reviewed by a <general:Data Access Committee (DAC) > appointed by the RDC, and not by GHGA. The DAC is responsible for authorising access to the particular datasets that the Research Data Controller has defined. This includes reviewing Data Access Requests and making decisions on whether access should be granted or not. Access is only granted after a positive decision by the DAC has been communicated to GHGA.
+Data Access Requests are reviewed by a <general:Data Access Committee (DAC) > appointed by the RDC, and not by GHGA. The DAC is responsible for authorising access to the particular datasets that the Research Data Controller has defined. Access is only granted after a positive decision by the DAC has been communicated to GHGA.
 
 The following sequence diagram shows the involved parties and key steps to process a Data Access Request coming in via GHGA.
 
