@@ -85,7 +85,7 @@ The TOR should specify:
 
 * The process by which other parties at the Research Data Controller’s institution can be involved, e.g. the data protection officer or the legal department.
 
-### DAC Standard Operating Procedures (SOP)
+### DAC Standard Operating Procedures (SOPs)
 
 The standard operating procedures (SOP) define how the routine tasks of the DAC should be carried out and help DAC members to work in an efficient and consistent manner. The SOP should be documented and subject to change through a predefined process (see last bullet point of the SOP). For transparency reasons, it should be possible to make the SOP available to other interested parties upon request.
 
