@@ -8,15 +8,15 @@ Please refer to the [glossary](../glossary.md) for definitions of capitalised te
 
 ## Introduction
 
-<general:Research Data> such as <general:Omics Data> and other forms of genetic and health data used for scientific research purposes is considered sensitive personal data (special category data under Art. 9 GDPR) due to its informational content and the inherent risk of re-identification associated with it. A whole genome sequence is unique to an individual and so has the potential to differentiate them from the wider population. Moreover, the combination of <general:Omics Data> with clinical data in research carries further informational risks for the identifiable person as information about their current and future health could also be attributed to them.
+<general:Research Data> such as <general:Omics Data> and other forms of genetic and health data used for scientific research purposes is considered sensitive personal data (special category data under Art. 9 GDPR) due to its informational content and the inherent risk of re-identification associated with it. A whole genome sequence is unique to an individual and so has the potential to differentiate them from the wider population. Moreover, the combination of Omics Data with clinical data in research carries further informational risks for the identifiable person as information about their current and future health could also be attributed to them.
 
 <general:Research Data> that is archived by GHGA for secondary use in scientific research is therefore subject to controlled access (see GHGA [Terms of Use](https://zenodo.org/records/11146387)). As part of data submission to GHGA, the <general:Data Submitters> should therefore implement a review process for <general:Data Access Request (DAR)|Data Access Requests> to ensure compliance with legal and ethical standards, especially to protect individual privacy.
 
 ### Review of Data Access Requests
 
-<general:Data Requester (DR)|Data Requesters> wishing to access datasets stored by GHGA must first make a <general:Data Access Request (DAR)|Data Access Request> that specifies their proposed research project, its purpose and aims, the responsible persons, and the datasets to be used. These requests are forwarded to the <general:Research Data Controller (RDC)> for the datasets in question (usually identical with the <general:Data Submitters| Data Submitter>).
+<general:Data Requester (DR)|Data Requesters> wishing to access datasets stored by GHGA must first make a Data Access Request that specifies their proposed research project, its purpose and aims, the responsible persons, and the datasets to be used. These requests are forwarded to the <general:Research Data Controller (RDC)> for the datasets in question (usually identical with the Data Submitter).
 
-Data Access Requests are reviewed by a <general:Data Access Committee (DAC) > appointed by the RDC, and not by GHGA. The DAC is responsible for authorising access to the particular datasets that the Research Data Controller has defined. Access is only granted after a positive decision by the DAC has been communicated to GHGA.
+Data Access Requests need to be reviewed by a <general:Data Access Committee (DAC) > appointed by the RDC, and not by GHGA. The DAC is responsible for authorising access to the particular datasets that the Research Data Controller has defined. Access is only granted after a positive decision by the DAC has been communicated to GHGA.
 
 The following sequence diagram shows the involved parties and key steps to process a Data Access Request coming in via GHGA.
 
@@ -59,9 +59,9 @@ sequenceDiagram
    end
 ```
 
-The primary objective of DACs is to oversee the access to Research Data. In contrast to Institutional Review Boards (Ethics Committees) that assess the full range of ethical issues associated with research projects, a DAC usually evaluates whether the proposed use of data is compatible with the data use conditions, in particular those specified in the Data Subject’s consent.
+The primary objective of DACs is to oversee the access to Research Data. In contrast to <general:Research Ethics Committee|Research Ethics Committees> (Institutional Review Boards) that assess the full range of ethical issues associated with research projects, a DAC usually evaluates whether the proposed use of data is compatible with the data use conditions, in particular those specified in the data subject’s consent.
 
-We recommend that DACs authorising access to data deposited with GHGA establish a set of documents to serve as a basis for them to operate and reach decisions. These will usually include terms of reference (TOR) and standard operating procedures (SOP) for the DAC as well as a list of criteria for data access decisions and a Data Transfer Agreement (DTA) template. These documents are further described below.
+We recommend that DACs authorising access to data deposited with GHGA establish a set of documents to serve as a basis for them to operate and reach decisions. These will usually include terms of reference (TOR) and standard operating procedures (SOP) for the DAC as well as a list of criteria for data access decisions and a <general:Data Transfer Agreement (DTA)> template. These documents are further described below.
 
 ## Key Documents Recommended for DAC Operation
 
@@ -83,7 +83,7 @@ The TOR should specify:
 
 * The nature and structure of DAC meetings and communication (as specified in more detail in the SOP);
 
-* The process by which other parties at the Research Data Controller’s institution can be involved, e.g. the Data Protection Officer or the legal department.
+* The process by which other parties at the Research Data Controller’s institution can be involved, e.g. the data protection officer or the legal department.
 
 ### DAC Standard Operating Procedures (SOP)
 
@@ -123,7 +123,7 @@ Access requests should be checked against these items:
 
 2. The identity and institutional affiliation of the Data Requester is verified and the Data Requester and their institutions are trustworthy.
 
-3. There are no data protection concerns that require further attention (see last section on [Data Protection Assessment](#data-protection-assessment)); if such concerns exist or if data is to be transferred across national borders, the DAC should check with the legal department or Data Protection Officer at the Research Data Controller’s institution if data transfer is lawful.
+3. There are no data protection concerns that require further attention (see last section on [Data Protection Assessment](#data-protection-assessment)); if such concerns exist or if data is to be transferred across national borders, the DAC should check with the legal department or data protection officer at the Research Data Controller’s institution if data transfer is lawful.
 
 4. There is sufficient evidence that the Data Requester requires access to the particular datasets in order to carry out the proposed research.
 
@@ -131,9 +131,9 @@ Access requests should be checked against these items:
 
 6. There is sufficient evidence that the intended data processing is taking place in a safe setting that prevents unauthorised access.
 
-7. There is sufficient evidence that the intended data use is compatible with the legal and ethical use conditions associated with the particular datasets, especially with the conditions and restrictions outlined in the Data Subjects’ consent.
+7. There is sufficient evidence that the intended data use is compatible with the legal and ethical use conditions associated with the particular datasets, especially with the conditions and restrictions outlined in the data subjects’ consent.
 
-8. There is sufficient evidence that appropriate measures are in place to protect the informational rights of Data Subjects and other parties (such as family members), including the right to erasure, and to manage and minimise potential risks (e.g., of re-identification).
+8. There is sufficient evidence that appropriate measures are in place to protect the informational rights of data subjects and other parties (such as family members), including the right to erasure, and to manage and minimise potential risks (e.g., of re-identification).
 
 ### Data Transfer Agreement (DTA) Template
 
@@ -143,6 +143,6 @@ Before access is granted, the Research Data Controller needs to ensure that the 
 
 A critical aspect of processing a Data Access Request is the assessment of the data protection aspects of the proposed sharing. This assessment focuses on compliance with the General Data Protection Regulation (GDPR), especially regarding an appropriate legal basis for data processing. If a Data Processing Impact Assessment (DPIA) has been conducted in accordance with Art. 35 GDPR, care should be taken that the risks that may emerge from data sharing have also been considered. GHGA has performed a risk assessment and produced a related report of the potentials risks that could emerge within the scope of its processing, and these can be made available upon request.   
 
-The aim of the data protection assessment is to ensure that granting data access to a Data Requester aligns with legal standards and that the rights of individuals are respected. Each institution operating a DAC should have a designated Data Protection Officer.
+The aim of the data protection assessment is to ensure that granting data access to a Data Requester aligns with legal standards and that the rights of individuals are respected. Each institution operating a DAC should have a designated data protection officer.
 
 If the request involves complex issues, or is not clearly regulated in terms of data protection, the DAC’s institution, in consultation with the DPO, may create a board to deal with such edge cases and to carry out a documented balancing of legal and other interests together with the DAC.
