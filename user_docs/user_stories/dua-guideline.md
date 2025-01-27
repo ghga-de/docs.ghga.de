@@ -10,7 +10,7 @@ Please refer to the [glossary](../glossary.md) for definitions of capitalised te
 
 <general:Research Data> such as <general:Omics Data> and other forms of genetic and health data used for scientific research purposes is considered sensitive personal data (special category data under Art. 9 GDPR) due to its informational content and the inherent risk of re-identification associated with it. A whole genome sequence is unique to an individual and so has the potential to differentiate them from the wider population. Moreover, the combination of Omics Data with clinical data in research carries further informational risks for the identifiable person as information about their current and future health could also be attributed to them.
 
-<general:Research Data> that is archived by GHGA for secondary use in scientific research is therefore subject to controlled access (see GHGA [Terms of Use](https://zenodo.org/records/11146387)). As part of data submission to GHGA, the <general:Data Submitters> should therefore implement a review process for <general:Data Access Request (DAR)|Data Access Requests> to ensure compliance with legal and ethical standards, especially to protect individual privacy.
+<general:Research Data> that is archived by GHGA for secondary use in scientific research is therefore subject to controlled access (see GHGA [Terms of Use](https://zenodo.org/records/11146387)). As part of data submission to GHGA, the <general:Data Submitters> are therefore advised to implement a review process for <general:Data Access Request (DAR)|Data Access Requests> to ensure compliance with legal and ethical standards, especially to protect individual privacy.
 
 ### Review of Data Access Requests
 
