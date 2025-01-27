@@ -119,7 +119,7 @@ Each DAC should establish a list of criteria (LOC) that govern the review proces
 
 Access requests should be checked against these items:
 
-1. The proposed research has received a positive ethics vote or an ethics approval from a credible Institutional Review Board (Research Ethics Committee), if applicable.
+1. The proposed research has received a positive ethics vote or an ethics approval from a credible source, e.g. a <general:Research Ethics Committee>, if applicable.
 
 2. The identity and institutional affiliation of the Data Requester is verified and the Data Requester and their institutions are trustworthy.
 
