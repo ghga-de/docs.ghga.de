@@ -89,7 +89,7 @@ general:Helpdesk Lead
 :   The Helpdesk Lead manages the tasks of the GHGA Helpdesk and coordinates the work of the *Data Stewards<Data Steward>*. The Helpdesk Lead is responsible for responding to requests from data subjects regarding administrative data and acts as a liaison between the Data Stewards and the GHGA Operations Consortium Board.
 
 general:Institutional Review Board (IRB)
-:   See <general:Research Ethics Committee> at an institution that conducts independent ethics reviews of research projects involving human subjects, their samples, or data. Research Ethics Committees assume the formal role of approving (or rejecting) research projects on the basis that they comply (or fail to comply) with relevant research ethics standards, especially regarding the protection of research subjects' privacy and well-being. Sometimes also call *Institutional Review Board (IRB)*.
+:   See <general:Research Ethics Committee>.
 
 general:Joint Controller Agreement for Personal Administrative Data (JCA) 
 :   The document governs the joint controllership of the administrative data by the institutions which are part of the *GHGA Operations Consortium*. Appendix to *GHGA Data Hub Cooperation Contract*.
