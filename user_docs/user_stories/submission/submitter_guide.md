@@ -67,7 +67,7 @@ Different compositions between technical and biological replicates can be encode
 
 #### Study with research data, processed data and supplementary data files
 
-[Table 4](https://docs.google.com/spreadsheets/d/1IpY0LWnzA_DDDrNVM39XliRhrtyA8kLmGZoQ-tt1guA) 
+[Table 4](https://docs.google.com/spreadsheets/d/14roP6smAxw5p_mPeMXlC0KUrab8eEIIJj51xb3Q9mzw)
 
 Processed files, such as for alignment and variant calling can be added and additional phenotypic information can be submitted alongside the research data/processed files in form of supplementary files. For individuals, it can be indicated that further supplementary information exists that is accessible upon decryption of data.
 
