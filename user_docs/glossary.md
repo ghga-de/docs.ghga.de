@@ -122,7 +122,7 @@ general:Research Data
 :   Omics or other forms of genetic (Art. 4 Nr. 13 GDPR) and health data (Art. 4 Nr. 15 GDPR) that are used for scientific research purposes. This is considered to be special category personal data under Art. 9 (1) in conjunction with Art. 4 Nr. 1 GDPR.
 
 general:Research Ethics Committee
-:   Committee at an institution that conducts independent ethics reviews of research projects involving human subjects, their samples, or data. Research Ethics Committees assume the formal role of approving (or rejecting) research projects on the basis that they comply (or fail to comply) with relevant research ethics standards, especially regarding the protection of research subjects' privacy and well-being. Sometimes also call *Institutional Review Board*.
+:   Committee at an institution that conducts independent ethics reviews of research projects involving human subjects, their samples, or data. Research Ethics Committees assume the formal role of approving (or rejecting) research projects on the basis that they comply (or fail to comply) with relevant research ethics standards, especially regarding the protection of research subjects' privacy and well-being. Sometimes also called an *Institutional Review Board*.
 
 general:Service User 
 :   Person who is contacting the GHGA Helpdesk for any form of user support.
