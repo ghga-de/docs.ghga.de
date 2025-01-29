@@ -13,11 +13,39 @@ The DPC creates a controller-to-processor relationship between the institution a
 
       The GDPR defines a Data Controller as the party which "determines the purposes and means of the processing of personal data". Within the context of GHGA, we also use the term Data Submitter to mean the person or institution who are submitting Research Data to the GHGA Data Portal. In many cases, the Data Controller and Data Submitter will be the same but this is not always true; it is therefore important for the Data Submitter to check who the Data Controller is for the data they wish to submit. In this guide, we will use the term Data Controller, as it is the Data Controller who is required to sign the GHGA Data Processing Contract.
 
+## Checklist
+
+- [x] Download and review the terms of the [GHGA Data Processing Contract](https://www.ghga.de/Downloads/GHGA_Data_Processing_Contract.pdf).
+
+An explanation of the GHGA Data Processing Contract is provided [below](#the-ghga-data-processing-contract).
+
+- [x] Identify the Data Controller.
+
+As the GHGA Data Processing Contract can only be signed by the Data Controller, it is important to identify who they are. 
+
+In cases where the data are jointly-controlled, only one of the Data Controllers is required to sign the contract.
+
+- [x] Consider the additional information that is required. 
+
+A number of the annexes to the GHGA Data Processing Contract require information from the Data Controller. It is important for the Data Controller to consider in advance how they will respond.
+
+- [x] Submit a [Pre-Submission Inquiry](https://www.ghga.de/about-us/presubmission-enquiries) or contact us via the <general:GHGA Helpdesk>.
+
+If the proposed data submission can be supported by GHGA, the Data Controller will be asked to supply their responses for the required information. GHGA will use these responses to prepare a bespoke Data Processing Contract for the Data Controller.
+
+- [x] Determine the authorised signatory person for the Data Controller.
+
+Different institutions will define differently which roles are authorised to sign contracts on their behalf. It is not typical that an individual researcher can alone sign a contract. 
+
+- [x] Submit the signed Data Processing Contract to GHGA for counter-signing and propossing. 
+
+A physical copy of the signed contract should be sent to GHGA Central. Details will be provided of how to do so.
+
 ## The GHGA Data Processing Contract
 
-The DPC is structured in two parts. The first part, comprised of the sections *Preamble* to *§7 - Signing*, focuses on the services that GHGA offers to the Data Controller once they have signed a DPC. The second part of the DPC are the annexes which focus on the data protection aspects that relate to the different data types which are processed under the DPC. There are sections within the annexes for which the Data Controller must provide information.
+The DPC is structured in two parts. The [first part](#sections-in-the-first-part), comprised of the sections *Preamble* to *§7 - Signing*, focuses on the services that GHGA offers to the Data Controller once they have signed a DPC. The second part of the DPC are the [Annexes](#annexes) which focus on the data protection aspects that relate to the different data types which are processed under the DPC. There are sections within the Annexes for which the Data Controller must provide information.
 
-### Sections of the First Part
+### Sections in the First Part
 
 A brief summary of these sections is presented below.
 
@@ -77,9 +105,6 @@ Annex 5 sets out the Data Controller's obligations with regards to the submissio
 #### Annex 6 - The Processing of Personal Data to fulfil this Agreement
 In order for GHGA to fulfil a Data Processing Contract it will be necessary to process personal Administrative Data, e.g. contact information about people who have been authorised to act on behalf of the Data Controller. Annex 6 describes the processing of personal Administrative Data, the legal basis for doing so, and the rights of the Data Subjects.
 
-#### Annex 7 - Data Protection Framework
-The GHGA Data Protection Framework explains the data protection principles that GHGA employs. The Data Protection Framework is included as Annex 7, and the latest version can be found on the GHGA [website](https://www.ghga.de/Downloads/GHGA_Data_Protection_Framework.pdf).
-
 ## Specification of LS Login IDs for usage in contracts
 
 To be able to process <general:Data Processing Contract (DPC)> and for others uses, GHGA users need to specify details of their LS Login ID to GHGA. The following information is needed:
@@ -95,4 +120,3 @@ To be able to process <general:Data Processing Contract (DPC)> and for others us
 [Profile page](https://profile.aai.lifescience-ri.eu/profile) on LS Login:
 
 ![Ls Login Profile page](../../assets/img/lslogin-lsid.png)
-
