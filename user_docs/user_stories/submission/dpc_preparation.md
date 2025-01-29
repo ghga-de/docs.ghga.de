@@ -18,30 +18,23 @@ The DPC creates a controller-to-processor relationship between the institution a
 ## Checklist
 
 - [x] Download and review the terms of the [GHGA Data Processing Contract](https://www.ghga.de/Downloads/GHGA_Data_Processing_Contract.pdf).
-
-An explanation of the GHGA Data Processing Contract is provided [below](#the-ghga-data-processing-contract).
+      - An explanation of the GHGA Data Processing Contract is provided [below](#the-ghga-data-processing-contract).
 
 - [x] Identify the Data Controller.
-
-As the GHGA Data Processing Contract can only be signed by the Data Controller, it is important to identify who they are. 
-
-In cases where the data are jointly-controlled, only one of the Data Controllers is required to sign the contract.
+      - As the GHGA Data Processing Contract can only be signed by the Data Controller, it is important to identify who they are. 
+      - In cases where the data are jointly-controlled, only one of the Data Controllers is required to sign the contract.
 
 - [x] Consider the additional information that is required. 
-
-A number of the annexes to the GHGA Data Processing Contract require information from the Data Controller. It is important for the Data Controller to consider in advance how they will respond.
+      - A number of the annexes to the GHGA Data Processing Contract require information from the Data Controller. It is important for the Data Controller to consider in advance how they will respond.
 
 - [x] Submit a [Pre-Submission Inquiry](https://www.ghga.de/about-us/presubmission-enquiries) or contact us via the <general:GHGA Helpdesk>.
-
-If the proposed data submission can be supported by GHGA, the Data Controller will be asked to supply their responses for the required information. GHGA will use these responses to prepare a bespoke Data Processing Contract for the Data Controller.
+      - If the proposed data submission can be supported by GHGA, the Data Controller will be asked to supply their responses for the required information. GHGA will use these responses to prepare a bespoke Data Processing Contract for the Data Controller.
 
 - [x] Determine the authorised signatory person for the Data Controller.
-
-Different institutions will define differently which roles are authorised to sign contracts on their behalf. It is not typical that an individual researcher can alone sign a contract. 
+      - Different institutions will define differently which roles are authorised to sign contracts on their behalf. It is not typical that an individual researcher can alone sign a contract. 
 
 - [x] Submit the signed Data Processing Contract to GHGA for counter-signing and propossing. 
-
-A physical copy of the signed contract should be sent to GHGA Central. Details will be provided of how to do so.
+      - A physical copy of the signed contract should be sent to GHGA Central. Details will be provided of how to do so.
 
 ## The GHGA Data Processing Contract
 
