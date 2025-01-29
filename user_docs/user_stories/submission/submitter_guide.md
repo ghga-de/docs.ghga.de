@@ -15,7 +15,7 @@ The GHGA metadata model aims at facilitating comprehensive submissions that maxi
 ### Research Metadata
 To provide a streamlined submission of metadata, the model is designed to closely resemble a bottom-up-omics experiment:
 
-  ![OmicsWF](../../assets/img/OmicsWF.png){ width="800" }
+  ![OmicsWF](../../assets/img/SubmitterGuideOverview-detailed.png){ width="800" }
 
 Similar to an experimental procedure, [**Individuals**](https://docs.ghga.de/metadata/entities/#individual) that are subject to investigation should be defined first. 
 In order to describe an individual, data submitters are required to provide information about sex and are recommended to provide information about phenotypic features and diagnoses. 
@@ -23,13 +23,19 @@ To maximize the FAIRness of the provided metadata, phenotypic features shoulde b
 
 In the next step, the collection of biological material from individuals is described via [**Sample and Biospecimen**](https://docs.ghga.de/metadata/entities/#biospecimensample). Biospecimen is defined in GHGA's metadata as any natural material taken from a biological entity for testing, diagnostics, treatment or research purposes. The sample is linked to the individual and defined as a limited quantity of something to be used for testing, analysis, inspection, investigation, demonstration, or trial use. 
 
+  ![IndSam](../../assets/img/Individual-Sample.png){ width="800" }
+
 The modules [**Experiment**](https://docs.ghga.de/metadata/entities/#experiment) and [**Experiment Method**](https://docs.ghga.de/metadata/entities/#experiment-method) capture information about the protocol that was followed to perform the omics experiment to define the data acquisition process. The experimental method has to be defined once for each different type of experimental setup, e.g. bulk WGS or single cell RNA, whereas an experiment describes the measurement that was performed of a sample with this experimental approach to generate a Research Data File. Therefore, sample and experimental methods are both linked to an experiment.
 
 A [**Research Data File**](https://docs.ghga.de/metadata/entities/#research-data-file) is linked to an experiment as it is defined as the raw output from the data acquisition process. Information about the file format as well as technical replicate should be provided here. Checksum and file size are automatically generated upon file upload and do not need to be specified again. The file alias should match the name of the submitted file to connect the specified metadata to the Research Data File.
 
+  ![ExpMet](../../assets/img/ExperimentMethod.png){ width="800" }
+
 The classes [**Analysis**](https://docs.ghga.de/metadata/entities/#analysis) and [**Analysis Method**](https://docs.ghga.de/metadata/entities/#analysis-method) function similar to Experiment and its methods to describe the process of data acquisition from a linked Research Data Files by downstream processing. The analysis method has to be provided once for the analytical approach or used workflow, analysis describes the processing that was performed to generate a Process Data File.
 
 [**Process Data Files**](https://docs.ghga.de/metadata/entities/#process-data-file) are the output of an analysis and linked to it. The class functions similar to a Research Data File and requires submitters to define the matching file alias, type and analysis that generated them to link them to the remaining metadata.
+
+  ![AnMeth](../../assets/img/AnalysisMethod.png){ width="800" }
 
 Additionally, the submitter can embellish the classes with **Supplementary files**, such as [**experimental protocols**](https://docs.ghga.de/metadata/data_dictionary/ExperimentMethodSupportingFile/) for the experiment class, [**workflow parameter files**](https://docs.ghga.de/metadata/data_dictionary/AnalysisMethodSupportingFile/) for the analysis class or [**structured metadata files**](https://docs.ghga.de/metadata/data_dictionary/IndividualSupportingFile/), such as phenopackets or PED files for the individual class. 
 Supplementary files are encrypted and inaccessible without an accepted data access request. 
@@ -37,6 +43,8 @@ This allows submission of metadata that should not be publicly visible **as it c
 
 ### Administrative Metadata
 Once the experimental and analytic approach as well as the file generation have been described, the submitter can define the conditions on how to share the data.
+
+  ![DSet](../../assets/img/Dataset-DAPDAC-StudyPublication.png){ width="800" }
 
 For this, all submitted file types are linked to and presented in [**Datasets**](https://docs.ghga.de/metadata/entities/#dataset) that allow submitters to provide a high-level description of its content and define under which data use conditions the content of the dataset can be shared by providing [Data Use Ontology (DUO) codes](https://www.ga4gh.org/product/data-use-ontology-duo/). 
 

@@ -1,5 +1,6 @@
 # Submitting Data
 
+  ![Overview](../../assets/img/Submisison_overviewsimplified.png){ width="800" }
 
 A submission of data contains the three main steps, please follow the links for further information:
 
