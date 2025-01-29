@@ -1,10 +1,6 @@
 # Preparation of a GHGA Data Processing Contract for submission to GHGA Archive
 
-<div style="text-align: center;">
-
 ![GHGA Contract](../../assets/img/ContractDesign.png)
-
-</div>
 
 ## Introduction
 
