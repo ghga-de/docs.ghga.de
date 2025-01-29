@@ -15,7 +15,9 @@ The DPC creates a controller-to-processor relationship between the institution a
 
       The GDPR defines a Data Controller as the party which "determines the purposes and means of the processing of personal data". Within the context of GHGA, we also use the term Data Submitter to mean the person or institution who are submitting Research Data to the GHGA Data Portal. In many cases, the Data Controller and Data Submitter will be the same but this is not always true; it is therefore important for the Data Submitter to check who the Data Controller is for the data they wish to submit. In this guide, we will use the term Data Controller, as it is the Data Controller who is required to sign the GHGA Data Processing Contract.
 
-## Checklist
+## Checklist for legal pre-requisites for data submission to GHGA
+
+The following checklist gives an overview on the necessary legal processes to be carried out before a data submission to GHGA can be performed.
 
 - [x] Download and review the terms of the [GHGA Data Processing Contract](https://www.ghga.de/Downloads/GHGA_Data_Processing_Contract.pdf).
       - An explanation of the GHGA Data Processing Contract is provided [below](#the-ghga-data-processing-contract).
