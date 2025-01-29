@@ -1,7 +1,5 @@
 # Submitting Data
 
-  ![Overview](../../assets/img/Submisison_overviewsimplified.png){ width="800" }
-
 A submission of data contains the three main steps, please follow the links for further information:
 
 1. Filing a [Pre-Submission Inquiry](https://www.ghga.de/about-us/presubmission-enquiries) or contacting us via the <general:GHGA Helpdesk>

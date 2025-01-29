@@ -3,6 +3,8 @@
 ## 1. Initiation of a submission
 To initiate a submission of data to GHGA, please contact us by completing the [pre-submission enquiry](https://www.ghga.de/about-us/presubmission-enquiries), which collects general information about the plannend submission. A GHGA Data Steward will be assigned and guide you through the process, which consists of the following steps:
 
+  ![Overview](../../assets/img/Submisison_overviewsimplified.png){ width="800" }
+
 1. Signing of a Data Processing Contract, see [here](dpc_preparation.md).
 2. Preparation of the non-personal metadata
 3. Research Data File submission
