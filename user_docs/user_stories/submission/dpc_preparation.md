@@ -114,8 +114,4 @@ To be able to process <general:Data Processing Contract (DPC)> and for others us
 
 [Profile page](https://profile.aai.lifescience-ri.eu/profile) on LS Login:
 
-<div style="text-align: center;">
-
 ![Ls Login Profile page](../../assets/img/lslogin-lsid.png)
-
-</div>
