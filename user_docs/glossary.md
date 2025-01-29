@@ -92,7 +92,7 @@ general:Institutional Review Board (IRB)
 :   See <general:Research Ethics Committee>.
 
 general:Joint Controller Agreement for Personal Administrative Data (JCA) 
-:   The document governs the joint controllership of the administrative data by the institutions which are part of the *GHGA Operations Consortium*. Appendix to *GHGA Data Hub Cooperation Contract*.
+:   The document governs the joint controllership of the <general:Administrative Data> by the institutions which are part of the *GHGA Operations Consortium*. Appendix to *GHGA Data Hub Cooperation Contract*.
 
 general:Metadata Processing Contract 
 :   This agreement covers the deposition and sharing of metadata in the GHGA Metadata Catalog during the GHGA Catalog phase of the project. During GHGA Catalog, only *Non-personal Metadata* describing *Research Data* will be processed and shared; the corresponding *Research Data* and *Personal Metadata* remain with the *Data Controller* and are not stored by the *GHGA Operations Consortium*.
