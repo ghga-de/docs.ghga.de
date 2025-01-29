@@ -1,5 +1,11 @@
 # Preparation of a GHGA Data Processing Contract for submission to GHGA Archive
 
+<div style="text-align: center;">
+
+![GHGA Contract](../../assets/img/ContractDesign.png)
+
+</div>
+
 ## Introduction
 
 A <general:Data Processing Contract (DPC)> is signed by <general:GHGA Central> and an institution that is the <general:Research Data Controller (RDC)> when they wish to submit data to GHGA. The DPC sets out how GHGA may process the data, the role of the <general:GHGA Data Hub|GHGA Data Hubs>, and what the Data Controllers’ responsibilities are. 
@@ -119,4 +125,8 @@ To be able to process <general:Data Processing Contract (DPC)> and for others us
 
 [Profile page](https://profile.aai.lifescience-ri.eu/profile) on LS Login:
 
+<div style="text-align: center;">
+
 ![Ls Login Profile page](../../assets/img/lslogin-lsid.png)
+
+</div>
