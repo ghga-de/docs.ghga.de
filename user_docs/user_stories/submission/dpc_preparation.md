@@ -77,9 +77,6 @@ Annex 5 sets out the Data Controller's obligations with regards to the submissio
 #### Annex 6 - The Processing of Personal Data to fulfil this Agreement
 In order for GHGA to fulfil a Data Processing Contract it will be necessary to process personal Administrative Data, e.g. contact information about people who have been authorised to act on behalf of the Data Controller. Annex 6 describes the processing of personal Administrative Data, the legal basis for doing so, and the rights of the Data Subjects.
 
-#### Annex 7 - Data Protection Framework
-The GHGA Data Protection Framework explains the data protection principles that GHGA employs. The Data Protection Framework is included as Annex 7, and the latest version can be found on the GHGA [website](https://www.ghga.de/Downloads/GHGA_Data_Protection_Framework.pdf).
-
 ## Specification of LS Login IDs for usage in contracts
 
 To be able to process <general:Data Processing Contract (DPC)> and for others uses, GHGA users need to specify details of their LS Login ID to GHGA. The following information is needed:
