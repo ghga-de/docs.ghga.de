@@ -81,7 +81,7 @@ The TOR should specify:
 
 * The period of service of the DAC and/or its members;
 
-* The nature and structure of DAC meetings and communication (as specified in more detail in the SOP);
+* The nature and structure of DAC meetings and communication (as specified in more detail in the SOPs);
 
 * The process by which other parties at the Research Data Controller’s institution can be involved, e.g. the data protection officer or the legal department.
 
