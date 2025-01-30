@@ -16,7 +16,7 @@ Please refer to the [glossary](../glossary.md) for definitions of capitalised te
 
 <general:Data Requester (DR)|Data Requesters> wishing to access datasets stored by GHGA must first make a Data Access Request that specifies their proposed research project, its purpose and aims, the responsible persons, and the datasets to be used. These requests are forwarded to the <general:Research Data Controller (RDC)> for the datasets in question (usually identical with the Data Submitter).
 
-Data Access Requests need to be reviewed by a <general:Data Access Committee (DAC) > appointed by the RDC, and not by GHGA. The DAC is responsible for authorising access to the particular datasets that the Research Data Controller has defined. Access is only granted after a positive decision by the DAC has been communicated to GHGA.
+Data Access Requests need to be reviewed by a <general:Data Access Committee (DAC)> appointed by the RDC, and not by GHGA. The DAC is responsible for authorising access to the particular datasets that the Research Data Controller has defined. Access is only granted after a positive decision by the DAC has been communicated to GHGA.
 
 The following sequence diagram shows the involved parties and key steps to process a Data Access Request coming in via GHGA.
 
@@ -42,7 +42,7 @@ sequenceDiagram
    deactivate GHGA
    end
    rect rgb(250, 250, 250)
-   note over DR, GHGA: Negotiation of Data Access Request
+   note over DR, RDC: Negotiation of Data Access Request
    DR ->> GHGA : Files Data Access Request (DAR) <br/> at Data Portal
    activate GHGA
    GHGA ->> DAC : Forwards DAR
@@ -53,7 +53,7 @@ sequenceDiagram
    RDC ->> DR : Informs Data Requester on decision outcome. <br/>If positive sends countersigned DTA
    end
    rect rgb(250, 250, 250)
-   note over DR, GHGA: Decision Implementation / Data Download
+   note over DR, RDC: Decision Implementation / Data Download
    RDC ->> GHGA : Informs GHGA on decision on  DAR<br/> (Acceptance / rejection)
    GHGA ->> DR : Informs DR on decision. <br/> If positive provides download link
    end
@@ -61,7 +61,7 @@ sequenceDiagram
 
 The primary objective of DACs is to oversee the access to Research Data. In contrast to <general:Research Ethics Committee|Research Ethics Committees> (Institutional Review Boards) that assess the full range of ethical issues associated with research projects, a DAC usually evaluates whether the proposed use of data is compatible with the data use conditions, in particular those specified in the data subject’s consent.
 
-We recommend that DACs authorising access to data deposited with GHGA establish a set of documents to serve as a basis for them to operate and reach decisions. These will usually include terms of reference (TOR) and standard operating procedures (SOP) for the DAC as well as a list of criteria for data access decisions and a <general:Data Transfer Agreement (DTA)> template. These documents are further described below.
+We recommend that DACs authorising access to data deposited with GHGA establish a set of documents to serve as a basis for them to operate and reach decisions. These will usually include [terms of reference (TOR)](#dac-terms-of-reference-tor) and [standard operating procedures (SOP)](#dac-standard-operating-procedures-sops) for the DAC as well as a [list of criteria](#list-of-criteria-loc-for-data-access-decisions) for data access decisions and a [Data Transfer Agreement (DTA) template](#data-transfer-agreement-dta-template). These documents are further described below.
 
 ## Key Documents Recommended for DAC Operation
 
@@ -137,12 +137,12 @@ Access requests should be checked against these items:
 
 ### Data Transfer Agreement (DTA) Template
 
-Before access is granted, the Research Data Controller needs to ensure that the Data Requester is contractually bound to comply with any applicable regulations concerning the exchange of the date. For this a Data Transfer Agreement (DTA) needs to be agreed upon between the Research Data Controller and the Data Requester. The DTA establishes the contractual basis for granting data access/transfer and ensures that all parties involved are aware of their responsibilities and obligations regarding data handling and data protection.
+Before access is granted, the Research Data Controller needs to ensure that the Data Requester is contractually bound to comply with any applicable regulations concerning the exchange of the date. For this a <general:Data Transfer Agreement (DTA)> needs to be agreed upon between the Research Data Controller and the Data Requester. The DTA establishes the contractual basis for granting data access/transfer and ensures that all parties involved are aware of their responsibilities and obligations regarding data handling and data protection.
 
-## Data Protection Assessment {#data-protection-assessment}
+## Data Protection Assessment
 
 A critical aspect of processing a Data Access Request is the assessment of the data protection aspects of the proposed sharing. This assessment focuses on compliance with the General Data Protection Regulation (GDPR), especially regarding an appropriate legal basis for data processing. If a Data Processing Impact Assessment (DPIA) has been conducted in accordance with Art. 35 GDPR, care should be taken that the risks that may emerge from data sharing have also been considered. GHGA has performed a risk assessment and produced a related report of the potentials risks that could emerge within the scope of its processing, and these can be made available upon request.   
 
 The aim of the data protection assessment is to ensure that granting data access to a Data Requester aligns with legal standards and that the rights of individuals are respected. Each institution operating a DAC should have a designated data protection officer.
 
-If the request involves complex issues, or is not clearly regulated in terms of data protection, the DAC’s institution, in consultation with the DPO, may create a board to deal with such edge cases and to carry out a documented balancing of legal and other interests together with the DAC.
+If the request involves complex issues, or is not clearly regulated in terms of data protection, the DAC’s institution, in consultation with the DPO, may either consult the institution's <general:Research Ethics Committee> or decide to create a dedicated board to deal with such edge cases and to carry out a documented balancing of legal and other interests together with the DAC.
