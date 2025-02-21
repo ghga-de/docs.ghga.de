@@ -133,6 +133,7 @@ nav:
       - "Overview": metadata/overview.md
       - "Entities & Attributes": metadata/entities.md
       - "Standards": metadata/standards.md
+      - "Data Dictionary Overview": metadata/data_dictionary_overview
       - "Data Dictionary": metadata/data_dictionary
   - "CLI Tools": cli_tools
   - "FAQ": faq.md
