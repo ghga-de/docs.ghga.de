@@ -1,6 +1,6 @@
 # Preparation of a GHGA Data Processing Contract for submission to GHGA Archive
 
-![GHGA Contract](../../assets/img/ContractDesign.png)
+![GHGA Contract](../../assets/img/User_stories_Submitting_Data_DPC.png)
 
 ## Introduction
 
