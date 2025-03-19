@@ -14,10 +14,10 @@ The signing of a DPC has to be finalized before a Data Steward is allowed to int
 ## 2. Metadata preparation
 The GHGA metadata model aims at facilitating comprehensive submissions that maximize the amount of collected metadata in a FAIR manner. Submissions can be either prepared in JSON format or by using a [submission spreadsheet](https://github.com/ghga-de/ghga-metadata-schema/tree/main/spreadsheets). An example submission can be found in our [Github repository containing example data](https://github.com/ghga-de/example-data). The provided metadata are categorized as **Research Metadata** and **Administrative Metadata**, whereas the former collect information about the experimental and data acquisition process and the latter about data access, rights management and disposition. It is crucial, that only non-personal metadata are submitted to GHGA.
 
+  ![OmicsWF](../../assets/img/User_stories_Submitting_Data_Data_Prep_Metadata_overview.png){ width="800" }
+
 ### Research Metadata
 To provide a streamlined submission of metadata, the model is designed to closely resemble a bottom-up-omics experiment:
-
-  ![OmicsWF](../../assets/img/SubmitterGuideOverview-detailed.png){ width="800" }
 
 Similar to an experimental procedure, [**Individuals**](https://docs.ghga.de/metadata/entities/#individual) that are subject to investigation should be defined first. 
 In order to describe an individual, data submitters are required to provide information about sex and are recommended to provide information about phenotypic features and diagnoses. 
@@ -59,32 +59,30 @@ Lastly, a [**Study**](https://docs.ghga.de/metadata/entities/#study) is defined 
 The GHGA metadata model enables submitters to represent a wide range of experimental and analytic approaches of omics studies. Different experimental methods require different entities in the classes, whereas only the relevant ones are exposed to the submitter via different spreadsheets. The “core set” of classes in contrast stays immutable and describes approach- agnostic metadata that can be used to describe the general experiment design. The following tables show a set of common use-cases linearized to the long format for the submitted files for better readability:
 
 #### Studies with case/control samples:
-[Table 1](https://docs.google.com/spreadsheets/d/10bTG8TwisxZf_tCOlQc0HunXmDKPsvPkqA6rZG766dY/)
-
-Case or control is an entity on the sample level and is linked to files via experiment.
+[Table 1](https://docs.google.com/spreadsheets/d/10bTG8TwisxZf_tCOlQc0HunXmDKPsvPkqA6rZG766dY/) - Case or control is an entity on the sample level and is linked to files via experiment.
 
 #### Studies with technical and biological replicates
 
-[Table 2](https://docs.google.com/spreadsheets/d/1xiID3i0sIav79DdmffvTHMJ3kAIfo-jBxrywjZ2BwMI)
-
-Biological replicate information can be collected similarly on the sample level, technical replicates on file level.
+[Table 2](https://docs.google.com/spreadsheets/d/1xiID3i0sIav79DdmffvTHMJ3kAIfo-jBxrywjZ2BwMI) - Biological replicate information can be collected similarly on the sample level, technical replicates on file level.
 
 #### Studies with composition of technical and biological replicates in a time series
 
-[Table 3](https://docs.google.com/spreadsheets/d/12yr8NGENaf6X-Ma5mhTGieoNc-lbzmKTW-9mVhsgbEA)
-
-Different compositions between technical and biological replicates can be encoded on the research data file and sample level. Specific information like time series can be modeled by annotating the samples in name, description and attribute.
+[Table 3](https://docs.google.com/spreadsheets/d/12yr8NGENaf6X-Ma5mhTGieoNc-lbzmKTW-9mVhsgbEA) - Different compositions between technical and biological replicates can be encoded on the research data file and sample level. Specific information like time series can be modeled by annotating the samples in name, description and attribute.
 
 #### Study with research data, processed data and supplementary data files
 
-[Table 4](https://docs.google.com/spreadsheets/d/14roP6smAxw5p_mPeMXlC0KUrab8eEIIJj51xb3Q9mzw)
-
-Processed files, such as for alignment and variant calling can be added and additional phenotypic information can be submitted alongside the research data/processed files in form of supplementary files. For individuals, it can be indicated that further supplementary information exists that is accessible upon decryption of data.
+[Table 4](https://docs.google.com/spreadsheets/d/14roP6smAxw5p_mPeMXlC0KUrab8eEIIJj51xb3Q9mzw) - Processed files, such as for alignment and variant calling can be added and additional phenotypic information can be submitted alongside the research data/processed files in form of supplementary files. For individuals, it can be indicated that further supplementary information exists that is accessible upon decryption of data.
 
 The shown examples show only the relevant parts of the metadata model in the long format, linking to samples, experiment, analysis via aliases has been inferred.
 
 ## 3. Metadata validation
-The GHGA Data Steward assists in case of any questions about the GHGA metadata schema. Once the metadata spreadsheet is finalized, it should be sent to the GHGA helpdesk. To validate the submission, the GHGA Data Steward will use the [**GHGA Transpiler**](https://docs.ghga.de/cli_tools/transpiler/) to generate a JSON of the submission. Should the linkage between entities contain structural or logical issues, they would be identified at this step. If a JSON can be generated from the submission, the [**GHGA Validator**](https://docs.ghga.de/cli_tools/validator/) is used to validate the content of the submission. A report is generated that indicates errors issues with the submitted metadata, such as misalignments with controlled vocabularies or ontologies. This report is sent back by the Data Steward with recommendations on how to fix the issues. 
+The GHGA Data Steward assists in case of any questions about the GHGA metadata schema. Once the metadata spreadsheet is finalized, it should be sent to the GHGA helpdesk. 
+
+To validate the submission, the GHGA Data Steward will use the [**GHGA Transpiler**](https://docs.ghga.de/cli_tools/transpiler/) to generate a JSON of the submission. Should the linkage between entities contain structural or logical issues, they would be identified at this step. 
+
+If a JSON can be generated from the submission, the [**GHGA Validator**](https://docs.ghga.de/cli_tools/validator/) is used to validate the content of the submission. A report is generated that indicates errors issues with the submitted metadata, such as misalignments with controlled vocabularies or ontologies. This report is sent back by the Data Steward with recommendations on how to fix the issues. 
+
+  ![DVal](../../assets/img/User_stories_Submitting_Data_Data_Prep_Validation.png){ width="800" }
 
 Both Validator and Transpiler are publicly available and can be used by the submitter to validate the submission on their end.
 
