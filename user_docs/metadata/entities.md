@@ -1,6 +1,10 @@
 # **Captured Metadata**
 
-This section provides an overview on what metadata elements are captured with the GHGA Metadata Schema.
+  ![Enti](../../assets/img/Metadata_Model_Entities_Attributes.png){ width="800" }
+
+- [Research Metadata](https://docs.ghga.de/metadata/entities/#research-metadata) – Covers metadata on individuals, samples, experiments, and analyses, including biospecimens, experimental methods, and analytical workflows used to generate the data.
+- [Administrative Metadata](https://docs.ghga.de/metadata/entities/#administrative-metadata) – Manages data governance, access, and study details, defining datasets, access policies, responsible committees, and linked publications.
+- [Submission Spreadsheet](https://docs.ghga.de/metadata/entities/#submission-spreadsheet) – Provides a structured format for metadata submission, ensuring consistency and completeness across all metadata categories.
 
 A breakdown of each metadata element described in the different entities will provide more insight on what elements are required for the functionality of GHGA, mandatory properties and recommended or optional information that can be provided by the data submitters.
 
