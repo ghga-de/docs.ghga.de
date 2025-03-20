@@ -1,6 +1,6 @@
 # **Captured Metadata**
 
-  ![Enti](../../assets/img/Metadata_Model_Entities_Attributes.png){ width="800" }
+  ![Enti](../assets/img/Metadata_Model_Entities_Attributes.png){ width="800" }
 
 - [Research Metadata](https://docs.ghga.de/metadata/entities/#research-metadata) – Covers metadata on individuals, samples, experiments, and analyses, including biospecimens, experimental methods, and analytical workflows used to generate the data.
 - [Administrative Metadata](https://docs.ghga.de/metadata/entities/#administrative-metadata) – Manages data governance, access, and study details, defining datasets, access policies, responsible committees, and linked publications.

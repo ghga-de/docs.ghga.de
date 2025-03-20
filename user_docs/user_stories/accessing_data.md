@@ -1,7 +1,7 @@
 # Accessing Data
 ## Creating a Data Access Request
 
-  ![UAD](../../assets/img/User_stories_Accessing_Data.png){ width="800" }
+  ![UAD](../assets/img/User_stories_Accessing_Data.png){ width="800" }
 
  - The GHGA Data Portal enables users to request access to data through the portal.
  - For creating a <general:Data Access Request (DAR)> you need to have a Life Science Login / LS ID. See [here](ls-login.md) for further information on this.
@@ -13,7 +13,7 @@
 !!! note "Responsibilities for handling of data access requests"
     Please note the GHGA is not responsible for deciding of data access requests as this is a responsibility of <general:Data Access Committee (DAC)> installed by the the <general:Research Data Controller (RDC)|Research Data Controller>. In case you do not receive notifications about the decision on your request, please first contact the DAC as indicated on the [dataset details page](../user_stories/browsing_data.md#dataset-details)
 
-  ![UARS](../../assets/img/User_stories_Accessing Data_roles.png){ width="800" }
+  ![UARS](../assets/img/User_stories_Accessing Data_roles.png){ width="800" }
 
 ## Account verification
 

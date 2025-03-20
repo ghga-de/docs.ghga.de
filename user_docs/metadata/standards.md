@@ -1,6 +1,6 @@
 # **Concepts and Standards**
 
-  ![Stnds](../../assets/img/Metadata_Model_Standards.png){ width="800" }
+  ![Stnds](../assets/img/Metadata_Model_Standards.png){ width="800" }
 
 - [Resources and Standards](https://docs.ghga.de/metadata/standards/#resources-and-standards) - Guiding principles and frameworks for data accessibility, reproducibility, and secure sharing across research domains, ensuring consistency, reliability, and ethical data management.
 - [Metadata Standards](https://docs.ghga.de/metadata/standards/#metadata-standards) - Providing a structured approach to describing and organising research data, ensuring consistency across datasets and facilitating reuse.

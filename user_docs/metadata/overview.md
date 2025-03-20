@@ -4,7 +4,7 @@ The GHGA Metadata Model provides a structured approach to organising human omics
 
 ## Key Components: 
 
-  ![MetMod](../../assets/img/Metadata_Model_Overview.png){ width="800" }
+  ![MetMod](../assets/img/Metadata_Model_Overview.png){ width="800" }
 
 1. [Introduction](https://docs.ghga.de/metadata/overview/#introduction) – Understand the general structure of the metadata model and how it supports data submission and retrieval.
 2. [Captured Metadata](https://docs.ghga.de/metadata/entities/) – Learn about types of metadata captured in our model, including research and administrative metadata attributes.

@@ -7,7 +7,7 @@ Welcome to the GHGA User Documentation. On these pages you will find relevant in
 ## Getting Started - User Stories
 The GHGA Data Portal supports researchers in browsing, accessing, and submitting human omics data under controlled access. This section provides step-by-step guidance for different user stories.
 
-  ![UOV](../../assets/img/User_stories_Overview.png){ width="800" }
+  ![UOV](assets/img/User_stories_Overview.png){ width="800" }
 
 1. [Browsing Data](user_stories/browsing_data.md) – Search and filter available datasets to find relevant research data. Learn how to navigate the GHGA Data Portal efficiently.
 1. [Accessing Data](user_stories/accessing_data.md) – Follow this step-by-step process to request dataset access, including login requirements and approval workflows.
