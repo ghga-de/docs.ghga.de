@@ -2,14 +2,17 @@
 
 Welcome to the GHGA User Documentation. On these pages you will find relevant information on services provided by [GHGA - the German Human Genome-Phenome Archive](https://www.ghga.de). 
 
-## Getting Started - User Stories
-To get started with this documentation, please visit the following pages describing the main user stories for GHGA:
-
-1. [Browsing data on the GHGA Data Portal](user_stories/browsing_data.md)
-1. [Accessing data available on GHGA](user_stories/accessing_data.md)
-1. [Submitting data to GHGA](user_stories/submission/submitting_data.md)
-
 --8<-- "submission_limitations.md"
+
+## Getting Started - User Stories
+The GHGA Data Portal supports researchers in browsing, accessing, and submitting human omics data under controlled access. This section provides step-by-step guidance for different user stories.
+
+  ![UOV](assets/img/User_stories_Overview.png){ width="800" }
+
+1. [Browsing Data](user_stories/browsing_data.md) – Search and filter available datasets to find relevant research data. Learn how to navigate the GHGA Data Portal efficiently.
+1. [Accessing Data](user_stories/accessing_data.md) – Follow this step-by-step process to request dataset access, including login requirements and approval workflows.
+1. [Submitting Data](user_stories/submission/submitting_data.md) – Understand the submission process, including metadata preparation, file uploads, and necessary legal agreements.
+1. [Data Use & Access Guide](user_stories/dua-guideline.md) – Learn about suggested ethical standards, decision-making criteria, and policies for handling access requests.
 
 ## GHGA Terms of Use
 
