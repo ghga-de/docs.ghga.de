@@ -76,7 +76,7 @@ The GHGA metadata model enables submitters to represent a wide range of experime
 The shown examples show only the relevant parts of the metadata model in the long format, linking to samples, experiment, analysis via aliases has been inferred.
 
 ## 3. Metadata validation
-The GHGA Data Steward assists in case of any questions about the GHGA metadata schema. Once the metadata spreadsheet is finalized, it should be sent to the GHGA helpdesk. 
+The GHGA Data Steward assists in case of any questions about the GHGA metadata schema. Once the metadata spreadsheet is finalized, it should be sent to the GHGA Helpdesk. 
 
 To validate the submission, the GHGA Data Steward will use the [**GHGA Transpiler**](https://docs.ghga.de/cli_tools/transpiler/) to generate a JSON of the submission. Should the linkage between entities contain structural or logical issues, they would be identified at this step. 
 
@@ -90,5 +90,5 @@ Both Validator and Transpiler are publicly available and can be used by the subm
 To submit the research data files to GHGA, the files have to be migrated to a [**GHGA Data Hub**](https://www.ghga.de/about-us/how-we-work/data-hubs). The Data Stewards will assist in this process. Once the files are available at a Data Hub, the files are ingested in the GHGA Archive by the Data Steward using the [**GHGA DataSteward-Kit**](https://github.com/ghga-de/ghga-datasteward-kit). 
 
 ## 5. Publication on the Data Portal
-Once the files are deposited and the metadata submitted to the GHGA helpdesk, the submission is finalized but the data is not yet findable on the [**GHGA Data Portal**](https://data.ghga.de/). To make the metadata of the submission publicly findable and allow Data Access Requests to be started for the data, simply notify the GHGA helpdesk. This will generate stable accessions that can be used to refer to the data deposition at GHGA.
+Once the files are deposited and the metadata submitted to the GHGA Helpdesk, the submission is finalized but the data is not yet findable on the [**GHGA Data Portal**](https://data.ghga.de/). To make the metadata of the submission publicly findable and allow Data Access Requests to be started for the data, simply notify the GHGA Helpdesk. This will generate stable accessions that can be used to refer to the data deposition at GHGA.
 
