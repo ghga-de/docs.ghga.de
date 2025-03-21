@@ -13,7 +13,7 @@
 !!! note "Responsibilities for handling of data access requests"
     Please note the GHGA is not responsible for deciding of data access requests as this is a responsibility of <general:Data Access Committee (DAC)> installed by the the <general:Research Data Controller (RDC)|Research Data Controller>. In case you do not receive notifications about the decision on your request, please first contact the DAC as indicated on the [dataset details page](../user_stories/browsing_data.md#dataset-details)
 
-  ![UARS](../assets/img/User_stories_Accessing Data_roles.png){ width="800" }
+  ![UARS](../assets/img/User_stories_Accessing_Data_roles.png){ width="800" }
 
 ## Account verification
 
