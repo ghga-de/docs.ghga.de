@@ -36,7 +36,10 @@ The following checklist gives an overview on the necessary legal processes to be
       - Different institutions will define differently which roles are authorised to sign contracts on their behalf. It is not typical that an individual researcher can alone sign a contract. 
 
 - [x] Submit the signed Data Processing Contract to GHGA for counter-signing and propossing. 
-      - A physical copy of the signed contract should be sent to GHGA Central. Details will be provided of how to do so.
+      - The signing can be carried out either using "wet ink" or a qualified electronic signature:
+            - For wet ink, submit two physical copies of the signed contract should be sent to GHGA Central. Details will be provided of how to do so.
+            - For electronic signing a **qualified electronic signature (QES)** is required in accordance with [Article 3(12) of the eIDAS Regulation (EU) No. 910/2014](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32014R0910) and [Section 126a of the German Civil Code (BGB)](https://www.gesetze-im-internet.de/englisch_bgb/englisch_bgb.html#p1163). Such a signature can be provided using certified services like **DocuSign**, **IDnow**, or other providers.
+
 
 ## The GHGA Data Processing Contract
 
@@ -76,7 +79,7 @@ A fuller description of these services is provided in the DPC.
 
 *§6 - Final Provisions* - This section includes additional clauses that affect the DPC including how changes to the contract can be made.
 
-*§7 - Signing* - This section is signed by the Data Controller and GHGA Central.
+*§7 - Signing* - This section is signed by the Data Controller and GHGA Central. See the checklist above for details on types of accepted signatures.
 
 ### Annexes
 
