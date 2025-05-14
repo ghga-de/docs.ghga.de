@@ -29,17 +29,29 @@ The following checklist gives an overview on the necessary legal processes to be
 - [x] Consider the additional information that is required. 
       - A number of the annexes to the GHGA Data Processing Contract require information from the Data Controller. It is important for the Data Controller to consider in advance how they will respond.
 
-- [x] Submit a [Pre-Submission Inquiry](https://www.ghga.de/about-us/presubmission-enquiries) or contact us via the <general:GHGA Helpdesk>.
-      - If the proposed data submission can be supported by GHGA, the Data Controller will be asked to supply their responses for the required information. GHGA will use these responses to prepare a bespoke Data Processing Contract for the Data Controller.
+- [x] Submit a [Pre-Submission Inquiry](https://www.ghga.de/about-us/presubmission-enquiries) or contact us via the <general:GHGA Helpdesk>. GHGA will send you feedback whether or not the intended submission can be supported.
 
 - [x] Determine the authorised signatory person for the Data Controller.
       - Different institutions will define differently which roles are authorised to sign contracts on their behalf. It is not typical that an individual researcher can alone sign a contract. 
 
-- [x] Submit the signed Data Processing Contract to GHGA for counter-signing and propossing. 
-      - The signing can be carried out either using "wet ink" or a qualified electronic signature:
-            - For wet ink, submit two physical copies of the signed contract should be sent to GHGA Central. Details will be provided of how to do so.
-            - For electronic signing a **qualified electronic signature (QES)** is required in accordance with [Article 3(12) of the eIDAS Regulation (EU) No. 910/2014](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32014R0910) and [Section 126a of the German Civil Code (BGB)](https://www.gesetze-im-internet.de/englisch_bgb/englisch_bgb.html#p1163). Such a signature can be provided using certified services like **DocuSign**, **IDnow**, or other providers.
+- [x] Submit detailled information to complete the DPC.
+      - If the proposed data submission can be supported by GHGA, the Data Controller will be asked by GHGA to supply the information necessary to prepare a bespoke Data Processing Contract for the Data Controller. THis includes details like the adress of the institutions, signatories, persons authorized to act and a description of the data to be submitted.
 
+
+- [x] Submit the signed Data Processing Contract to GHGA for counter-signing and propossing. 
+
+### Details on Signing Procedure
+
+- The signing can be carried out either using "wet ink" or a qualified electronic signature:
+      - For wet ink signing (preferred), submit two physical copies of the signed contract should be sent to GHGA Central to the following adress:
+
+            DKFZ Heidelberg
+            GHGA (German Human Genome-Phenome Archive) - W620
+            Im Neuenheimer Feld 280
+            D-69120 Heidelberg
+
+
+      - For electronic signing a **qualified electronic signature (QES)** is required in accordance with [Article 3(12) of the eIDAS Regulation (EU) No. 910/2014](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32014R0910) and [Section 126a of the German Civil Code (BGB)](https://www.gesetze-im-internet.de/englisch_bgb/englisch_bgb.html#p1163). Such a signature can be provided using certified services like **DocuSign**, **IDnow**, or other providers.
 
 ## The GHGA Data Processing Contract
 
