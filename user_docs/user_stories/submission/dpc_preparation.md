@@ -43,7 +43,7 @@ The following checklist gives an overview on the necessary legal processes to be
 ### Details on Signing Procedure
 
 - The signing can be carried out either using "wet ink" or a qualified electronic signature:
-      - For wet ink signing (preferred), submit two physical copies of the signed contract should be sent to GHGA Central to the following adress:
+      - For wet ink signing (preferred), submit two physical copies of the signed contract to GHGA Central using the following address:
 
             DKFZ Heidelberg
             GHGA (German Human Genome-Phenome Archive) - W620
