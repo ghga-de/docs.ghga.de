@@ -35,7 +35,7 @@ The following checklist gives an overview on the necessary legal processes to be
       - Different institutions will define differently which roles are authorised to sign contracts on their behalf. It is not typical that an individual researcher can alone sign a contract. 
 
 - [x] Submit detailled information to complete the DPC.
-      - If the proposed data submission can be supported by GHGA, the Data Controller will be asked by GHGA to supply the information necessary to prepare a bespoke Data Processing Contract for the Data Controller. THis includes details like the adress of the institutions, signatories, persons authorized to act and a description of the data to be submitted.
+      - If the proposed data submission can be supported by GHGA, the Data Controller will be asked by GHGA to supply the information necessary to prepare a bespoke Data Processing Contract for the Data Controller. This includes details like the address of the institutions, signatories, persons authorised to act, and a description of the data to be submitted.
 
 
 - [x] Submit the signed Data Processing Contract to GHGA for counter-signing and propossing. 
