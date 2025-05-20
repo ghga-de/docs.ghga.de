@@ -117,7 +117,7 @@ Annex 5 sets out the Data Controller's obligations with regards to the submissio
 #### Annex 6 - The Processing of Personal Data to fulfil this Agreement
 In order for GHGA to fulfil a Data Processing Contract it will be necessary to process personal Administrative Data, e.g. contact information about people who have been authorised to act on behalf of the Data Controller. Annex 6 describes the processing of personal Administrative Data, the legal basis for doing so, and the rights of the Data Subjects.
 
-For approved Data Access Requests, it will be necessary that a person authorized to act on behalf of the Data Controller submits the following information to GHGA Central:
+For approved Data Access Requests, it will be necessary that a person authorised to act on behalf of the Data Controller submits the following information to GHGA Central:
 
 - Name of the approved Data Requester
 - <general:LS-Login| Life Science Login ID>
