@@ -47,8 +47,8 @@ sequenceDiagram
    activate GHGA
    GHGA ->> DAC : Forwards DAR
    deactivate GHGA
-   DAC ->> DR : Requests necessary information and DTA Template
-   DR ->> DAC : Information on research project and signed DTA
+   DAC ->> DR : Requests necessary information and forwards DTA Template
+   DR ->> DAC : Sends information on research project and signed DTA
    DAC ->> RDC : Informs RDC institution on decision <br/>(Acceptance / rejection)
    RDC ->> DR : Informs Data Requester on decision outcome. <br/>If positive sends countersigned DTA
    end
