@@ -4,11 +4,13 @@
   ![UAD](../assets/img/User_stories_Accessing_Data.png){ width="800" }
 
  - The GHGA Data Portal enables users to request access to data through the portal.
- - For creating a <general:Data Access Request (DAR)> you need to have a Life Science Login / LS ID. See [here](ls-login.md) for further information on this.
+ - For creating a <general:Data Access Request (DAR)> you need to have a <general:LS-Login|Life Science Login or LS-Login>.
  - Browse for your dataset of interest and then click on the "Request Access" button. This will direct you to a data access request form. 
  - Complete the form with the necessary information and submit your <general:Data Access Request (DAR)|Data Access Request>. 
  - The data access request will be sent to the <general:Research Data Controller (RDC)>, who will will review your request and respond accordingly. Please note that GHGA is not involved in the further process of negotiating the data access.
- - To download a dataset, a valid contact address for account verification has to be set up in the user profile.
+ - To download a dataset, a valid <general:Independent Verification Address (IVA)> has to be set up for account verification in your user profile in the GHGA Data Portal. 
+    - The <general:Independent Verification Address (IVA)|IVA> also needs to be shared with the <general:Research Data Controller (RDC)> as part of the negotiations of your request. 
+    - Once the access request is approved, the <general:Research Data Controller (RDC)> will instruct GHGA to share the data only with accounts which include the proper <general:Independent Verification Address (IVA)|IVA>. 
 
 !!! note "Responsibilities for handling of data access requests"
     Please note the GHGA is not responsible for deciding of data access requests as this is a responsibility of <general:Data Access Committee (DAC)> installed by the the <general:Research Data Controller (RDC)|Research Data Controller>. In case you do not receive notifications about the decision on your request, please first contact the DAC as indicated on the [dataset details page](../user_stories/browsing_data.md#dataset-details)
