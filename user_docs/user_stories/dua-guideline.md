@@ -47,21 +47,21 @@ sequenceDiagram
    activate GHGA
    GHGA ->> DAC : Forwards DAR
    deactivate GHGA
-   DAC ->> DR : Requests necessary information and DTA Template
-   DR ->> DAC : Information on research project and signed DTA
-   DAC ->> RDC : Informs RDC institution on decision <br/>(Acceptance / rejection)
+   DAC ->> DR : Requests necessary information and forwards DTA Template
+   DR ->> DAC : Sends information on research project and signed DTA
+   DAC ->> RDC : Informs RDC institution on decision <br/>(Acceptance / Rejection)
    RDC ->> DR : Informs Data Requester on decision outcome. <br/>If positive sends countersigned DTA
    end
    rect rgb(250, 250, 250)
    note over DR, RDC: Decision Implementation / Data Download
-   RDC ->> GHGA : Informs GHGA on decision on  DAR<br/> (Acceptance / rejection)
+   RDC ->> GHGA : Informs GHGA on decision on  DAR<br/> (Acceptance /Rejection)
    GHGA ->> DR : Informs DR on decision. <br/> If positive provides download link
    end
 ```
 
 The primary objective of DACs is to oversee the access to Research Data. In contrast to <general:Research Ethics Committee|Research Ethics Committees> (Institutional Review Boards) that assess the full range of ethical issues associated with research projects, a DAC usually evaluates whether the proposed use of data is compatible with the data use conditions, in particular those specified in the data subject’s consent.
 
-We recommend that DACs authorising access to data deposited with GHGA establish a set of documents to serve as a basis for them to operate and reach decisions. These will usually include [terms of reference (TOR)](#dac-terms-of-reference-tor) and [standard operating procedures (SOP)](#dac-standard-operating-procedures-sops) for the DAC as well as a [list of criteria](#list-of-criteria-loc-for-data-access-decisions) for data access decisions and a [Data Transfer Agreement (DTA) template](#data-transfer-agreement-dta-template). These documents are further described below.
+We recommend that DACs authorising access to data deposited with GHGA establish a set of documents to serve as a basis for them to operate and reach decisions. These will usually include [terms of reference (TOR)](#dac-terms-of-reference-tor) and [standard operating procedures (SOP)](#dac-standard-operating-procedures-sops) for the DAC as well as a [list of criteria](#list-of-criteria-loc-for-data-access-decisions) for data access decisions and a [Data Transfer Agreement (DTA) template](#data-transfer-agreement-dta). These documents are further described below.
 
 ## Key Documents Recommended for DAC Operation
 
@@ -135,9 +135,19 @@ Access requests should be checked against these items:
 
 8. There is sufficient evidence that appropriate measures are in place to protect the informational rights of data subjects and other parties (such as family members), including the right to erasure, and to manage and minimise potential risks (e.g., of re-identification).
 
-### Data Transfer Agreement (DTA) Template
+### Data Transfer Agreement (DTA)
 
 Before access is granted, the Research Data Controller needs to ensure that the Data Requester is contractually bound to comply with any applicable regulations concerning the exchange of the date. For this a <general:Data Transfer Agreement (DTA)> needs to be agreed upon between the Research Data Controller and the Data Requester. The DTA establishes the contractual basis for granting data access/transfer and ensures that all parties involved are aware of their responsibilities and obligations regarding data handling and data protection.
+
+#### Using the Independent Verification Adress (IVA) to verify identities
+
+- To download data from GHGA, users need to have a verified account (see [here](./accessing_data.md#account-verification)), which is linked to:
+
+      1. a <general:LS-Login> Acount
+      2. a <general:Independent Verification Address (IVA)>
+
+- The <general:Research Data Controller (RDC)> should verify the IVA of the requester independently of GHGA (by e.g. calling the requester on this number or sending a secret code to the IVA which then should be returned via mail) and should then inform GHGA that this IVA should be used for the data download.
+
 
 ## Data Protection Assessment
 
