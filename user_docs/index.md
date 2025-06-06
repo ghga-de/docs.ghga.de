@@ -16,10 +16,16 @@ The GHGA Data Portal supports researchers in browsing, accessing, and submitting
 
 ## GHGA Terms of Use
 
-The [**GHGA Terms of Use**](https://doi.org/10.5281/zenodo.11146387) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11146387.svg)](https://doi.org/10.5281/zenodo.11146387) define the services offered by the GHGA Consortium and the performance levels of those services that users can expect. They also define the conditions that apply to users when using GHGA.
+The [**GHGA Terms of Use**](https://doi.org/10.5281/zenodo.11146386)[^1] define the services offered by the GHGA Consortium and the performance levels of those services that users can expect. They also define the conditions that apply to users when using GHGA.
 
 ## Contact
 Please reach out to the [GHGA Helpdesk](mailto:helpdesk@ghga.de) for any questions on GHGA.
 
 !!! info "Funding"
     The <general:GHGA Consortium> is not an independent legal entity but an association of research institutions from all over Germany. It is funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) as part of  GHGA – The German Human Genome-Phenome Archive (www.ghga.de, Grant Number [441914366](https://gepris.dfg.de/gepris/projekt/441914366?context=projekt&task=showDetail&id=441914366&) (NFDI 1/1)).
+
+
+
+    [^1]: 
+      The GHGA Consortium. (2024). Terms of Use GHGA Data Infrastructure (Version 1.1). Zenodo. [10.5281/zenodo.14357642](https://doi.org/10.5281/zenodo.14357642)
+      </br>Most recent Version: [10.5281/zenodo.11146386](https://doi.org/10.5281/zenodo.11146386)
