@@ -1,6 +1,6 @@
 # **Concepts and Standards**
 
-  ![Stnds](../assets/img/Metadata_Model_Standards.png){ width="800" }
+  ![Visual summary of the site content on metadata concepts and standards, illustrated with icons: Resources and Standards (principles for FAIR and secure data sharing), Metadata Standards (structured metadata for consistency and reuse), and Ontologies (standardized terminology for interoperability) – as described in the text below.](../assets/img/Metadata_Model_Standards.png){ width="800" }
 
 - [Resources and Standards](https://docs.ghga.de/metadata/standards/#resources-and-standards) - Guiding principles and frameworks for data accessibility, reproducibility, and secure sharing across research domains, ensuring consistency, reliability, and ethical data management.
 - [Metadata Standards](https://docs.ghga.de/metadata/standards/#metadata-standards) - Providing a structured approach to describing and organising research data, ensuring consistency across datasets and facilitating reuse.
