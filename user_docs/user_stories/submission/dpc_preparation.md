@@ -1,6 +1,6 @@
 # Preparation of a GHGA Data Processing Contract for submission to GHGA Archive
 
-![GHGA Contract](../../assets/img/User_stories_Submitting_Data_DPC.png)
+![Flowchart with icons showing the relationship between the Research Data Controller (RDC) and GHGA Central, established via a Data Processing Contract – described in more detail in the text below on this page.](../../assets/img/User_stories_Submitting_Data_DPC.png)
 
 ## Introduction
 
@@ -138,4 +138,4 @@ To be able to process <general:Data Processing Contract (DPC)> and for others us
 
 [Profile page](https://profile.aai.lifescience-ri.eu/profile) on LS Login:
 
-![Ls Login Profile page](../../assets/img/lslogin-lsid.png)
+![Screenshot of profile page on Life Science Login showing name, LS ID, username, email, affiliations, and language – as described in the text above.](../../assets/img/lslogin-lsid.png)
