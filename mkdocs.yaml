@@ -28,7 +28,7 @@ repo_url: https://github.com/ghga-de/docs/
 edit_uri: "edit/main/docs/"
 
 # Copyright
-copyright: 2023 The GHGA Team
+copyright: 2025 The GHGA Team
 
 # Theming, Configuration
 theme:
@@ -72,8 +72,12 @@ extra:
       link: https://github.com/ghga-de
     - icon: fontawesome/brands/mastodon
       link: https://genomic.social/@ghga
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/ghga_DE
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/the-german-human-genome-phenome-archive/
+    - icon: fontawesome/brands/bluesky
+      link: https://bsky.app/profile/ghga.bsky.social
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UC7Yqi4gBl86drcUxwwEe6EA
 
 # Extensions
 markdown_extensions:
