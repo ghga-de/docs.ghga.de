@@ -27,9 +27,6 @@ repo_name: GHGA User Documentation
 repo_url: https://github.com/ghga-de/docs/
 edit_uri: "edit/main/docs/"
 
-# Copyright
-copyright: 2025 The GHGA Team
-
 # Theming, Configuration
 theme:
   name: material
