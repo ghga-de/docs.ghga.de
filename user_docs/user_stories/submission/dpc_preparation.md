@@ -101,7 +101,7 @@ A brief summary of the annexes is presented below.
 
 In Annex 1, the Data Controller is required to list the **datasets or studies** that they wish to submit to GHGA, and to provide information about them. This information is used to decide which GHGA Data Hub is best placed to process the submission. Only data or studies which are listed in Annex 1 can be submitted under the DPC. Any future submission will require another DPC. 
 
-The Data Controller must also provide **contact information** about how Data Requesters can make a request to access the data. This needs to be a functional email address and can not contain personal information. Usually this is the email address of the <general:Data Access Committee (DAC)>. The same information will also need to be submitted as part of the metadata submission as part of the information on the [Data Access Committee](../../metadata/data_dictionary/DataAccessCommittee.md).
+The Data Controller must also provide **contact information** about how Data Requesters can make a request to access the data. This needs to be a functional institutional email address and can not contain personal information. Usually this is the email address of the <general:Data Access Committee (DAC)>. The same information will also need to be submitted as part of the metadata submission as part of the information on the [Data Access Committee](../../metadata/data_dictionary/DataAccessCommittee.md).
  
 
 #### Annex 2 - GHGA Data Hubs
