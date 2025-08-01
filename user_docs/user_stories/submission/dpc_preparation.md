@@ -35,7 +35,7 @@ The following checklist gives an overview on the necessary legal processes to be
       - Different institutions will define differently which roles are authorised to sign contracts on their behalf. It is not typical that an individual researcher can alone sign a contract. 
 
 - [x] Submit detailled information to complete the DPC.
-      - If the proposed data submission can be supported by GHGA, the Data Controller will be asked by GHGA to supply the information necessary to prepare a bespoke Data Processing Contract for the Data Controller. This includes details like the address of the institutions, signatories, persons authorised to act, and a description of the data to be submitted.
+      - If the proposed data submission can be supported by GHGA, the Data Controller will be asked by GHGA to supply the information necessary to prepare a bespoke Data Processing Contract for the Data Controller. This includes details such as the address of the institutions, signatories, persons authorised to act, and a description of the data to be submitted. **GHGA will then provide the Data Controller with a sign-ready PDF-version of the DPC.**
 
 
 - [x] Submit the signed Data Processing Contract to GHGA for counter-signing and propossing. 
@@ -98,7 +98,11 @@ A fuller description of these services is provided in the DPC.
 A brief summary of the annexes is presented below.
 
 #### Annex 1 - Research Data Transferred by the the Data Submitter
-In Annex 1, the Data Controller is required to list the data or studies that they wish to submit to GHGA, and to provide information about them. This information is used to decide which GHGA Data Hub is best placed to process the submission. Only data or studies which are listed in Annex 1 can be submitted under the DPC. Any future submission will require another DPC. The Data Controller must also provide contact information about how Data Requesters can make a request to access the data. 
+
+In Annex 1, the Data Controller is required to list the **datasets or studies** that they wish to submit to GHGA, and to provide information about them. This information is used to decide which GHGA Data Hub is best placed to process the submission. Only data or studies which are listed in Annex 1 can be submitted under the DPC. Any future submission will require another DPC. 
+
+The Data Controller must also provide **contact information** about how Data Requesters can make a request to access the data. This needs to be a functional institutional email address and can not contain personal information. Usually this is the email address of the <general:Data Access Committee (DAC)>. The same information will also need to be submitted as part of the metadata submission as part of the information on the [Data Access Committee](../../metadata/data_dictionary/DataAccessCommittee.md).
+ 
 
 #### Annex 2 - GHGA Data Hubs
 In Annex 2, GHGA will list all of the institutions that have been fully onboarded as GHGA Data Hubs and will be acting as sub-processors to GHGA Central. The GHGA Data Hubs will be responsible for storing Research Data and Personal Metadata on behalf of GHGA Central. 
