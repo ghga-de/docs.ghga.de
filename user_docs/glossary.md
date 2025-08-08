@@ -112,6 +112,9 @@ general:Non-personal Metadata
 general:Omics Data 
 :   The Research Data collected as part of omics-based research. This research focuses on collecting information regarding the entire set of certain molecules in a sample. Within the context of GHGA, Omics Data linked to genetic information of an individual are of particular interest since in many cases omics data would fall under the definition of personal data in Art. 4 Nr. 1 GDPR. Types of Omics Data considered in GHGA are e.g.: genomics – the entirety of the hereditary information in a sample’s DNA; transcriptomics – the entirety of the RNA transcribed from DNA; epigenomics – information on epigenetic modifications of the genetic materials.
 
+general:Person Authorized to Act
+:   Individuals that are authorized to act on behalf of a <general:Research Data Controller (RDC)> as defined in the <general:Data Processing Contract (DPC)> between the RDC and <general:GHGA Central>. For details see [here](user_stories/submission/dpc_preparation.md#annex-4-persons-authorised-to-act).
+
 general:Personal Metadata 
 :   Information that describes or annotates research data to facilitate its interpretation or to describe the relationship between data elements. For example, demographic data or information on the ancestry of the data subjects of the research data that allow conclusions to be drawn about individuals and thus fall within the scope of the GDPR, Art. 4 No. 1 GDPR. Personal metadata are made available to the data requester together with the research data only under controlled access after release by the data submitter.
 

@@ -115,6 +115,8 @@ Annex 4 asks the Data Controller for persons authorised to act. It is expected t
 
 In order to ensure that only authorised people can access our systems, GHGA utilises [Life Science Login (LS Login)](https://lifescience-ri.eu/ls-login/) to authenticate users. Therefore, the DPC requires the Data Controller to include the LS Login IDs of the persons who they authorise to act. The process for obtaining LS Login IDs is described [below](#specification-of-ls-login-ids-for-usage-in-contracts). 
 
+In addition, in order to ensure secure communications between GHGA and the named persons authorized to act, an <general:Independent Verification Address (IVA)> is required from the named individuals.
+
 #### Annex 5 - Processing of Non-personal Metadata
 Annex 5 sets out the Data Controller's obligations with regards to the submission of Non-personal Metadata that will be displayed publicly in the GHGA Data Portal. The Data Controller is required to confirm that the metadata they are submitting is non-personal.
  
