@@ -15,7 +15,7 @@ The GHGA Data Portal supports researchers in browsing, accessing, and submitting
     <area target="" alt="" title="" href="user_stories/browsing_data" coords="364,387,-2,1" shape="rect">
     <area target="" alt="" title="" href="user_stories/accessing_data" coords="387,1,774,381" shape="rect">
     <area target="" alt="" title="" href="user_stories/submission/submitting_data" coords="791,377,1167,-1" shape="rect">
-    <area target="" alt="" title="" href="user_stories/dua-guideline.md" coords="1580,387,1194,-1" shape="rect">
+    <area target="" alt="" title="" href="user_stories/dua-guideline" coords="1580,387,1194,-1" shape="rect">
 </map>
 
 1. [Browsing Data](user_stories/browsing_data.md) – Search and filter available datasets to find relevant research data. Learn how to navigate the GHGA Data Portal efficiently.
