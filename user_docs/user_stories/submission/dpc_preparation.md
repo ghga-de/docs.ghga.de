@@ -16,7 +16,7 @@ The DPC creates a controller-to-processor relationship between the institution a
 
 ### Data Submission to GHGA from DKFZ Scientists
 
-![DKFZ Logo](../../assets/img/DKFZ_solo.png){ align=right}For submissions in which the DKFZ is the <general:Research Data Controller (RDC)>, instead of signing a <general:Data Processing Contract (DPC)|DPC> the responsible scientists needs to sign the DKFZ Internal Terms of Use for data deposition in GHGA. The Internal Terms of Use are availbe [here in the DKFZ Intranet](https://intranet.dkfz.de/services/wissenschaftliche-dienste/deutsches-humangenom-phaenomarchiv-ghga). 
+![DKFZ Logo](../../assets/img/DKFZ_solo.png){ align=right}For submissions in which the DKFZ is the <general:Research Data Controller (RDC)>, instead of agreeing to a <general:Data Processing Contract (DPC)|DPC> the responsible scientists need to sign the DKFZ Internal Terms of Use for data deposition in GHGA. The Internal Terms of Use are availbe [here in the DKFZ Intranet](https://intranet.dkfz.de/services/wissenschaftliche-dienste/deutsches-humangenom-phaenomarchiv-ghga). 
 
 ## Checklist for legal pre-requisites for data submission to GHGA
 
