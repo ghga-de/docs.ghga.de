@@ -11,10 +11,10 @@ general:Central-to-Data-Hub-Bilateral Contract (Bilateral Contract)
 :   Agreement between *GHGA Central* and a *GHGA Data Hub*. Based on the *GHGA Data Hub Cooperation Contract* it regulates the relationship between GHGA Central and the Data Hub and the corresponding rights and responsibilities in full detail. In particular it defines the processor to sub-processor relationship between GHGA Central and the individual Data Hub. It also enables adjustments with respect to local infrastructures and federal data protection law where required.
 
 general:Data Access Committee (DAC) 
-:   An abstract body, potentially a panel of people, deciding on *Data Access Requests* and authorized by the *Research Data Controller*. 
+:   An abstract body, potentially a panel of people, deciding on *Data Access Requests* and authorised by the *Research Data Controller*. 
 
 general:Data Access Committee Representative (DACR)
-:   A natural person authorized by the *Data Access Committee* to communicate decisions made by the DAC to GHGA.
+:   A natural person authorised by the *Data Access Committee* to communicate decisions made by the DAC to GHGA.
 
 general:Data Access Request (DAR)
 :   A request to obtain access to *Research Data* stated by a *Data Requester*.
@@ -26,7 +26,7 @@ general:Data Requester (DR)
 :   Institution that requests access to data via the *GHGA Data Infrastructure*.
 
 general:Data Requester Representative (DRR) 
-:   Natural person acting on behalf of the *Data Requester*. The term is used for persons communicating data access requests to the Research Data Controller on behalf of the Data Requester as well as for persons that were authorized to retrieve the data for the Data Requester in the corresponding Data Transfer Agreement.
+:   Natural person acting on behalf of the *Data Requester*. The term is used for persons communicating data access requests to the Research Data Controller on behalf of the Data Requester as well as for persons that were authorised to retrieve the data for the Data Requester in the corresponding Data Transfer Agreement.
 
 general:Data Steward 
 :   Data Stewards are the staff members who (besides other duties) operate the GHGA Helpdesk. They are responsible for assisting users of the GHGA Data Infrastructure with data transfer to the GHGA Data Infrastructure, access requests and responding to queries. Data Stewards will be employed at each of the GHGA Data Hubs.
@@ -112,8 +112,8 @@ general:Non-personal Metadata
 general:Omics Data 
 :   The Research Data collected as part of omics-based research. This research focuses on collecting information regarding the entire set of certain molecules in a sample. Within the context of GHGA, Omics Data linked to genetic information of an individual are of particular interest since in many cases omics data would fall under the definition of personal data in Art. 4 Nr. 1 GDPR. Types of Omics Data considered in GHGA are e.g.: genomics – the entirety of the hereditary information in a sample’s DNA; transcriptomics – the entirety of the RNA transcribed from DNA; epigenomics – information on epigenetic modifications of the genetic materials.
 
-general:Person Authorized to Act
-:   Individuals that are authorized to act on behalf of a <general:Research Data Controller (RDC)> as defined in the <general:Data Processing Contract (DPC)> between the RDC and <general:GHGA Central>. For details see [here](user_stories/submission/dpc_preparation.md#annex-4-persons-authorised-to-act).
+general:Person authorised to Act
+:   Individuals that are authorised to act on behalf of a <general:Research Data Controller (RDC)> as defined in the <general:Data Processing Contract (DPC)> between the RDC and <general:GHGA Central>. For details see [here](user_stories/submission/dpc_preparation.md#annex-4-persons-authorised-to-act).
 
 general:Personal Metadata 
 :   Information that describes or annotates research data to facilitate its interpretation or to describe the relationship between data elements. For example, demographic data or information on the ancestry of the data subjects of the research data that allow conclusions to be drawn about individuals and thus fall within the scope of the GDPR, Art. 4 No. 1 GDPR. Personal metadata are made available to the data requester together with the research data only under controlled access after release by the data submitter.
@@ -125,7 +125,7 @@ general:Research Data Controller Representative (RDCR)
 :   Natural person representing the *Research Data Controller* when establishing the contractual relationship with GHGA.
 
 general:Research Data Submitter (RDSU)
-:   Natural person authorized by the *Research Data Controller* to peform the upload of *Metadata* and *Research Data* on behalf of the *Research Data Controller*.
+:   Natural person authorised by the *Research Data Controller* to peform the upload of *Metadata* and *Research Data* on behalf of the *Research Data Controller*.
 
 general:Research Data 
 :   Omics or other forms of genetic (Art. 4 Nr. 13 GDPR) and health data (Art. 4 Nr. 15 GDPR) that are used for scientific research purposes. This is considered to be special category personal data under Art. 9 (1) in conjunction with Art. 4 Nr. 1 GDPR.
@@ -137,5 +137,5 @@ general:Service User
 :   Person who is contacting the GHGA Helpdesk for any form of user support.
 
 general:Submission Reviewer (SR) 
-:   Natural person authorized by the *Research Data Controller* to review a data upload before the submission is finalized and eventually made publicly findable by GHGA.
+:   Natural person authorised by the *Research Data Controller* to review a data upload before the submission is finalized and eventually made publicly findable by GHGA.
 

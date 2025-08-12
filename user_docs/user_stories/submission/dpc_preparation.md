@@ -8,12 +8,15 @@ A <general:Data Processing Contract (DPC)> is signed by <general:GHGA Central> a
 
 :octicons-info-24:: The DPC is available [here :octicons-download-24:](https://www.ghga.de/Downloads/GHGA_Data_Processing_Contract.pdf) for download.
 
-
 The DPC creates a controller-to-processor relationship between the institution and GHGA Central. It has been designed to conform with [Art. 28 GDPR Nr. 3](https://gdpr-info.eu/art-28-gdpr/).
 
 !!! note "The difference between a Data Controller and a Data Submitter"
 
       The GDPR defines a Data Controller as the party which "determines the purposes and means of the processing of personal data". Within the context of GHGA, we also use the term Data Submitter to mean the person or institution who are submitting Research Data to the GHGA Data Portal. In many cases, the Data Controller and Data Submitter will be the same but this is not always true; it is therefore important for the Data Submitter to check who the Data Controller is for the data they wish to submit. In this guide, we will use the term Data Controller, as it is the Data Controller who is required to sign the GHGA Data Processing Contract.
+
+### Data Submission to GHGA from DKFZ Scientists
+
+![DKFZ Logo](../../assets/img/DKFZ_solo.png){ align=right}For submissions in which the DKFZ is the <general:Research Data Controller (RDC)>, instead of agreeing to a <general:Data Processing Contract (DPC)|DPC> the responsible scientists need to sign the DKFZ Internal Terms of Use for data deposition in GHGA. The Internal Terms of Use are availbe [here in the DKFZ Intranet](https://intranet.dkfz.de/services/wissenschaftliche-dienste/deutsches-humangenom-phaenomarchiv-ghga). 
 
 ## Checklist for legal pre-requisites for data submission to GHGA
 
@@ -115,7 +118,7 @@ Annex 4 asks the Data Controller for persons authorised to act. It is expected t
 
 In order to ensure that only authorised people can access our systems, GHGA utilises [Life Science Login (LS Login)](https://lifescience-ri.eu/ls-login/) to authenticate users. Therefore, the DPC requires the Data Controller to include the LS Login IDs of the persons who they authorise to act. The process for obtaining LS Login IDs is described [below](#specification-of-ls-login-ids-for-usage-in-contracts). 
 
-In addition, in order to ensure secure communications between GHGA and the named persons authorized to act, an <general:Independent Verification Address (IVA)> is required from the named individuals.
+In addition, in order to ensure secure communications between GHGA and the named persons authorised to act, an <general:Independent Verification Address (IVA)> is required from the named individuals.
 
 #### Annex 5 - Processing of Non-personal Metadata
 Annex 5 sets out the Data Controller's obligations with regards to the submission of Non-personal Metadata that will be displayed publicly in the GHGA Data Portal. The Data Controller is required to confirm that the metadata they are submitting is non-personal.
