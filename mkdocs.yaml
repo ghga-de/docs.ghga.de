@@ -41,6 +41,12 @@ strict: false
 extra_css:
   - css/extra.css
 
+extra_javascript:
+  - javascripts/jquery-3.7.1.slim.min.js
+  - javascripts/jquery.rwdImageMaps.min.js
+  - javascripts/extra.js
+
+
 # Validation https://www.mkdocs.org/user-guide/configuration/#validation
 validation:
   links:
