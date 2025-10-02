@@ -26,6 +26,10 @@ Data depositions should be referenced via the Study Accession (GHGAS123456789012
 
 The GHGA Data Portal allows users to request access to data through the portal. Identify your dataset of interest using the browse and filter functions of the GHGA Data Portal. Click on the "Request access" button. This will direct you to a data access request form. Complete the form with the necessary information and submit it to request access to the dataset. The data access request will be sent to the <general:Research Data Controller (RDC)|Research Data Controller>, who will will review your request and respond accordingly. Please note that GHGA is not involved in the further process of negotiating the data access.
 
+## Where can I find my Life Science ID (LSID)?
+
+In order to ensure that only authorised people can access our systems, GHGA utilises [Life Science Login (LS Login)](https://lifescience-ri.eu/ls-login/) to authenticate users. The LSID is displayed in the user profile on https://profile.aai.lifescience-ri.eu/profile that can also be accessed via the [user account](https://data.ghga.de/account) in the data portal.
+
 ## My data access request got approved but I cannot download the data?
 
 The GHGA Data Portal requires authentication of a user via an <general:Independent Verification Address (IVA)|Independent Verification Address (IVA)>, to ensure that the registered user is the person specified in the Data Transfer Agreement between <general:Research Data Controller (RDC)|Research Data Controller> and <general:Data Requester (DR)|Data Requester>. For more information about this process, please visit the [respective user story](user_stories/submission/accessing_data.md). Please note that the verification process is currently manually supervised by GHGA <general:Data Steward|Data Stewards> and can take up to three working days.
