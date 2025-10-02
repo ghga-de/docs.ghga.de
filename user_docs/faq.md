@@ -28,7 +28,7 @@ The GHGA Data Portal allows users to request access to data through the portal. 
 
 ## Where can I find my Life Science ID (LSID)?
 
-In order to ensure that only authorised people can access our systems, GHGA utilises [Life Science Login (LS Login)](https://lifescience-ri.eu/ls-login/) to authenticate users. The LSID is displayed in the user profile on https://profile.aai.lifescience-ri.eu/profile that can also be accessed via the [user account](https://data.ghga.de/account) in the data portal.
+In order to ensure that only authorised people can access our systems, GHGA utilises [Life Science Login (LS Login)](https://lifescience-ri.eu/ls-login/) to authenticate users. The LSID is displayed in the user profile on https://profile.aai.lifescience-ri.eu/profile that can also be accessed via the [user account](https://data.ghga.de/account) in the GHGA Data Portal.
 
 ## My data access request got approved but I cannot download the data?
 
