@@ -94,6 +94,7 @@ markdown_extensions:
       smart_enable: all
   - pymdownx.caret
   - pymdownx.critic
+  - pymdownx.details
   - pymdownx.blocks.details
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
