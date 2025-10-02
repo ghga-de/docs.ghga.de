@@ -100,6 +100,7 @@ markdown_extensions:
       smart_enable: all
   - pymdownx.caret
   - pymdownx.critic
+  - pymdownx.details
   - pymdownx.blocks.details
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
@@ -135,6 +136,7 @@ nav:
         - "Overview": user_stories/submission/submitting_data.md
         - "Preparing a Data Processing Contract": user_stories/submission/dpc_preparation.md
         - "Data Preparation Guide": user_stories/submission/submitter_guide.md
+        - "Data Availability Statement": user_stories/submission/data_availability_statement.md
       - "Data Use and Access Guide": user_stories/dua-guideline.md
   - "GHGA Metadata Model":
       - "Overview": metadata/overview.md

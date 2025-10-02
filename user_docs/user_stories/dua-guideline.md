@@ -143,7 +143,7 @@ Before access is granted, the Research Data Controller needs to ensure that the 
 
 - To download data from GHGA, users need to have a verified account (see [here](./accessing_data.md#account-verification)), which is linked to:
 
-      1. a <general:LS-Login> Acount
+      1. a <general:LS ID> Acount
       2. a <general:Independent Verification Address (IVA)>
 
 - The <general:Research Data Controller (RDC)> should verify the IVA of the requester independently of GHGA (by e.g. calling the requester on this number or sending a secret code to the IVA which then should be returned via mail) and should then inform GHGA that this IVA should be used for the data download.

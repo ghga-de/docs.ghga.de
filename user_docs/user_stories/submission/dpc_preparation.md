@@ -143,8 +143,5 @@ To be able to process <general:Data Processing Contract (DPC)> and for others us
 |Organisation| Name of the Organisation / Institution that interacts with GHGA, e.g. `Doe Institut`|
 |Role| Your role in the Organisation, e.g. `Data Steward` |
 |Contact Information| An email adress, e.g. `Jane.doe@doe-institut.xyz`|
-|Life Science Login ID / LS ID | The LS ID e.g. as displayed in your user profile on https://profile.aai.lifescience-ri.eu/profile, e.g. `777xc437f725f58660456780tt01d5l999f9b123456@lifescience-ri.eu`. See screenshot below.  |
+|Life Science Login ID / LS ID | The LS ID e.g. as displayed in your [LS ID user profile](https://profile.aai.lifescience-ri.eu/profile), e.g. `777xc437f725f58660456780tt01d5l999f9b123456@lifescience-ri.eu`. [Further information](../../faq.md#where-can-i-find-my-life-science-id-ls-id)  |
 
-[Profile page](https://profile.aai.lifescience-ri.eu/profile) on LS Login:
-
-![Screenshot of profile page on Life Science Login showing name, LS ID, username, email, affiliations, and language – as described in the text above.](../../assets/img/lslogin-lsid.png)

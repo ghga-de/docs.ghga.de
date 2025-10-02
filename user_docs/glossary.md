@@ -19,6 +19,9 @@ general:Data Access Committee Representative (DACR)
 general:Data Access Request (DAR)
 :   A request to obtain access to *Research Data* stated by a *Data Requester*.
 
+general:Data Availability Statement
+:   Proposed text how data included in GHGA should be referenced in publications, websites or other media. Details can be found [here](user_stories/submission/data_availability_statement.md).
+
 general:Data Processing Contract (DPC)
 :   Bilateral agreement signed by *GHGA Central* and a *Research Data Controller* who wishes to deposit data in the archive. The agreement regulates the rights and duties of the controller and *GHGA Central* in processing the deposited data.
 
@@ -89,7 +92,7 @@ general:Helpdesk Lead
 :   The Helpdesk Lead manages the tasks of the GHGA Helpdesk and coordinates the work of the *Data Stewards<Data Steward>*. The Helpdesk Lead is responsible for responding to requests from data subjects regarding administrative data and acts as a liaison between the Data Stewards and the GHGA Operations Consortium Board.
 
 general:Independent Verification Address (IVA)
-: The independent verification address (IVA) is used to add additional security towards the identification of users in the GHGA Data Portal. An IVA is a verification factor that is independent of the primary route of authentication in the GHGA Data Portal using <general:LS-Login>. IVAs can be phone numbers or postal addresses to which GHGA will send a code that then needs to be entered back into the GHGA Data Portal by the user. The user's account is then verified for this particular address.
+: The independent verification address (IVA) is used to add additional security towards the identification of users in the GHGA Data Portal. An IVA is a verification factor that is independent of the primary route of authentication in the GHGA Data Portal using <general:LS ID>. IVAs can be phone numbers or postal addresses to which GHGA will send a code that then needs to be entered back into the GHGA Data Portal by the user. The user's account is then verified for this particular address.
 
 general:Institutional Review Board (IRB)
 :   See <general:Research Ethics Committee>.
@@ -97,8 +100,8 @@ general:Institutional Review Board (IRB)
 general:Joint Controller Agreement for Personal Administrative Data (JCA) 
 :   The document governs the joint controllership of the <general:Administrative Data> by the institutions which are part of the *GHGA Operations Consortium*. Appendix to *GHGA Data Hub Cooperation Contract*.
 
-general:LS-Login
-:   For the usage of the services of the GHGA Data Portal, a Life Science Login / LS ID is necessary. Life Science Login is an authentication service from EOSC-Life, for details see [lifescience-ri.eu/ls-login/](https://lifescience-ri.eu/ls-login/). For identification purposes, an LS ID is needed, see further details [here](./user_stories/submission/dpc_preparation.md#specification-of-ls-login-ids-for-usage-in-contracts).
+general:LS ID
+:   For the usage of the services of the GHGA Data Portal, a Life Science Login / LS ID is necessary. Life Science Login is an authentication service from EOSC-Life, for details see [lifescience-ri.eu/ls-login/](https://lifescience-ri.eu/ls-login/). For identification purposes, an LS ID is needed, see further details [here](faq.md#where-can-i-find-my-life-science-id-ls-id).
 
 general:Metadata Processing Contract 
 :   This agreement covers the deposition and sharing of metadata in the GHGA Metadata Catalog during the GHGA Catalog phase of the project. During GHGA Catalog, only *Non-personal Metadata* describing *Research Data* will be processed and shared; the corresponding *Research Data* and *Personal Metadata* remain with the *Data Controller* and are not stored by the *GHGA Operations Consortium*.
