@@ -20,15 +20,21 @@ To find out more about how to prepare for a submission, please visit the [respec
 
 ## How should I publicly reference my data deposition in GHGA?
 
-Data depositions should be referenced via the Study Accession (GHGAS1234567890123). To unify how data is referenced, GHGA Data Stewards will provide a [recommended Data Availability Statement](user_stories/submission/data_availability_statement.md) during the submission process.
+Data depositions should be referenced via the Study Accession (e.g. `GHGAS12079965883832`). To unify how data is referenced, please always use the [recommended **data availability statement**](user_stories/submission/data_availability_statement.md).
 
 ## How to get data access?
 
 The GHGA Data Portal allows users to request access to data through the portal. Identify your dataset of interest using the browse and filter functions of the GHGA Data Portal. Click on the "Request access" button. This will direct you to a data access request form. Complete the form with the necessary information and submit it to request access to the dataset. The data access request will be sent to the <general:Research Data Controller (RDC)|Research Data Controller>, who will will review your request and respond accordingly. Please note that GHGA is not involved in the further process of negotiating the data access.
 
-## Where can I find my Life Science ID (LSID)?
+## Where can I find my Life Science ID (LS ID)?
 
-In order to ensure that only authorised people can access our systems, GHGA utilises [Life Science Login (LS Login)](https://lifescience-ri.eu/ls-login/) to authenticate users. The LSID is displayed in the user profile on https://profile.aai.lifescience-ri.eu/profile that can also be accessed via the [user account](https://data.ghga.de/account) in the GHGA Data Portal.
+In order to ensure that only authorised people can access our systems, GHGA utilises [Life Science Login (LS Login)](https://lifescience-ri.eu/ls-login/) to authenticate users. The **LS ID** (e.g. `777xc437f725f58660456780tt01d5l999f9b123456@lifescience-ri.eu`) is displayed in the [Life Science RI user profile](https://profile.aai.lifescience-ri.eu/profile) and can also be accessed via the [user account](https://data.ghga.de/account) in the GHGA Data Portal.
+
+??? tip "LS ID User Profile Screenshot"
+
+    ![Screenshot of profile page on Life Science Login showing name, LS ID, username, email, affiliations, and language – as described in the text above.](../../assets/img/lslogin-lsid.png)
+    [Life Science RI user profile](https://profile.aai.lifescience-ri.eu/profile)
+
 
 ## My data access request got approved but I cannot download the data?
 

@@ -1,9 +1,9 @@
 # Data Availability Statement
 
-Data submissions to GHGA Archive should be referenced via the study accession, which serves as umbrella for all datasets included in the related submission. We recommend using the following statement to reference the data deposition in journals:
+To reference a study included in the GHGA Archive in publications or other media, please always reference the study accession, e.g. `GHGAS12079965883832`. This accession number serves as umbrella for all datasets included in the related [study](../../metadata/entities.md#study). We recommend using the following statement to reference the data deposition in journals:
 
 !!! note "Data Availability Statement"
 
-      The data generated in this study are available via controlled access in the German Human Genome-Phenome Archive (GHGA, [data.ghga.de](https://data.ghga.de)) under GHGA Accession GHGAS1234567890123. Further details, including the Data Access policy, can be found in the GHGA Data Portal.
+      The data generated in this study are available via controlled access in the German Human Genome-Phenome Archive (GHGA, [data.ghga.de](https://data.ghga.de)) under GHGA Accession GHGAS12079965883832. Further details, including the data access policy for the study, can be found there.
 
-This reference should be used instead of a direct link to the submission on the GHGA portal. The structure or layout of the Data Portal might be subject to change at some point, which could effect a direct link. The accession will stay valid in any case.
+This reference should be used **instead of a direct link** to the submission as these links might render invalid eventually. The accession number will stay valid in any case.
