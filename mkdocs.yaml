@@ -128,6 +128,7 @@ nav:
         - "Overview": user_stories/submission/submitting_data.md
         - "Preparing a Data Processing Contract": user_stories/submission/dpc_preparation.md
         - "Data Preparation Guide": user_stories/submission/submitter_guide.md
+        - "Submission Guideline": user_stories/submission/submission_guideline.md
       - "Data Use and Access Guide": user_stories/dua-guideline.md
   - "GHGA Metadata Model":
       - "Overview": metadata/overview.md
