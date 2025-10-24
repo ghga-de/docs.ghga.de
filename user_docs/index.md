@@ -27,12 +27,24 @@ The GHGA Data Portal supports researchers in browsing, accessing, and submitting
 
 The [**GHGA Terms of Use**](https://doi.org/10.5281/zenodo.11146386)[^1] define the services offered by the GHGA Consortium and the performance levels of those services that users can expect. They also define the conditions that apply to users when using GHGA.
 
+
 ## Contact
 Please reach out to the [GHGA Helpdesk](mailto:helpdesk@ghga.de) for any questions on GHGA.
 
-!!! info "Funding"
-    The <general:GHGA Consortium> is not an independent legal entity but an association of research institutions from all over Germany. It is funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) as part of  GHGA – The German Human Genome-Phenome Archive (www.ghga.de, Grant Number [441914366](https://gepris.dfg.de/gepris/projekt/441914366?context=projekt&task=showDetail&id=441914366&) (NFDI 1/1)).
+## About GHGA
 
+### Funding and Legal Status
+The <general:GHGA Consortium> is not an independent legal entity but an association of research institutions from all over Germany. It is funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) as part of  the National Research Data Infrastructure ([NFDI](https://www.nfdi.de/?lang=en)). 
+
+GHGA – The German Human Genome-Phenome Archive (www.ghga.de, Grant Number [441914366](https://gepris.dfg.de/gepris/projekt/441914366?context=projekt&task=showDetail&id=441914366&)).
+
+
+### Listing in FAIR-Sharing Repositories
+
+*GHGA is listed in the following repositories as a FAIR-sharing ressources:*
+
+- FAIRsharing.org - [doi.org/10.25504/FAIRsharing.e2df6a](https://doi.org/10.25504/FAIRsharing.e2df6a) 
+- re3data.org - [doi.org/10.17616/R31NJNQB](https://doi.org/10.17616/R31NJNQB)
 
 
     [^1]: 
