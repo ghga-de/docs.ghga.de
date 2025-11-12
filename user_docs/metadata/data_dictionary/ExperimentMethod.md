@@ -36,6 +36,7 @@ The Experiment Method captures technical metadata describing the parameters used
 | `CHROMOSOME_CONFORMATION_CAPTURE` | `Chromosome conformation capture library` |
 | `CHIP_SEQ` | `A combination of chromatin immunoprecipitation with DNA sequencing.` |
 | `OTHER` | `A library type not captured by the above vocabulary.` |
+| `UNSPECIFIED` | `The library type is not specified.` |
 ///
 
 ### ***library_selection_methods***
@@ -87,6 +88,13 @@ The Experiment Method captures technical metadata describing the parameters used
 | --- | --- |
 | `10X_GENOMICS_CHROMIUM_SINGLE_CELL_3_V2` | `10X Genomics Chromium Single Cell 3' v2 Reagent Kit` |
 | `10X_GENOMICS_CHROMIUM_SINGLE_CELL_3_V3` | `10X Genomics Chromium Single Cell 3' v3 Reagent Kit` |
+| `10X_GENOMICS_CHROMIUM_SINGLE_CELL_3_V4` | `10X Genomics Chromium Single Cell 3' v4 Reagent Kit` |
+| `10X_GENOMICS_CHROMIUM_SINGLE_CELL_5_V3` | `10X Genomics Chromium Single Cell 5' v3 Reagent Kit` |
+| `10X_GENOMICS_CHROMIUM_ATAC_V2` | `10X Genomics Chromium ATAC v2 Reagent Kit` |
+| `10X_GENOMICS_CHROMIUM_MULTIOME_ATAC_RNA` | `10X Genomics Chromium Multiome ATAC + RNA Reagent Kit` |
+| `10X_GENOMICS_CHROMIUM_VISIUM_FF` | `10X Genomics Chromium Visium FF Reagent Kit` |
+| `10X_GENOMICS_CHROMIUM_VISIUM_FFPE` | `10X Genomics Chromium Visium FFPE Reagent Kit` |
+| `10X_GENOMICS_CHROMIUM_VISIUM_CYTASSIST` | `10X Genomics Chromium Visium Cytassist Reagent Kit` |
 | `ACCEL_NGS_2_S_PLUS_DNA_LIBRARY_KIT` | `Accel-NGS 2S Plus DNA Library Kit` |
 | `ACCEL_NGS_METHYL_SEQ_DNA` | `Accel-NGS Methyl-Seq DNA Library Kit` |
 | `AGILENT_STRAND_SPECIFIC_RNA` | `Agilent SureSelect Strand Specific RNA Library Preparation Kit` |
@@ -348,6 +356,7 @@ The Experiment Method captures technical metadata describing the parameters used
 | `ILLUMINA_NOVASEQ_6000` | `Illumina NovaSeq 6000` |
 | `ILLUMINA_NOVASEQ_X` | `Illumina NovaSeq X` |
 | `ILLUMINA_ISEQ_100` | `Illumina iSeq 100` |
+| `ILLUMINA_ISCAN` | `Illumina iScan` |
 | `ION_GENESTUDIO_S5` | `Ion Genestudio S5` |
 | `ION_GENESTUDIO_S5_PLUS` | `Ion Genestudio S5 Plus` |
 | `ION_GENESTUDIO_S5_PRIME` | `Ion Genestudio S5 Prime` |
@@ -391,6 +400,7 @@ The Experiment Method captures technical metadata describing the parameters used
 | --- | --- |
 | `SE` | `Single end sequencing.` |
 | `PE` | `Paired end sequencing.` |
+| `UNSPECIFIED` | `The sequencing layout is unspecified.` |
 ///
 
 ### ***target_coverage***
@@ -409,8 +419,21 @@ The Experiment Method captures technical metadata describing the parameters used
 /// details | Permissible Values
 | Permissible Values | Description |
 | --- | --- |
+| `ELEMENT_BIOSCIENCES_AVITI_LOW_OUTPUT` | `Usage of Element Biosciences Aviti Low Output flow cell.` |
+| `ELEMENT_BIOSCIENCES_AVITI_MID_OUTPUT` | `Usage of Element Biosciences Aviti Mid Output flow cell.` |
+| `ELEMENT_BIOSCIENCES_AVITI_HIGH_OUTPUT` | `Usage of Element Biosciences Aviti High Output flow cell.` |
+| `ILLUMINA_NOVA_SEQ_SP` | `Usage of Illumina NovaSeq SP flow cell.` |
+| `ILLUMINA_NOVA_SEQ_S1` | `Usage of Illumina NovaSeq S1 flow cell.` |
 | `ILLUMINA_NOVA_SEQ_S2` | `Usage of Illumina NovaSeq S2 flow cell.` |
 | `ILLUMINA_NOVA_SEQ_S4` | `Usage of Illumina NovaSeq S4 flow cell.` |
+| `ILLUMINA_NOVA_SEQ_XPLUS_1_5B` | `Usage of Illumina NovaSeq X Plus 1.5B flow cell.` |
+| `ILLUMINA_NOVA_SEQ_XPLUS_10B` | `Usage of Illumina NovaSeq X Plus 10B flow cell.` |
+| `ILLUMINA_NOVA_SEQ_XPLUS_25B` | `Usage of Illumina NovaSeq X Plus 25B flow cell.` |
+| `ILLUMINA_MISEQ_MICRO` | `Usage of Illumina MiSeq Micro flow cell.` |
+| `ILLUMINA_MISEQ_NANO` | `Usage of Illumina MiSeq Nano flow cell.` |
+| `ILLUMINA_NEXTSEQ_HIGH_OUTPUT` | `Usage of Illumina NextSeq High Output flow cell.` |
+| `ILLUMINA_NEXTSEQ_MID_OUTPUT` | `Usage of Illumina NextSeq Mid Output flow cell.` |
+| `PACBIO_SEQUELL_II` | `Usage of PacBio Sequell II flow cell.` |
 | `PROMETHION` | `Usage of PromethION flow cell.` |
 | `FLONGLE` | `Usage of Flongle flow cell.` |
 | `MINION` | `Usage of MinION flow cell.` |
@@ -436,7 +459,7 @@ The Experiment Method captures technical metadata describing the parameters used
 **required** : False<br>
 **data type** : string <br>
 ### ***attributes***
-**description** : One or more attributes that further characterize this Experiment Method.<br>
+**description** : Key/value pairs corresponding to an entity.<br>
 **required** : False<br>
 **data type** : Attribute <br>
 ### ***alias***
