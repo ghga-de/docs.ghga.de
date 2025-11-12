@@ -6,7 +6,7 @@ An Experiment Method Supporting File is a File that contains additional informat
 ## Fields
 ### ***format***
 **description** : The file format of the Supporting File (e.g., TXT, JSON).<br>
-**required** : True<br>
+**requirement**:  $\color{red}{\textbf{required}}$<br> 
 **data type** : Controlled Vocabulary <br>
 
 /// details | Permissible Values
@@ -23,25 +23,25 @@ An Experiment Method Supporting File is a File that contains additional informat
 
 ### ***experiment_method***
 **description** : The Experiment Method associated with an entity.<br>
-**required** : True<br>
+**requirement**:  $\color{red}{\textbf{required}}$<br> 
 **data type** : ExperimentMethod <br>
 ### ***name***
 **description** : The given filename.<br>
-**required** : True<br>
+**requirement**:  $\color{red}{\textbf{required}}$<br> 
 **data type** : string <br>
 ### ***dataset***
 **description** : The Dataset alias associated with this File.<br>
-**required** : True<br>
+**requirement**:  $\color{red}{\textbf{required}}$<br> 
 **data type** : Dataset <br>
 ### ***ega_accession***
 **description** : The EGA accession ID of an entity.<br>
-**required** : False<br>
+**requirement**:  $\color{green}{\textbf{optional}}$<br>
 **data type** : string <br>
 ### ***included_in_submission***
 **description** : Whether a File is included in the Submission or not.<br>
-**required** : True<br>
+**requirement**:  $\color{red}{\textbf{required}}$<br> 
 **data type** : boolean <br>
 ### ***alias***
 **description** : The alias for an entity at the time of submission.<br>
-**required** : True<br>
+**requirement**:  $\color{red}{\textbf{required}}$<br> 
 **data type** : string <br>
