@@ -14,7 +14,7 @@ An Experiment is an investigation that consists of a coordinated set of actions 
 **data type** : string <br>
 ### ***description***
 **description** : A detailed description of this Experiment.<br>
-**required** : True<br>
+**required** : False<br>
 **data type** : string <br>
 ### ***type***
 **description** : The type of this Experiment.<br>

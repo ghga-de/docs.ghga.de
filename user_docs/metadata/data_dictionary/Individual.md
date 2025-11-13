@@ -21,7 +21,7 @@ An Individual is a Person who is participating in a Study.
 **required** : False<br>
 **data type** : string <br>
 ### ***sex***
-**description** : The genotypic sex of the Individual (e.g., female).<br>
+**description** : The biological sex of the Individual (e.g., female).<br>
 **required** : True<br>
 **data type** : Controlled Vocabulary <br>
 
@@ -35,7 +35,7 @@ An Individual is a Person who is participating in a Study.
 ///
 
 ### ***geographical_region_term***
-**description** : The geographical region where the Individual is located. The Geographical Region is captured using a concept from the NCIT "country" class (NCIT:C25464) (e.g., Austria, Germany, Italy).<br>
+**description** : The Individual's geographical region. The used terms should be descendants of 'NCIT:C25464: country' (e.g., Austria, Germany, Italy).<br>
 **required** : False<br>
 **data type** : string <br>
 ### ***geographical_region_id***
@@ -43,7 +43,7 @@ An Individual is a Person who is participating in a Study.
 **required** : False<br>
 **data type** : string <br>
 ### ***ancestry_terms***
-**description** : A person's descent or lineage from a population. The Ancestry is captured using a concept from the Human Ancestry Ontology "ancestry category" (HANCESTRO:0004) branch (e.g., African, European, Oceanian).<br>
+**description** : A person's descent or lineage from a population. The used terms should be descendants of 'HANCESTRO:0004: ancestry category' (e.g., African, European, Oceanian).<br>
 **required** : False<br>
 **data type** : string <br>
 ### ***ancestry_ids***

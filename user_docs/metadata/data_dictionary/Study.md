@@ -54,6 +54,7 @@ A Study is an experimental investigation of a particular phenomenon. It involves
 | `INTERVENTIONAL` | `Interventional study` |
 | `NON_INTERVENTIONAL` | `Non-interventional study` |
 | `COMMUNITY_BASED` | `Community-based study` |
+| `TARGETED_SEQUENCING` | `Targeted sequencing using gene panels.` |
 | `OTHER` | `A study type not captured by the above mentioned.` |
 ///
 
@@ -66,7 +67,7 @@ A Study is an experimental investigation of a particular phenomenon. It involves
 **required** : True<br>
 **data type** : string <br>
 ### ***attributes***
-**description** : One or more attributes that further characterize this Study.<br>
+**description** : Key/value pairs corresponding to an entity.<br>
 **required** : False<br>
 **data type** : Attribute <br>
 ### ***alias***
