@@ -1,0 +1,3 @@
+!!! note "The difference between a Data Controller and a Data Submitter"
+
+      The GDPR defines a Data Controller as the party which "determines the purposes and means of the processing of personal data". Within the context of GHGA, we also use the term Data Submitter to mean the person or institution who are submitting Research Data to the GHGA Data Portal. In many cases, the Data Controller and Data Submitter will be the same but this is not always true; it is therefore important for the Data Submitter to check who the Data Controller is for the data they wish to submit. In this guide, we will use the term Data Controller, as it is the Data Controller who is required to sign the GHGA Data Processing Contract.
