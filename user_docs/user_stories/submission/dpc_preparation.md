@@ -10,9 +10,7 @@ A <general:Data Processing Contract (DPC)> is signed by <general:GHGA Central> a
 
 The DPC creates a controller-to-processor relationship between the institution and GHGA Central. It has been designed to conform with [Art. 28 GDPR Nr. 3](https://gdpr-info.eu/art-28-gdpr/).
 
-!!! note "The difference between a Data Controller and a Data Submitter"
-
-      The GDPR defines a Data Controller as the party which "determines the purposes and means of the processing of personal data". Within the context of GHGA, we also use the term Data Submitter to mean the person or institution who are submitting Research Data to the GHGA Data Portal. In many cases, the Data Controller and Data Submitter will be the same but this is not always true; it is therefore important for the Data Submitter to check who the Data Controller is for the data they wish to submit. In this guide, we will use the term Data Controller, as it is the Data Controller who is required to sign the GHGA Data Processing Contract.
+--8<-- "difference_data_controller_submitter.md"
 
 ### Data Submission to GHGA from DKFZ Scientists
 
@@ -28,6 +26,7 @@ The following checklist gives an overview on the necessary legal processes to be
 - [x] Identify the Data Controller.
       - As the GHGA Data Processing Contract can only be signed by the Data Controller, it is important to identify who they are. 
       - In cases where the data are jointly-controlled, only one of the Data Controllers is required to sign the contract.
+      - Please see also the article on [data protection obligations when submitting to GHGA](dp_obligations.md).
 
 - [x] Consider the additional information that is required. 
       - A number of the annexes to the GHGA Data Processing Contract require information from the Data Controller. It is important for the Data Controller to consider in advance how they will respond.
@@ -129,7 +128,7 @@ In order for GHGA to fulfil a Data Processing Contract it will be necessary to p
 For approved Data Access Requests, it will be necessary that a person authorised to act on behalf of the Data Controller submits the following information to GHGA Central:
 
 - Name of the approved Data Requester
-- <general:LS-Login| Life Science Login ID>
+- <general:LS ID| Life Science Login ID>
 - <general:Independent Verification Address (IVA)>
 
 
