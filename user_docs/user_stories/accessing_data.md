@@ -5,7 +5,7 @@
 ## Creating a Data Access Request
 
  - The GHGA Data Portal enables users to request access to data through the portal.
- - For creating a <general:Data Access Request (DAR)> you need to have a <general:LS-Login|Life Science Login or LS-Login>.
+ - For creating a <general:Data Access Request (DAR)> you need to have a <general:LS ID|Life Science Login or LS-Login>.
  - Browse for your dataset of interest and then click on the "Request Access" button. This will direct you to a data access request form. 
  - Complete the form with the necessary information and submit your <general:Data Access Request (DAR)|Data Access Request>. 
  - The data access request will be sent to the <general:Research Data Controller (RDC)>, who will will review your request and respond accordingly. Please note that GHGA is not involved in the further process of negotiating the data access.
