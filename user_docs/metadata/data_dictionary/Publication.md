@@ -30,7 +30,7 @@ A Publication represents an article that is published. The minimum expectation i
 **data type** : string <br>
 ### ***doi***
 **description** : DOI identifier of a publication.<br>
-**required** : False<br>
+**required** : True<br>
 **data type** : string <br>
 ### ***xref***
 **description** : One or more cross-references for this Publication.<br>
