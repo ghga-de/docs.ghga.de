@@ -44,7 +44,3 @@ An Analysis Method captures the workflow steps that were performed to analyze da
 **description** : key/value pairs where key corresponds to a software name and value corresponds to a version descriptor (e.g., `salmon` = '1.3.0', `trim-galore` = '0.6.6', `bedtools` = '2.29.2').<br>
 **required** : False<br>
 **data type** : Attribute <br>
-### ***alias***
-**description** : The alias for an entity at the time of submission.<br>
-**required** : True<br>
-**data type** : string <br>
