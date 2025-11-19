@@ -56,6 +56,7 @@ A Sample is a limited quantity of something to be used for testing, analysis, in
 | `FREEZER` | `The sample / biospecimen was stored in a freezer at -20°C.` |
 | `ULTRA_LOW_FREEZER` | `The sample / biospecimen was stored in a ultra-low freezer at -80°C.` |
 | `CRYOGENIC_FREEZER` | `The sample / biospecimen was stored in a cryogenic freezer at -150°C to -190°C.` |
+| `FFPE` | `The sample / biospecimen was stored using formalin-fixed paraffin-embedding (FFPE).` |
 | `NONE` | `The sample / biospecimen was not stored.` |
 | `OTHER` | `The sample / biospecimen was stored with a method differing from the available options.` |
 | `UNKNOWN` | `The storage method is unknown.` |
@@ -185,6 +186,7 @@ A Sample is a limited quantity of something to be used for testing, analysis, in
 | `FREEZER` | `The sample / biospecimen was stored in a freezer at -20°C.` |
 | `ULTRA_LOW_FREEZER` | `The sample / biospecimen was stored in a ultra-low freezer at -80°C.` |
 | `CRYOGENIC_FREEZER` | `The sample / biospecimen was stored in a cryogenic freezer at -150°C to -190°C.` |
+| `FFPE` | `The sample / biospecimen was stored using formalin-fixed paraffin-embedding (FFPE).` |
 | `NONE` | `The sample / biospecimen was not stored.` |
 | `OTHER` | `The sample / biospecimen was stored with a method differing from the available options.` |
 | `UNKNOWN` | `The storage method is unknown.` |
