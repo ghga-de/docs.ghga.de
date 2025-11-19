@@ -459,7 +459,7 @@ The Experiment Method captures technical metadata describing the parameters used
 **required** : False<br>
 **data type** : string <br>
 ### ***attributes***
-**description** : One or more attributes that further characterize this Experiment Method.<br>
+**description** : Key/value pairs corresponding to an entity.<br>
 **required** : False<br>
 **data type** : Attribute <br>
 ### ***alias***
