@@ -19,13 +19,12 @@ The European Genome-phenome Archive (EGA) is the main repository approved by sev
 
 In the future, metadata deposited in GHGA will be findeable in the EGA Data Portal. This functionality is currently being worked on.
 
-## Journal Considerations
+## Journal Considerations, frequently asked editor questions
 
 - Specific reasons for controlled access must be transparently described in your data statement.
-TBD
 
-- Restrictions on controlled access datasets including restrictions on downstream data reuse or authorship requirements must be clearly described in manuscript.
-TBD
+Please outline the reasoning in the Data Access Policy section of the non-personal metadata and refer to it.
 
 - Data should be presented as a fully linkable URL
+
 Always reference the study via the relevant GHGA Study Accession: https://data.ghga.de/study/GHGAS12079965883832
