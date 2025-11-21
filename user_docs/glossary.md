@@ -20,7 +20,7 @@ general:Data Access Request (DAR)
 :   A request to obtain access to *Research Data* stated by a *Data Requester*.
 
 general:Data Availability Statement
-:   Proposed text how data included in GHGA should be referenced in publications, websites or other media. Details can be found [here](user_stories/submission/data_availability_statement.md).
+:   Proposed text how data included in GHGA should be referenced in publications, websites or other media. Details can be found [here](user_stories/submission/Citing_GHGA_Submissions.md/#data-availability-statement).
 
 general:Data Processing Contract (DPC)
 :   Bilateral agreement signed by *GHGA Central* and a *Research Data Controller* who wishes to deposit data in the archive. The agreement regulates the rights and duties of the controller and *GHGA Central* in processing the deposited data.

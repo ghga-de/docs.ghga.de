@@ -129,7 +129,7 @@ In order for GHGA to fulfil a Data Processing Contract it will be necessary to p
 For approved Data Access Requests, it will be necessary that a person authorised to act on behalf of the Data Controller submits the following information to GHGA Central:
 
 - Name of the approved Data Requester
-- <general:LS-Login| Life Science Login ID>
+- <general:LS ID| Life Science Login ID>
 - <general:Independent Verification Address (IVA)>
 
 

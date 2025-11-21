@@ -20,7 +20,7 @@ To find out more about how to prepare for a submission, please visit the [respec
 
 ## How should I publicly reference my data deposition in GHGA?
 
-Data depositions should be referenced via the Study Accession (e.g. `GHGAS12079965883832`). To unify how data is referenced, please always use the [recommended **data availability statement**](user_stories/submission/data_availability_statement.md).
+Data depositions should be referenced via the Study Accession (e.g. `GHGAS12079965883832`). To unify how data is referenced, please always use the [recommended **data availability statement**](user_stories/submission/Citing_GHGA_Submissions.md/#data-availability-statement).
 
 ## How to get data access?
 
@@ -38,4 +38,4 @@ In order to ensure that only authorised people can access our systems, GHGA util
 
 ## My data access request got approved but I cannot download the data?
 
-The GHGA Data Portal requires authentication of a user via an <general:Independent Verification Address (IVA)|Independent Verification Address (IVA)>, to ensure that the registered user is the person specified in the Data Transfer Agreement between <general:Research Data Controller (RDC)|Research Data Controller> and <general:Data Requester (DR)|Data Requester>. For more information about this process, please visit the [respective user story](user_stories/submission/accessing_data.md). Please note that the verification process is currently manually supervised by GHGA <general:Data Steward|Data Stewards> and can take up to three working days.
+The GHGA Data Portal requires authentication of a user via an <general:Independent Verification Address (IVA)|Independent Verification Address (IVA)>, to ensure that the registered user is the person specified in the Data Transfer Agreement between <general:Research Data Controller (RDC)|Research Data Controller> and <general:Data Requester (DR)|Data Requester>. For more information about this process, please visit the [respective user story](user_stories/accessing_data.md). Please note that the verification process is currently manually supervised by GHGA <general:Data Steward|Data Stewards> and can take up to three working days.
