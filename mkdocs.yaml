@@ -144,5 +144,6 @@ nav:
       - "Standards": metadata/standards.md
       - "Data Dictionary": metadata/data_dictionary
   - "CLI Tools": cli_tools
+  - "Other Documents": other
   - "FAQ": faq.md
   - "Glossary": glossary.md
