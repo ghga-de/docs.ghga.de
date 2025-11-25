@@ -38,6 +38,6 @@ GHGA can also be found on [re3data.org](https://www.re3data.org/repository/r3d10
 **A:** The Data Submitter is responsible for defining how Data Requesters can gain access to the data they have submitted. Some journals may require that your data availability statement clarifies how long this process is expected to take.
 -
 
-**Requirement: Describe the authoriship requirements**
+**Requirement: Describe the authorship requirements**
 
-**A:** Some Data Submitters require Data Requesters who utilise data that they have archived to include the Data Submitter as a co-author in any publication based upon that data. When submitting data to GHGA, please check whether such a policy exists at your institution.
+**A:** Some Data Submitters require Data Requesters who utilise data that they have archived to include the Data Submitter as a co-author in any publication based upon that data. When submitting data to GHGA, please check whether such a policy exists at your institution, so that it can be included in your data availability statement if needed.
