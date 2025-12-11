@@ -135,6 +135,7 @@ nav:
       - "Submitting Data": 
         - "Overview": user_stories/submission/submitting_data.md
         - "Preparing a Data Processing Contract": user_stories/submission/dpc_preparation.md
+        - "Data Protection Obligations": user_stories/submission/dp_obligations.md
         - "Data Preparation Guide": user_stories/submission/submitter_guide.md
         - "Citing GHGA Submissions": user_stories/submission/Citing_GHGA_Submissions.md
       - "Data Use and Access Guide": user_stories/dua-guideline.md
