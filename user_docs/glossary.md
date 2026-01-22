@@ -92,7 +92,7 @@ general:Helpdesk Lead
 :   The Helpdesk Lead manages the tasks of the GHGA Helpdesk and coordinates the work of the *Data Stewards<Data Steward>*. The Helpdesk Lead is responsible for responding to requests from data subjects regarding administrative data and acts as a liaison between the Data Stewards and the GHGA Operations Consortium Board.
 
 general:Independent Verification Address (IVA)
-: The independent verification address (IVA) is used to add additional security towards the identification of users in the GHGA Data Portal. An IVA is a verification factor that is independent of the primary route of authentication in the GHGA Data Portal using <general:LS ID>. IVAs can be phone numbers or postal addresses to which GHGA will send a code that then needs to be entered back into the GHGA Data Portal by the user. The user's account is then verified for this particular address.
+: The independent verification address (IVA) is used to add additional security towards the identification of users in the GHGA Data Portal. An IVA is a verification factor that is independent of the primary route of authentication in the GHGA Data Portal using <general:LS ID>. Further information can be found [here](other/iva.md).
 
 general:Institutional Review Board (IRB)
 :   See <general:Research Ethics Committee>.
