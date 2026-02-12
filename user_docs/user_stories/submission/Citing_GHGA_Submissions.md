@@ -41,3 +41,7 @@ GHGA can also be found on [re3data.org](https://www.re3data.org/repository/r3d10
 **Requirement: Describe the authorship requirements**
 
 **A:** Some Data Submitters require Data Requesters who utilise data that they have archived to include the Data Submitter as a co-author in any publication based upon that data. When submitting data to GHGA, please check whether such a policy exists at your institution, so that it can be included in your data availability statement if needed.
+
+**Requirement: The reviewers ask for Reviewer Access**
+
+**A:** Same as at the EGA, download access to the files cannot be granted to persons without an approved Data Access Request. For studies that are already released on the GHGA Data Portal, the non-personal metadata can be downloaded as excel file as proof of upload via the GHGA Study Accession: https://data.ghga.de/api/rts/studies/GHGAS12079965883832
