@@ -25,18 +25,18 @@ GHGA can also be found on [re3data.org](https://www.re3data.org/repository/r3d10
 
 **Requirement:  Specific reasons for controlled access must be transparently described in your data statement.**
 
-**A:**: Please outline the reasoning in the Data Access Policy section of the non-personal metadata you have provided during your submission to GHGA and refer to it.
-- 
+**A:** Please outline the reasoning in the Data Access Policy section of the non-personal metadata you have provided during your submission to GHGA and refer to it.
+
 
 **Requirement: Data should be presented as a fully linkable URL**
 
 **A:** Always reference the study via the relevant GHGA Study Accession: https://data.ghga.de/study/GHGAS12079965883832
--
+
 
 **Requirement: Describe the timeframe associated with gaining access**
 
 **A:** The Data Submitter is responsible for defining how Data Requesters can gain access to the data they have submitted. Some journals may require that your data availability statement clarifies how long this process is expected to take.
--
+
 
 **Requirement: Describe the authorship requirements**
 
