@@ -1,0 +1,3983 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Public documentation for users of the German Human Genome-Phenome Archive.">
+      
+      
+        <meta name="author" content="The GHGA Team">
+      
+      
+        <link rel="canonical" href="https://docs.ghga.de/metadata/data_dictionary/ExperimentMethod/">
+      
+      
+        <link rel="prev" href="../Experiment/">
+      
+      
+        <link rel="next" href="../ExperimentMethodSupportingFile/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>ExperimentMethod - GHGA User Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#experimentmethod" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      <!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Determine classes -->
+
+
+  
+
+
+<!-- Header -->
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav
+    class="md-header__inner md-grid"
+    aria-label="Header"
+  >
+
+    <!-- Link to home -->
+    <a
+      href="../../.."
+      title="GHGA User Documentation"
+      class="md-header__button md-logo"
+      aria-label="GHGA User Documentation"
+      data-md-component="logo"
+    >
+      
+  <img src="../../../logo.svg" alt="logo">
+
+    </a>
+
+    <!-- Button to open drawer -->
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+
+    <!-- Header title -->
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GHGA User Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ExperimentMethod
+            
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Header Link GHGA Data Portal -->
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__topic">
+    <span class="md-ellipsis">
+    <a href="https://data.ghga.de/browse" title="GHGA Data Portal" target="_blank" rel="noopener">GHGA Data Portal <img src="/assets/img/arrow-up-right-from-square-solid.svg" alt="Upright Arrow" width="20"></a>
+    </span>
+    </div>
+    </div>
+
+
+    <!-- Color palette toggle -->
+    
+      
+    
+
+    <!-- User preference: color palette -->
+    
+
+    <!-- Site language selector -->
+    
+
+    <!-- Button to open search modal -->
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+
+      <!-- Search interface -->
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    <!-- Repository information -->
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ghga-de/docs/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GHGA User Documentation
+  </div>
+</a>
+      </div>
+    
+  </nav>
+
+  <!-- Navigation tabs (sticky) -->
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="GHGA User Documentation" class="md-nav__button md-logo" aria-label="GHGA User Documentation" data-md-component="logo">
+      
+  <img src="../../../logo.svg" alt="logo">
+
+    </a>
+    GHGA User Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ghga-de/docs/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GHGA User Documentation
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Stories
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    User Stories
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user_stories/browsing_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Browsing Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user_stories/accessing_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accessing Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Submitting Data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Submitting Data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user_stories/submission/submitting_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user_stories/submission/dpc_preparation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Preparing a Data Processing Contract
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user_stories/submission/dp_obligations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Protection Obligations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user_stories/submission/submitter_guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Preparation Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user_stories/submission/Citing_GHGA_Submissions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Citing GHGA Submissions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../user_stories/dua-guideline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Use and Access Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GHGA Metadata Model
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    GHGA Metadata Model
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Entities & Attributes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../standards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Dictionary
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Dictionary
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Analysis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Analysis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AnalysisMethod/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AnalysisMethod
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AnalysisMethodSupportingFile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AnalysisMethodSupportingFile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DataAccessCommittee/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DataAccessCommittee
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DataAccessPolicy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DataAccessPolicy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Dataset/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dataset
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Experiment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Experiment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ExperimentMethod
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ExperimentMethod
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Description
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fields
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fields">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#description_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        description
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        type
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#library_type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        library_type
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#library_selection_methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        library_selection_methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#library_preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        library_preparation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#library_preparation_kit_retail_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        library_preparation_kit_retail_name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#library_preparation_kit_manufacturer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        library_preparation_kit_manufacturer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#primer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        primer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#end_bias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        end_bias
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#target_regions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        target_regions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnaseq_strandedness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        rnaseq_strandedness
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instrument_model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        instrument_model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sequencing_center" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        sequencing_center
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sequencing_read_length" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        sequencing_read_length
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sequencing_layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        sequencing_layout
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#target_coverage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        target_coverage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flow_cell_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        flow_cell_id
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flow_cell_type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        flow_cell_type
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sample_barcode_read" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        sample_barcode_read
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ega_accession" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ega_accession
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        attributes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        alias
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ExperimentMethodSupportingFile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ExperimentMethodSupportingFile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Individual/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Individual
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../IndividualSupportingFile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IndividualSupportingFile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ProcessDataFile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ProcessDataFile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Publication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Publication
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ResearchDataFile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ResearchDataFile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Sample/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sample
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Study/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Study
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CLI Tools
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    CLI Tools
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cli_tools/cli_overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cli_tools/connector/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GHGA Connector
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cli_tools/transpiler/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GHGA Transpiler
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cli_tools/validator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GHGA Validator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Other Documents
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Other Documents
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../other/iva/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Independent Verification Address (IVA) and how it is used in GHGA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Description
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fields
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fields">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#description_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        description
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        type
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#library_type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        library_type
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#library_selection_methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        library_selection_methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#library_preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        library_preparation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#library_preparation_kit_retail_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        library_preparation_kit_retail_name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#library_preparation_kit_manufacturer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        library_preparation_kit_manufacturer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#primer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        primer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#end_bias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        end_bias
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#target_regions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        target_regions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnaseq_strandedness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        rnaseq_strandedness
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instrument_model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        instrument_model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sequencing_center" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        sequencing_center
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sequencing_read_length" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        sequencing_read_length
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sequencing_layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        sequencing_layout
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#target_coverage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        target_coverage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flow_cell_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        flow_cell_id
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flow_cell_type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        flow_cell_type
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sample_barcode_read" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        sample_barcode_read
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ega_accession" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ega_accession
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        attributes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        alias
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="experimentmethod">ExperimentMethod<a class="headerlink" href="#experimentmethod" title="Permanent link">&para;</a></h1>
+<h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
+<p>The Experiment Method captures technical metadata describing the parameters used to generate output from the Sample.</p>
+<h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permanent link">&para;</a></h2>
+<h3 id="name"><strong><em>name</em></strong><a class="headerlink" href="#name" title="Permanent link">&para;</a></h3>
+<p><strong>description</strong> : A short name identifying this Experiment Method.<br>
+<strong>required</strong> : True<br>
+<strong>data type</strong> : string <br></p>
+<h3 id="description_1"><strong><em>description</em></strong><a class="headerlink" href="#description_1" title="Permanent link">&para;</a></h3>
+<p><strong>description</strong> : A short description of this Experiment Method.<br>
+<strong>required</strong> : True<br>
+<strong>data type</strong> : string <br></p>
+<h3 id="type"><strong><em>type</em></strong><a class="headerlink" href="#type" title="Permanent link">&para;</a></h3>
+<p><strong>description</strong> : The type associated with this Experiment Method.<br>
+<strong>required</strong> : True<br>
+<strong>data type</strong> : string <br></p>
+<h3 id="library_type"><strong><em>library_type</em></strong><a class="headerlink" href="#library_type" title="Permanent link">&para;</a></h3>
+<p><strong>description</strong> : Describe the level of omics analysis (e.g., WGS, ATAC).<br>
+<strong>required</strong> : True<br>
+<strong>data type</strong> : Controlled Vocabulary <br></p>
+<details>
+<summary>Permissible Values</summary>
+<table>
+<thead>
+<tr>
+<th>Permissible Values</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>WGS</code></td>
+<td><code>Whole genome sequencing library</code></td>
+</tr>
+<tr>
+<td><code>WXS</code></td>
+<td><code>Whole exome sequencing library</code></td>
+</tr>
+<tr>
+<td><code>WCS</code></td>
+<td><code>Whole chromosome sequencing library</code></td>
+</tr>
+<tr>
+<td><code>TOTAL_RNA</code></td>
+<td><code>Total RNA sequencing library</code></td>
+</tr>
+<tr>
+<td><code>M_RNA</code></td>
+<td><code>mRNA sequencing library</code></td>
+</tr>
+<tr>
+<td><code>MI_RNA</code></td>
+<td><code>miRNA sequencing library</code></td>
+</tr>
+<tr>
+<td><code>NC_RNA</code></td>
+<td><code>ncRNA sequencing library</code></td>
+</tr>
+<tr>
+<td><code>ATAC</code></td>
+<td><code>ATAC sequencing library</code></td>
+</tr>
+<tr>
+<td><code>METHYLATION</code></td>
+<td><code>Methylation library</code></td>
+</tr>
+<tr>
+<td><code>CHROMOSOME_CONFORMATION_CAPTURE</code></td>
+<td><code>Chromosome conformation capture library</code></td>
+</tr>
+<tr>
+<td><code>CHIP_SEQ</code></td>
+<td><code>A combination of chromatin immunoprecipitation with DNA sequencing.</code></td>
+</tr>
+<tr>
+<td><code>OTHER</code></td>
+<td><code>A library type not captured by the above vocabulary.</code></td>
+</tr>
+<tr>
+<td><code>UNSPECIFIED</code></td>
+<td><code>The library type is not specified.</code></td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="library_selection_methods"><strong><em>library_selection_methods</em></strong><a class="headerlink" href="#library_selection_methods" title="Permanent link">&para;</a></h3>
+<p><strong>description</strong> : One or more methods used to select for or against, enrich, or screen the material being sequenced (e.g., random, PCA, cDNA).<br>
+<strong>required</strong> : True<br>
+<strong>data type</strong> : Controlled Vocabulary <br></p>
+<details>
+<summary>Permissible Values</summary>
+<table>
+<thead>
+<tr>
+<th>Permissible Values</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>5_METHYLCYTIDINE_ANTIBODY_METHOD</code></td>
+<td><code>Selection of methylated DNA fragments using an antibody raised against 5-methylcytosine or 5-methylcytidine (m5C).</code></td>
+</tr>
+<tr>
+<td><code>CAGE_METHOD</code></td>
+<td><code>Cap-analysis gene expression.</code></td>
+</tr>
+<tr>
+<td><code>C_DNA_METHOD</code></td>
+<td><code>PolyA selection or enrichment for messenger RNA (mRNA). complementary DNA.</code></td>
+</tr>
+<tr>
+<td><code>CF_H_METHOD</code></td>
+<td><code>Cot-filtered highly repetitive genomic DNA.</code></td>
+</tr>
+<tr>
+<td><code>CF_M_METHOD</code></td>
+<td><code>Cot-filtered moderately repetitive genomic DNA.</code></td>
+</tr>
+<tr>
+<td><code>CF_S_METHOD</code></td>
+<td><code>Cot-filtered single/low-copy genomic DNA.</code></td>
+</tr>
+<tr>
+<td><code>CF_T_METHOD</code></td>
+<td><code>Cot-filtered theoretical single-copy genomic DNA.</code></td>
+</tr>
+<tr>
+<td><code>CHIP_SEQ_METHOD</code></td>
+<td><code>Chromatin immunoprecipitation.</code></td>
+</tr>
+<tr>
+<td><code>D_NASE_METHOD</code></td>
+<td><code>Deoxyribonuclease (MNase) digestion.</code></td>
+</tr>
+<tr>
+<td><code>HMPR_METHOD</code></td>
+<td><code>Hypo-methylated partial restriction digest.</code></td>
+</tr>
+<tr>
+<td><code>HYBRID_SELECTION_METHOD</code></td>
+<td><code>Selection by hybridization in array or solution.</code></td>
+</tr>
+<tr>
+<td><code>MBD2_PROTEIN_METHYL_CP_G_BINDING_DOMAIN_METHOD</code></td>
+<td><code>Enrichment by methyl-CpG binding domain.</code></td>
+</tr>
+<tr>
+<td><code>MF_METHOD</code></td>
+<td><code>Methyl Filtrated</code></td>
+</tr>
+<tr>
+<td><code>M_NASE_METHOD</code></td>
+<td><code>Micrococcal Nuclease (MNase) digestion.</code></td>
+</tr>
+<tr>
+<td><code>MSLL_METHOD</code></td>
+<td><code>Methylation Spanning Linking Library.</code></td>
+</tr>
+<tr>
+<td><code>PCR_METHOD</code></td>
+<td><code>Source material was selected by designed primers.</code></td>
+</tr>
+<tr>
+<td><code>RACE_METHOD</code></td>
+<td><code>Rapid Amplification of cDNA Ends.</code></td>
+</tr>
+<tr>
+<td><code>RANDOM_PCR_METHOD</code></td>
+<td><code>Source material was selected by randomly generated primers.</code></td>
+</tr>
+<tr>
+<td><code>RANDOM_METHOD</code></td>
+<td><code>Random selection by shearing or other method.</code></td>
+</tr>
+<tr>
+<td><code>RT_PCR_METHOD</code></td>
+<td><code>Source material was selected by reverse transcription PCR.</code></td>
+</tr>
+<tr>
+<td><code>REDUCED_REPRESENTATION_METHOD</code></td>
+<td><code>Reproducible genomic subsets, often generated by restriction fragment size selection, containing a manageable number of loci to facilitate re-sampling.</code></td>
+</tr>
+<tr>
+<td><code>RESTRICTION_DIGEST_METHOD</code></td>
+<td><code>DNA fractionation using restriction enzymes.</code></td>
+</tr>
+<tr>
+<td><code>SIZE_FRACTIONATION_METHOD</code></td>
+<td><code>Physical selection of size appropriate targets.</code></td>
+</tr>
+<tr>
+<td><code>UNSPECIFIED</code></td>
+<td><code>The library selection cannot be specified.</code></td>
+</tr>
+<tr>
+<td><code>OTHER</code></td>
+<td><code>Other library enrichment, screening, or selection process.</code></td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="library_preparation"><strong><em>library_preparation</em></strong><a class="headerlink" href="#library_preparation" title="Permanent link">&para;</a></h3>
+<p><strong>description</strong> : The general method for preparation of the sequencing library (e.g., KAPA PCR-free).<br>
+<strong>required</strong> : True<br>
+<strong>data type</strong> : string <br></p>
+<h3 id="library_preparation_kit_retail_name"><strong><em>library_preparation_kit_retail_name</em></strong><a class="headerlink" href="#library_preparation_kit_retail_name" title="Permanent link">&para;</a></h3>
+<p><strong>description</strong> : The retail name for the kit used to construct a genomic library. This may include the vendor name, kit name and kit version (e.g., Agilent sure select Human Exome V8, Twist RefSeq Exome).<br>
+<strong>required</strong> : False<br>
+<strong>data type</strong> : Controlled Vocabulary <br></p>
+<details>
+<summary>Permissible Values</summary>
+<table>
+<thead>
+<tr>
+<th>Permissible Values</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>10X_GENOMICS_CHROMIUM_SINGLE_CELL_3_V2</code></td>
+<td><code>10X Genomics Chromium Single Cell 3' v2 Reagent Kit</code></td>
+</tr>
+<tr>
+<td><code>10X_GENOMICS_CHROMIUM_SINGLE_CELL_3_V3</code></td>
+<td><code>10X Genomics Chromium Single Cell 3' v3 Reagent Kit</code></td>
+</tr>
+<tr>
+<td><code>10X_GENOMICS_CHROMIUM_SINGLE_CELL_3_V4</code></td>
+<td><code>10X Genomics Chromium Single Cell 3' v4 Reagent Kit</code></td>
+</tr>
+<tr>
+<td><code>10X_GENOMICS_CHROMIUM_SINGLE_CELL_5_V3</code></td>
+<td><code>10X Genomics Chromium Single Cell 5' v3 Reagent Kit</code></td>
+</tr>
+<tr>
+<td><code>10X_GENOMICS_CHROMIUM_ATAC_V2</code></td>
+<td><code>10X Genomics Chromium ATAC v2 Reagent Kit</code></td>
+</tr>
+<tr>
+<td><code>10X_GENOMICS_CHROMIUM_MULTIOME_ATAC_RNA</code></td>
+<td><code>10X Genomics Chromium Multiome ATAC + RNA Reagent Kit</code></td>
+</tr>
+<tr>
+<td><code>10X_GENOMICS_CHROMIUM_VISIUM_FF</code></td>
+<td><code>10X Genomics Chromium Visium FF Reagent Kit</code></td>
+</tr>
+<tr>
+<td><code>10X_GENOMICS_CHROMIUM_VISIUM_FFPE</code></td>
+<td><code>10X Genomics Chromium Visium FFPE Reagent Kit</code></td>
+</tr>
+<tr>
+<td><code>10X_GENOMICS_CHROMIUM_VISIUM_CYTASSIST</code></td>
+<td><code>10X Genomics Chromium Visium Cytassist Reagent Kit</code></td>
+</tr>
+<tr>
+<td><code>ACCEL_NGS_2_S_PLUS_DNA_LIBRARY_KIT</code></td>
+<td><code>Accel-NGS 2S Plus DNA Library Kit</code></td>
+</tr>
+<tr>
+<td><code>ACCEL_NGS_METHYL_SEQ_DNA</code></td>
+<td><code>Accel-NGS Methyl-Seq DNA Library Kit</code></td>
+</tr>
+<tr>
+<td><code>AGILENT_STRAND_SPECIFIC_RNA</code></td>
+<td><code>Agilent SureSelect Strand Specific RNA Library Preparation Kit</code></td>
+</tr>
+<tr>
+<td><code>AGILENT_SURE_SELECT_CUSTOM_ENRICHMENT_KIT</code></td>
+<td><code>Agilent SureSelect Target Enrichment System</code></td>
+</tr>
+<tr>
+<td><code>AGILENT_SURE_SELECT_V3</code></td>
+<td><code>Agilent SureSelect Human All Exon V3</code></td>
+</tr>
+<tr>
+<td><code>AGILENT_SURE_SELECT_V4</code></td>
+<td><code>Agilent SureSelect Human All Exon V4</code></td>
+</tr>
+<tr>
+<td><code>AGILENT_SURE_SELECT_V4_UTRS</code></td>
+<td><code>Agilent SureSelect Human All Exon V4 + UTRs</code></td>
+</tr>
+<tr>
+<td><code>AGILENT_SURE_SELECT_V5</code></td>
+<td><code>Agilent SureSelect Human All Exon V5</code></td>
+</tr>
+<tr>
+<td><code>AGILENT_SURE_SELECT_V5_UTRS</code></td>
+<td><code>Agilent SureSelect Human All Exon V5 + UTRs</code></td>
+</tr>
+<tr>
+<td><code>AGILENT_SURE_SELECT_V6</code></td>
+<td><code>Agilent SureSelect Human All Exon V6</code></td>
+</tr>
+<tr>
+<td><code>AGILENT_SURE_SELECT_V6_UTRS</code></td>
+<td><code>Agilent SureSelect Human All Exon V6 + UTRs</code></td>
+</tr>
+<tr>
+<td><code>AGILENT_SURE_SELECT_V6_PLUS_ONE</code></td>
+<td><code>Agilent SureSelect XT Human All Exon V6 Plus 1</code></td>
+</tr>
+<tr>
+<td><code>AGILENT_SURE_SELECT_V6_PLUS_TWO</code></td>
+<td><code>Agilent SureSelect XT Human All Exon V6 Plus 2</code></td>
+</tr>
+<tr>
+<td><code>AGILENT_SURE_SELECT_V8</code></td>
+<td><code>Agilent SureSelect XT HS Human All Exon V8</code></td>
+</tr>
+<tr>
+<td><code>AGILENT_SURE_SELECT_V8_UTRS</code></td>
+<td><code>Agilent SureSelect XT HS Human All Exon V8 + UTRs</code></td>
+</tr>
+<tr>
+<td><code>AGILENT_SURE_SELECT_V8_NCV</code></td>
+<td><code>Agilent SureSelect XT HS Human All Exon V8 + NCV</code></td>
+</tr>
+<tr>
+<td><code>AGILENT_SURE_SELECT_QXT_WGS</code></td>
+<td><code>Agilent SureSelectQXT Library Prep for WGS</code></td>
+</tr>
+<tr>
+<td><code>AGILENT_SURE_SELECT_XT_HS_HUMAN_ALL_EXON_V7</code></td>
+<td><code>Agilent SureSelect CT HS and Low Input Human All Exon V7</code></td>
+</tr>
+<tr>
+<td><code>AGILENT_SURE_SELECT_XT_HS_HUMAN_ALL_EXON_V7_ONE</code></td>
+<td><code>Agilent SureSelect CT HS and Low Input Human All Exon V7 Plus 1</code></td>
+</tr>
+<tr>
+<td><code>AGILENT_SURE_SELECT_XT_HS_HUMAN_ALL_EXON_V7_TWO</code></td>
+<td><code>Agilent SureSelect CT HS and Low Input Human All Exon V7 Plus 2</code></td>
+</tr>
+<tr>
+<td><code>AGILENT_SURE_SELECT_CLINICAL_RESEARCH_EXOME_V2</code></td>
+<td><code>Agilent SureSelect XT Clinical Research Exome V2</code></td>
+</tr>
+<tr>
+<td><code>AGILENT_SURE_SELECT_CLINICAL_RESEARCH_EXOME_V2_ONE</code></td>
+<td><code>Agilent SureSelect XT Clinical Research Exome V2 Plus 1</code></td>
+</tr>
+<tr>
+<td><code>AGILENT_SURE_SELECT_CLINICAL_RESEARCH_EXOME_V2_TWO</code></td>
+<td><code>Agilent SureSelect XT Clinical Research Exome V2 Plus 2</code></td>
+</tr>
+<tr>
+<td><code>AGILENT_CLEAR_SEQ_COMPREHENSIVE_CANCER_XT</code></td>
+<td><code>Agilent ClearSeq Comprehensive Cancer XT</code></td>
+</tr>
+<tr>
+<td><code>AGILENT_SURE_SELECT_CUSTOM_TIER1</code></td>
+<td><code>Agilent SureSelect Custom Tier1</code></td>
+</tr>
+<tr>
+<td><code>AGILENT_SURE_SELECT_CUSTOM_TIER2</code></td>
+<td><code>Agilent SureSelect Custom Tier2</code></td>
+</tr>
+<tr>
+<td><code>AGILENT_SURE_SELECT_CUSTOM_TIER3</code></td>
+<td><code>Agilent SureSelect Custom Tier3</code></td>
+</tr>
+<tr>
+<td><code>AGILENT_SURE_SELECT_CUSTOM_TIER4</code></td>
+<td><code>Agilent SureSelect Custom Tier4</code></td>
+</tr>
+<tr>
+<td><code>AGILENT_SURE_SELECT_CUSTOM_TIER5</code></td>
+<td><code>Agilent SureSelect Custom Tier5</code></td>
+</tr>
+<tr>
+<td><code>AVENIO_CT_DNA_TARGETED_KIT</code></td>
+<td><code>AVENIO ctDNA Targeted Kit V2</code></td>
+</tr>
+<tr>
+<td><code>AVENIO_CT_DNA_SURVEILLANCE_KIT</code></td>
+<td><code>AVENIO ctDNA Surveillance Kit V2</code></td>
+</tr>
+<tr>
+<td><code>AVENIO_CT_DNA_EXPANDED_KIT</code></td>
+<td><code>AVENIO ctDNA Expanded Kit V2</code></td>
+</tr>
+<tr>
+<td><code>IDT_X_GEN_EXOME_RESEARCH_PANEL</code></td>
+<td><code>IDT xGen Exome Research Panel V2</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_DNA_PCR_FREE_PREP</code></td>
+<td><code>Illumina DNA PCR-Free Prep</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_NEXTERA_DNA_FLEX</code></td>
+<td><code>Illumina Nextera DNA Flex</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_DNA_PREP</code></td>
+<td><code>Illumina DNA Prep</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_NEXTERA_EXOME_ENRICHMENT_KIT</code></td>
+<td><code>Illumina Nextera Exome Enrichment Kit</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_DNA_PREP_WITH_ENRICHMENT</code></td>
+<td><code>Illumina DNA Prep with Enrichment</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_DNA_PREP_WITH_EXOME_2_5_ENRICHMENT</code></td>
+<td><code>Illumina DNA Prep with Exome 2.5 Enrichment</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_STRANDED_M_RNA_PREP</code></td>
+<td><code>Illumina Stranded mRNA Prep</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_NEXTERA_DNA_LIBRARY_PREPARATION_KIT</code></td>
+<td><code>Illumina Nextera DNA Library Preparation Kit</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_NEXTERA_XT_DNA_LIBRARY_PREPARATION_KIT</code></td>
+<td><code>Illumina Nextera XT DNA Library Preparation Kit</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_RNA_PREP_WITH_ENRICHMENT</code></td>
+<td><code>Illumina RNA Prep with Enrichment</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_TRU_SEQ_CH_IP_LIBRARY_PREPARATION_KIT</code></td>
+<td><code>TruSeq ChIP Library Preparation Kit</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_TRU_SEQ_CUSTOM_AMPLICON_LOW_INPUT_KIT</code></td>
+<td><code>Illumina TruSeq Custom Amplicon Low Input Kit</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_TRU_SEQ_CUSTOM_AMPLICON_V_1_5</code></td>
+<td><code>Illumina TruSeq Custom Amplicon v1.5</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_TRU_SEQ_DNA_EXOME</code></td>
+<td><code>Illumina TruSeq DNA Exome</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_TRU_SEQ_DNA_NANO</code></td>
+<td><code>Illumina TruSeq DNA Nano</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_TRU_SEQ_DNA_NANO_LIBRARY_PREP_KIT_FOR_NEO_PREP</code></td>
+<td><code>Illumina TruSeq DNA Nano Library Prep Kit for NeoPrep</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_TRU_SEQ_NANO_DNA_HT</code></td>
+<td><code>Illumina TruSeq Nano DNA High Throughput</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_TRU_SEQ_NANO_DNA_LT</code></td>
+<td><code>Illumina TruSeq Nano DNA Low Throughput</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_TRU_SEQ_FFPE_DNA_LIBRARY_PREP_QC_KIT</code></td>
+<td><code>TruSeq FFPE DNA Library Prep QC Kit</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_TRU_SEQ_DNA_PCR_FREE</code></td>
+<td><code>Illumina TruSeq DNA PCR-Free</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_TRU_SEQ_RNA_LIBRARY_PREP_KIT_V2</code></td>
+<td><code>Illumina TruSeq RNA Library Prep Kit v2</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_TRU_SEQ_RNA_EXOME</code></td>
+<td><code>Illumina TruSeq RNA Exome</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_TRU_SEQ_SMALL_RNA_LIBRARY_PREPARATION_KIT</code></td>
+<td><code>Illumina TruSeq Small RNA Library Preparation Kit</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_TRU_SEQ_STRANDED_TOTAL_RNA</code></td>
+<td><code>Illumina TruSeq Stranded Total RNA</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_TRU_SEQ_STRANDED_M_RNA</code></td>
+<td><code>Illumina TruSeq Stranded mRNA</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_TRU_SEQ_STRANDED_TOTAL_RNA_WITH_RIBO_ZERO_GOLD</code></td>
+<td><code>Illumina TruSeq Stranded Total RNA with Ribo-Zero Globin</code></td>
+</tr>
+<tr>
+<td><code>VAHTS_TOTAL_RNA_SEQ_H_M_R_LIBRARY_PREP_KIT_FOR_ILLUMINA</code></td>
+<td><code>VAHTS Total RNA (H/M/R) Library Prep Kit for Illumina</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_NEXTERA_XT_DNA</code></td>
+<td><code>Illumina Nextera XT DNA Library Preparation Kit</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_TRU_SEQ_TARGETED_RNA_EXPRESSION_STEM_CELL_PANEL</code></td>
+<td><code>Illumina TruSeq Targeted RNA Expression Stem Cell Panel</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_TRU_SEQ_TARGETED_RNA_EXPRESSION_P_53_PANEL</code></td>
+<td><code>Illumina TruSeq Targeted RNA Expression p53 Panel</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_TRU_SIGHT_ONCOLOGY_500</code></td>
+<td><code>Illumina TruSight Oncology 500</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_TRU_SIGHT_ONCOLOGY_500_HIGH_THROUGHPUT</code></td>
+<td><code>Illumina TruSight Oncology High Throughput</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_TRU_SIGHT_ONCOLOGY_500_CT_DNA</code></td>
+<td><code>Illumina TruSight Oncology 500 ctDNA</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_TRU_SIGHT_RNA_FUSION_PANEL</code></td>
+<td><code>Illumina TruSight RNA Fusion Panel</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_TRU_SIGHT_RNA_PAN_CANCER</code></td>
+<td><code>Illumina TruSight RNA Pan-Cancer</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_TRU_SIGHT_TUMOR_15</code></td>
+<td><code>Illumina TruSight Tumor 15</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_TRU_SIGHT_TUMOR_170</code></td>
+<td><code>Illumina TruSight Tumor 170</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_AMPLI_SEQ_FOR_ILLUMINA_BRCA_PANEL</code></td>
+<td><code>Illumina AmpliSeq for Illumina BRCA Panel</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_AMPLI_SEQ_FOR_ILLUMINA_CANCER_HOTSPOT_PANEL_V2</code></td>
+<td><code>Illumina AmpliSeq for Illumina Cancer Hotspot Panel v2</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_AMPLI_SEQ_FOR_ILLUMINA_CHILDHOOD_CANCER_PANEL</code></td>
+<td><code>Illumina AmpliSeq for Illumina Childhood Cancer Panel</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_AMPLI_SEQ_FOR_ILLUMINA_COMPREHENSIVE_PANEL_V3</code></td>
+<td><code>Illumina AmpliSeq for Illumina Comprehensive Panel v3</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_AMPLI_SEQ_FOR_ILLUMINA_CUSTOM_DNA_PANEL</code></td>
+<td><code>Illumina AmpliSeq for Illumina Custom DNA Panel</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_AMPLI_SEQ_FOR_ILLUMINA_CUSTOM_RNA_FUSION_PANEL</code></td>
+<td><code>Illumina AmpliSeq for Illumina Custom RNA Fusion Panel</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_AMPLI_SEQ_FOR_ILLUMINA_CUSTOM_RNA_PANEL</code></td>
+<td><code>Illumina AmpliSeq for Illumina Custom RNA Panel</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_AMPLI_SEQ_FOR_ILLUMINA_FOCUS_PANEL</code></td>
+<td><code>Illumina AmpliSeq for Illumina Focus Panel</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_AMPLI_SEQ_FOR_ILLUMINA_IMMUNE_REPERTOIRE_PLUS_TCR_BETA_PANEL</code></td>
+<td><code>Illumina AmpliSeq for Illumina Immune Repertoire Plus, TCR beta Panel</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_AMPLI_SEQ_FOR_ILLUMINA_IMMUNE_RESPONSE_PANEL</code></td>
+<td><code>Illumina AmpliSeq for Illumina Immune Response Panel</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_AMPLI_SEQ_FOR_ILLUMINA_LIBRARY_PREP_INDEXES_AND_ACCESSOIRES</code></td>
+<td><code>Illumina AmpliSeq for Illumina Library Prep, Indexes, and Accessoires</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_AMPLI_SEQ_FOR_ILLUMINA_MYELOID_PANEL</code></td>
+<td><code>Illumina AmpliSeq for Illumina Myeloid Panel</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_AMPLI_SEQ_FOR_ILLUMINA_ON_DEMAND</code></td>
+<td><code>Illumina AmpliSeq for Illumina On-Demand</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_AMPLI_SEQ_FOR_ILLUMINA_TCR_BETA_SR_PANEL</code></td>
+<td><code>Illumina AmpliSeq for Illumina TCR beta-SR Panel</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_AMPLI_SEQ_FOR_ILLUMINA_TRANSCRIPTOME_HUMAN_GENE_EXPRESSION_PANEL</code></td>
+<td><code>Illumina AmpliSeq for Illumina Transcriptome Human Gene Expression Panel</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_COMPLETE_LONG_READ_PREP_HUMAN</code></td>
+<td><code>Illumina Complete Long Read Prep, Human</code></td>
+</tr>
+<tr>
+<td><code>INFORM_ONCO_PANEL_HG19</code></td>
+<td><code>Inform Onco Panel Hg19</code></td>
+</tr>
+<tr>
+<td><code>ION_AMPLI_SEQ_EXOME_KIT</code></td>
+<td><code>Ion AmpliSeq Exome RDY Kit</code></td>
+</tr>
+<tr>
+<td><code>KAPA_HIFI_HOT_START_READYMIX</code></td>
+<td><code>KAPA HiFi HotStart ReadyMix Kit</code></td>
+</tr>
+<tr>
+<td><code>KAPA_HYPER_PREP_KIT</code></td>
+<td><code>KAPA HyperPrep Kit</code></td>
+</tr>
+<tr>
+<td><code>KAPA_HYPER_PREP_PCR_FREE_KIT</code></td>
+<td><code>KAPA HyperPrep Kit (PCR-free)</code></td>
+</tr>
+<tr>
+<td><code>KAPA_HYPER_PLUS_KIT</code></td>
+<td><code>KAPA HyperPlus Kit</code></td>
+</tr>
+<tr>
+<td><code>KAPA_M_RNA_HYPER_PREP_KIT</code></td>
+<td><code>KAPA RNA HyperPrep Kit</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_GLOBIN_R_RNA_DEPLETION_HU_MO_RAT_RNA_SAMPLE_PURIFICATION_BEADS</code></td>
+<td><code>NEBNext Globin &amp; rRNA Depletion Kit (Human/Mouse/Rat) with RNA Sample Purification Beads</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_GLOBIN_R_RNA_DEPLETION_KIT_HUMAN_MOUSE_RAT</code></td>
+<td><code>NEBNext Globin &amp; rRNA Depletion Kit (Human/Mouse/Rat)</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_GLOBIN_R_RNA_DEPLET_V2_HU_MO_RAT_RNA_SAMPLE_PURIFICATION_BEADS</code></td>
+<td><code>NEBNext Globin &amp; rRNA Depletion Kit v2 (Human/Mouse/Rat) with RNA Sample Purification Beads</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_GLOBIN_R_RNA_DEPLETION_KIT_V2_HUMAN_MOUSE_RAT</code></td>
+<td><code>NEBNext Globin &amp; rRNA Depletion Kit v2 (Human/Mouse/Rat)</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_RNA_DEPLETION_CORE_REAGENT_SET</code></td>
+<td><code>NEBNext RNA Depletion Core Reagent Set</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_RNA_DEPLETION_CORE_REAGENT_SET_RNA_SAMPLE_PURIFICATION_BEADS</code></td>
+<td><code>NEBNext RNA Depletion Core Reagent Set with RNA Sample Purification Beads</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_POLY_A_M_RNA_MAGNETIC_ISOLATION_MODULE</code></td>
+<td><code>NEBNext Poly(A) mRNA Magnetic Isolation Module</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_SINGLE_CELL_LOW_INPUT_CDNA_SYNTHESIS_AND_AMPLIFICATION_MODULE</code></td>
+<td><code>NEBNext Single Cell / Low Input cDNA Synthesis and Amplification Module</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_SINGLE_CELL_LOW_INPUT_RNA_LIBRARY_KIT_FOR_ILLUMINA</code></td>
+<td><code>NEBNext Single Cell / Low Input RNA Library Kit for Illumina</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_RNA_ULTRA_II_FIRST_STRAND_SYNTHESIS_MODULE</code></td>
+<td><code>NEBNext Ultra II RNA First Strand Synthesis Module</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_RNA_ULTRA_II_LIBRARY_PREP_KIT_FOR_ILLUMINA</code></td>
+<td><code>NEBNext Ultra II RNA Library Prep Kit for Illumina</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_RNA_ULTRA_II_LIBRARY_PREP_WITH_SAMPLE_PURIFICATION_BEADS</code></td>
+<td><code>NEBNext Ultra II RNA Library Prep with Sample Purification Beads</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_ULTRA_II_DIRECTIONAL_RNA_SAMPLE_WITH_SAMPLE_PURIFICATION_BEADS</code></td>
+<td><code>NEBNext Ultra II Directional RNA Library Prep with Sample Purification Beads</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_ULTRA_II_DIRECTIONAL_RNA_SECOND_STRAND_SYNTHESIS_MODULE</code></td>
+<td><code>NEBNext Ultra II Directional RNA Second Strand Synthesis Module</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_ULTRA_DNA</code></td>
+<td><code>NEBNext Ultra DNA Library Prep for Illumina</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_ULTRA_II_DNA_LIBRARY_PREP_KIT_FOR_ILLUMINA</code></td>
+<td><code>NEBNext Ultra II DNA Library Prep Kit for Illumina</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_ULTRA_II_DNA_ILLUMINA_SAMPLE_PURIFICATION_BEADS</code></td>
+<td><code>NEBNext Ultra II DNA Library Prep for Illumina with Sample Purification Beads</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_ULTRA_II_DIRECTIONAL_RNA_LIBRARY_PREP_KIT_FOR_ILLUMINA</code></td>
+<td><code>NEBNext Ultra II Directional RNA Library Prep Kit for Illumina</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_ULTRA_II_FS_DNA_MODULE</code></td>
+<td><code>NEBNext Ultra II FS DNA Module</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_ULTRA_II_END_REPAIR_DA_TAILING_MODULE</code></td>
+<td><code>NEBNext Ultra II End Repair/dA-Tailing Module</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_ULTRA_II_FS_DNA_LIBRARY_PREP_KIT_FOR_ILLUMINA</code></td>
+<td><code>NEBNext Ultra II FS DNA Library Prep Kit for Illumina</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_ULTRA_II_FS_DNA_ILLUMINA_SAMPLE_PURIFICATION_BEADS</code></td>
+<td><code>NEBNext Ultra II FS DNA Library Prep for Illumina with Sample Purification Beads</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_ULTRA_II_DNA_PCR_FREE_SAMPLE_PURIFICATION_BEADS</code></td>
+<td><code>NEBNext Ultra II DNA PCR-free Library Prep with Sample Purification Beads</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_ULTRA_II_FS_DNA_PCR_FREE_SAMPLE_PURIFICATION_BEADS</code></td>
+<td><code>NEBNext Ultra II FS DNA PCR-free Library Prep with Sample Purification Beads</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_ULTRA_II_DNA_PCR_FREE_LIBRARY_PREP_KIT_FOR_ILLUMINA</code></td>
+<td><code>NEBNext Ultra II DNA PCR-free Library Prep Kit for Illumina</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_ULTRA_II_FS_DNA_PCR_FREE_LIBRARY_PREP_KIT_FOR_ILLUMINA</code></td>
+<td><code>NEBNext Ultra II FS DNA PCR-free Library Prep Kit for Illumina</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_ULTRA_II_LIGATION_MODULE</code></td>
+<td><code>NEBNext Ultra II Ligation Module</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_ULTRA_II_Q5_MASTER_MIX</code></td>
+<td><code>NEBNext Ultra II Q5 Master Mix</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_Q5_HOT_START_HIFI_PCR_MASTER_MIX</code></td>
+<td><code>NEBNext Q5 Hot Start HiFi PCR Master Mix</code></td>
+</tr>
+<tr>
+<td><code>NEB_TEMPLATE_SWITCHING_RT_ENZYME_MIX</code></td>
+<td><code>NEB Template Switching RT Enzyme Mix</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_LIBRARY_PCR_MASTER_MIX</code></td>
+<td><code>NEBNext Library PCR Master Mix</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_ULTRA_SHEAR</code></td>
+<td><code>NEBNext UltraShear</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_ULTRA_SHEAR_FFPE_DNA_LIBRARY_PREP_KIT</code></td>
+<td><code>NEBNext UltraShear FFPE DNA Library Prep Kit</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_COMPANION_MODULE_ONT_LIGATION_SEQUENCING</code></td>
+<td><code>NEBNext Companion Module for Oxford Nanopore Technologies Ligation Sequencing</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_FAST_DNA_FRAGMENTATION_AND_LIBRARY_PREP_SET_FOR_ION_TORRENT</code></td>
+<td><code>NEBNext Fast DNA Fragmentation and Library Prep Set for Ion Torrent</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_FAST_DNA_LIBRARY_PREP_SET_FOR_ION_TORRENT</code></td>
+<td><code>NEBNext Fast DNA Library Prep Set for Ion Torrent</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_FFPE_DNA_LIBRARY_PREP_KIT</code></td>
+<td><code>NEBNext FFPE DNA Library Prep Kit</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_FFPE_DNA_REPAIR_MIX</code></td>
+<td><code>NEBNext FFPE DNA Repair Mix</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_FFPE_DNA_REPAIR_V2_MODULE</code></td>
+<td><code>NEBNext FFPE DNA Repair v2 Module</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_DS_DNA_FRAGMENTASE</code></td>
+<td><code>NEBNext dsDNA Fragmentase</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_MAGNETIC_SEPARATION_RACK</code></td>
+<td><code>NEBNext Magnetic Separation Rack</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_LIBRARY_QUANT_FOR_ILLUMINA</code></td>
+<td><code>NEBNext Library Quant for Illumina</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_LIBRARY_QUANT_DNA_STANDARDS</code></td>
+<td><code>NEBNext Library Quant DNA Standards</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_MAGNESIUM_RNA_FRAGMENTATION_MODULE</code></td>
+<td><code>NEBNext Magnesium RNA Fragmentation Module</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_DIRECT_GENOTYPING_SOLUTION</code></td>
+<td><code>NEBNext Direct Genotyping Solution</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_ENZYMATIC_METHYL_SEQ_CONVERSION_MODULE</code></td>
+<td><code>NEBNext Enzymatic Methyl-seq Conversion Module</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_ENZYMATIC_METHYL_SEQ_KIT</code></td>
+<td><code>NEBNext Enzymatic Methyl-seq Kit</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_MULTIPLEX_SMALL_RNA_LIBRARY_PREP_KIT_FOR_ILLUMINA</code></td>
+<td><code>NEBNext Multiplex Small RNA Library Prep Kit for Illumina</code></td>
+</tr>
+<tr>
+<td><code>NEB_NEXT_SMALL_RNA_LIBRARY_PREP_SET_FOR_ILLUMINA_MULTIPLEX_COMPATIBLE</code></td>
+<td><code>NEBNext Small RNA Library Prep Set for Illumina (Multiplex Compatible)</code></td>
+</tr>
+<tr>
+<td><code>EPI_MARK_5_HMC_AND_5_MC_ANALYSIS_KIT</code></td>
+<td><code>EpiMark 5-hmC and 5-mC Analysis Kit</code></td>
+</tr>
+<tr>
+<td><code>EPI_MARK_METHYLATED_DNA_ENRICHMENT_KIT</code></td>
+<td><code>EpiMark Methylated DNA Enrichment Kit</code></td>
+</tr>
+<tr>
+<td><code>EPI_MARK_N6_METHYLADENOSINE_ENRICHMENT_KIT</code></td>
+<td><code>EpiMark N6-Methyladenosine Enrichment Kit</code></td>
+</tr>
+<tr>
+<td><code>EPI_MARK_NUCLEOSOME_ASSEMBLY_KIT</code></td>
+<td><code>EpiMark Nucleosome Assembly Kit</code></td>
+</tr>
+<tr>
+<td><code>EPI_MARK_HOT_START_TAG_DNA_POLYMERASE</code></td>
+<td><code>EpiMark Hot Start Tag DNA Polymerase</code></td>
+</tr>
+<tr>
+<td><code>PICO_METHYL_SEQ</code></td>
+<td><code>Pico Methyl-Seq Library Prep Kit</code></td>
+</tr>
+<tr>
+<td><code>TAKARA_SMART_SEQ_V4_ULTRA_LOW_INPUT_RNA_KIT</code></td>
+<td><code>Takara SMART-Seq v4 Ultra Low Input RNA Kit</code></td>
+</tr>
+<tr>
+<td><code>TAKARA_SMART_ER_STRANDED_TOTAL_RNA_SEQ_KIT</code></td>
+<td><code>Takara SMARTer Stranded RNA-Seq Kit</code></td>
+</tr>
+<tr>
+<td><code>TAKARA_SMART_ER_ULTRA_LOW_INPUT_RNA_KIT</code></td>
+<td><code>Takara SMARTer Universal Low Input RNA Kit</code></td>
+</tr>
+<tr>
+<td><code>TAKARA_SMART_SEQ2_TAG</code></td>
+<td><code>Takara Smart-Seq2 library preparation</code></td>
+</tr>
+<tr>
+<td><code>TAKARA_SMART_ER_PREP_X_DNA_LIBRARY_KIT</code></td>
+<td><code>Takara SMARTer PrepX DNA Library Kit</code></td>
+</tr>
+<tr>
+<td><code>SUPER_SCRIPT_II_RT_BULK</code></td>
+<td><code>SuperScript II Reverse Transkriptase</code></td>
+</tr>
+<tr>
+<td><code>SURE_CELL_ATAC_SEQ_LIBRARY_PREP_KIT</code></td>
+<td><code>SureCell ATAC-Seq Library Prep Kit</code></td>
+</tr>
+<tr>
+<td><code>EUROFINS_ENRICHMENT_CUSTOM</code></td>
+<td><code>Eurofins Genomics Custom Enrichment Kit</code></td>
+</tr>
+<tr>
+<td><code>TWIST_HUMAN_CORE_EXOME_KIT</code></td>
+<td><code>Twist Human Core Exome Kit</code></td>
+</tr>
+<tr>
+<td><code>TWIST_HUMAN_CORE_EXOME_PLUS_KIT</code></td>
+<td><code>Twist Human Core Exome Plus Kit</code></td>
+</tr>
+<tr>
+<td><code>ULTRALOW_METHYL_SEQ_WITH_TRUE_METHYL_OX_BS</code></td>
+<td><code>TECAN Ultralow Methyl-Seq with TrueMethyl oxBS</code></td>
+</tr>
+<tr>
+<td><code>OTHER</code></td>
+<td><code>A Library Preparation Kit not captured by the controlled vocabulary.</code></td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="library_preparation_kit_manufacturer"><strong><em>library_preparation_kit_manufacturer</em></strong><a class="headerlink" href="#library_preparation_kit_manufacturer" title="Permanent link">&para;</a></h3>
+<p><strong>description</strong> : The manufacturer of the kit used for library preparation.<br>
+<strong>required</strong> : False<br>
+<strong>data type</strong> : string <br></p>
+<h3 id="primer"><strong><em>primer</em></strong><a class="headerlink" href="#primer" title="Permanent link">&para;</a></h3>
+<p><strong>description</strong> : The type of primer used for reverse transcription (e.g., oligo-dT or random).<br>
+<strong>required</strong> : False<br>
+<strong>data type</strong> : Controlled Vocabulary <br></p>
+<details>
+<summary>Permissible Values</summary>
+<table>
+<thead>
+<tr>
+<th>Permissible Values</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>OLIGO_D_T</code></td>
+<td><code>An oligonucleotide primer consisting of thymidine bases only. It is used to target messenger RNA molecules with poly-adenosine 3' end.</code></td>
+</tr>
+<tr>
+<td><code>RANDOM</code></td>
+<td><code>An oligonucleotide primer with random sequence.</code></td>
+</tr>
+<tr>
+<td><code>GENE_SPECIFIC</code></td>
+<td><code>Ready-to-use, usually commercially prepared primers that are used to detect specific genes.</code></td>
+</tr>
+<tr>
+<td><code>OTHER</code></td>
+<td><code>A primer not captured by the controlled vocabulary.</code></td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="end_bias"><strong><em>end_bias</em></strong><a class="headerlink" href="#end_bias" title="Permanent link">&para;</a></h3>
+<p><strong>description</strong> : The end of the cDNA molecule that is preferentially sequenced (e.g., &#8535; prime end, full-length).<br>
+<strong>required</strong> : False<br>
+<strong>data type</strong> : Controlled Vocabulary <br></p>
+<details>
+<summary>Permissible Values</summary>
+<table>
+<thead>
+<tr>
+<th>Permissible Values</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>3_PRIME_END</code></td>
+<td><code>The sequencing method preferentially captures the nucleic acids towards the 3 prime end of the targeted molecule.</code></td>
+</tr>
+<tr>
+<td><code>5_PRIME_END</code></td>
+<td><code>The sequencing method preferentially captures the nucleic acids towards the 5 prime end of the targeted molecule.</code></td>
+</tr>
+<tr>
+<td><code>FULL_LENGTH</code></td>
+<td><code>Captures the full length of the targeted molecule.</code></td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="target_regions"><strong><em>target_regions</em></strong><a class="headerlink" href="#target_regions" title="Permanent link">&para;</a></h3>
+<p><strong>description</strong> : Subset of genes or specific regions of the genome, which are most likely to be involved in the phenotype under study.<br>
+<strong>required</strong> : False<br>
+<strong>data type</strong> : string <br></p>
+<h3 id="rnaseq_strandedness"><strong><em>rnaseq_strandedness</em></strong><a class="headerlink" href="#rnaseq_strandedness" title="Permanent link">&para;</a></h3>
+<p><strong>description</strong> : The strandedness of the library, whether reads come from both strands of the cDNA or only from the first (antisense) or the second (sense) strand.<br>
+<strong>required</strong> : False<br>
+<strong>data type</strong> : Controlled Vocabulary <br></p>
+<details>
+<summary>Permissible Values</summary>
+<table>
+<thead>
+<tr>
+<th>Permissible Values</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>SENSE</code></td>
+<td><code>Having a DNA sequence identical to that of a messenger RNA molecule; the coding strand in double-stranded DNA.</code></td>
+</tr>
+<tr>
+<td><code>ANTISENSE</code></td>
+<td><code>Having a DNA sequence complementary to that of a messenger RNA molecule; the non-coding strand in double-stranded DNA.</code></td>
+</tr>
+<tr>
+<td><code>UNSTRANDED</code></td>
+<td><code>Non-directional sequencing, where the reads can map from either the transcript strand or its complement.</code></td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="instrument_model"><strong><em>instrument_model</em></strong><a class="headerlink" href="#instrument_model" title="Permanent link">&para;</a></h3>
+<p><strong>description</strong> : The name and model of the technology platform used to perform sequencing.<br>
+<strong>required</strong> : True<br>
+<strong>data type</strong> : Controlled Vocabulary <br></p>
+<details>
+<summary>Permissible Values</summary>
+<table>
+<thead>
+<tr>
+<th>Permissible Values</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>454_GS</code></td>
+<td><code>454 GS</code></td>
+</tr>
+<tr>
+<td><code>454_GS_20</code></td>
+<td><code>454 GS 20</code></td>
+</tr>
+<tr>
+<td><code>454_GS_FLX</code></td>
+<td><code>454 GS FLX</code></td>
+</tr>
+<tr>
+<td><code>454_GS_FLX_TITANIUM</code></td>
+<td><code>454 FS FLX Titanium</code></td>
+</tr>
+<tr>
+<td><code>454_GS_FLX+</code></td>
+<td><code>454 GS FLX+</code></td>
+</tr>
+<tr>
+<td><code>454_GS_JUNIOR</code></td>
+<td><code>454 GS Junior</code></td>
+</tr>
+<tr>
+<td><code>AB_310_GENETIC_ANALYZER</code></td>
+<td><code>AB 310 Genetic Analyzer</code></td>
+</tr>
+<tr>
+<td><code>AB_3130_GENETIC_ANALYZER</code></td>
+<td><code>AB 3130 Genetic Analyzer</code></td>
+</tr>
+<tr>
+<td><code>AB_3130XL_GENETIC_ANALYZER</code></td>
+<td><code>AB 3130XL Genetic Analyzer</code></td>
+</tr>
+<tr>
+<td><code>AB_3500_GENETIC_ANALYZER</code></td>
+<td><code>AB 3500 Genetic Analyzer</code></td>
+</tr>
+<tr>
+<td><code>AB_3500XL_GENETIC_ANALYZER</code></td>
+<td><code>AB 3500XL Genetic Analyzer</code></td>
+</tr>
+<tr>
+<td><code>AB_3730_GENETIC_ANALYZER</code></td>
+<td><code>AB 3730 Genetic Analyzer</code></td>
+</tr>
+<tr>
+<td><code>AB_3730XL_GENETIC_ANALYZER</code></td>
+<td><code>AB 3730XL Genetic Analyzer</code></td>
+</tr>
+<tr>
+<td><code>AB_5500_GENETIC_ANALYZER</code></td>
+<td><code>AB 5500 Genetic Analyzer</code></td>
+</tr>
+<tr>
+<td><code>AB_5500XL_GENETIC_ANALYZER</code></td>
+<td><code>AB 5500XL Genetic Analyzer</code></td>
+</tr>
+<tr>
+<td><code>AB_5500XL-W_GENETIC_ANALYSIS_SYSTEM</code></td>
+<td><code>AB 5500 XL-W Genetic Analysis System</code></td>
+</tr>
+<tr>
+<td><code>BGISEQ-50</code></td>
+<td><code>BGISEQ-50:</code></td>
+</tr>
+<tr>
+<td><code>BGISEQ-500</code></td>
+<td><code>BGISEQ-500</code></td>
+</tr>
+<tr>
+<td><code>DNBSEQ-G400</code></td>
+<td><code>DNBSEQ-G400</code></td>
+</tr>
+<tr>
+<td><code>DNBSEQ-G400_FAST</code></td>
+<td><code>DNBSEQ-G400_FAST</code></td>
+</tr>
+<tr>
+<td><code>DNBSEQ-G50</code></td>
+<td><code>DNBSEQ-G50</code></td>
+</tr>
+<tr>
+<td><code>DNBSEQ-T7</code></td>
+<td><code>DNBSEQ-T7</code></td>
+</tr>
+<tr>
+<td><code>ELEMENT_AVITI</code></td>
+<td><code>Element AVITI</code></td>
+</tr>
+<tr>
+<td><code>GRIDION</code></td>
+<td><code>GridION</code></td>
+</tr>
+<tr>
+<td><code>HELICOS_HELISCOPE</code></td>
+<td><code>Helicos HeliScope</code></td>
+</tr>
+<tr>
+<td><code>HISEQ_X_FIVE</code></td>
+<td><code>HiSeq X Five</code></td>
+</tr>
+<tr>
+<td><code>HISEQ_X_TEN</code></td>
+<td><code>HiSeq X Ten</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_GENOME_ANALYZER</code></td>
+<td><code>Illumina Genome Analyzer</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_GENOME_ANALYZER_II</code></td>
+<td><code>Illumina Genome Analyzer II</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_GENOME_ANALYZER_IIX</code></td>
+<td><code>Illumina Genome Analyzer IIx</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_HISCANSQ</code></td>
+<td><code>Illumina HiScanSQ</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_HISEQ_1000</code></td>
+<td><code>Illumina HiSeq 1000</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_HISEQ_1500</code></td>
+<td><code>Illumina HiSeq 1500</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_HISEQ_2000</code></td>
+<td><code>Illumina HiSeq 2000</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_HISEQ_2500</code></td>
+<td><code>Illumina HiSeq 2500</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_HISEQ_3000</code></td>
+<td><code>Illumina HiSeq 3000</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_HISEQ_4000</code></td>
+<td><code>Illumina HiSeq 4000</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_HISEQ_X</code></td>
+<td><code>Illumina HiSeq X</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_MISEQ</code></td>
+<td><code>Illumina MiSeq</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_MINISEQ</code></td>
+<td><code>Illumina MiniSeq</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_NOVASEQ_6000</code></td>
+<td><code>Illumina NovaSeq 6000</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_NOVASEQ_X</code></td>
+<td><code>Illumina NovaSeq X</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_ISEQ_100</code></td>
+<td><code>Illumina iSeq 100</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_ISCAN</code></td>
+<td><code>Illumina iScan</code></td>
+</tr>
+<tr>
+<td><code>ION_GENESTUDIO_S5</code></td>
+<td><code>Ion Genestudio S5</code></td>
+</tr>
+<tr>
+<td><code>ION_GENESTUDIO_S5_PLUS</code></td>
+<td><code>Ion Genestudio S5 Plus</code></td>
+</tr>
+<tr>
+<td><code>ION_GENESTUDIO_S5_PRIME</code></td>
+<td><code>Ion Genestudio S5 Prime</code></td>
+</tr>
+<tr>
+<td><code>ION_TORRENT_GENEXUS</code></td>
+<td><code>Ion Torrent Genexus</code></td>
+</tr>
+<tr>
+<td><code>ION_TORRENT_PGM</code></td>
+<td><code>Ion Torrent PGM</code></td>
+</tr>
+<tr>
+<td><code>ION_TORRENT_PROTON</code></td>
+<td><code>Ion Torrent Proton</code></td>
+</tr>
+<tr>
+<td><code>ION_TORRENT_S5</code></td>
+<td><code>Ion Torrent S5</code></td>
+</tr>
+<tr>
+<td><code>ION_TORRENT_S5_XL</code></td>
+<td><code>Ion Torrent S5 XL</code></td>
+</tr>
+<tr>
+<td><code>MGISEQ-2000RS</code></td>
+<td><code>MGISEQ-2000RS</code></td>
+</tr>
+<tr>
+<td><code>MINION</code></td>
+<td><code>MinION</code></td>
+</tr>
+<tr>
+<td><code>NEXTSEQ_1000</code></td>
+<td><code>NextSeq 1000</code></td>
+</tr>
+<tr>
+<td><code>NEXTSEQ_2000</code></td>
+<td><code>NextSeq 2000</code></td>
+</tr>
+<tr>
+<td><code>NEXTSEQ_500</code></td>
+<td><code>NextSeq 500</code></td>
+</tr>
+<tr>
+<td><code>NEXTSEQ_550</code></td>
+<td><code>NextSeq 550</code></td>
+</tr>
+<tr>
+<td><code>PACBIO_RS</code></td>
+<td><code>PacBio RS</code></td>
+</tr>
+<tr>
+<td><code>PACBIO_RS_II</code></td>
+<td><code>PacBio RS II</code></td>
+</tr>
+<tr>
+<td><code>PROMETHION</code></td>
+<td><code>PromethION</code></td>
+</tr>
+<tr>
+<td><code>SEQUEL</code></td>
+<td><code>Sequel</code></td>
+</tr>
+<tr>
+<td><code>SEQUEL_II</code></td>
+<td><code>Sequel II</code></td>
+</tr>
+<tr>
+<td><code>SEQUEL_IIE</code></td>
+<td><code>Sequel IIe</code></td>
+</tr>
+<tr>
+<td><code>UG_100</code></td>
+<td><code>UG 100</code></td>
+</tr>
+<tr>
+<td><code>UNSPECIFIED</code></td>
+<td><code>Instrument model is unspecified.</code></td>
+</tr>
+<tr>
+<td><code>OTHER</code></td>
+<td><code>Other instrument model than mentioned above.</code></td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="sequencing_center"><strong><em>sequencing_center</em></strong><a class="headerlink" href="#sequencing_center" title="Permanent link">&para;</a></h3>
+<p><strong>description</strong> : Center where sample was sequenced.<br>
+<strong>required</strong> : False<br>
+<strong>data type</strong> : string <br></p>
+<h3 id="sequencing_read_length"><strong><em>sequencing_read_length</em></strong><a class="headerlink" href="#sequencing_read_length" title="Permanent link">&para;</a></h3>
+<p><strong>description</strong> : Length of sequencing reads (e.g., long or short or actual number of the read length).<br>
+<strong>required</strong> : False<br>
+<strong>data type</strong> : string <br></p>
+<h3 id="sequencing_layout"><strong><em>sequencing_layout</em></strong><a class="headerlink" href="#sequencing_layout" title="Permanent link">&para;</a></h3>
+<p><strong>description</strong> : Describe whether the library was sequenced in single-end (forward or reverse) or paired-end mode.<br>
+<strong>required</strong> : True<br>
+<strong>data type</strong> : Controlled Vocabulary <br></p>
+<details>
+<summary>Permissible Values</summary>
+<table>
+<thead>
+<tr>
+<th>Permissible Values</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>SE</code></td>
+<td><code>Single end sequencing.</code></td>
+</tr>
+<tr>
+<td><code>PE</code></td>
+<td><code>Paired end sequencing.</code></td>
+</tr>
+<tr>
+<td><code>UNSPECIFIED</code></td>
+<td><code>The sequencing layout is unspecified.</code></td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="target_coverage"><strong><em>target_coverage</em></strong><a class="headerlink" href="#target_coverage" title="Permanent link">&para;</a></h3>
+<p><strong>description</strong> : Mean coverage for whole genome sequencing, or mean target coverage for whole exome and targeted sequencing, (i.e. the number of times a particular locus was sequenced).<br>
+<strong>required</strong> : False<br>
+<strong>data type</strong> : string <br></p>
+<h3 id="flow_cell_id"><strong><em>flow_cell_id</em></strong><a class="headerlink" href="#flow_cell_id" title="Permanent link">&para;</a></h3>
+<p><strong>description</strong> : Flow cell ID (e.g., Experiment ID_Cell 1_Lane_1).<br>
+<strong>required</strong> : False<br>
+<strong>data type</strong> : string <br></p>
+<h3 id="flow_cell_type"><strong><em>flow_cell_type</em></strong><a class="headerlink" href="#flow_cell_type" title="Permanent link">&para;</a></h3>
+<p><strong>description</strong> : Type of flow cell used (e.g., S4, S2 for NovaSeq; PromethION, Flongle for Nanopore).<br>
+<strong>required</strong> : False<br>
+<strong>data type</strong> : Controlled Vocabulary <br></p>
+<details>
+<summary>Permissible Values</summary>
+<table>
+<thead>
+<tr>
+<th>Permissible Values</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ELEMENT_BIOSCIENCES_AVITI_LOW_OUTPUT</code></td>
+<td><code>Usage of Element Biosciences Aviti Low Output flow cell.</code></td>
+</tr>
+<tr>
+<td><code>ELEMENT_BIOSCIENCES_AVITI_MID_OUTPUT</code></td>
+<td><code>Usage of Element Biosciences Aviti Mid Output flow cell.</code></td>
+</tr>
+<tr>
+<td><code>ELEMENT_BIOSCIENCES_AVITI_HIGH_OUTPUT</code></td>
+<td><code>Usage of Element Biosciences Aviti High Output flow cell.</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_NOVA_SEQ_SP</code></td>
+<td><code>Usage of Illumina NovaSeq SP flow cell.</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_NOVA_SEQ_S1</code></td>
+<td><code>Usage of Illumina NovaSeq S1 flow cell.</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_NOVA_SEQ_S2</code></td>
+<td><code>Usage of Illumina NovaSeq S2 flow cell.</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_NOVA_SEQ_S4</code></td>
+<td><code>Usage of Illumina NovaSeq S4 flow cell.</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_NOVA_SEQ_XPLUS_1_5B</code></td>
+<td><code>Usage of Illumina NovaSeq X Plus 1.5B flow cell.</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_NOVA_SEQ_XPLUS_10B</code></td>
+<td><code>Usage of Illumina NovaSeq X Plus 10B flow cell.</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_NOVA_SEQ_XPLUS_25B</code></td>
+<td><code>Usage of Illumina NovaSeq X Plus 25B flow cell.</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_MISEQ_MICRO</code></td>
+<td><code>Usage of Illumina MiSeq Micro flow cell.</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_MISEQ_NANO</code></td>
+<td><code>Usage of Illumina MiSeq Nano flow cell.</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_NEXTSEQ_HIGH_OUTPUT</code></td>
+<td><code>Usage of Illumina NextSeq High Output flow cell.</code></td>
+</tr>
+<tr>
+<td><code>ILLUMINA_NEXTSEQ_MID_OUTPUT</code></td>
+<td><code>Usage of Illumina NextSeq Mid Output flow cell.</code></td>
+</tr>
+<tr>
+<td><code>PACBIO_SEQUELL_II</code></td>
+<td><code>Usage of PacBio Sequell II flow cell.</code></td>
+</tr>
+<tr>
+<td><code>PROMETHION</code></td>
+<td><code>Usage of PromethION flow cell.</code></td>
+</tr>
+<tr>
+<td><code>FLONGLE</code></td>
+<td><code>Usage of Flongle flow cell.</code></td>
+</tr>
+<tr>
+<td><code>MINION</code></td>
+<td><code>Usage of MinION flow cell.</code></td>
+</tr>
+<tr>
+<td><code>GRIDION</code></td>
+<td><code>Usage of GridION flow cell.</code></td>
+</tr>
+<tr>
+<td><code>OTHER</code></td>
+<td><code>Usage of a flow cell not captured by the controlled vocabulary.</code></td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="sample_barcode_read"><strong><em>sample_barcode_read</em></strong><a class="headerlink" href="#sample_barcode_read" title="Permanent link">&para;</a></h3>
+<p><strong>description</strong> : The type of read that contains the sample barcode (e.g., index1, index2, read1, read2).<br>
+<strong>required</strong> : False<br>
+<strong>data type</strong> : Controlled Vocabulary <br></p>
+<details>
+<summary>Permissible Values</summary>
+<table>
+<thead>
+<tr>
+<th>Permissible Values</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>INDEX1</code></td>
+<td><code>Sample barcode read location is in Index 1.</code></td>
+</tr>
+<tr>
+<td><code>INDEX1_AND_INDEX2</code></td>
+<td><code>Sample barcode read location is in Index 1 and Index 2.</code></td>
+</tr>
+<tr>
+<td><code>OTHER</code></td>
+<td><code>Sample barcode read is neither in Index 1 or Index 1 and Index 2.</code></td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="ega_accession"><strong><em>ega_accession</em></strong><a class="headerlink" href="#ega_accession" title="Permanent link">&para;</a></h3>
+<p><strong>description</strong> : The EGA accession of the 'Experiment' entity (EGAX).<br>
+<strong>required</strong> : False<br>
+<strong>data type</strong> : string <br></p>
+<h3 id="attributes"><strong><em>attributes</em></strong><a class="headerlink" href="#attributes" title="Permanent link">&para;</a></h3>
+<p><strong>description</strong> : Key/value pairs corresponding to an entity.<br>
+<strong>required</strong> : False<br>
+<strong>data type</strong> : Attribute <br></p>
+<h3 id="alias"><strong><em>alias</em></strong><a class="headerlink" href="#alias" title="Permanent link">&para;</a></h3>
+<p><strong>description</strong> : The alias for an entity at the time of submission.<br>
+<strong>required</strong> : True<br>
+<strong>data type</strong> : string <br></p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="February 12, 2026 14:23:44 UTC">February 12, 2026</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Copyright and theme information -->
+<div class="md-copyright">
+    
+    
+      Made with
+      <a
+        href="https://squidfunk.github.io/mkdocs-material/"
+        target="_blank" rel="noopener"
+      >
+        Material for MkDocs
+      </a>
+
+    <!-- Imprint-->
+      | <a href="https://www.ghga.de/imprint/" target="_blank" rel="noopener">Imprint</a>  
+
+    <!-- Data Protection -->
+      | <a href="https://www.ghga.de/data-protection" target="_blank" rel="noopener">Data Protection</a>  
+
+    <!-- Accessibility -->
+      | <a href="https://www.ghga.de/accessibility" target="_blank" rel="noopener">Accessibility</a>  
+
+    
+  </div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/ghga-de" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+      
+    
+    
+    
+      
+      
+    
+    <a href="https://genomic.social/@ghga" target="_blank" rel="noopener me" title="genomic.social" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M433 179.1c0-97.2-63.7-125.7-63.7-125.7-62.5-28.7-228.6-28.4-290.5 0 0 0-63.7 28.5-63.7 125.7 0 115.7-6.6 259.4 105.6 289.1 40.5 10.7 75.3 13 103.3 11.4 50.8-2.8 79.3-18.1 79.3-18.1l-1.7-36.9s-36.3 11.4-77.1 10.1c-40.4-1.4-83-4.4-89.6-54-.6-4.6-.9-9.3-.9-13.9 85.6 20.9 158.7 9.1 178.7 6.7 56.1-6.7 105-41.3 111.2-72.9 9.8-49.8 9-121.5 9-121.5zm-75.1 125.2h-46.6V190.1c0-49.7-64-51.6-64 6.9v62.5H201V197c0-58.5-64-56.6-64-6.9v114.2H90.3c0-122.1-5.2-147.9 18.4-175 25.9-28.9 79.8-30.8 103.8 6.1l11.6 19.5 11.6-19.5c24.1-37.1 78.1-34.8 103.8-6.1 23.7 27.3 18.4 53 18.4 175"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/the-german-human-genome-phenome-archive/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://bsky.app/profile/ghga.bsky.social" target="_blank" rel="noopener" title="bsky.app" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M407.8 294.7c-3.3-.4-6.7-.8-10-1.3 3.4.4 6.7.9 10 1.3M288 227.1c-26.1-50.7-97.1-145.2-163.1-191.8C61.6-9.4 37.5-1.7 21.6 5.5 3.3 13.8 0 41.9 0 58.4S9.1 194 15 213.9c19.5 65.7 89.1 87.9 153.2 80.7 3.3-.5 6.6-.9 10-1.4-3.3.5-6.6 1-10 1.4-93.9 14-177.3 48.2-67.9 169.9C220.6 589.1 265.1 437.8 288 361.1c22.9 76.7 49.2 222.5 185.6 103.4 102.4-103.4 28.1-156-65.8-169.9-3.3-.4-6.7-.8-10-1.3 3.4.4 6.7.9 10 1.3 64.1 7.1 133.6-15.1 153.2-80.7C566.9 194 576 75 576 58.4s-3.3-44.7-21.6-52.9c-15.8-7.1-40-14.9-103.2 29.8C385.1 81.9 314.1 176.4 288 227.1"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/channel/UC7Yqi4gBl86drcUxwwEe6EA" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M549.7 124.1c-6.2-23.7-24.8-42.3-48.3-48.6C458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5c-23.5 6.3-42 24.9-48.3 48.6C15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8C117.3 448 288.1 448 288.1 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6V175.2l142.7 81.2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+    
+      
+    
+    
+      
+        
+  
+  
+    
+    
+  
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" name="github" checked>
+      <span class="task-list-indicator"></span>
+      GitHub
+    </label>
+  </li>
+
+      
+    
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/jquery-3.7.1.slim.min.js"></script>
+      
+        <script src="../../../javascripts/jquery.rwdImageMaps.min.js"></script>
+      
+        <script src="../../../javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>

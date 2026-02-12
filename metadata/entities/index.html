@@ -1,0 +1,2974 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Public documentation for users of the German Human Genome-Phenome Archive.">
+      
+      
+        <meta name="author" content="The GHGA Team">
+      
+      
+        <link rel="canonical" href="https://docs.ghga.de/metadata/entities/">
+      
+      
+        <link rel="prev" href="../overview/">
+      
+      
+        <link rel="next" href="../standards/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Entities & Attributes - GHGA User Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#captured-metadata" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      <!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Determine classes -->
+
+
+  
+
+
+<!-- Header -->
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav
+    class="md-header__inner md-grid"
+    aria-label="Header"
+  >
+
+    <!-- Link to home -->
+    <a
+      href="../.."
+      title="GHGA User Documentation"
+      class="md-header__button md-logo"
+      aria-label="GHGA User Documentation"
+      data-md-component="logo"
+    >
+      
+  <img src="../../logo.svg" alt="logo">
+
+    </a>
+
+    <!-- Button to open drawer -->
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+
+    <!-- Header title -->
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GHGA User Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Entities & Attributes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Header Link GHGA Data Portal -->
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__topic">
+    <span class="md-ellipsis">
+    <a href="https://data.ghga.de/browse" title="GHGA Data Portal" target="_blank" rel="noopener">GHGA Data Portal <img src="/assets/img/arrow-up-right-from-square-solid.svg" alt="Upright Arrow" width="20"></a>
+    </span>
+    </div>
+    </div>
+
+
+    <!-- Color palette toggle -->
+    
+      
+    
+
+    <!-- User preference: color palette -->
+    
+
+    <!-- Site language selector -->
+    
+
+    <!-- Button to open search modal -->
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+
+      <!-- Search interface -->
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    <!-- Repository information -->
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ghga-de/docs/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GHGA User Documentation
+  </div>
+</a>
+      </div>
+    
+  </nav>
+
+  <!-- Navigation tabs (sticky) -->
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="GHGA User Documentation" class="md-nav__button md-logo" aria-label="GHGA User Documentation" data-md-component="logo">
+      
+  <img src="../../logo.svg" alt="logo">
+
+    </a>
+    GHGA User Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ghga-de/docs/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GHGA User Documentation
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Stories
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    User Stories
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_stories/browsing_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Browsing Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_stories/accessing_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accessing Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Submitting Data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Submitting Data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_stories/submission/submitting_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_stories/submission/dpc_preparation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Preparing a Data Processing Contract
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_stories/submission/dp_obligations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Protection Obligations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_stories/submission/submitter_guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Preparation Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_stories/submission/Citing_GHGA_Submissions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Citing GHGA Submissions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_stories/dua-guideline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Use and Access Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GHGA Metadata Model
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    GHGA Metadata Model
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Entities & Attributes
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Entities & Attributes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#research-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Research Metadata
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Research Metadata">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#individual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Individual
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Individual">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#individual-metadata-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Individual metadata properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#individual-supporting-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Individual Supporting File
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Individual Supporting File">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#individual-supporting-file-metadata-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Individual Supporting File metadata properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sample" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sample
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sample">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sample-metadata-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sample metadata properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#experiment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Experiment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Experiment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#experiment-metadata-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Experiment metadata properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#experiment-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Experiment Method
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Experiment Method">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#experiment-method-metadata-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Experiment Method metadata properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#experiment-method-supporting-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Experiment Method Supporting File
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Experiment Method Supporting File">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#experiment-method-supporting-file-metadata-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Experiment Method Supporting File metadata properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#research-data-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Research Data File
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Research Data File">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#research-data-file-metadata-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Research Data File metadata properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analysis
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#analysis-metadata-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analysis metadata properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analysis-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analysis Method
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Analysis Method">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#analysis-method-metadata-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analysis Method metadata properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analysis-method-supporting-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analysis Method Supporting File
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Analysis Method Supporting File">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#analysis-method-supporting-file-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analysis Method Supporting File properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-data-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Process Data File
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Process Data File">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#process-data-file-metadata-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Process Data File metadata properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#administrative-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Administrative Metadata
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Administrative Metadata">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dataset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dataset-metadata-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset metadata properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-access-policy-and-committee" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Access Policy and Committee
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Access Policy and Committee">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dap-and-dac-metadata-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DAP and DAC metadata properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#study" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Study
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Study">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#study-metadata-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Study metadata properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#publication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Publication
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Publication">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#publication-metadata-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Publication metadata properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#submission-spreadsheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Submission Spreadsheet
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../standards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Dictionary
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Dictionary
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_dictionary/00_overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_dictionary/Analysis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Analysis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_dictionary/AnalysisMethod/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AnalysisMethod
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_dictionary/AnalysisMethodSupportingFile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AnalysisMethodSupportingFile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_dictionary/DataAccessCommittee/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DataAccessCommittee
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_dictionary/DataAccessPolicy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DataAccessPolicy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_dictionary/Dataset/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dataset
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_dictionary/Experiment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Experiment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_dictionary/ExperimentMethod/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ExperimentMethod
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_dictionary/ExperimentMethodSupportingFile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ExperimentMethodSupportingFile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_dictionary/Individual/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Individual
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_dictionary/IndividualSupportingFile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IndividualSupportingFile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_dictionary/ProcessDataFile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ProcessDataFile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_dictionary/Publication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Publication
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_dictionary/ResearchDataFile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ResearchDataFile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_dictionary/Sample/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sample
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_dictionary/Study/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Study
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CLI Tools
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    CLI Tools
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cli_tools/cli_overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cli_tools/connector/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GHGA Connector
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cli_tools/transpiler/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GHGA Transpiler
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cli_tools/validator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GHGA Validator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Other Documents
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Other Documents
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other/iva/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Independent Verification Address (IVA) and how it is used in GHGA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#research-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Research Metadata
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Research Metadata">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#individual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Individual
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Individual">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#individual-metadata-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Individual metadata properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#individual-supporting-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Individual Supporting File
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Individual Supporting File">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#individual-supporting-file-metadata-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Individual Supporting File metadata properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sample" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sample
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sample">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sample-metadata-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sample metadata properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#experiment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Experiment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Experiment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#experiment-metadata-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Experiment metadata properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#experiment-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Experiment Method
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Experiment Method">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#experiment-method-metadata-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Experiment Method metadata properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#experiment-method-supporting-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Experiment Method Supporting File
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Experiment Method Supporting File">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#experiment-method-supporting-file-metadata-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Experiment Method Supporting File metadata properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#research-data-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Research Data File
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Research Data File">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#research-data-file-metadata-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Research Data File metadata properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analysis
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#analysis-metadata-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analysis metadata properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analysis-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analysis Method
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Analysis Method">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#analysis-method-metadata-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analysis Method metadata properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analysis-method-supporting-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analysis Method Supporting File
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Analysis Method Supporting File">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#analysis-method-supporting-file-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analysis Method Supporting File properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-data-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Process Data File
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Process Data File">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#process-data-file-metadata-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Process Data File metadata properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#administrative-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Administrative Metadata
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Administrative Metadata">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dataset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dataset-metadata-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset metadata properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-access-policy-and-committee" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Access Policy and Committee
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Access Policy and Committee">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dap-and-dac-metadata-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DAP and DAC metadata properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#study" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Study
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Study">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#study-metadata-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Study metadata properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#publication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Publication
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Publication">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#publication-metadata-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Publication metadata properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#submission-spreadsheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Submission Spreadsheet
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="captured-metadata"><strong>Captured Metadata</strong><a class="headerlink" href="#captured-metadata" title="Permanent link">&para;</a></h1>
+<p><img alt="Visual summary of the site content for captured metadata with icons: Research Metadata, Administrative Metadata, and Submission Spreadsheet – as described in the text below." src="../../assets/img/Metadata_Model_Entities_Attributes.png" width="800" /></p>
+<ul>
+<li><a href="https://docs.ghga.de/metadata/entities/#research-metadata">Research Metadata</a> – Covers metadata on individuals, samples, experiments, and analyses, including biospecimens, experimental methods, and analytical workflows used to generate the data.</li>
+<li><a href="https://docs.ghga.de/metadata/entities/#administrative-metadata">Administrative Metadata</a> – Manages data governance, access, and study details, defining datasets, access policies, responsible committees, and linked publications.</li>
+<li><a href="https://docs.ghga.de/metadata/entities/#submission-spreadsheet">Submission Spreadsheet</a> – Provides a structured format for metadata submission, ensuring consistency and completeness across all metadata categories.</li>
+</ul>
+<p>A breakdown of each metadata element described in the different entities will provide more insight on what elements are required for the functionality of GHGA, mandatory properties and recommended or optional information that can be provided by the data submitters.</p>
+<h2 id="research-metadata"><strong>Research Metadata</strong><a class="headerlink" href="#research-metadata" title="Permanent link">&para;</a></h2>
+<p>The Research Metadata focuses on the reusability and FAIRness of the data. The Research Metadata encapsulates a set of classes that shape the model in accordance to the performed experiment ensuring reproducibility and scalability. The classes include <em>Individual</em>, <em>Biospecimen/Sample</em>, <em>Experiment</em>, <em>Experiment Method</em>, <em>Analysis</em> and <em>Analysis Method</em>.</p>
+<h3 id="individual"><strong>Individual</strong><a class="headerlink" href="#individual" title="Permanent link">&para;</a></h3>
+<p>The <em>Individual</em> entity collects non-personal metadata about the <em>Individual</em> from which the samples were collected. The content of the <em>Individual</em> entity is crucial to identify cohorts of interest and gives valuable insight on the target group of an experiment. </p>
+<h4 id="individual-metadata-properties"><strong>Individual metadata properties</strong><a class="headerlink" href="#individual-metadata-properties" title="Permanent link">&para;</a></h4>
+<p>In order to describe an <em>Individual</em>, data submitters are required to provide information about sex and are recommended to provide information about phenotypic features and diagnoses. Additional information about the geographical region and ancestries can also be provided.</p>
+<p>The Individual entity is linked to the <em>Sample</em> entity.</p>
+<h3 id="individual-supporting-file"><strong>Individual Supporting File</strong><a class="headerlink" href="#individual-supporting-file" title="Permanent link">&para;</a></h3>
+<p>If the data submitters have additional information to provide about the <em>Individual</em>, then they can make use of the <em>Individual Supporting File</em> class. </p>
+<h4 id="individual-supporting-file-metadata-properties"><strong>Individual Supporting File metadata properties</strong><a class="headerlink" href="#individual-supporting-file-metadata-properties" title="Permanent link">&para;</a></h4>
+<p>The <strong>Individual Supporting File</strong> requires the following information: file format, file name, dataset associated with this file as well as if the file is included as part of the submission.</p>
+<h3 id="sample"><strong>Sample</strong><a class="headerlink" href="#sample" title="Permanent link">&para;</a></h3>
+<p>The <em>Sample</em> describes the extracted sample and tissue for an experimental process. Furthermore, the <em>Sample</em> is defined as a limited quantity of something to be used for testing, analysis, inspection, investigation, demonstration, or trial use. A sample is prepared from a biospecimen (isolate or tissue). The <em>Sample</em> entity includes slots describing the <em>Biospecimen</em> from which the sample was prepared, which are highlighted with a "<em>biospecimen_</em>" -prefix. The <em>Biospecimen</em> is defined as any natural material taken from a biological entity for testing, diagnostics, treatment or research purposes.</p>
+<p>The <em>Sample</em> is linked to the <em>Individual</em> entity describing the collection of biological material. Further, it is linked to the <em>Experiment</em>.</p>
+<h4 id="sample-metadata-properties"><strong>Sample metadata properties</strong><a class="headerlink" href="#sample-metadata-properties" title="Permanent link">&para;</a></h4>
+<p>The <em>Sample</em> entity requires data submitters to provide the name, description, whether the sample is case or control, as well as the alias to the <em>Individual</em> from which the <em>Sample</em> was derived. In addition to the mandatory information, the data submitter is recommended to provide information about the storage, whether the sample can be classified as  diseased or healthy, and biological replicate information. Other optional fields include the type of the sample and an EGA accession ID. </p>
+<p>To further describe the <em>Biospecimen</em> from which the sample was prepared, data submitters are required to provide information about the age of the individual at the time of sampling and the biospecimen tissue. The recommended properties include a name for the biospecimen, its type, the vital status of the individual at the time of sampling, and the biospecimen isolation and storage.</p>
+<h3 id="experiment"><strong>Experiment</strong><a class="headerlink" href="#experiment" title="Permanent link">&para;</a></h3>
+<p>An <em>Experiment</em> is an investigation that consists of a coordinated set of actions and observations designed to generate data with the goal of verifying, falsifying, or establishing the validity of a hypothesis. The <em>Experiment</em> entity describes the experimental setup or a protocol used for performing an omics experiment. </p>
+<p>The <em>Experiment</em> entity is linked to the <em>Sample</em> which implies one or more samples associated with this Experiment and the <em>Experiment Method</em> which implies one or more experiment methods associated with this Experiment. The outcome of an <em>Experiment</em> results in <em>Research Data File</em>.</p>
+<h4 id="experiment-metadata-properties"><strong>Experiment metadata properties</strong><a class="headerlink" href="#experiment-metadata-properties" title="Permanent link">&para;</a></h4>
+<p>The <em>Experiment</em> entity requires the data submitters to provide information about experiment method, title, description and sample information.</p>
+<h3 id="experiment-method"><strong>Experiment Method</strong><a class="headerlink" href="#experiment-method" title="Permanent link">&para;</a></h3>
+<p>The <em>Experiment Method</em> entity captures information about the protocol that was followed to perform the omics experiment.</p>
+<h4 id="experiment-method-metadata-properties"><strong>Experiment Method metadata properties</strong><a class="headerlink" href="#experiment-method-metadata-properties" title="Permanent link">&para;</a></h4>
+<p>The data submitter is required to provide information about the name, description, library type, selection methods, preparation, the instrument model and sequencing layout to fulfil the <em>Experiment Method</em> pertaining to an omics experiment. Furthermore, it is recommended to provide information about the library preparation kit name and manufacturer, the primer, end bias, flow cell ID and type, rna seq strandedness, sample barcode read and sequencing center. The optional properties include target region, target coverage and EGA accession ID.</p>
+<h3 id="experiment-method-supporting-file"><strong>Experiment Method Supporting File</strong><a class="headerlink" href="#experiment-method-supporting-file" title="Permanent link">&para;</a></h3>
+<p>Any additional information pertaining to the <em>Experiment Method</em> can be provided as <em>Experiment Method Supporting File</em>. </p>
+<h4 id="experiment-method-supporting-file-metadata-properties"><strong>Experiment Method Supporting File metadata properties</strong><a class="headerlink" href="#experiment-method-supporting-file-metadata-properties" title="Permanent link">&para;</a></h4>
+<p>The submitter is required to provide information about the file format, the <em>Experiment Method</em> this file supports, the file name, the <em>Dataset</em> associated with this file and whether this file is included as part of the submission.</p>
+<h3 id="research-data-file"><strong>Research Data File</strong><a class="headerlink" href="#research-data-file" title="Permanent link">&para;</a></h3>
+<p>The <em>Research Data File</em> entity is generated as a result of a direct measurement or sequencing of a sample. They are the raw files that were generated while carrying out an <em>Experiment</em>. This entity is linked to the <em>Experiment</em> that produced this file as well as the <em>Dataset</em> that is associated with this file. The GHGA metadata model emphasizes on the submission of a <em>Research Data File</em> alone or accompanied by <em>Process Data Files</em> for enabling reconstruction of the analytical process representing a submission.</p>
+<h4 id="research-data-file-metadata-properties"><strong>Research Data File metadata properties</strong><a class="headerlink" href="#research-data-file-metadata-properties" title="Permanent link">&para;</a></h4>
+<p>The <em>Research Data File</em> entity requires a data submitter to provide information about the file format, technical replicate, the <em>Experiment</em> that generated this <em>Research Data File</em>, the file name, the <em>Dataset</em> and whether the file is included in the submission. It is also recommended to provide information about the sequencing lane. The EGA accession ID is an optional property.</p>
+<h3 id="analysis"><strong>Analysis</strong><a class="headerlink" href="#analysis" title="Permanent link">&para;</a></h3>
+<p>The <em>Analysis</em> entity permutates a <em>Research Data File</em> into a <em>Process Data File</em> through a computational workflow. </p>
+<p>The <em>Analysis</em> entity is linked to <em>Experiment</em> via <em>Research Data File</em> and also linked to <em>Analysis Method</em>.</p>
+<h4 id="analysis-metadata-properties"><strong>Analysis metadata properties</strong><a class="headerlink" href="#analysis-metadata-properties" title="Permanent link">&para;</a></h4>
+<p>The data submitter is required to provide information about the <em>Analysis</em> title, the <em>Analysis Method</em> that is associated with this <em>Analysis</em> and the <em>Research Data Files</em> that this <em>Analysis</em> used as input to generate <em>Process Data Files</em>.</p>
+<h3 id="analysis-method"><strong>Analysis Method</strong><a class="headerlink" href="#analysis-method" title="Permanent link">&para;</a></h3>
+<p>The <em>Analysis Method</em> entity describes the computational workflow that created <em>Process Data Files</em> in more detail. </p>
+<h4 id="analysis-method-metadata-properties"><strong>Analysis Method metadata properties</strong><a class="headerlink" href="#analysis-method-metadata-properties" title="Permanent link">&para;</a></h4>
+<p>For this submission, the data submitter is required to provide information about the <em>Analysis Method</em> name, a description, type, the workflow name, workflow repository and workflow DOI. Furthermore, it is also recommended to provide information about the workflow version, workflow tasks, parameters and software versions.</p>
+<h3 id="analysis-method-supporting-file"><strong>Analysis Method Supporting File</strong><a class="headerlink" href="#analysis-method-supporting-file" title="Permanent link">&para;</a></h3>
+<p>For any additional information pertaining to the <em>Analysis Method</em> entity, the data submitter can use the <em>Analysis Method Supporting File</em>.</p>
+<h4 id="analysis-method-supporting-file-properties"><strong>Analysis Method Supporting File properties</strong><a class="headerlink" href="#analysis-method-supporting-file-properties" title="Permanent link">&para;</a></h4>
+<p>For supporting information about the <em>Analysis Method</em>, the data submitter is required to provide information about the file format, the <em>Analysis Method</em> this file supports, the file name, and the <em>Dataset</em> associated with this file.</p>
+<h3 id="process-data-file"><strong>Process Data File</strong><a class="headerlink" href="#process-data-file" title="Permanent link">&para;</a></h3>
+<p>The <em>Process Data File</em> entity is a generated outcome of an analysis, alignment or  processing of a <em>Research Data File</em>. The <em>Process Data File</em> entity is linked to the <em>Dataset</em> that is associated with the file and the <em>Analysis</em> that produced this <em>Process Data File</em>.</p>
+<h4 id="process-data-file-metadata-properties"><strong>Process Data File metadata properties</strong><a class="headerlink" href="#process-data-file-metadata-properties" title="Permanent link">&para;</a></h4>
+<p>The <em>Process Data File</em> entity requires the data submitter to provide information about the file format, the <em>Analysis</em> from which this file originated, the file name, and the <em>Dataset</em>. Additionally, it is also possible to submit an optional EGA accession ID.</p>
+<p>The submission process allows submission of processed data file alone but this is discouraged as it requires creation of empty Experiment class.</p>
+<h2 id="administrative-metadata"><strong>Administrative Metadata</strong><a class="headerlink" href="#administrative-metadata" title="Permanent link">&para;</a></h2>
+<p>The Administrative Metadata focuses on managing the resources such as creation or acquisition of the data, rights management, and disposition. </p>
+<h3 id="dataset"><strong>Dataset</strong><a class="headerlink" href="#dataset" title="Permanent link">&para;</a></h3>
+<p>GHGA presents its content to potential data requesters and submitters with the <em>Dataset</em> entity, which focuses on sharing functionality by describing the contents at a high level. Each <em>Dataset</em> is linked to a <em>Data Access Policy</em>, which builds the legal basis for the sharing of data. One <em>Dataset</em> has links to <em>Experiment</em> via <em>Research Data File</em>, and to  <em>Analysis</em> via <em>Process Data File</em>. The <em>Dataset</em> is also indirectly linked to <em>Analysis Method</em>, <em>Experiment Method</em> and the <em>Individual</em> via <em>Analysis Method Supporing File</em>, <em>Experiment Method Supporing File</em> and <em>Individual Supporting File</em>, respectively. The <em>Dataset</em> entity is also linked to <em>Study</em>.</p>
+<h4 id="dataset-metadata-properties"><strong>Dataset metadata properties</strong><a class="headerlink" href="#dataset-metadata-properties" title="Permanent link">&para;</a></h4>
+<p>The <em>Dataset</em> entity is aimed at capturing relevant information about a dataset itself. The mandatory information required for <em>Dataset</em> entity includes title, description, type, the <em>Data Access Policy</em> that regulates this <em>Dataset</em> and the <em>Study</em>. Optionally, the data submitter could also provide information about an EGA accession.</p>
+<h3 id="data-access-policy-and-committee"><strong>Data Access Policy and Committee</strong><a class="headerlink" href="#data-access-policy-and-committee" title="Permanent link">&para;</a></h3>
+<p>Depositing data at GHGA requires a data submitter to provide a <em>Data Access Committee (DAC)</em> and <em>Data Access Policy (DAP)</em>. This ensures controlled access to their deposited data and a clear guideline for data requesters to access the data. This includes a defined contact person and a consent-based legal basis for getting access to a dataset. The <em>DAP</em> entity is linked to <em>Dataset</em> and <em>DAC</em>.</p>
+<h4 id="dap-and-dac-metadata-properties"><strong>DAP and DAC metadata properties</strong><a class="headerlink" href="#dap-and-dac-metadata-properties" title="Permanent link">&para;</a></h4>
+<p>A <em>DAP</em> is directly linked to the <em>DAC</em> and <em>Dataset</em> entity, thus providing  the condition under which the data deposited at GHGA can be re-used by a data requester. The submitter must provide an alias, name, description and either the policy text for the <em>DAP</em> or the URL where the <em>DAP</em> is stored, data use permission and modifier using the Data Use Ontology, and the <em>DAC</em> that governs this <em>DAP</em>.</p>
+<p>A <em>DAC</em> is linked directly to <em>DAP</em> and requires information about the DAC email and institute and optionally about an EGA accession.</p>
+<h3 id="study"><strong>Study</strong><a class="headerlink" href="#study" title="Permanent link">&para;</a></h3>
+<p>All data deposited at GHGA is subject to a specific study, under which relevant data has been aggregated. A <em>Study</em> is an experimental investigation of a particular phenomenon and involves a detailed examination and analysis of a subject to learn more about the phenomenon being studied. A detailed description of a study can guide data requesters to identify the most relevant datasets for their own research.  The <em>Study</em> entity is linked to <em>Dataset</em> and optionally to <em>Publication</em>.</p>
+<h4 id="study-metadata-properties"><strong>Study metadata properties</strong><a class="headerlink" href="#study-metadata-properties" title="Permanent link">&para;</a></h4>
+<p>In order to describe a <em>Study</em>, data submitters are required to provide information about the study affiliation(s), the title, a description and the study type. Optionally, they can provide an EGA accession ID.</p>
+<h3 id="publication"><strong>Publication</strong><a class="headerlink" href="#publication" title="Permanent link">&para;</a></h3>
+<p>The <em>Publication</em> entity refers to a journal article, book, or conference paper that presents original research or scholarly findings in a specific field of study, contributing to the collective knowledge and understanding of that discipline. </p>
+<p>The <em>Publication</em> entity is linked to <em>Study</em>.</p>
+<h4 id="publication-metadata-properties"><strong>Publication metadata properties</strong><a class="headerlink" href="#publication-metadata-properties" title="Permanent link">&para;</a></h4>
+<p>The data submitter is required to provide information about the <em>Study</em> associated with this publication. Optionally, the data submitter can also provide information about the publication title, abstract, author, year, journal and DOI.</p>
+<h2 id="submission-spreadsheet"><strong>Submission Spreadsheet</strong><a class="headerlink" href="#submission-spreadsheet" title="Permanent link">&para;</a></h2>
+<p>The Submission Spreadsheet for GHGA Archive captures the above-mentioned metadata in an ordered fashion. The submission process is tailored to replicate a “front-to-end” workflow:</p>
+<ul>
+<li>Which individuals are subject to investigation?</li>
+<li>Which biological material was collected and how?</li>
+<li>Which experiment was performed and how? Which files were generated as result?</li>
+<li>Which analysis was performed and how? Which output files were generated from which input files?</li>
+<li>How can this data be shared in meaningful datasets? Which conditions apply and who governs them?</li>
+</ul>
+<p>The submitter can also make use of the supporting files to enrich their data with additional information, such as experimental protocols for the <em>Experiment</em> class or workflow parameter files for the <em>Analysis</em> class. The supporting files can contain structured metadata, such as Phenopackets or PED files for the <em>Individual</em> class. Since supplementary files are encrypted and inaccessible without DAC approval, this allows submissions of clinical or personal metadata that can only be accessed by requesters after signing a Data Transfer Agreement. Hence, the metadata model can only indicate the presence of supplementary files for classes and signify that a submission contains additional information but not process their content.
+This results in a submission process, which will appear much more natural to submitters, while maintaining a high degree of flexibility to adapt to different omics types.</p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="February 12, 2026 14:23:44 UTC">February 12, 2026</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Copyright and theme information -->
+<div class="md-copyright">
+    
+    
+      Made with
+      <a
+        href="https://squidfunk.github.io/mkdocs-material/"
+        target="_blank" rel="noopener"
+      >
+        Material for MkDocs
+      </a>
+
+    <!-- Imprint-->
+      | <a href="https://www.ghga.de/imprint/" target="_blank" rel="noopener">Imprint</a>  
+
+    <!-- Data Protection -->
+      | <a href="https://www.ghga.de/data-protection" target="_blank" rel="noopener">Data Protection</a>  
+
+    <!-- Accessibility -->
+      | <a href="https://www.ghga.de/accessibility" target="_blank" rel="noopener">Accessibility</a>  
+
+    
+  </div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/ghga-de" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+      
+    
+    
+    
+      
+      
+    
+    <a href="https://genomic.social/@ghga" target="_blank" rel="noopener me" title="genomic.social" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M433 179.1c0-97.2-63.7-125.7-63.7-125.7-62.5-28.7-228.6-28.4-290.5 0 0 0-63.7 28.5-63.7 125.7 0 115.7-6.6 259.4 105.6 289.1 40.5 10.7 75.3 13 103.3 11.4 50.8-2.8 79.3-18.1 79.3-18.1l-1.7-36.9s-36.3 11.4-77.1 10.1c-40.4-1.4-83-4.4-89.6-54-.6-4.6-.9-9.3-.9-13.9 85.6 20.9 158.7 9.1 178.7 6.7 56.1-6.7 105-41.3 111.2-72.9 9.8-49.8 9-121.5 9-121.5zm-75.1 125.2h-46.6V190.1c0-49.7-64-51.6-64 6.9v62.5H201V197c0-58.5-64-56.6-64-6.9v114.2H90.3c0-122.1-5.2-147.9 18.4-175 25.9-28.9 79.8-30.8 103.8 6.1l11.6 19.5 11.6-19.5c24.1-37.1 78.1-34.8 103.8-6.1 23.7 27.3 18.4 53 18.4 175"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/the-german-human-genome-phenome-archive/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://bsky.app/profile/ghga.bsky.social" target="_blank" rel="noopener" title="bsky.app" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M407.8 294.7c-3.3-.4-6.7-.8-10-1.3 3.4.4 6.7.9 10 1.3M288 227.1c-26.1-50.7-97.1-145.2-163.1-191.8C61.6-9.4 37.5-1.7 21.6 5.5 3.3 13.8 0 41.9 0 58.4S9.1 194 15 213.9c19.5 65.7 89.1 87.9 153.2 80.7 3.3-.5 6.6-.9 10-1.4-3.3.5-6.6 1-10 1.4-93.9 14-177.3 48.2-67.9 169.9C220.6 589.1 265.1 437.8 288 361.1c22.9 76.7 49.2 222.5 185.6 103.4 102.4-103.4 28.1-156-65.8-169.9-3.3-.4-6.7-.8-10-1.3 3.4.4 6.7.9 10 1.3 64.1 7.1 133.6-15.1 153.2-80.7C566.9 194 576 75 576 58.4s-3.3-44.7-21.6-52.9c-15.8-7.1-40-14.9-103.2 29.8C385.1 81.9 314.1 176.4 288 227.1"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/channel/UC7Yqi4gBl86drcUxwwEe6EA" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M549.7 124.1c-6.2-23.7-24.8-42.3-48.3-48.6C458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5c-23.5 6.3-42 24.9-48.3 48.6C15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8C117.3 448 288.1 448 288.1 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6V175.2l142.7 81.2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+    
+      
+    
+    
+      
+        
+  
+  
+    
+    
+  
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" name="github" checked>
+      <span class="task-list-indicator"></span>
+      GitHub
+    </label>
+  </li>
+
+      
+    
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../javascripts/jquery-3.7.1.slim.min.js"></script>
+      
+        <script src="../../javascripts/jquery.rwdImageMaps.min.js"></script>
+      
+        <script src="../../javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>

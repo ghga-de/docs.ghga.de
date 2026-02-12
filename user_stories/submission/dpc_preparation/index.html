@@ -1,0 +1,2528 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Public documentation for users of the German Human Genome-Phenome Archive.">
+      
+      
+        <meta name="author" content="The GHGA Team">
+      
+      
+        <link rel="canonical" href="https://docs.ghga.de/user_stories/submission/dpc_preparation/">
+      
+      
+        <link rel="prev" href="../submitting_data/">
+      
+      
+        <link rel="next" href="../dp_obligations/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Preparing a Data Processing Contract - GHGA User Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#preparation-of-a-ghga-data-processing-contract-for-submission-to-ghga-archive" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      <!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Determine classes -->
+
+
+  
+
+
+<!-- Header -->
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav
+    class="md-header__inner md-grid"
+    aria-label="Header"
+  >
+
+    <!-- Link to home -->
+    <a
+      href="../../.."
+      title="GHGA User Documentation"
+      class="md-header__button md-logo"
+      aria-label="GHGA User Documentation"
+      data-md-component="logo"
+    >
+      
+  <img src="../../../logo.svg" alt="logo">
+
+    </a>
+
+    <!-- Button to open drawer -->
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+
+    <!-- Header title -->
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GHGA User Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Preparing a Data Processing Contract
+            
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Header Link GHGA Data Portal -->
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__topic">
+    <span class="md-ellipsis">
+    <a href="https://data.ghga.de/browse" title="GHGA Data Portal" target="_blank" rel="noopener">GHGA Data Portal <img src="/assets/img/arrow-up-right-from-square-solid.svg" alt="Upright Arrow" width="20"></a>
+    </span>
+    </div>
+    </div>
+
+
+    <!-- Color palette toggle -->
+    
+      
+    
+
+    <!-- User preference: color palette -->
+    
+
+    <!-- Site language selector -->
+    
+
+    <!-- Button to open search modal -->
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+
+      <!-- Search interface -->
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    <!-- Repository information -->
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ghga-de/docs/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GHGA User Documentation
+  </div>
+</a>
+      </div>
+    
+  </nav>
+
+  <!-- Navigation tabs (sticky) -->
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="GHGA User Documentation" class="md-nav__button md-logo" aria-label="GHGA User Documentation" data-md-component="logo">
+      
+  <img src="../../../logo.svg" alt="logo">
+
+    </a>
+    GHGA User Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ghga-de/docs/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GHGA User Documentation
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Stories
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    User Stories
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../browsing_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Browsing Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../accessing_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accessing Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Submitting Data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Submitting Data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../submitting_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Preparing a Data Processing Contract
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Preparing a Data Processing Contract
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-submission-to-ghga-from-dkfz-scientists" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Submission to GHGA from DKFZ Scientists
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist-for-legal-pre-requisites-for-data-submission-to-ghga" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checklist for legal pre-requisites for data submission to GHGA
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Checklist for legal pre-requisites for data submission to GHGA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#details-on-signing-procedure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Details on Signing Procedure
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-ghga-data-processing-contract" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The GHGA Data Processing Contract
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The GHGA Data Processing Contract">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sections-in-the-first-part" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sections in the First Part
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#annexes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Annexes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Annexes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#annex-1-research-data-transferred-by-the-the-data-submitter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Annex 1 - Research Data Transferred by the the Data Submitter
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#annex-2-ghga-data-hubs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Annex 2 - GHGA Data Hubs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#annex-3-transfer-of-research-data-and-personal-metadata-from-the-data-submiter-to-ghga-central-in-accordance-with-article-28-gdpr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Annex 3 - Transfer of Research Data and Personal Metadata from the Data Submiter to GHGA Central in Accordance with Article 28 GDPR
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#annex-4-persons-authorised-to-act" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Annex 4 - Persons Authorised to Act
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#annex-5-processing-of-non-personal-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Annex 5 - Processing of Non-personal Metadata
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#annex-6-the-processing-of-personal-data-to-fulfil-this-agreement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Annex 6 - The Processing of Personal Data to fulfil this Agreement
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specification-of-ls-login-ids-for-usage-in-contracts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Specification of LS Login IDs for usage in contracts
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dp_obligations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Protection Obligations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../submitter_guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Preparation Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Citing_GHGA_Submissions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Citing GHGA Submissions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dua-guideline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Use and Access Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GHGA Metadata Model
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    GHGA Metadata Model
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../metadata/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../metadata/entities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Entities & Attributes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../metadata/standards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Dictionary
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Dictionary
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../metadata/data_dictionary/00_overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../metadata/data_dictionary/Analysis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Analysis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../metadata/data_dictionary/AnalysisMethod/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AnalysisMethod
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../metadata/data_dictionary/AnalysisMethodSupportingFile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AnalysisMethodSupportingFile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../metadata/data_dictionary/DataAccessCommittee/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DataAccessCommittee
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../metadata/data_dictionary/DataAccessPolicy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DataAccessPolicy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../metadata/data_dictionary/Dataset/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dataset
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../metadata/data_dictionary/Experiment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Experiment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../metadata/data_dictionary/ExperimentMethod/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ExperimentMethod
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../metadata/data_dictionary/ExperimentMethodSupportingFile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ExperimentMethodSupportingFile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../metadata/data_dictionary/Individual/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Individual
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../metadata/data_dictionary/IndividualSupportingFile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IndividualSupportingFile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../metadata/data_dictionary/ProcessDataFile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ProcessDataFile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../metadata/data_dictionary/Publication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Publication
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../metadata/data_dictionary/ResearchDataFile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ResearchDataFile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../metadata/data_dictionary/Sample/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sample
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../metadata/data_dictionary/Study/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Study
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CLI Tools
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    CLI Tools
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cli_tools/cli_overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cli_tools/connector/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GHGA Connector
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cli_tools/transpiler/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GHGA Transpiler
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cli_tools/validator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GHGA Validator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Other Documents
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Other Documents
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../other/iva/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Independent Verification Address (IVA) and how it is used in GHGA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-submission-to-ghga-from-dkfz-scientists" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Submission to GHGA from DKFZ Scientists
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist-for-legal-pre-requisites-for-data-submission-to-ghga" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checklist for legal pre-requisites for data submission to GHGA
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Checklist for legal pre-requisites for data submission to GHGA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#details-on-signing-procedure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Details on Signing Procedure
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-ghga-data-processing-contract" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The GHGA Data Processing Contract
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The GHGA Data Processing Contract">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sections-in-the-first-part" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sections in the First Part
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#annexes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Annexes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Annexes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#annex-1-research-data-transferred-by-the-the-data-submitter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Annex 1 - Research Data Transferred by the the Data Submitter
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#annex-2-ghga-data-hubs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Annex 2 - GHGA Data Hubs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#annex-3-transfer-of-research-data-and-personal-metadata-from-the-data-submiter-to-ghga-central-in-accordance-with-article-28-gdpr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Annex 3 - Transfer of Research Data and Personal Metadata from the Data Submiter to GHGA Central in Accordance with Article 28 GDPR
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#annex-4-persons-authorised-to-act" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Annex 4 - Persons Authorised to Act
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#annex-5-processing-of-non-personal-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Annex 5 - Processing of Non-personal Metadata
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#annex-6-the-processing-of-personal-data-to-fulfil-this-agreement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Annex 6 - The Processing of Personal Data to fulfil this Agreement
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specification-of-ls-login-ids-for-usage-in-contracts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Specification of LS Login IDs for usage in contracts
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="preparation-of-a-ghga-data-processing-contract-for-submission-to-ghga-archive">Preparation of a GHGA Data Processing Contract for submission to GHGA Archive<a class="headerlink" href="#preparation-of-a-ghga-data-processing-contract-for-submission-to-ghga-archive" title="Permanent link">&para;</a></h1>
+<p><img alt="Flowchart with icons showing the relationship between the Research Data Controller (RDC) and GHGA Central, established via a Data Processing Contract – described in more detail in the text below on this page." src="../../../assets/img/User_stories_Submitting_Data_DPC.png" /></p>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>A <a class="mkdocs-ezglossary-link"
+    id="2d74bc2bec9e683ffe5e8d9391c54819"
+    title="Bilateral agreement signed by GHGA Central and a Research Data Controller who wishes to deposit data in the archive. The agreement regulates the rights and duties of the controller and GHGA Central in processing the deposited data."
+    name="general:Data Processing Contract (DPC)"
+    href="../../../glossary/#518cea5b087f8b27dd8374ddd6c52311">Data Processing Contract (DPC)</a> is signed by <a class="mkdocs-ezglossary-link"
+    id="fb1c2b560cd19efc07d93653abc03b8b"
+    title="Deutsches Krebsforschungszentrum (DKFZ) shall be the legal entity responsible for GHGA Data Infrastructure. The responsibilities are outlined in the GHGA Data Hub Cooperation Contract and are to be fulfilled in accordance with the regulations outlined in this contract. These responsibilities will include taking on the role of a data processor for the research data submitted to the GHGA Data Infrastructure. Within this agreement, DKFZ will be referred to as GHGA Central. DKFZ will also operate a GHGA Data Hub."
+    name="general:GHGA Central"
+    href="../../../glossary/#26ba5cb2e639a7c2bdca1ce64c79d1e2">GHGA Central</a> and an institution that is the <a class="mkdocs-ezglossary-link"
+    id="0aa712b221cb2c38f70a02720fb7ae9b"
+    title="Institution that is the controller (as defined by the GDPR) of Research Data and that contracted GHGA for processing the Research Data on their behalf. The term is also used for the corresponding party if the processing of the Research Data is only intended, i.e. before such a contract is established."
+    name="general:Research Data Controller (RDC)"
+    href="../../../glossary/#5d1f2ea385175f1740534ef230af4424">Research Data Controller (RDC)</a> when they wish to submit data to GHGA. The DPC sets out how GHGA may process the data, the role of the <a class="mkdocs-ezglossary-link"
+    id="5a8af5bf17adca6540d94b553f69ff48"
+    title="A GHGA Consortium Member that stores and processes research data for the purposes of archiving and secondary analysis for scientific research purposes on behalf of GHGA Central. The responsibilities are set out in the GHGA Data Hub Cooperation Contract."
+    name="general:GHGA Data Hub"
+    href="../../../glossary/#578b8d37fe61809bf45c3791f9af6d74">GHGA Data Hubs</a>, and what the Data Controllers’ responsibilities are. </p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 7.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-3 3.75a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 .75.75v4.25h.75a.75.75 0 0 1 0 1.5h-3a.75.75 0 0 1 0-1.5h.75V12h-.75a.75.75 0 0 1-.75-.75"/><path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1M2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12"/></svg></span>: The DPC is available <a href="https://www.ghga.de/Downloads/GHGA_Data_Processing_Contract.pdf">here <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4.75 17.25a.75.75 0 0 1 .75.75v2.25c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V18a.75.75 0 0 1 1.5 0v2.25A1.75 1.75 0 0 1 18.25 22H5.75A1.75 1.75 0 0 1 4 20.25V18a.75.75 0 0 1 .75-.75"/><path d="M5.22 9.97a.75.75 0 0 1 1.06 0l4.97 4.969V2.75a.75.75 0 0 1 1.5 0v12.189l4.97-4.969a.749.749 0 1 1 1.06 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0l-6.25-6.25a.75.75 0 0 1 0-1.06"/></svg></span></a> for download.</p>
+<p>The DPC creates a controller-to-processor relationship between the institution and GHGA Central. It has been designed to conform with <a href="https://gdpr-info.eu/art-28-gdpr/">Art. 28 GDPR Nr. 3</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">The difference between a Data Controller and a Data Submitter</p>
+<p>The GDPR defines a Data Controller as the party which "determines the purposes and means of the processing of personal data". Within the context of GHGA, we also use the term Data Submitter to mean the person or institution who are submitting Research Data to the GHGA Data Portal. In many cases, the Data Controller and Data Submitter will be the same but this is not always true; it is therefore important for the Data Submitter to check who the Data Controller is for the data they wish to submit. In this guide, we will use the term Data Controller, as it is the Data Controller who is required to sign the GHGA Data Processing Contract.</p>
+</div>
+<h3 id="data-submission-to-ghga-from-dkfz-scientists">Data Submission to GHGA from DKFZ Scientists<a class="headerlink" href="#data-submission-to-ghga-from-dkfz-scientists" title="Permanent link">&para;</a></h3>
+<p><img align="right" alt="DKFZ Logo" src="../../../assets/img/DKFZ_solo.png" />For submissions in which the DKFZ is the <a class="mkdocs-ezglossary-link"
+    id="4335424c31ef494fb4a77e71d130acc4"
+    title="Institution that is the controller (as defined by the GDPR) of Research Data and that contracted GHGA for processing the Research Data on their behalf. The term is also used for the corresponding party if the processing of the Research Data is only intended, i.e. before such a contract is established."
+    name="general:Research Data Controller (RDC)"
+    href="../../../glossary/#5d1f2ea385175f1740534ef230af4424">Research Data Controller (RDC)</a>, instead of agreeing to a <a class="mkdocs-ezglossary-link"
+    id="f617129677523b5de7c1b4f2d1c366f5"
+    title="Bilateral agreement signed by GHGA Central and a Research Data Controller who wishes to deposit data in the archive. The agreement regulates the rights and duties of the controller and GHGA Central in processing the deposited data."
+    name="general:Data Processing Contract (DPC)"
+    href="../../../glossary/#518cea5b087f8b27dd8374ddd6c52311">DPC</a> the responsible scientists need to sign the DKFZ Internal Terms of Use for data deposition in GHGA. The Internal Terms of Use are available <a href="https://intranet.dkfz.de/services/wissenschaftliche-dienste/deutsches-humangenom-phaenomarchiv-ghga">here in the DKFZ Intranet</a>. </p>
+<h2 id="checklist-for-legal-pre-requisites-for-data-submission-to-ghga">Checklist for legal pre-requisites for data submission to GHGA<a class="headerlink" href="#checklist-for-legal-pre-requisites-for-data-submission-to-ghga" title="Permanent link">&para;</a></h2>
+<p>The following checklist gives an overview on the necessary legal processes to be carried out before a data submission to GHGA can be performed.</p>
+<ul class="task-list">
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Download and review the terms of the <a href="https://www.ghga.de/Downloads/GHGA_Data_Processing_Contract.pdf">GHGA Data Processing Contract</a>.</p>
+<ul>
+<li>An explanation of the GHGA Data Processing Contract is provided <a href="#the-ghga-data-processing-contract">below</a>.</li>
+</ul>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Identify the Data Controller.</p>
+<ul>
+<li>As the GHGA Data Processing Contract can only be signed by the Data Controller, it is important to identify who they are. </li>
+<li>In cases where the data are jointly-controlled, only one of the Data Controllers is required to sign the contract.</li>
+<li>Please see also the article on <a href="../dp_obligations/">data protection obligations when submitting to GHGA</a>.</li>
+</ul>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Consider the additional information that is required. </p>
+<ul>
+<li>A number of the annexes to the GHGA Data Processing Contract require information from the Data Controller. It is important for the Data Controller to consider in advance how they will respond.</li>
+</ul>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Submit a <a href="https://www.ghga.de/about-us/presubmission-enquiries">Pre-Submission Inquiry</a> or contact us via the <a class="mkdocs-ezglossary-link"
+    id="5b898e89cbf3db87f8ccdb4d0588f4d3"
+    title="The GHGA Helpdesk is the main point of contact for service users. To open a ticket send a mail to helpdesk@ghga.de The helpdesk software is operated by the DKFZ as GHGA Central and is also available via helpdesk.ghga.de"
+    name="general:GHGA Helpdesk"
+    href="../../../glossary/#4f93b7914834322853bafdeae4255982">GHGA Helpdesk</a>. GHGA will send you feedback whether or not the intended submission can be supported.</p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Determine the authorised signatory person for the Data Controller.</p>
+<ul>
+<li>Different institutions will define differently which roles are authorised to sign contracts on their behalf. It is not typical that an individual researcher can alone sign a contract. </li>
+</ul>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Submit detailled information to complete the DPC.</p>
+<ul>
+<li>If the proposed data submission can be supported by GHGA, the Data Controller will be asked by GHGA to supply the information necessary to prepare a bespoke Data Processing Contract for the Data Controller. This includes details such as the address of the institutions, signatories, persons authorised to act, and a description of the data to be submitted. <strong>GHGA will then provide the Data Controller with a sign-ready PDF-version of the DPC.</strong></li>
+</ul>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Submit the signed Data Processing Contract to GHGA for counter-signing and propossing. </p>
+</li>
+</ul>
+<h3 id="details-on-signing-procedure">Details on Signing Procedure<a class="headerlink" href="#details-on-signing-procedure" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>The signing can be carried out either using "wet ink" or a qualified electronic signature:</p>
+<ul>
+<li>
+<p>For wet ink signing (preferred), submit two physical copies of the signed contract to GHGA Central using the following address:</p>
+<div class="codehilite"><pre><span></span><code>DKFZ Heidelberg
+GHGA (German Human Genome-Phenome Archive) - W620
+Im Neuenheimer Feld 280
+D-69120 Heidelberg
+</code></pre></div>
+
+</li>
+<li>
+<p>For electronic signing a <strong>qualified electronic signature (QES)</strong> is required in accordance with <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32014R0910">Article 3(12) of the eIDAS Regulation (EU) No. 910/2014</a> and <a href="https://www.gesetze-im-internet.de/englisch_bgb/englisch_bgb.html#p1163">Section 126a of the German Civil Code (BGB)</a>. Such a signature can be provided using certified services like <strong>DocuSign</strong>, <strong>IDnow</strong>, or other providers.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="the-ghga-data-processing-contract">The GHGA Data Processing Contract<a class="headerlink" href="#the-ghga-data-processing-contract" title="Permanent link">&para;</a></h2>
+<p>The DPC is structured in two parts. The <a href="#sections-in-the-first-part">first part</a>, comprised of the sections <em>Preamble</em> to <em>§7 - Signing</em>, focuses on the services that GHGA offers to the Data Controller once they have signed a DPC. The second part of the DPC are the <a href="#annexes">Annexes</a> which focus on the data protection aspects that relate to the different data types which are processed under the DPC. There are sections within the Annexes for which the Data Controller must provide information.</p>
+<h3 id="sections-in-the-first-part">Sections in the First Part<a class="headerlink" href="#sections-in-the-first-part" title="Permanent link">&para;</a></h3>
+<p>A brief summary of these sections is presented below.</p>
+<p><em>Preamble</em> - This section introduces GHGA and the objectives of the project.</p>
+<p><em>§1 - Definitions</em> - This section defines the specific GHGA-related terms used within the DPC.</p>
+<p><em>§2 - Purpose of this Agreement</em> - This sections describes the services that GHGA offers to Data Controllers. These services are:</p>
+<ol>
+<li>
+<p>The storage of Research Data.</p>
+</li>
+<li>
+<p>The publication of Non-personal Metadata that describes the Research Data in the GHGA Data Portal.</p>
+</li>
+<li>
+<p>Quality control checks performed upon the Research Data, Personal Metadata, and Non-personal Metadata.</p>
+</li>
+<li>
+<p>The storage of any Personal Metadata related to the Research Data.</p>
+</li>
+<li>
+<p>Additional processing of the Research Data to assess and enhance its quality.</p>
+</li>
+<li>
+<p>Support to make the Research Data and Personal Metadata accessible to approved Data Requesters. </p>
+</li>
+<li>
+<p>GHGA Central shall operate a Helpdesk service through which Service Users including the Data Submitter can receive support.</p>
+</li>
+</ol>
+<p>A fuller description of these services is provided in the DPC.</p>
+<p><em>§3 - Right to Termination</em> - This section explains in what circumstances the DPC can be terminated. Both parties have the right to cancel the DPC if the other fails to meet their obligations. The Data Controller can also cancel the DPC whenever they wish.</p>
+<p><em>§4 - Process for the Termination of the Agreement</em> - This section sets out the process followed in the event that a DPC is cancelled. The data that has been deposited will either be returned to the Data Controller or destroyed depending on the preferences of the Data Controller. If a DPC is cancelled because the Data Controller is unresponsive, GHGA may be forced to destroy the data has been deposited. </p>
+<p><em>§5 - Warranties and Liabilities</em> - This section describes the warranties and liabilities for each party in the event that there are damages resulting from the submission of data. GHGA commits to making a reasonable effort to retreive any data in the event of a loss, but that this effort is limited to what is reasonable for GHGA to do.</p>
+<p><em>§6 - Final Provisions</em> - This section includes additional clauses that affect the DPC including how changes to the contract can be made.</p>
+<p><em>§7 - Signing</em> - This section is signed by the Data Controller and GHGA Central. See the checklist above for details on types of accepted signatures.</p>
+<h3 id="annexes">Annexes<a class="headerlink" href="#annexes" title="Permanent link">&para;</a></h3>
+<p>A brief summary of the annexes is presented below.</p>
+<h4 id="annex-1-research-data-transferred-by-the-the-data-submitter">Annex 1 - Research Data Transferred by the the Data Submitter<a class="headerlink" href="#annex-1-research-data-transferred-by-the-the-data-submitter" title="Permanent link">&para;</a></h4>
+<p>In Annex 1, the Data Controller is required to list the <strong>datasets or studies</strong> that they wish to submit to GHGA, and to provide information about them. This information is used to decide which GHGA Data Hub is best placed to process the submission. Only data or studies which are listed in Annex 1 can be submitted under the DPC. Any future submission will require another DPC. </p>
+<p>The Data Controller must also provide <strong>contact information</strong> about how Data Requesters can make a request to access the data. This needs to be a functional institutional email address and can not contain personal information. Usually this is the email address of the <a class="mkdocs-ezglossary-link"
+    id="32e54ed8c6b1a325c0936dfea2b3dcef"
+    title="An abstract body, potentially a panel of people, deciding on Data Access Requests and authorised by the Research Data Controller."
+    name="general:Data Access Committee (DAC)"
+    href="../../../glossary/#42a7968ccdfa919809c984d9a9fc1e69">Data Access Committee (DAC)</a>. The same information will also need to be submitted as part of the metadata submission as part of the information on the <a href="../../../metadata/data_dictionary/DataAccessCommittee/">Data Access Committee</a>.</p>
+<h4 id="annex-2-ghga-data-hubs">Annex 2 - GHGA Data Hubs<a class="headerlink" href="#annex-2-ghga-data-hubs" title="Permanent link">&para;</a></h4>
+<p>In Annex 2, GHGA will list all of the institutions that have been fully onboarded as GHGA Data Hubs and will be acting as sub-processors to GHGA Central. The GHGA Data Hubs will be responsible for storing Research Data and Personal Metadata on behalf of GHGA Central. </p>
+<h4 id="annex-3-transfer-of-research-data-and-personal-metadata-from-the-data-submiter-to-ghga-central-in-accordance-with-article-28-gdpr">Annex 3 - Transfer of Research Data and Personal Metadata from the Data Submiter to GHGA Central in Accordance with Article 28 GDPR<a class="headerlink" href="#annex-3-transfer-of-research-data-and-personal-metadata-from-the-data-submiter-to-ghga-central-in-accordance-with-article-28-gdpr" title="Permanent link">&para;</a></h4>
+<p>Annex 3 utilises the <a href="https://commission.europa.eu/publications/standard-contractual-clauses-controllers-and-processors-eueea_en">Standard Contractual Clauses</a> developed by the European Commission for controller-to-processor relationships to govern the processing of Research Data and Personal Metadata. The template produced by the European Commission has been adapted to refer to GHGA Central and the GHGA Data Hubs. </p>
+<h4 id="annex-4-persons-authorised-to-act">Annex 4 - Persons Authorised to Act<a class="headerlink" href="#annex-4-persons-authorised-to-act" title="Permanent link">&para;</a></h4>
+<p>Annex 4 asks the Data Controller for <a class="mkdocs-ezglossary-link"
+    id="eea6ae9e3a52735ece6c6f0c649ea943"
+    title="Individuals that are authorised to act on behalf of a Research Data Controller (RDC) as defined in the Data Processing Contract (DPC) between the RDC and GHGA Central. For details see here."
+    name="general:Person authorised to Act"
+    href="../../../glossary/#4604c5633ad91bd0726418dece11ade3">persons authorised to act</a>. It is expected that for a majority of submissions to GHGA, an institution rather than an individual scientist will be the Data Controller. It is also expected that the people who represent their institutions, such as a Management Board, Chancellor, or Director, are not likely to be responsible for submitting data to GHGA. As such, we require the Data Controller to name people who can act on their behalf so that we can be sure that the instructions we receive from those people are legally valid.</p>
+<p>In order to ensure that only authorised people can access our systems, GHGA utilises <a href="https://lifescience-ri.eu/ls-login/">Life Science Login (LS Login)</a> to authenticate users. Therefore, the DPC requires the Data Controller to include the LS Login IDs of the persons who they authorise to act. The process for obtaining LS Login IDs is described <a href="#specification-of-ls-login-ids-for-usage-in-contracts">below</a>. </p>
+<p>In addition, in order to ensure secure communications between GHGA and the named persons authorised to act, an <a class="mkdocs-ezglossary-link"
+    id="874d741e30a165791df19e155f38a253"
+    title="The independent verification address (IVA) is used to add additional security towards the identification of users in the GHGA Data Portal. An IVA is a verification factor that is independent of the primary route of authentication in the GHGA Data Portal using LS ID. Further information can be found here."
+    name="general:Independent Verification Address (IVA)"
+    href="../../../glossary/#7b2c0f1962cf62677c4deb6f3252d63f">Independent Verification Address (IVA)</a> is required from the named individuals.</p>
+<h4 id="annex-5-processing-of-non-personal-metadata">Annex 5 - Processing of Non-personal Metadata<a class="headerlink" href="#annex-5-processing-of-non-personal-metadata" title="Permanent link">&para;</a></h4>
+<p>Annex 5 sets out the Data Controller's obligations with regards to the submission of Non-personal Metadata that will be displayed publicly in the GHGA Data Portal. The Data Controller is required to confirm that the metadata they are submitting is non-personal.</p>
+<h4 id="annex-6-the-processing-of-personal-data-to-fulfil-this-agreement">Annex 6 - The Processing of Personal Data to fulfil this Agreement<a class="headerlink" href="#annex-6-the-processing-of-personal-data-to-fulfil-this-agreement" title="Permanent link">&para;</a></h4>
+<p>In order for GHGA to fulfil a Data Processing Contract it will be necessary to process personal Administrative Data, e.g. contact information about people who have been authorised to act on behalf of the Data Controller. Annex 6 describes the processing of personal Administrative Data, the legal basis for doing so, and the rights of the Data Subjects.</p>
+<p>For approved Data Access Requests, it will be necessary that a person authorised to act on behalf of the Data Controller submits the following information to GHGA Central:</p>
+<ul>
+<li>Name of the approved Data Requester</li>
+<li><a class="mkdocs-ezglossary-link"
+    id="f57988bfc65f258a6c8eca2b925fd639"
+    title="For the usage of the services of the GHGA Data Portal, a Life Science Login / LS ID is necessary. Life Science Login is an authentication service from EOSC-Life, for details see lifescience-ri.eu/ls-login/. For identification purposes, an LS ID is needed, see further details here."
+    name="general:LS ID"
+    href="../../../glossary/#a8ae3c823ed59b755c28e5b23fd6d47f"> Life Science Login ID</a></li>
+<li><a class="mkdocs-ezglossary-link"
+    id="5768912c6036b7dfa94d2f6cd7275ce6"
+    title="The independent verification address (IVA) is used to add additional security towards the identification of users in the GHGA Data Portal. An IVA is a verification factor that is independent of the primary route of authentication in the GHGA Data Portal using LS ID. Further information can be found here."
+    name="general:Independent Verification Address (IVA)"
+    href="../../../glossary/#7b2c0f1962cf62677c4deb6f3252d63f">Independent Verification Address (IVA)</a></li>
+</ul>
+<h2 id="specification-of-ls-login-ids-for-usage-in-contracts">Specification of LS Login IDs for usage in contracts<a class="headerlink" href="#specification-of-ls-login-ids-for-usage-in-contracts" title="Permanent link">&para;</a></h2>
+<p>To be able to process <a class="mkdocs-ezglossary-link"
+    id="9ff7b674cde9bcdf80a07a7a0a61647b"
+    title="Bilateral agreement signed by GHGA Central and a Research Data Controller who wishes to deposit data in the archive. The agreement regulates the rights and duties of the controller and GHGA Central in processing the deposited data."
+    name="general:Data Processing Contract (DPC)"
+    href="../../../glossary/#518cea5b087f8b27dd8374ddd6c52311">Data Processing Contract (DPC)</a> and for others uses, GHGA users need to specify details of their LS Login ID to GHGA. The following information is needed:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>The name of the person, e.g. <code>Doe, Jane</code></td>
+</tr>
+<tr>
+<td>Organisation</td>
+<td>Name of the Organisation / Institution that interacts with GHGA, e.g. <code>Doe Institut</code></td>
+</tr>
+<tr>
+<td>Role</td>
+<td>Your role in the Organisation, e.g. <code>Data Steward</code></td>
+</tr>
+<tr>
+<td>Contact Information</td>
+<td>An email adress, e.g. <code>Jane.doe@doe-institut.xyz</code></td>
+</tr>
+<tr>
+<td>Life Science Login ID / LS ID</td>
+<td>The LS ID e.g. as displayed in your <a href="https://profile.aai.lifescience-ri.eu/profile">LS ID user profile</a>, e.g. <code>777xc437f725f58660456780tt01d5l999f9b123456@lifescience-ri.eu</code>. <a href="../../../faq/#where-can-i-find-my-life-science-id-ls-id">Further information</a></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="February 12, 2026 14:23:44 UTC">February 12, 2026</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Copyright and theme information -->
+<div class="md-copyright">
+    
+    
+      Made with
+      <a
+        href="https://squidfunk.github.io/mkdocs-material/"
+        target="_blank" rel="noopener"
+      >
+        Material for MkDocs
+      </a>
+
+    <!-- Imprint-->
+      | <a href="https://www.ghga.de/imprint/" target="_blank" rel="noopener">Imprint</a>  
+
+    <!-- Data Protection -->
+      | <a href="https://www.ghga.de/data-protection" target="_blank" rel="noopener">Data Protection</a>  
+
+    <!-- Accessibility -->
+      | <a href="https://www.ghga.de/accessibility" target="_blank" rel="noopener">Accessibility</a>  
+
+    
+  </div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/ghga-de" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+      
+    
+    
+    
+      
+      
+    
+    <a href="https://genomic.social/@ghga" target="_blank" rel="noopener me" title="genomic.social" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M433 179.1c0-97.2-63.7-125.7-63.7-125.7-62.5-28.7-228.6-28.4-290.5 0 0 0-63.7 28.5-63.7 125.7 0 115.7-6.6 259.4 105.6 289.1 40.5 10.7 75.3 13 103.3 11.4 50.8-2.8 79.3-18.1 79.3-18.1l-1.7-36.9s-36.3 11.4-77.1 10.1c-40.4-1.4-83-4.4-89.6-54-.6-4.6-.9-9.3-.9-13.9 85.6 20.9 158.7 9.1 178.7 6.7 56.1-6.7 105-41.3 111.2-72.9 9.8-49.8 9-121.5 9-121.5zm-75.1 125.2h-46.6V190.1c0-49.7-64-51.6-64 6.9v62.5H201V197c0-58.5-64-56.6-64-6.9v114.2H90.3c0-122.1-5.2-147.9 18.4-175 25.9-28.9 79.8-30.8 103.8 6.1l11.6 19.5 11.6-19.5c24.1-37.1 78.1-34.8 103.8-6.1 23.7 27.3 18.4 53 18.4 175"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/the-german-human-genome-phenome-archive/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://bsky.app/profile/ghga.bsky.social" target="_blank" rel="noopener" title="bsky.app" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M407.8 294.7c-3.3-.4-6.7-.8-10-1.3 3.4.4 6.7.9 10 1.3M288 227.1c-26.1-50.7-97.1-145.2-163.1-191.8C61.6-9.4 37.5-1.7 21.6 5.5 3.3 13.8 0 41.9 0 58.4S9.1 194 15 213.9c19.5 65.7 89.1 87.9 153.2 80.7 3.3-.5 6.6-.9 10-1.4-3.3.5-6.6 1-10 1.4-93.9 14-177.3 48.2-67.9 169.9C220.6 589.1 265.1 437.8 288 361.1c22.9 76.7 49.2 222.5 185.6 103.4 102.4-103.4 28.1-156-65.8-169.9-3.3-.4-6.7-.8-10-1.3 3.4.4 6.7.9 10 1.3 64.1 7.1 133.6-15.1 153.2-80.7C566.9 194 576 75 576 58.4s-3.3-44.7-21.6-52.9c-15.8-7.1-40-14.9-103.2 29.8C385.1 81.9 314.1 176.4 288 227.1"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/channel/UC7Yqi4gBl86drcUxwwEe6EA" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M549.7 124.1c-6.2-23.7-24.8-42.3-48.3-48.6C458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5c-23.5 6.3-42 24.9-48.3 48.6C15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8C117.3 448 288.1 448 288.1 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6V175.2l142.7 81.2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+    
+      
+    
+    
+      
+        
+  
+  
+    
+    
+  
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" name="github" checked>
+      <span class="task-list-indicator"></span>
+      GitHub
+    </label>
+  </li>
+
+      
+    
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/jquery-3.7.1.slim.min.js"></script>
+      
+        <script src="../../../javascripts/jquery.rwdImageMaps.min.js"></script>
+      
+        <script src="../../../javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>
