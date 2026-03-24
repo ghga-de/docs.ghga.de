@@ -13,7 +13,7 @@ A <general:Data Processing Contract (DPC)> is signed by <general:GHGA Central> a
 ## Preparation of the Data Processing Contract (DCP)
 
 - When intending to submit data to GHGA, the submitter should consult the [checklist below](#checklist-for-legal-pre-requisites-for-data-submission-to-ghga) and review the DPC, which is available [here for download :octicons-download-24:](https://www.ghga.de/Downloads/GHGA_Data_Processing_Contract.pdf).
-- The submitter then needs to complete [the GHGA-DPC-Information-Collection-Form :material-file-excel:](GHGA_DPC_Information_Collection_Form.xlsx) and send it to <general:GHGA Central> via the [Helpdesk](mailto:helpdesk@ghga.de). GHGA Central will then create a sign-ready version of the DPC and send it to you for signing. **Do not create the sign-ready version on your own!**
+- The submitter then needs to complete [the GHGA-DPC-Information-Collection-Form :material-file-excel:](../../assets/GHGA_DPC_Information_Collection_Form.xlsx) and send it to <general:GHGA Central> via the [Helpdesk](mailto:helpdesk@ghga.de). GHGA Central will then create a sign-ready version of the DPC and send it to you for signing. **Do not create the sign-ready version on your own!**
 
 ### Data Submission to GHGA from DKFZ Scientists
 
@@ -40,7 +40,7 @@ The following checklist gives an overview on the necessary legal processes to be
       - Different institutions will define differently which roles are authorised to sign contracts on their behalf. It is not typical that an individual researcher can alone sign a contract. 
 
 - [x] Submit detailed information to create a sign-readey version of the DPC.
-      - If the proposed data submission can be supported by GHGA, the Data Controller will be asked to complete [:material-file-excel: the GHGA-DPC-Information-Collection-Form](GHGA_DPC_Information_Collection_Form.xlsx). Based on this information GHGA Central will create a sign-ready version of the DPC for the Data Controller. This includes details such as the address of the institutions, signatories, persons authorised to act, and a description of the data to be submitted. **GHGA will then provide the Data Controller with a sign-ready PDF-version of the DPC.**
+      - If the proposed data submission can be supported by GHGA, the Data Controller will be asked to complete [:material-file-excel: the GHGA-DPC-Information-Collection-Form](../../assets/GHGA_DPC_Information_Collection_Form.xlsx). Based on this information GHGA Central will create a sign-ready version of the DPC for the Data Controller. This includes details such as the address of the institutions, signatories, persons authorised to act, and a description of the data to be submitted. **GHGA will then provide the Data Controller with a sign-ready PDF-version of the DPC.**
 
 
 - [x] Submit the signed Data Processing Contract to GHGA for counter-signing and further processing. 
