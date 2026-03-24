@@ -24,7 +24,7 @@ A <general:Data Processing Contract (DPC)> is signed by <general:GHGA Central> a
 The following checklist gives an overview on the necessary legal processes to be carried out before a data submission to GHGA can be performed.
 
 - [x] Download and review the terms of the [GHGA Data Processing Contract](https://www.ghga.de/Downloads/GHGA_Data_Processing_Contract.pdf).
-      - An explanation of the GHGA Data Processing Contract is provided [below](#the-ghga-data-processing-contract).
+      - An explanation of the GHGA Data Processing Contract is provided [below](#details-on-the-ghga-data-processing-contract).
 
 - [x] Identify the Data Controller.
       - As the GHGA Data Processing Contract can only be signed by the Data Controller, it is important to identify who they are. 

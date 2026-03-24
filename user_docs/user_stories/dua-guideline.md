@@ -141,7 +141,7 @@ Before access is granted, the Research Data Controller needs to ensure that the 
 
 #### Using the Independent Verification Adress (IVA) to verify identities
 
-- To download data from GHGA, users need to have a verified account (see [here](./accessing_data.md#account-verification)), which is linked to:
+- To download data from GHGA, users need to have a verified account (see [here](accessing_data.md#account-verification-using-an-independent-verification-address-iva), which is linked to:
 
       1. a <general:LS ID> Acount
       2. a <general:Independent Verification Address (IVA)>
