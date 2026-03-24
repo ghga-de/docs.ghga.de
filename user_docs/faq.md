@@ -10,7 +10,7 @@ The GHGA Data Portal allows users to browse, search, and download omics datasets
 
 ## What data can be found on GHGA Data Portal?
 
-Please visit the [GHGA Data Portal browse page](https://data.ghga.de/browse) and find your data of interest either by a keyword search or by using the selectors on the left side. Currently, we are only displaying datasets from GHGA partner institutions.
+Please visit the [GHGA Data Portal](https://data.ghga.de/browse) and find your data of interest either by a keyword search or by using the selectors on the left side. Currently, we are only displaying datasets from GHGA partner institutions.
 
 ## How to upload your data to the GHGA Data Portal?
 
