@@ -32,7 +32,7 @@ In order to ensure that only authorised people can access our systems, GHGA util
 
 ??? tip "LS ID User Profile Screenshot"
 
-    ![Screenshot of profile page on Life Science Login showing name, LS ID, username, email, affiliations, and language – as described in the text above.](../../assets/img/lslogin-lsid.png)
+    ![Screenshot of profile page on Life Science Login showing name, LS ID, username, email, affiliations, and language – as described in the text above.](assets/img/lslogin-lsid.png)
     [Life Science RI user profile](https://profile.aai.lifescience-ri.eu/profile)
 
 

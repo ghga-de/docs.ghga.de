@@ -4,24 +4,27 @@
 
 ## Introduction
 
-A <general:Data Processing Contract (DPC)> is signed by <general:GHGA Central> and an institution that is the <general:Research Data Controller (RDC)> when they wish to submit data to GHGA. The DPC sets out how GHGA may process the data, the role of the <general:GHGA Data Hub|GHGA Data Hubs>, and what the Data Controllers’ responsibilities are. 
-
-:octicons-info-24:: The DPC is available [here :octicons-download-24:](https://www.ghga.de/Downloads/GHGA_Data_Processing_Contract.pdf) for download.
-
-The DPC creates a controller-to-processor relationship between the institution and GHGA Central. It has been designed to conform with [Art. 28 GDPR Nr. 3](https://gdpr-info.eu/art-28-gdpr/).
+A <general:Data Processing Contract (DPC)> is signed by <general:GHGA Central> and an institution that is the <general:Research Data Controller (RDC)> when they wish to submit data to GHGA. The DPC creates a controller-to-processor relationship between the institution and GHGA Central and sets out how GHGA may process the data, the role of the <general:GHGA Data Hub|GHGA Data Hubs>, and what the Data Controllers’ responsibilities are. It has been designed to conform with [Art. 28 GDPR Nr. 3](https://gdpr-info.eu/art-28-gdpr/).
 
 --8<-- "difference_data_controller_submitter.md"
 
+
+
+## Preparation of the Data Processing Contract (DCP)
+
+- When intending to submit data to GHGA, the submitter should consult the [checklist below](#checklist-for-legal-pre-requisites-for-data-submission-to-ghga) and review the DPC, which is available [here for download :octicons-download-24:](https://www.ghga.de/Downloads/GHGA_Data_Processing_Contract.pdf).
+- The submitter then needs to complete [the GHGA-DPC-Information-Collection-Form :material-file-excel:](../../assets/GHGA_DPC_Information_Collection_Form.xlsx) and send it to <general:GHGA Central> via the [Helpdesk](mailto:helpdesk@ghga.de). GHGA Central will then create a sign-ready version of the DPC and send it to you for signing. **Do not create the sign-ready version on your own!**
+
 ### Data Submission to GHGA from DKFZ Scientists
 
-![DKFZ Logo](../../assets/img/DKFZ_solo.png){ align=right}For submissions in which the DKFZ is the <general:Research Data Controller (RDC)>, instead of agreeing to a <general:Data Processing Contract (DPC)|DPC> the responsible scientists need to sign the DKFZ Internal Terms of Use for data deposition in GHGA. The Internal Terms of Use and further instructions are available [here on the ODFC Website](https://odcf.dkfz.de/supporting-information/data-transfers/ghga). 
+![DKFZ Logo](../../assets/img/DKFZ_solo.png){ align=right}For submissions in which the DKFZ is the <general:Research Data Controller (RDC)>, instead of agreeing to a <general:Data Processing Contract (DPC)|DPC>, the responsible scientists need to sign the <general:DKFZ Internal Terms of Use of the GHGA Data Infrastructure (ITOU)>. The Internal Terms of Use and further instructions are available [here on the ODFC Website](https://odcf.dkfz.de/supporting-information/data-transfers/ghga). 
 
 ## Checklist for legal pre-requisites for data submission to GHGA
 
 The following checklist gives an overview on the necessary legal processes to be carried out before a data submission to GHGA can be performed.
 
 - [x] Download and review the terms of the [GHGA Data Processing Contract](https://www.ghga.de/Downloads/GHGA_Data_Processing_Contract.pdf).
-      - An explanation of the GHGA Data Processing Contract is provided [below](#the-ghga-data-processing-contract).
+      - An explanation of the GHGA Data Processing Contract is provided [below](#details-on-the-ghga-data-processing-contract).
 
 - [x] Identify the Data Controller.
       - As the GHGA Data Processing Contract can only be signed by the Data Controller, it is important to identify who they are. 
@@ -36,11 +39,11 @@ The following checklist gives an overview on the necessary legal processes to be
 - [x] Determine the authorised signatory person for the Data Controller.
       - Different institutions will define differently which roles are authorised to sign contracts on their behalf. It is not typical that an individual researcher can alone sign a contract. 
 
-- [x] Submit detailled information to complete the DPC.
-      - If the proposed data submission can be supported by GHGA, the Data Controller will be asked by GHGA to supply the information necessary to prepare a bespoke Data Processing Contract for the Data Controller. This includes details such as the address of the institutions, signatories, persons authorised to act, and a description of the data to be submitted. **GHGA will then provide the Data Controller with a sign-ready PDF-version of the DPC.**
+- [x] Submit detailed information to create a sign-readey version of the DPC.
+      - If the proposed data submission can be supported by GHGA, the Data Controller will be asked to complete [:material-file-excel: the GHGA-DPC-Information-Collection-Form](../../assets/GHGA_DPC_Information_Collection_Form.xlsx). Based on this information GHGA Central will create a sign-ready version of the DPC for the Data Controller. This includes details such as the address of the institutions, signatories, persons authorised to act, and a description of the data to be submitted. **GHGA will then provide the Data Controller with a sign-ready PDF-version of the DPC.**
 
 
-- [x] Submit the signed Data Processing Contract to GHGA for counter-signing and propossing. 
+- [x] Submit the signed Data Processing Contract to GHGA for counter-signing and further processing. 
 
 ### Details on Signing Procedure
 
@@ -55,7 +58,7 @@ The following checklist gives an overview on the necessary legal processes to be
 
       - For electronic signing a **qualified electronic signature (QES)** is required in accordance with [Article 3(12) of the eIDAS Regulation (EU) No. 910/2014](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32014R0910) and [Section 126a of the German Civil Code (BGB)](https://www.gesetze-im-internet.de/englisch_bgb/englisch_bgb.html#p1163). Such a signature can be provided using certified services like **DocuSign**, **IDnow**, or other providers.
 
-## The GHGA Data Processing Contract
+## Details on the GHGA Data Processing Contract 
 
 The DPC is structured in two parts. The [first part](#sections-in-the-first-part), comprised of the sections *Preamble* to *§7 - Signing*, focuses on the services that GHGA offers to the Data Controller once they have signed a DPC. The second part of the DPC are the [Annexes](#annexes) which focus on the data protection aspects that relate to the different data types which are processed under the DPC. There are sections within the Annexes for which the Data Controller must provide information.
 
@@ -115,7 +118,7 @@ Annex 3 utilises the [Standard Contractual Clauses](https://commission.europa.eu
 #### Annex 4 - Persons Authorised to Act
 Annex 4 asks the Data Controller for <general:Person authorised to Act|persons authorised to act>. It is expected that for a majority of submissions to GHGA, an institution rather than an individual scientist will be the Data Controller. It is also expected that the people who represent their institutions, such as a Management Board, Chancellor, or Director, are not likely to be responsible for submitting data to GHGA. As such, we require the Data Controller to name people who can act on their behalf so that we can be sure that the instructions we receive from those people are legally valid.
 
-In order to ensure that only authorised people can access our systems, GHGA utilises [Life Science Login (LS Login)](https://lifescience-ri.eu/ls-login/) to authenticate users. Therefore, the DPC requires the Data Controller to include the LS Login IDs of the persons who they authorise to act. The process for obtaining LS Login IDs is described [below](#specification-of-ls-login-ids-for-usage-in-contracts). 
+In order to ensure that only authorised people can access our systems, GHGA utilises [Life Science Login (LS Login)](https://lifescience-ri.eu/ls-login/) to authenticate users. Therefore, the DPC requires the Data Controller to include the LS Login IDs of the persons who they authorise to act. The process for obtaining LS Login IDs is described [in our FAQ](../../faq.md#where-can-i-find-my-life-science-id-ls-id). 
 
 In addition, in order to ensure secure communications between GHGA and the named persons authorised to act, an <general:Independent Verification Address (IVA)> is required from the named individuals.
 
@@ -130,17 +133,3 @@ For approved Data Access Requests, it will be necessary that a person authorised
 - Name of the approved Data Requester
 - <general:LS ID| Life Science Login ID>
 - <general:Independent Verification Address (IVA)>
-
-
-## Specification of LS Login IDs for usage in contracts
-
-To be able to process <general:Data Processing Contract (DPC)> and for others uses, GHGA users need to specify details of their LS Login ID to GHGA. The following information is needed:
-
-| Field | Explanation  |
-|---|---|
-|Name| The name of the person, e.g. `Doe, Jane` |
-|Organisation| Name of the Organisation / Institution that interacts with GHGA, e.g. `Doe Institut`|
-|Role| Your role in the Organisation, e.g. `Data Steward` |
-|Contact Information| An email adress, e.g. `Jane.doe@doe-institut.xyz`|
-|Life Science Login ID / LS ID | The LS ID e.g. as displayed in your [LS ID user profile](https://profile.aai.lifescience-ri.eu/profile), e.g. `777xc437f725f58660456780tt01d5l999f9b123456@lifescience-ri.eu`. [Further information](../../faq.md#where-can-i-find-my-life-science-id-ls-id)  |
-
