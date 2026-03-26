@@ -28,7 +28,9 @@ The GHGA Data Portal allows users to request access to data through the portal. 
 
 ## Where can I find my Life Science ID (LS ID)?
 
-In order to ensure that only authorised people can access our systems, GHGA utilises [Life Science Login (LS Login)](https://lifescience-ri.eu/ls-login/) to authenticate users. The **LS ID** (e.g. `777xc437f725f58660456780tt01d5l999f9b123456@lifescience-ri.eu`) is displayed in the [Life Science RI user profile](https://profile.aai.lifescience-ri.eu/profile) and can also be accessed via the [user account](https://data.ghga.de/account) in the GHGA Data Portal.
+In order to ensure that only authorised people can access our systems, GHGA utilises [Life Science Login (LS Login)](https://lifescience-ri.eu/ls-login/) to authenticate users. **Creating a Life Science ID** is free and can usually be linked to your institutional account. For detailed instructions on creating and managing your LS ID, please refer to the [LS Login user documentation](https://lifescience-ri.eu/ls-login/documentation/user-documentation/user-documentation.html).
+
+**To lookup your LS ID** (e.g. `777xc437f725f58660456780tt01d5l999f9b123456@lifescience-ri.eu`) check your *[Life Science RI user profile](https://profile.aai.lifescience-ri.eu/profile)*. It can also be accessed via the [user account](https://data.ghga.de/account) in the GHGA Data Portal.
 
 ??? tip "LS ID User Profile Screenshot"
 
