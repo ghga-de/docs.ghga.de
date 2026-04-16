@@ -47,16 +47,15 @@ The following checklist gives an overview on the necessary legal processes to be
 
 ### Details on Signing Procedure
 
-- The signing can be carried out either using "wet ink" or a qualified electronic signature:
-      - For wet ink signing (preferred), submit two physical copies of the signed contract to GHGA Central using the following address:
+The signing can be carried out either using "wet ink" or a qualified electronic signature:
+- For wet ink signing (preferred), submit two physical copies of the signed contract to GHGA Central using the following address:
 
             DKFZ Heidelberg
             GHGA (German Human Genome-Phenome Archive) - W620
             Im Neuenheimer Feld 280
             D-69120 Heidelberg
 
-
-      - For electronic signing a **qualified electronic signature (QES)** is required in accordance with [Article 3(12) of the eIDAS Regulation (EU) No. 910/2014](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32014R0910) and [Section 126a of the German Civil Code (BGB)](https://www.gesetze-im-internet.de/englisch_bgb/englisch_bgb.html#p1163). Such a signature can be provided using certified services like **DocuSign**, **IDnow**, or other providers.
+- For electronic signing a **qualified electronic signature (QES)** is required in accordance with [Article 3(12) of the eIDAS Regulation (EU) No. 910/2014](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32014R0910) and [Section 126a of the German Civil Code (BGB)](https://www.gesetze-im-internet.de/englisch_bgb/englisch_bgb.html#p1163). A QES can be obtained through certified trust service providers such as [FP Sign](https://www.fp-sign.com/), [DocuSign](https://www.docusign.com/), [IDnow](https://www.idnow.io/), or comparable qualified providers.
 
 ## Details on the GHGA Data Processing Contract 
 
