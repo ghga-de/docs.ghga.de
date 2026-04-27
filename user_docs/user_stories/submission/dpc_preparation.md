@@ -12,8 +12,8 @@ A <general:Data Processing Contract (DPC)> is signed by <general:GHGA Central> a
 
 ## Preparation of the Data Processing Contract (DCP)
 
-- When intending to submit data to GHGA, the submitter should consult the [checklist below](#checklist-for-legal-pre-requisites-for-data-submission-to-ghga) and review the DPC, which is available [here for download :octicons-download-24:](https://www.ghga.de/Downloads/GHGA_Data_Processing_Contract.pdf).
-- The submitter then needs to complete [the GHGA-DPC-Information-Collection-Form :material-file-excel:](../../assets/GHGA_DPC_Information_Collection_Form.xlsx) and send it to <general:GHGA Central> via the [Helpdesk](mailto:helpdesk@ghga.de). GHGA Central will then create a sign-ready version of the DPC and send it to you for signing. **Do not create the sign-ready version on your own!**
+- When intending to submit data to GHGA, the submitter should consult the [checklist below](#checklist-for-legal-pre-requisites-for-data-submission-to-ghga) and review the DPC, which is available [here for download :octicons-download-24:][GHGA Data Processing Contract].
+- The submitter then needs to complete the [GHGA-DPC-Information-Collection-Form] and send it to <general:GHGA Central> via the [Helpdesk](mailto:helpdesk@ghga.de). GHGA Central will then create a sign-ready version of the DPC and send it to you for signing. **Do not create the sign-ready version on your own!**
 
 ### Data Submission to GHGA from DKFZ Scientists
 
@@ -91,7 +91,7 @@ A fuller description of these services is provided in the DPC.
 
 *§4 - Process for the Termination of the Agreement* - This section sets out the process followed in the event that a DPC is cancelled. The data that has been deposited will either be returned to the Data Controller or destroyed depending on the preferences of the Data Controller. If a DPC is cancelled because the Data Controller is unresponsive, GHGA may be forced to destroy the data has been deposited. 
 
-*§5 - Warranties and Liabilities* - This section describes the warranties and liabilities for each party in the event that there are damages resulting from the submission of data. GHGA commits to making a reasonable effort to retreive any data in the event of a loss, but that this effort is limited to what is reasonable for GHGA to do.
+*§5 - Warranties and Liabilities* - This section describes the warranties and liabilities for each party in the event that there are damages resulting from the submission of data. GHGA commits to making a reasonable effort to retrieve any data in the event of a loss, but that this effort is limited to what is reasonable for GHGA to do.
 
 *§6 - Final Provisions* - This section includes additional clauses that affect the DPC including how changes to the contract can be made.
 
@@ -132,3 +132,11 @@ For approved Data Access Requests, it will be necessary that a person authorised
 - Name of the approved Data Requester
 - <general:LS ID| Life Science Login ID>
 - <general:Independent Verification Address (IVA)>
+
+## Downloads
+
+- :fontawesome-regular-file-pdf: [GHGA Data Processing Contract] - for reviewing
+- :fontawesome-regular-file-excel: [GHGA-DPC-Information-Collection-Form] - for collecting the necessary information to prepare a sign-ready DPC by GHGA-Central
+
+[GHGA Data Processing Contract]: https://www.ghga.de/Downloads/GHGA_Data_Processing_Contract.pdf
+[GHGA-DPC-Information-Collection-Form]: ../../assets/GHGA_DPC_Information_Collection_Form.xlsx
