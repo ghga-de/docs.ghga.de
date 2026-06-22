@@ -16,7 +16,7 @@ pip install --upgrade ghga-connector
 
 ### Crypt4gh Keys
 
-GHGA Connector requires a [Crypt4GH](https://crypt4gh.readthedocs.io/en/latest/) key pair to download data. Please create a pair of Crypt4GH keys if you don't already have one. The public key is also needed for the creation of the download token through the Data Portal.
+GHGA Connector requires a [Crypt4GH](https://crypt4gh.readthedocs.io/latest/) key pair to download data. Please create a pair of Crypt4GH keys if you don't already have one. The public key is also needed for the creation of the download token through the Data Portal.
 
 By default, GHGA Connector looks for the keys at **./key.pub** and **./key.sec**. You can either place your keys there or use CLI options to specify your key locations.
 
