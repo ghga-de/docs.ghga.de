@@ -5,7 +5,7 @@ An Experiment is an investigation that consists of a coordinated set of actions 
 
 ## Fields
 ### ***experiment_method***
-**description** : The alias of one or more Experiment Methods that are associated with this Experiment.<br>
+**description** : The alias of the Experiment Method that is associated with this Experiment.<br>
 **required** : True<br>
 **data type** : ExperimentMethod <br>
 ### ***title***
