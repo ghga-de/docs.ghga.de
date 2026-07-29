@@ -15,12 +15,15 @@ A Research Data File is a File that contains raw data originating from an Experi
 | `FASTA` | `FASTA format including NCBI-style IDs.` |
 | `FASTQ` | `FASTQ short read format ignoring quality scores.` |
 | `UBAM` | `Unaligned BAM file.` |
-| `FAST5` | `FAST5 data format for Nanopore.` |
+| `UCRAM` | `Unaligned CRAM file.` |
+| `FAST5` | `FAST5 data format for Nanopore data.` |
+| `POD5` | `POD5 file format for Nanopore data.` |
 | `RAW` | `Raw file format for mass spectrometry proteomics data.` |
 | `D` | `Raw .d files for mass spectrometry proteomics data.` |
 | `MZML` | `mzML format for mass spectrometry proteomics data.` |
 | `MZDATA` | `mzData for mass spectrometry proteomics data.` |
 | `IDAT` | `IDAT file format for BeadArray data.` |
+| `CEL` | `CEL file format for Affymetrix data.` |
 | `OTHER` | `A file format not captured by the controlled vocabulary.` |
 ///
 
