@@ -100,6 +100,8 @@ To initiate file deposition to an upload box:
 - Once granted access by a Data Steward, generate an access token for the upload box in your [Account](https://data.ghga.de/account)
 - Start the file deposition in the upload box using the [**GHGA-Connector**](https://github.com/ghga-de/ghga-connector)
 
+*Please keep in mind that the file names of the deposited files match the File Name or File Alias in the metadata, so the services can link the entries.*
+
 ## 5. Publication on the Data Portal
 Once the files are deposited and the metadata submitted to the GHGA Helpdesk, the submission is finalized but the data is not yet findable on the [**GHGA Data Portal**](https://data.ghga.de/). To make the metadata of the submission publicly findable and allow Data Access Requests to be started for the data, simply notify the GHGA Helpdesk. This will generate stable accessions that can be used to refer to the data deposition at GHGA.
 
