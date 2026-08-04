@@ -9,7 +9,7 @@ To initiate a submission of data to GHGA, please contact us by completing the [p
 2. Preparation of the non-personal metadata, see [here](user_docs/user_stories/submission/submitter_guide.md)
 3. Research Data File submission
 
-The signing of a DPC has to be finalized before a Data Steward is allowed to interact with the non-personal metadata. Preparation of the metadata and file submission can be done on the submitter side in parallel.
+The signing of a DPC has to be finalized before a Data Steward is allowed to generate an upload box and enable the submission of Research Data Files.
 
 
 ## File upload
