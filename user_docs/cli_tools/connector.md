@@ -166,7 +166,7 @@ Example usage:
 
 After pasting the access token, the ghga-connector connects to the upload box and provides functionality to modify it:
 
-```ubox> help
+```
 Available commands:
   upload PATH [PATH ...]      Upload one or more files/globs, using each local
                               file name as its alias.
