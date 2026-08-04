@@ -6,7 +6,7 @@ To initiate a submission of data to GHGA, please contact us by completing the [p
   ![Flowchart with icons showing data submission in five steps: Initiate submission, Prepare Research Metadata, Prepare Administrative Metadata, Validate Metadata, and Submit Data – as outlined in the text below on this page.](../../assets/img/Submisison_overviewsimplified.png){ width="800" }
 
 1. Signing of a Data Processing Contract, see [here](dpc_preparation.md).
-2. **Preparation of the non-personal metadata**
+2. Preparation of the non-personal metadata
 3. Research Data File submission, see [here](RDF_submission.md)
 
 The signing of a DPC has to be finalized before a Data Steward is allowed to interact with the non-personal metadata. Preparation of the metadata can be done on the submitter side in parallel.
