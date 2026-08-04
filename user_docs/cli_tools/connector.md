@@ -108,7 +108,11 @@ ghga-connector decrypt --input-dir <INPUT-DIR>
 
 To submit Research Data Files as part of a [GHGA Submission](../user_stories/submission/submitter_guide.md), the GHGA-Connector can deposit files into an upload box. Upload boxes are created on request by Data Stewards and assigned to verified accounts in the GHGA Data Portal. Once granted access to an upload box, an access token can be generated in the [User Account](https://data.ghga.de/account).
 
-There are two ways to deposit files in an upload box. The first one is to create a filesToUpload.tsv consisting of the file paths in the first column and the file aliases in the second. The file aliases should correspond to the related entries in the metadata.
+There are two ways to deposit files in an upload box.
+
+### Batch-upload
+
+ The first one is to create a filesToUpload.tsv consisting of the file paths in the first column and the file aliases in the second. The file aliases should correspond to the related entries in the metadata.
 
 *filesToUpload.tsv:*
 
@@ -141,9 +145,14 @@ Usage: ghga-connector batch-upload [OPTIONS]
 ╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
 ```
 
-Example usage:
+#### Batch-upload example
+
+Specify the filesToUpload.tsv, the C4GH keypair and optionally set a number of retries in case the upload fails:
 
 ```ghga-connector batch-upload --tsv filesToUpload.tsv --my-public-key-path key.pub --my-private-key-path key.sec --max-retries 3```
+
+
+### Ubox upload
 
 Alternatively, the files can be uploaded directly via the ```ubox``` command, which allows direct access to the upload box to submit or remove files:
 
@@ -160,7 +169,10 @@ Alternatively, the files can be uploaded directly via the ```ubox``` command, wh
 │ --help                                       Show this message and exit.                                                                                                                                                                                                                                                     │
 ╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
 ```
-Example usage:
+
+#### Ubox example
+
+Specify the C4GH keypair and connect to the ubox
 
 ```ghga-connector ubox --my-public-key-path key.pub --my-private-key-path key.sec```
 
@@ -177,8 +189,13 @@ Available commands:
   help                        Show this help text.
   exit | quit                 Leave the shell (Ctrl+D also works).
 ```
-Example usage:
+
+#### Ubox upload example
+
+Navigate to the folder that contains your files and run:
 
  ```upload MyFile.fastq.gz``` or in batch via wildcard ```upload *fastq.gz``` to upload all files in the current folder.
+
+ Optionally, ``--alias`` can be used to upload a file under an alias. If none is specified, the file name is used as alias. The file aliases should correspond to the related entries in the metadata.
 
 Once the upload concludes, the upload box can be closed by clicking ```Submit``` in the [User Account](https://data.ghga.de/account). The files will then be re-encrypted and archived by a Data Steward.
