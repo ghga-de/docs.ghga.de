@@ -192,7 +192,7 @@ Available commands:
 
 #### Ubox upload example
 
-Navigate to the folder that contains your files and run:
+Navigate to the folder that contains your files and connect to the ubox. Then run:
 
  ```upload MyFile.fastq.gz``` or in batch via wildcard ```upload *fastq.gz``` to upload all files in the current folder.
 
