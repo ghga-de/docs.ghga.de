@@ -12,7 +12,7 @@ To initiate file deposition to an upload box:
 - Verify your account with a valid [IVA](../../other/iva.md)
 - Communicate the account (name/email) in your ticket in the [GHGA Helpdesk](mailto:helpdesk@ghga.de)
 - Once granted access by a Data Steward, generate an access token for the upload box in your [User Account](https://data.ghga.de/account) by clicking ```Generate Token``` in the "Research Data Upload" tab
-- Start the file deposition as outlined in the [**GHGA-Connector Documentation**](user_docs/cli_tools/connector.md)
+- Start the file deposition as outlined in the [GHGA-Connector Documentation](user_docs/cli_tools/connector.md)
 - Once the submission is complete, click on ```Submit```in the [User Account](https://data.ghga.de/account) to close the box
 
 *Please keep in mind that the file names of the deposited files match the File Name or File Alias in the metadata, so the services can link the entries.*
