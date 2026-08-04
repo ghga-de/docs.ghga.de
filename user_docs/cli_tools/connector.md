@@ -106,3 +106,79 @@ ghga-connector decrypt --input-dir <INPUT-DIR>
 
 ## File Upload
 
+To submit Research Data Files as part of a [GHGA Submission](../user_stories/submission/submitter_guide.md), the GHGA-Connector can deposit files into an upload box. Upload boxes are created on request by Data Stewards and assigned to verified accounts in the GHGA Data Portal. Once granted access to an upload box, an access token can be generated in the [User Account](https://data.ghga.de/account).
+
+There are two ways to deposit files in an upload box. The first one is to create a filesToUpload.tsv consisting of the file paths in the first column and the file aliases in the second. The file aliases should correspond to the related entries in the metadata.
+
+*filesToUpload.tsv:*
+
+```
+my_data/example-data/SEQ_FILE_A_R1.fastq.gz SEQ_FILE_A
+my_data/example-data/SEQ_FILE_A_R2.fastq.gz SEQ_FILE_B
+...
+
+```
+The upload can be initialized via ```ghga-connector batch-upload```. Once executed, the access token for the upload box from the Data Portal can be pasted to start the upload:
+
+```
+Usage: ghga-connector batch-upload [OPTIONS]
+
+ Upload a batch of files described by a TSV file.
+
+ Files already present in the upload box are skipped, so the command can be re-run
+ to resume an interrupted batch. Files that fail to upload are retried automatically.
+
+╭─ Options ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ *  --tsv                                    PATH     Path to a TSV file describing the files to upload. The first column must contain the file path and the second column the file alias. Relative file paths can only be used if this command is run from same directory. Prefer to use absolute paths. [required]          │
+│    --my-public-key-path                     PATH     The path to a public key from the key pair that was announced in the metadata. Defaults to key.pub in the current folder. [default: ./key.pub]                                                                                                                          │
+│    --my-private-key-path                    PATH     The path to a private key from the key pair that will be used to encrypt the crypt4gh envelope. Defaults to key.sec in the current folder. [default: ./key.sec]                                                                                                         │
+│    --passphrase                             TEXT     Passphrase for the encrypted private key. Only needs to be provided if the key is actually encrypted.                                                                                                                                                                   │
+│    --max-retries                            INTEGER  Maximum number of automatic retries for files that fail to upload. [default: 3]                                                                                                                                                                                         │
+│    --dry-run                --no-dry-run             List the files that would be uploaded (after skipping any already in the upload box) without uploading anything. [default: no-dry-run]                                                                                                                                  │
+│    --shorten-names                                   Shorten very long file aliases in the output, keeping the start and end (e.g. 'sample-001 … -run5.bam'). Full aliases are shown by default. This is only for improving readability and does not affect how data is sent to GHGA.                                        │
+│    --debug                  --no-debug               Set this option in order to view traceback for errors. [default: no-debug]                                                                                                                                                                                              │
+│    --help                                            Show this message and exit.                                                                                                                                                                                                                                             │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+```
+
+Example usage:
+
+```ghga-connector batch-upload --tsv filesToUpload.tsv --my-public-key-path key.pub --my-private-key-path key.sec --max-retries 3```
+
+Alternatively, the files can be uploaded directly via the ```ubox``` command, which allows direct access to the upload box to submit or remove files:
+
+```
+ Usage: ghga-connector ubox [OPTIONS]
+
+ Open an interactive shell to manage an upload box (upload, ls, rm).
+
+╭─ Options ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ --my-public-key-path                   PATH  The path to a public key from the key pair that was announced in the metadata. Defaults to key.pub in the current folder. [default: ./key.pub]                                                                                                                                  │
+│ --my-private-key-path                  PATH  The path to a private key from the key pair that will be used to encrypt the crypt4gh envelope. Defaults to key.sec in the current folder. [default: ./key.sec]                                                                                                                 │
+│ --passphrase                           TEXT  Passphrase for the encrypted private key. Only needs to be provided if the key is actually encrypted.                                                                                                                                                                           │
+│ --debug                  --no-debug          Set this option in order to view traceback for errors. [default: no-debug]                                                                                                                                                                                                      │
+│ --help                                       Show this message and exit.                                                                                                                                                                                                                                                     │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+```
+Example usage:
+
+```ghga-connector ubox --my-public-key-path key.pub --my-private-key-path key.sec```
+
+After pasting the access token, the ghga-connector connects to the upload box and provides functionality to modify it:
+
+```ubox> help
+Available commands:
+  upload PATH [PATH ...]      Upload one or more files/globs, using each local
+                              file name as its alias.
+  upload --alias ALIAS PATH   Upload a single file under the given alias.
+  ls [--show-deleted]         List the contents of the upload box. Deleted
+                              files are hidden unless --show-deleted is given.
+  rm ALIAS                    Delete the file with the given alias from the box.
+  help                        Show this help text.
+  exit | quit                 Leave the shell (Ctrl+D also works).
+```
+Example usage:
+
+ ```upload MyFile.fastq.gz``` or in batch via wildcard ```upload *fastq.gz``` to upload all files in the current folder.
+
+Once the upload concludes, the upload box can be closed by clicking ```Submit``` in the [User Account](https://data.ghga.de/account). The files will then be re-encrypted and archived by a Data Steward.
