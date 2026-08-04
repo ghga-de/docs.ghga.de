@@ -1,8 +1,11 @@
 # Research Data File Submission Guide
 
-## File upload
-To submit Research Data Files to GHGA, the [**GHGA-Connector**](https://github.com/ghga-de/ghga-connector) can be utilized to deposit files in an upload box. A Data Steward creates an upload box for each submission with an appropriate volume and can grant access to verified users in the GHGA Data Portal. Files are encrypted and checksums are calculated on the fly. There is no file preparation required before initiating an upload. The signing of a [Data Processing Contract](dpc_preparation.md) has to be finalized before a Data Steward is allowed to generate an upload box and enable the submission of Research Data Files.
+To submit Research Data Files to GHGA, the [**GHGA-Connector**](https://github.com/ghga-de/ghga-connector) can be utilized to deposit files in an upload box. A Data Steward creates an upload box for each submission with an appropriate volume and can grant access to verified users in the GHGA Data Portal. Files are encrypted and checksums are calculated on the fly. There is no file preparation required before initiating an upload. 
 
+
+!!! note "Data Processing Contract"
+
+      The signing of a [Data Processing Contract](dpc_preparation.md) has to be finalized before a Data Steward is allowed to generate an upload box and enable the submission of Research Data Files.
 
 To initiate file deposition to an upload box:
 
