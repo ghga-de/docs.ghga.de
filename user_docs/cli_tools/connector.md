@@ -1,6 +1,6 @@
 # GHGA Connector
 
-The GHGA Connector is a command line tool and Python library facilitating interaction with the file storage infrastructure of GHGA. It provides fnctionality for file deposition in an upload box or downloading and decrypting files.
+The GHGA Connector is a command line tool and Python library facilitating interaction with the file storage infrastructure of GHGA. It provides functionality for file deposition to an upload box or downloading and decrypting files.
 
 
 ## Installation and Upgrade
