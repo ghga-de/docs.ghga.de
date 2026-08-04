@@ -89,6 +89,6 @@ If a JSON can be generated from the submission, the [**GHGA Validator**](https:/
 
 Both Validator and Transpiler are publicly available and can be used by the submitter to validate the submission on their end.
 
-## 5. Metadata publication on the Data Portal
+## 4. Metadata publication on the Data Portal
 Once the files are deposited and the metadata submitted to the GHGA Helpdesk, the submission is finalized but the data is not yet findable on the [**GHGA Data Portal**](https://data.ghga.de/). To make the metadata of the submission publicly findable and allow Data Access Requests to be started for the data, simply notify the GHGA Helpdesk. This will generate stable accessions that can be used to refer to the data deposition at GHGA.
 
