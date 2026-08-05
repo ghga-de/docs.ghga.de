@@ -24,11 +24,7 @@ Data depositions should be referenced via the Study Accession (e.g. `GHGAS120799
 
 ## Can reviewers access my data during the peer-review process anonymously?
 
-GHGA currently does not provide a dedicated mechanism for anonymous reviewer access. GHGA distinguishes between two types of information:
-
-- **Public metadata**: Once a study has been released on our [data portal](https://data.ghga.de/), its metadata (such as the study description and other non-personal information) are publicly available. This means that reviewers can view and identify the study through the GHGA Data Portal without any need of exposing their identity.
-- **Controlled research data**: The underlying research data are not publicly available. Access is only granted via  [controlled access](user_stories/accessing_data.md). Each reviewer —or any other user— must submit an individual <general:Data Access Request (DAR)|data access request>, which is evaluated by the responsible <general:Data Access Committee (DAC)>. GHGA has no influence on the decision of the DAC.
-
+No, this is not possible, see details [here](user_stories/submission/Citing_GHGA_Submissions.md#anonymous-reviewer-access).
 
 ## How to get data access?
 
