@@ -22,6 +22,10 @@ To find out more about how to prepare for a submission, please visit the [respec
 
 Data depositions should be referenced via the Study Accession (e.g. `GHGAS12079965883832`). To unify how data is referenced, please always use the [recommended **data availability statement**](user_stories/submission/Citing_GHGA_Submissions.md/#data-availability-statement).
 
+## Can reviewers access my data during the peer-review process anonymously?
+
+No, this is not possible, see details [here](user_stories/submission/Citing_GHGA_Submissions.md#anonymous-reviewer-access).
+
 ## How to get data access?
 
 The GHGA Data Portal allows users to request access to data through the portal. Identify your dataset of interest using the browse and filter functions of the GHGA Data Portal. Click on the "Request access" button. This will direct you to a data access request form. Complete the form with the necessary information and submit it to request access to the dataset. The data access request will be sent to the <general:Research Data Controller (RDC)|Research Data Controller>, who will will review your request and respond accordingly. Please note that GHGA is not involved in the further process of negotiating the data access.

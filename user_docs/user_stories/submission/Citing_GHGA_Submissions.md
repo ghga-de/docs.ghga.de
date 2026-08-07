@@ -23,25 +23,27 @@ GHGA can also be found on [re3data.org](https://www.re3data.org/repository/r3d10
 
 ## Additional Journal Requirements
 
-**Requirement:  Specific reasons for controlled access must be transparently described in your data statement.**
+Below are common journal requirements related to data availability statements and reviewer access, with suggested wording you can reuse or adapt for your manuscript.
 
-**A:** Please outline the reasoning in the Data Access Policy section of the non-personal metadata you have provided during your submission to GHGA and refer to it.
+### Specification of reasons for controlled access
 
+**A:** Outline the rationale in the Data Access Policy section of the non-personal metadata you submitted to GHGA and cite that metadata in your manuscript.
 
-**Requirement: Data should be presented as a fully linkable URL**
+### Fully linkable data URLs
 
-**A:** Always reference the study via the relevant GHGA Study Accession: https://data.ghga.de/study/GHGAS12079965883832
+**A:** Reference the study using its GHGA Study Accession URL, for example https://data.ghga.de/study/GHGAS12079965883832.
 
+### Timeframe for gaining access
 
-**Requirement: Describe the timeframe associated with gaining access**
+**A:** The Data Submitter defines how Data Requesters may obtain access. If a journal requests this information, include an expected processing timeframe for Data Access Requests in your data availability statement.
 
-**A:** The Data Submitter is responsible for defining how Data Requesters can gain access to the data they have submitted. Some journals may require that your data availability statement clarifies how long this process is expected to take.
+### Authorship expectations
 
+**A:** Some Data Submitters require Data Requesters to include the Data Submitter as a co-author. When depositing data with GHGA, check your institution's policy and include any applicable authorship requirements in the Data Access Policy.
 
-**Requirement: Describe the authorship requirements**
+### Anonymous reviewer access
 
-**A:** Some Data Submitters require Data Requesters who utilise data that they have archived to include the Data Submitter as a co-author in any publication based upon that data. When submitting data to GHGA, please check whether such a policy exists at your institution, so that it can be included in your data availability statement if needed.
+**A:** GHGA does not provide a dedicated anonymous reviewer access mechanism. We distinguish between:
 
-**Requirement: A reviewer asks for Reviewer Access / A Reviewer Access Token**
-
-**A:** Same as at the EGA, download access to the files cannot be granted to persons without an approved Data Access Request. For studies that are already released on the GHGA Data Portal, the non-personal metadata can be downloaded as excel file as proof of upload via the GHGA Study Accession: https://data.ghga.de/api/rts/studies/GHGAS12079965883832
+- **Non-personal (public) metadata:** Once a study is released on the GHGA Data Portal, its non-personal metadata (such as the study description) are publicly available. Reviewers can view the study via the Data Portal without revealing their identity. The non-personal metadata can be downloaded as an Excel file as proof of upload using the GHGA Study Accession, e.g. https://data.ghga.de/api/rts/studies/GHGAS12079965883832
+- **Controlled-access research data:** Underlying research data are not publicly accessible. Access is granted only via [controlled access](user_stories/accessing_data.md). Each reviewer — or any other user — must submit an individual <general:Data Access Request (DAR)|data access request>, which is evaluated by the responsible <general:Data Access Committee (DAC)>. GHGA does not influence DAC decisions.
