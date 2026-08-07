@@ -1,4 +1,4 @@
-# Citing GHGA Submissions
+# Citing GHGA & Journal Requirements
 
 To reference a study included in the GHGA Archive in publications or other media, please always reference the study accession, e.g. `GHGAS12079965883832`. This accession number serves as umbrella for all datasets included in the related [study](../../metadata/entities.md#study).
 
