@@ -7,12 +7,12 @@ To initiate a submission of data to GHGA, please contact us by completing the [p
 
 1. Signing of a Data Processing Contract, see [here](dpc_preparation.md).
 2. Preparation of the non-personal metadata
-3. Research Data File submission
+3. Research Data File submission, see [here](RDF_submission.md)
 
-The signing of a DPC has to be finalized before a Data Steward is allowed to interact with the non-personal metadata. Preparation of the metadata and file submission can be done on the submitter side in parallel.
+The signing of a DPC has to be finalized before a Data Steward is allowed to interact with the non-personal metadata. Preparation of the metadata can be done on the submitter side in parallel.
 
 ## 2. Metadata preparation
-The GHGA metadata model aims at facilitating comprehensive submissions that maximize the amount of collected metadata in a FAIR manner. Submissions can be either prepared in JSON format or by using a [submission spreadsheet](https://github.com/ghga-de/ghga-metadata-schema/tree/main/spreadsheets). An example submission can be found in our [Github repository containing example data](https://github.com/ghga-de/example-data). The provided metadata are categorized as **Research Metadata** and **Administrative Metadata**, whereas the former collect information about the experimental and data acquisition process and the latter about data access, rights management and disposition. It is crucial, that only non-personal metadata are submitted to GHGA.
+The GHGA metadata model aims at facilitating comprehensive submissions that maximize the amount of collected metadata in a FAIR manner. Submissions can be either prepared in JSON format or by using a [submission spreadsheet](https://github.com/ghga-de/ghga-metadata-schema/tree/main/spreadsheets). An example submission can be found in our [Github repository containing example data](https://github.com/ghga-de/example-data). The provided metadata are categorized as **Research Metadata** and **Administrative Metadata**. The former collects information about the experimental and data acquisition process whereas the latter about data access, rights management and disposition. It is crucial, that only non-personal metadata are submitted to GHGA.
 
 !!! info "Identifiers and quasi-identifiers in the metadata model"
     Identifiers are data elements that are unique to an entity, and can be used to directly identify that entity. For example, a person's name can directly identify them. Within the GHGA metadata model, sample IDs are unique to a Data Subject, and Data Submitters are advised to ensure that any matching file that contains both the sample ID and personal data about the Data Subject is securely held. Quasi-identifiers, by contrast, are attributes that may not identify an individual on their own but could lead to re-identification when used in combination. In the GHGA metadata model, we consider sex, age, diagnosis, phenotypic feature, ancestry, and geographic region to be quasi-identifiers. While the model employs privacy by design, Data Submitters should be aware that rare combinations of quasi-identifiers could lead to re-identification of the Data Subject. It may therefore be necessary to change certain data items when unusual combinations of quasi-identifiers occur, for example by reducing the precision of diagnosis codes.
@@ -89,9 +89,6 @@ If a JSON can be generated from the submission, the [**GHGA Validator**](https:/
 
 Both Validator and Transpiler are publicly available and can be used by the submitter to validate the submission on their end.
 
-## 4. File upload
-To submit the research data files to GHGA, the files have to be migrated to a [**GHGA Data Hub**](https://www.ghga.de/about-us/how-we-work/data-hubs). The Data Stewards will assist in this process. Once the files are available at a Data Hub, the files are ingested in the GHGA Archive by the Data Steward using the [**GHGA DataSteward-Kit**](https://github.com/ghga-de/ghga-datasteward-kit). 
-
-## 5. Publication on the Data Portal
-Once the files are deposited and the metadata submitted to the GHGA Helpdesk, the submission is finalized but the data is not yet findable on the [**GHGA Data Portal**](https://data.ghga.de/). To make the metadata of the submission publicly findable and allow Data Access Requests to be started for the data, simply notify the GHGA Helpdesk. This will generate stable accessions that can be used to refer to the data deposition at GHGA.
+## 4. Metadata publication on the Data Portal
+Once the files are deposited and the metadata is submitted to the GHGA Helpdesk, the submission is finalized but the data is not yet findable on the [**GHGA Data Portal**](https://data.ghga.de/). To make a submission's metadata publicly available and enable Data Access Requests for the associated data, simply notify the GHGA Helpdesk. This will generate stable accession identifiers that can be used to reference the data deposited in GHGA.
 
