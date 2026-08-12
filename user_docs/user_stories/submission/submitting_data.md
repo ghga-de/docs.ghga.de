@@ -7,7 +7,7 @@ A submission of data contains the three main steps, please follow the links for 
 1. Filing a [Pre-Submission Inquiry](https://www.ghga.de/about-us/presubmission-enquiries) or contacting us via the <general:GHGA Helpdesk>
 1. [Agreement of a Data Processing Contract with GHGA Central](dpc_preparation.md)
 1. [Preparing the Metadata for submission](submitter_guide.md)
-1. [Submitting the Research Data Files](submitting_data.md)
+1. [Submitting the Research Data Files](RDF_submission.md)
 
 ## Note on Submission Service
 
