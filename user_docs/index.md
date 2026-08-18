@@ -28,8 +28,13 @@ The GHGA Data Portal supports researchers in browsing, accessing, and submitting
 The [**GHGA Terms of Use**](https://doi.org/10.5281/zenodo.11146386)[^1] define the services offered by the GHGA Consortium and the performance levels of those services that users can expect. They also define the conditions that apply to users when using GHGA.
 
 
-## Contact
-Please reach out to the [GHGA Helpdesk](mailto:helpdesk@ghga.de) for any questions on GHGA.
+## Contact & Support
+
+For questions about GHGA, please reach out to the [GHGA Helpdesk](mailto:helpdesk@ghga.de). 
+
+### System Status
+
+You can also check the [System Status Monitor](https://stats.uptimerobot.com/h8Vd5tALXR) to verify if services are operating normally.
 
 ## About GHGA
 
