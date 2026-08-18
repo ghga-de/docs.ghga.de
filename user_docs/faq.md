@@ -45,3 +45,7 @@ In order to ensure that only authorised people can access our systems, GHGA util
 ## My data access request got approved but I cannot download the data?
 
 The GHGA Data Portal requires authentication of a user via an <general:Independent Verification Address (IVA)|Independent Verification Address (IVA)>, to ensure that the registered user is the person specified in the Data Transfer Agreement between <general:Research Data Controller (RDC)|Research Data Controller> and <general:Data Requester (DR)|Data Requester>. For more information about this process, please visit the [respective user story](user_stories/accessing_data.md). Please note that the verification process is currently manually supervised by GHGA <general:Data Steward|Data Stewards> and can take up to three working days.
+
+## Where can I check the system status?
+
+The [GHGA System Status Monitor](https://stats.uptimerobot.com/h8Vd5tALXR) provides real-time information about the availability and performance of GHGA services. Check this page if you're experiencing issues accessing the GHGA Data Portal.
