@@ -20,34 +20,39 @@ An IVA is needed during the following processes:
 
 ### How to Verify an IVA
 
- GHGA offers multiple ways to add IVAs (Mobile Phones, Letter, in Person). A verification address can be added in the [GHGA Data Portal](https://data.ghga.de/). 
+ GHGA offers two ways to add IVAs (Mobile Phones and in Person). A verification address can be added in the [GHGA Data Portal](https://data.ghga.de/). 
 
-*For praticability mobile phones are recommened but please note that <general:Research Data Controller (RDC)> might demand alternative means during negotiation of a <general:Data Transfer Agreement (DTA)>*.
+*For practicability mobile phones are recommended but please note that <general:Research Data Controller (RDC)> might demand alternative means during negotiation of a <general:Data Transfer Agreement (DTA)>*.
 
 
 1. To create and verify a contact navigate to the [GHGA Data Portal](https://data.ghga.de/).
 
-2. Visit your profile page to find the menu "Contact addresses for account verification", which lists all registered contact addresses. To add a new one, click "New Contact Address":
+2. After logging in visit "Your GHGA account page" by clicking on your profile on the top right corner.
+    ![Screenshot of GHGA Data Portal user profile – as described in the text above.](../assets/img/account_page.png){ width="300" }
 
-    ![Screenshot of GHGA Data Portal profile page showing where to add a new contact address – as described in the text above.](../assets/img/IVA1.png){ width="800" }
+3. Here the menu "Independent Verification Addresses (IVAs)", lists all registered contact addresses. To add a new one, click "Add an IVA":
 
-3. Select a contact address from SMS, Letter or In-Person. Please note, in person verification is only offered for personnel located at a GHGA Data Hub. The fastest verification can be performed via SMS.
+    ![Screenshot of GHGA Data Portal profile page showing where to add a new IVA – as described in the text above.](../assets/img/add_iva.png){ width="800" }
 
-    ![Screenshot of contact method selection for account verification in the GHGA Data Portal – SMS, Letter, or In-Person – as described in the text above.](../assets/img/IVA2.png){ width="800" }
+4. Select an IVA type from SMS, or In-Person. Please note, in person verification is only offered for personnel located at a GHGA Data Hub. The fastest verification can be performed via SMS.
 
-4. Enter the contact information for the chosen address and confirm them by clicking "Add unverified contact address".
+    ![Screenshot of contact method selection for account verification in the GHGA Data Portal – SMS or In-Person – as described in the text above.](../assets/img/iva_select.png){ width="800" }
 
-    ![Screenshot of GHGA Portal showing how to enter and add an unverified contact address – as explained in the text above.](../assets/img/IVA3.png){ width="800" }
+5. Enter the required information for the chosen type and confirm them by clicking on "Submit".
 
-5. The menu "Contact addresses for account verification" will add the unverified address. A code for this address can be requested by clicking "Request verification".
+    ![Screenshot of GHGA Portal showing how to enter and add an unverified contact address – as explained in the text above.](../assets/img/address_submit.png){ width="800" }
 
-    ![Screenshot of GHGA Portal showing how to request verification for a newly added contact address – as described in the text above.](../assets/img/IVA4.png){ width="800" }
+6. The menu "Independent Verification Addresses (IVAs)" will add the unverified address. A code for this address can be requested by clicking "Request verification".
 
-6. A GHGA Data Steward will generate a code and transmit it via the chosen verification method. You will also be notified via mail when a code has been transmitted. Upon receival of the code, click enter verification code, enter the code and confirm the transmission. The contact address will then be shown as "Verified".
+    ![Screenshot of GHGA Portal showing how to request verification for a newly added contact address – as described in the text above.](../assets/img/request_verification.png){ width="800" }
 
-    ![Screenshot of GHGA Portal showing where to enter the verification code after it has been received – as described in the text above.](../assets/img/IVA5.png){ width="800" }
+7. A code will be transmitted if "SMS" was selected. You will also be notified via mail when a code has been transmitted. Upon receival of the code, click on "Enter verification code", enter the code and confirm the transmission. 
 
-If a code is not working or lost, a Data Steward can generate a new one. In case of issues, please contact the <general:GHGA Helpdesk>.
+    ![Screenshot of GHGA Portal showing where to enter the verification code after it has been received – as described in the text above.](../assets/img/enter_verification.png){ width="800" }
+
+The contact address will then be shown as "Address has been verified".
+
+If a code is not working or lost, the address can be deleted and added again to generate a new code. In case of issues, please contact the <general:GHGA Helpdesk>.
 
 
 ### Important Notes
