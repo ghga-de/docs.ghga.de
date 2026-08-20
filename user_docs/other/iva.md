@@ -20,7 +20,7 @@ An IVA is needed during the following processes:
 
 ### How to Verify an IVA
 
- GHGA offers two ways to add IVAs (Mobile Phones and in Person). A verification address can be added in the [GHGA Data Portal](https://data.ghga.de/). 
+ GHGA offers two types of IVAs:  Mobile Phones and in Person validation. A new IVA can be added to your profile in the [GHGA Data Portal](https://data.ghga.de/). 
 
 *For practicability mobile phones are recommended but please note that <general:Research Data Controller (RDC)> might demand alternative means during negotiation of a <general:Data Transfer Agreement (DTA)>*.
 
