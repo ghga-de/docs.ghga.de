@@ -27,7 +27,7 @@ An IVA is needed during the following processes:
 
 1. To create and verify a contact navigate to the [GHGA Data Portal](https://data.ghga.de/).
 
-2. After logging in visit "Your GHGA account page" by clicking on your profile on the top right corner.
+2. After logging in, visit "Your GHGA account page" by clicking on your profile on the top right corner.
     ![Screenshot of GHGA Data Portal user profile – as described in the text above.](../assets/img/account_page.png){ width="300" }
 
 3. Here the menu "Independent Verification Addresses (IVAs)", lists all registered contact addresses. To add a new one, click "Add an IVA":
@@ -46,7 +46,7 @@ An IVA is needed during the following processes:
 
     ![Screenshot of GHGA Portal showing how to request verification for a newly added contact address – as described in the text above.](../assets/img/request_verification.png){ width="800" }
 
-7. A code will be transmitted if "SMS" was selected. You will also be notified via mail when a code has been transmitted. Upon receival of the code, click on "Enter verification code", enter the code and confirm the transmission. 
+7. A code will be transmitted if "SMS" was selected. Upon receival of the code, click on "Enter verification code", enter the code and confirm the transmission. 
 
     ![Screenshot of GHGA Portal showing where to enter the verification code after it has been received – as described in the text above.](../assets/img/enter_verification.png){ width="800" }
 
