@@ -58,18 +58,16 @@ perform the actual download.
 
 2. Visit your profile page to see the datasets you have access to.
 
-    ![Screenshot of GHGA Data Portal profile page showing dataset access and entry point to download – as described in the text above.](../assets/img/dataset-link.png){ width="500" }
+3. Navigate to the dataset list and select your dataset of interest to be downloaded by clicking on "Create Token".
 
-3. Navigate to the dataset list and select your dataset of interest to be downloaded.
-
-    ![Screenshot of dataset list view in GHGA Data Portal with option to select dataset for download – as described in the text above.](../assets/img/dataset-select.png){ width="500" }
+    ![Screenshot of dataset list view in GHGA Data Portal with the option to create a download token – as described in the text above.](../assets/img/dataset-select.png){ width="800" }
 
 4. Fill the form with the necessary information in order to create a download
 token. Specifying one or multiple file IDs is optional, if not information is
 provided the entire dataset will be downloaded. A Crypt4GH public key must be
 provided before submitting the form.
 
-    ![Screenshot of download token creation form in GHGA Data Portal, requiring Crypt4GH public key – as described in the text above.](../assets/img/token-form.png){ width="500" }
+    ![Screenshot of download token creation form in GHGA Data Portal, requiring Crypt4GH public key – as described in the text above.](../assets/img/token-form.png){ width="800" }
 
 ### Download using GHGA Connector
 
