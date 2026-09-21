@@ -15,6 +15,15 @@ Getting access to a dataset on GHGA happens in four stages, shown above: you fil
 
 We recommend setting up your <general:Independent Verification Address (IVA)> around the same time you submit your request, since you will need it in the next stage. See [Verifying Your Account](#verifying-your-account-with-an-iva) below.
 
+### Tips for a Strong Request
+
+A well-documented request helps the <general:Data Access Committee (DAC)> to assess it more quickly. When filling out the form, we recommend that you:
+
+- Use an email address affiliated with your institution rather than a personal address, so the DAC can confirm your affiliation at a glance.
+- State the institute or organisation you belong to.
+- Include your position or role (e.g. PhD student, postdoc, group leader), so the DAC can assess your standing to conduct the proposed research.
+- Use the request text to describe your research intent — what you plan to do with the data and why you need it — rather than a generic statement.
+
 ## Decision and Contracts
 
   ![Flowchart showing data access process with roles: Researcher as Data Requester, Data Access Committee as Data Controller, and GHGA as Data Processor - each labeled with text and an icon. Arrows indicate decision and contracts flow between committee and researcher, and GHGA forwards access requests and enables data download after controller approval.](../assets/img/User_stories_Accessing_Data_roles.png){ width="800" }
