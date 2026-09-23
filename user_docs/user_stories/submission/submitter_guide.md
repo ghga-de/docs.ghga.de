@@ -23,7 +23,7 @@ The GHGA metadata model aims at facilitating comprehensive submissions that maxi
 
 Every entity you define in the submission spreadsheet — an Individual, a Sample, an Experiment, and so on — is identified by an **alias**: a short, submitter-chosen name that only needs to be unique within your submission. Aliases are what connect entities to one another: for example, a Sample row references the alias of the Individual it was collected from, and an Experiment row references the aliases of the Sample and Experiment Method it uses. The same mechanism links Research Data Files and Process Data Files to the rest of the metadata, and, separately, it is also how the files you upload are matched to their metadata: the file alias must match the actual uploaded file name.
 
-Keeping aliases exactly consistent across all sheets is essential, since mismatched aliases are one of the most common causes of validation errors. It is worth double-checking them before sending a submission to the GHGA Helpdesk.
+Keeping aliases exactly consistent across all sheets is essential, since mismatched aliases are one of the most common causes of validation errors. It is worth double-checking them before sending a submission to the GHGA Helpdesk. Please also ensure that aliases, especially those identifying a Sample or Individual, do not contain any personal information, for example birth dates, initials or actual names.
 
 ### Research Metadata
 To provide a streamlined submission of metadata, the model is designed to closely resemble a bottom-up omics experiment:
