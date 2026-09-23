@@ -11,7 +11,7 @@ To initiate a submission of data to GHGA, please contact us by completing the [p
 
 The signing of a DPC has to be finalized before a Data Steward is allowed to interact with the non-personal metadata. Preparation of the metadata can be done on the submitter side in parallel.
 
-## 2. Prepare Research and Administrative Metadata
+## 2. Preparing Research and Administrative Metadata
 The GHGA metadata model aims at facilitating comprehensive submissions that maximize the amount of collected metadata in a FAIR manner. Submissions can be either prepared in JSON format or by using a [submission spreadsheet](https://github.com/ghga-de/ghga-metadata-schema/tree/main/spreadsheets). An example submission can be found in our [Github repository containing example data](https://github.com/ghga-de/example-data). The provided metadata are categorized as **Research Metadata** and **Administrative Metadata**. The former collects information about the experimental and data acquisition process whereas the latter about data access, rights management and disposition. It is crucial, that only non-personal metadata are submitted to GHGA.
 
 !!! info "Identifiers and quasi-identifiers in the metadata model"
@@ -23,7 +23,7 @@ The GHGA metadata model aims at facilitating comprehensive submissions that maxi
 
 Every entity you define in the submission spreadsheet — an Individual, a Sample, an Experiment, and so on — is identified by an **alias**: a short, submitter-chosen name that only needs to be unique within your submission. Aliases are what connect entities to one another: for example, a Sample row references the alias of the Individual it was collected from, and an Experiment row references the aliases of the Sample and Experiment Method it uses. The same mechanism links Research Data Files and Process Data Files to the rest of the metadata, and, separately, it is also how the files you upload are matched to their metadata: the file alias must match the actual uploaded file name.
 
-Keeping aliases exactly consistent across all sheets is essential, since mismatched aliases are one of the most common causes of validation errors. It is worth double-checking them before sending a submission to the GHGA Helpdesk.
+Keeping aliases exactly consistent across all sheets is essential, since mismatched aliases are one of the most common causes of validation errors. It is worth double-checking them before sending a submission to the GHGA Helpdesk. Please also ensure that aliases, especially those identifying a Sample or Individual, do not contain any personal information, for example birth dates, initials or actual names.
 
 ### Research Metadata
 To provide a streamlined submission of metadata, the model is designed to closely resemble a bottom-up omics experiment:
