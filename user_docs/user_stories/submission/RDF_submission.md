@@ -6,7 +6,7 @@ To submit Research Data Files to GHGA, the [**GHGA Connector**](../../cli_tools/
 
 !!! note "Data Processing Contract"
 
-    The signing of a [Data Processing Contract](dpc_preparation.md) has to be finalized before a Data Steward is allowed to generate an upload box and enable the submission of Research Data Files.
+    A [Data Processing Contract](dpc_preparation.md) has to be signed by all parties before a Data Steward is allowed to generate an upload box and enable the submission of Research Data Files.
 
 ## Get Portal Access
 
