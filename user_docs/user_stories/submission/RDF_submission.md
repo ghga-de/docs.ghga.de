@@ -24,7 +24,7 @@ Once a <general:Data Steward> has granted you access to an upload box, generate 
 
 ## Upload & Close Box
 
-Start the file deposition as outlined in the [GHGA Connector documentation](../../cli_tools/connector.md#file-upload), which supports two ways to deposit files: a TSV-driven [batch-upload](../../cli_tools/connector.md#1-batch-upload) for depositing many files at once, or an interactive [ubox shell](../../cli_tools/connector.md#2-ubox-upload) for uploading files and managing the upload box. Once the submission is complete, click **Submit** in the [User Account](https://data.ghga.de/account) to close the box.
+Start the file deposition as outlined in the [GHGA Connector documentation](../../cli_tools/connector.md#file-upload), which supports two ways to deposit files: a TSV-driven [batch-upload](../../cli_tools/connector.md#1-batch-upload) for depositing many files at once, or an interactive [ubox shell](../../cli_tools/connector.md#2-ubox-upload) for uploading single files and managing the upload box. Once the submission is complete, click **Submit** in the [User Account](https://data.ghga.de/account) to close the box.
 
 !!! warning "Matching file aliases to metadata"
 
