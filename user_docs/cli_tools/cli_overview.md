@@ -4,8 +4,8 @@ The GHGA CLI (command-line interface) tools provide command-line utilities and P
 
 ## Available Tools:
 
-  ![Visual summary of GHGA CLI tools with icons: Download and Decrypt Files with GHGA Connector, Metadata Conversion with GHGA Transpiler and Metadata Compliance Check with GHGA Validator - as described in the text below.](../assets/img/CLI_Tools.png){ width="800" }
+  ![Visual summary of GHGA CLI tools with icons: Upload, Download and Decrypt Files with GHGA Connector, Metadata Conversion with GHGA Transpiler and Metadata Compliance Check with GHGA Validator - as described in the text below.](../assets/img/CLI_Tools.png){ width="800" }
 
-- [GHGA Connector](https://docs.ghga.de/cli_tools/connector/) – Securely download and decrypt files from the GHGA infrastructure or submit files to upload boxes.
-- [GHGA Transpiler](https://docs.ghga.de/cli_tools/transpiler/) – Convert metadata from XLSX spreadsheets into JSON format, ensuring compatibility with GHGA systems.
-- [GHGA Validator](https://docs.ghga.de/cli_tools/validator/) – Validate metadata against the GHGA Metadata Model and generate a compliance report.
+- [GHGA Connector](connector.md) – Securely download and decrypt files from the GHGA infrastructure or submit files to upload boxes.
+- [GHGA Transpiler](transpiler.md) – Convert metadata from XLSX spreadsheets into JSON format, ensuring compatibility with GHGA systems.
+- [GHGA Validator](validator.md) – Validate metadata against the GHGA Metadata Model and generate a compliance report.
