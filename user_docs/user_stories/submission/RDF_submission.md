@@ -2,7 +2,7 @@
 
 To submit Research Data Files to GHGA, the [**GHGA Connector**](../../cli_tools/connector.md) is used to deposit files in an upload box. A Data Steward creates an upload box for each submission with an appropriate storage volume and can grant access to verified users in the [GHGA Data Portal](https://data.ghga.de/). Files are encrypted and checksums are calculated on the fly. There is no need to prepare or encrypt files yourself before starting an upload.
 
-  ![Flowchart with icons showing the four steps to submit Research Data Files: Get Portal Access, Generate Crypt4GH Keys, Create Access Token, and Upload & Close Box – as described in the text below on this page.](../../assets/img/RDF_submission_overview.png){ width="800" }
+  ![Flowchart with icons showing the four steps to submit Research Data Files: Get Portal Access, Generate Crypt4GH Keys, Create Access Token, and Upload Data & Submit Box – as described in the text below on this page.](../../assets/img/RDF_submission_overview.png){ width="800" }
 
 !!! note "Data Processing Contract"
 
