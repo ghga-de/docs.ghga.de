@@ -1,17 +1,10 @@
 # Metadata Preparation Guide
 
-## 1. Initiation of a Submission
-To initiate a submission of data to GHGA, please contact us by completing the [pre-submission enquiry](https://www.ghga.de/about-us/presubmission-enquiries), which collects general information about the planned submission. A GHGA Data Steward will be assigned and guide you through the process, which consists of the following steps:
+This guide covers metadata preparation and validation, the third of the four steps described in [Submitting Data](submitting_data.md). By this point, your Data Processing Contract should be signed and a Data Steward assigned to your submission — preparing the metadata itself can already have started in parallel, and is described here in three steps:
 
-  ![Flowchart with icons showing data submission in five steps: Initiate submission, Prepare Research Metadata, Prepare Administrative Metadata, Validate Metadata, and Submit Data – as outlined in the text below on this page.](../../assets/img/Submisison_overviewsimplified.png){ width="800" }
+  ![Flowchart with icons showing the three steps described on this page: Prepare Research Metadata, Prepare Administrative Metadata, and Validate Metadata.](../../assets/img/Metadata_Preparation_Guide_Overview.png){ width="800" }
 
-1. Signing of a Data Processing Contract, see [here](dpc_preparation.md).
-2. Preparation of the non-personal metadata
-3. Research Data File submission, see [here](RDF_submission.md)
-
-The signing of a DPC has to be finalized before a Data Steward is allowed to interact with the non-personal metadata. Preparation of the metadata can be done on the submitter side in parallel.
-
-## 2. Preparing Research and Administrative Metadata
+## Preparing Research and Administrative Metadata
 The GHGA metadata model aims at facilitating comprehensive submissions that maximize the amount of collected metadata in a FAIR manner. Submissions can be either prepared in JSON format or by using a [submission spreadsheet](https://github.com/ghga-de/ghga-metadata-schema/tree/main/spreadsheets). An example submission can be found in our [Github repository containing example data](https://github.com/ghga-de/example-data). The provided metadata are categorized as **Research Metadata** and **Administrative Metadata**. The former collects information about the experimental and data acquisition process whereas the latter about data access, rights management and disposition. It is crucial, that only non-personal metadata are submitted to GHGA.
 
 !!! info "Identifiers and quasi-identifiers in the metadata model"
@@ -19,13 +12,13 @@ The GHGA metadata model aims at facilitating comprehensive submissions that maxi
 
 ![Flowchart with icons showing the elements involved in metadata preparation. Research Metadata include individual, sample, experiment, analysis, and the resulting data files (FastQ for research data and BAM for processed data), grouped into datasets. Administrative Metadata cover the data access policy, data access committee, study, and publication related to the datasets. The image illustrates how these elements are connected – as described in the text below.](../../assets/img/User_stories_Submitting_Data_Data_Prep_Metadata_overview.png){ width="800" }
 
-### How Entities Are Linked: Aliases
+#### How Entities Are Linked: Aliases
 
 Every entity you define in the submission spreadsheet — an Individual, a Sample, an Experiment, and so on — is identified by an **alias**: a short, submitter-chosen name that only needs to be unique within your submission. Aliases are what connect entities to one another: for example, a Sample row references the alias of the Individual it was collected from, and an Experiment row references the aliases of the Sample and Experiment Method it uses. The same mechanism links Research Data Files and Process Data Files to the rest of the metadata, and, separately, it is also how the files you upload are matched to their metadata: the file alias must match the actual uploaded file name.
 
 Keeping aliases exactly consistent across all sheets is essential, since mismatched aliases are one of the most common causes of validation errors. It is worth double-checking them before sending a submission to the GHGA Helpdesk. Please also ensure that aliases, especially those identifying a Sample or Individual, do not contain any personal information, for example birth dates, initials or actual names.
 
-### Research Metadata
+### 1. Research Metadata
 To provide a streamlined submission of metadata, the model is designed to closely resemble a bottom-up omics experiment:
 
 Similar to an experimental procedure, [**Individuals**](../../metadata/entities.md#individual) that are subject to investigation should be defined first.
@@ -52,7 +45,7 @@ Additionally, the submitter can embellish the classes with **Supplementary files
 Supplementary files are encrypted and inaccessible without an accepted data access request.
 This allows submission of metadata that should not be publicly visible **as it can only be accessed by requesters after the data controller has approved a data transfer request** and the data is made available via the portal to the data requester. Hence, the data portal will only indicate the presence of supplementary files for classes and signify that a submission contains additional information, e.g. in the form of encrypted phenopackets for individuals, but not process or show their content.
 
-### Administrative Metadata
+### 2. Administrative Metadata
 Once the experimental and analytic approach as well as the file generation have been described, the submitter can define the conditions on how to share the data.
 
   ![Flowchart with icons showing steps to prepare administrative metadata for a dataset: Dataset(s), Data Access Policy, Data Access Committee, Study, and Publication – as described in the text below.](../../assets/img/Dataset-DAPDAC-StudyPublication.png){ width="800" }
@@ -63,7 +56,7 @@ Each dataset is managed by a **Data Access Committee** that defines a [**Data Ac
 
 Lastly, a [**Study**](../../metadata/entities.md#study) is defined to outline the research intent of the submission. For this, study title, abstract and affiliation are collected. An alias for the study has to be defined, to link the datasets of the submission. If present, also the [**Publication**](../../metadata/entities.md#publication) in which the data is referred can be described.
 
-### Writing Meaningful Metadata
+#### Writing meaningful Metadata
 
 Many entities in the model — Samples, Experiments, Studies, and especially Datasets — require a free-text **title** and **description**. These fields are not just for your own records: a Dataset's title and description are shown directly to prospective data requesters browsing the [GHGA Data Portal](https://data.ghga.de/), and every free-text field may later be read by a Data Steward, a Data Access Committee, or another Scientist who was not involved in generating the data. Writing them with that audience in mind makes your data easier to find and understand:
 
@@ -72,7 +65,7 @@ Many entities in the model — Samples, Experiments, Studies, and especially Dat
 - Where a field has a recommended ontology, as described throughout this page and summarized on the [Standards](../../metadata/standards.md#ontologies) page, use the matching concept term instead of relying on free text fields. This keeps metadata both human-readable and machine-searchable.
 - Use the same terminology for the same concept across all entities in a submission, so aliases and descriptions clearly refer to the same thing.
 
-### Use case examples
+#### Use case examples
 
 The GHGA metadata model enables submitters to represent a wide range of experimental and analytic approaches of omics studies. Different experimental methods require different entities in the classes, whereas only the relevant ones are exposed to the submitter via different spreadsheets. The “core set” of classes in contrast stays immutable and describes approach-agnostic metadata that can be used to describe the general experiment design.
 
@@ -80,24 +73,24 @@ A complete example submission, including a filled-in spreadsheet and the resulti
 
 The following tables show a set of common use-cases linearized to the long format for the submitted files for better readability:
 
-#### Studies with case/control samples:
+##### Studies with case/control samples:
 [:material-file-delimited: Table 1](../../assets/example_tables/case_control_samples.xlsx) - Case or control is an entity on the sample level and is linked to files via experiment.
 
-#### Studies with technical and biological replicates
+##### Studies with technical and biological replicates
 
 [:material-file-delimited: Table 2](../../assets/example_tables/technical_biological_replicates.xlsx) - Biological replicate information can be collected similarly on the sample level, technical replicates on file level.
 
-#### Studies with composition of technical and biological replicates in a time series
+##### Studies with composition of technical and biological replicates in a time series
 
 [:material-file-delimited: Table 3](../../assets/example_tables/time_series_replicates.xlsx) - Different compositions between technical and biological replicates can be encoded on the research data file and sample level. Specific information like time series can be modeled by annotating the samples in name, description and attribute.
 
-#### Study with research data, processed data and supplementary data files
+##### Study with research data, processed data and supplementary data files
 
 [:material-file-delimited: Table 4](../../assets/example_tables/research_processed_supplementary_files.xlsx) - Processed files, such as for alignment and variant calling can be added and additional phenotypic information can be submitted alongside the research data/processed files in form of supplementary files. For individuals, it can be indicated that further supplementary information exists that is accessible upon decryption of data.
 
 The shown examples show only the relevant parts of the metadata model in the long format, linking to samples, experiment, analysis via aliases has been inferred.
 
-## 3. Validate Metadata
+### 3. Validate Metadata
 Once the metadata spreadsheet is finalized, it should be sent to the GHGA Helpdesk. Alternatively, since both tools are [publicly available](../../cli_tools/cli_overview.md), you can run the [**GHGA Transpiler**](../../cli_tools/transpiler.md) and [**GHGA Validator**](../../cli_tools/validator.md) yourself first and forward us either result:
 
 - If you send the **spreadsheet**, the GHGA Data Steward runs the Transpiler to generate a JSON of the submission and then the Validator to validate its content.
@@ -109,5 +102,5 @@ The GHGA Data Steward assists in case of any questions about the GHGA metadata s
 
 Once the submission passes validation, GHGA generates stable accession identifiers that can be used to reference the data deposited in GHGA.
 
-## 4. Metadata Publication on the Data Portal
+## Metadata Publication on the Data Portal
 Once the files are deposited and the metadata has passed validation, the submission is finalized, but the data is not yet findable on the [**GHGA Data Portal**](https://data.ghga.de/). Publication does not have to happen right away — to make a submission's metadata publicly available and enable Data Access Requests for the associated data, simply notify the GHGA Helpdesk whenever you are ready to do so.
