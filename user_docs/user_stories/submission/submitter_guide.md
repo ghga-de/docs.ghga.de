@@ -5,7 +5,7 @@ This guide covers metadata preparation and validation, the third of the four ste
   ![Flowchart with icons showing the three steps described on this page: Prepare Research Metadata, Prepare Administrative Metadata, and Validate Metadata.](../../assets/img/Metadata_Preparation_Guide_Overview.png){ width="800" }
 
 ## Preparing Research and Administrative Metadata
-The GHGA metadata model aims at facilitating comprehensive submissions that maximize the amount of collected metadata in a FAIR manner. Submissions can be either prepared in JSON format or by using a [submission spreadsheet](https://github.com/ghga-de/ghga-metadata-schema/tree/main/spreadsheets). An example submission can be found in our [Github repository containing example data](https://github.com/ghga-de/example-data). The provided metadata are categorized as **Research Metadata** and **Administrative Metadata**. The former collects information about the experimental and data acquisition process whereas the latter about data access, rights management and disposition. It is crucial, that only non-personal metadata are submitted to GHGA.
+The GHGA metadata model aims at facilitating comprehensive submissions that maximize the amount of collected metadata in a FAIR manner. Submissions can be either prepared in JSON format or by using a [submission spreadsheet](https://github.com/ghga-de/ghga-metadata-schema/tree/main/spreadsheets). An example submission can be found in our [Github repository containing example data](https://github.com/ghga-de/example-data). The provided metadata are categorized as **Research Metadata** and **Administrative Metadata**. The former collects information about the experimental and data acquisition process whereas the latter about data access, rights management and disposition. It is crucial that only non-personal metadata are submitted to GHGA.
 
 !!! info "Identifiers and quasi-identifiers in the metadata model"
     Identifiers are data elements that are unique to an entity, and can be used to directly identify that entity. For example, a person's name can directly identify them. Within the GHGA metadata model, sample IDs are unique to a Data Subject, and Data Submitters are advised to ensure that any matching file that contains both the sample ID and personal data about the Data Subject is securely held. Quasi-identifiers, by contrast, are attributes that may not identify an individual on their own but could lead to re-identification when used in combination. In the GHGA metadata model, we consider sex, age, diagnosis, phenotypic feature, ancestry, and geographic region to be quasi-identifiers. While the model employs privacy by design, Data Submitters should be aware that rare combinations of quasi-identifiers could lead to re-identification of the Data Subject. It may therefore be necessary to change certain data items when unusual combinations of quasi-identifiers occur, for example by reducing the precision of diagnosis codes.
@@ -35,7 +35,7 @@ A [**Research Data File**](../../metadata/entities.md#research-data-file) is lin
 
   ![Flowchart with icons, showing the data acquisition process. Samples are processed by an experiment method, producing research data files (FASTQ), as described in the text above.](../../assets/img/ExperimentMethod.png){ width="800" }
 
-The classes [**Analysis**](../../metadata/entities.md#analysis) and [**Analysis Method**](../../metadata/entities.md#analysis-method) function similar to Experiment and its methods to describe the process of data acquisition from a linked Research Data Files by downstream processing. The analysis method has to be provided once for the analytical approach or used workflow, analysis describes the processing that was performed to generate a Process Data File.
+The classes [**Analysis**](../../metadata/entities.md#analysis) and [**Analysis Method**](../../metadata/entities.md#analysis-method) function similar to Experiment and its methods to describe the process of data acquisition from a linked Research Data File by downstream processing. The analysis method has to be provided once for the analytical approach or used workflow, analysis describes the processing that was performed to generate a Process Data File.
 
 [**Process Data Files**](../../metadata/entities.md#process-data-file) are the output of an analysis and linked to it. The class functions similar to a Research Data File and requires submitters to define the matching file alias, type and analysis that generated them to link them to the remaining metadata.
 
@@ -43,7 +43,7 @@ The classes [**Analysis**](../../metadata/entities.md#analysis) and [**Analysis 
 
 Additionally, the submitter can embellish the classes with **Supplementary files**, such as [**experimental protocols**](../../metadata/data_dictionary/ExperimentMethodSupportingFile.md) for the experiment class, [**workflow parameter files**](../../metadata/data_dictionary/AnalysisMethodSupportingFile.md) for the analysis class or [**structured metadata files**](../../metadata/data_dictionary/IndividualSupportingFile.md), such as phenopackets or PED files for the individual class.
 Supplementary files are encrypted and inaccessible without an accepted data access request.
-This allows submission of metadata that should not be publicly visible **as it can only be accessed by requesters after the data controller has approved a data transfer request** and the data is made available via the portal to the data requester. Hence, the data portal will only indicate the presence of supplementary files for classes and signify that a submission contains additional information, e.g. in the form of encrypted phenopackets for individuals, but not process or show their content.
+This allows submission of metadata that should not be publicly visible **as it can only be accessed by requesters after the data controller has approved a data access request** and the data is made available via the portal to the data requester. Hence, the data portal will only indicate the presence of supplementary files for classes and signify that a submission contains additional information, e.g. in the form of encrypted phenopackets for individuals, but not process or show their content.
 
 ### 2. Administrative Metadata
 Once the experimental and analytic approach as well as the file generation have been described, the submitter can define the conditions on how to share the data.
@@ -74,19 +74,19 @@ A complete example submission, including a filled-in spreadsheet and the resulti
 The following tables show a set of common use-cases linearized to the long format for the submitted files for better readability:
 
 ##### Studies with case/control samples:
-[:material-file-delimited: Table 1](../../assets/example_tables/case_control_samples.xlsx) - Case or control is an entity on the sample level and is linked to files via experiment.
+[:material-file-excel: Table 1](../../assets/example_tables/case_control_samples.xlsx) - Case or control is an entity on the sample level and is linked to files via experiment.
 
 ##### Studies with technical and biological replicates
 
-[:material-file-delimited: Table 2](../../assets/example_tables/technical_biological_replicates.xlsx) - Biological replicate information can be collected similarly on the sample level, technical replicates on file level.
+[:material-file-excel: Table 2](../../assets/example_tables/technical_biological_replicates.xlsx) - Biological replicate information can be collected similarly on the sample level, technical replicates on file level.
 
 ##### Studies with composition of technical and biological replicates in a time series
 
-[:material-file-delimited: Table 3](../../assets/example_tables/time_series_replicates.xlsx) - Different compositions between technical and biological replicates can be encoded on the research data file and sample level. Specific information like time series can be modeled by annotating the samples in name, description and attribute.
+[:material-file-excel: Table 3](../../assets/example_tables/time_series_replicates.xlsx) - Different compositions between technical and biological replicates can be encoded on the research data file and sample level. Specific information like time series can be modeled by annotating the samples in name, description and attribute.
 
 ##### Study with research data, processed data and supplementary data files
 
-[:material-file-delimited: Table 4](../../assets/example_tables/research_processed_supplementary_files.xlsx) - Processed files, such as for alignment and variant calling can be added and additional phenotypic information can be submitted alongside the research data/processed files in form of supplementary files. For individuals, it can be indicated that further supplementary information exists that is accessible upon decryption of data.
+[:material-file-excel: Table 4](../../assets/example_tables/research_processed_supplementary_files.xlsx) - Processed files, such as for alignment and variant calling can be added and additional phenotypic information can be submitted alongside the research data/processed files in form of supplementary files. For individuals, it can be indicated that further supplementary information exists that is accessible upon decryption of data.
 
 The shown examples show only the relevant parts of the metadata model in the long format, linking to samples, experiment, analysis via aliases has been inferred.
 
