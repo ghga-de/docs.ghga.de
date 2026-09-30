@@ -2,7 +2,7 @@
 
 To submit data to GHGA, please contact us by completing the [Pre-Submission Inquiry](https://www.ghga.de/about-us/presubmission-enquiries), which collects general information about the planned submission, or by reaching out directly via the <general:GHGA Helpdesk>. A GHGA Data Steward will be assigned to your submission and guide you through the following four steps:
 
-  ![Flowchart with icons showing the four-step GHGA data submission process: Pre-Submission Inquiry, Data Processing Contract, Metadata Preparation, and File Submission – as described in the text below.](../../assets/img/Submission_overview_page.png){ width="800" }
+  ![Flowchart with icons showing the four-step GHGA data submission process: Pre-Submission Inquiry, Data Processing Contract, Metadata Preparation, and File Upload – as described in the text below.](../../assets/img/Submission_overview_page.png){ width="800" }
 
 1. Filing a [Pre-Submission Inquiry](https://www.ghga.de/about-us/presubmission-enquiries) or contacting us via the <general:GHGA Helpdesk>
       - A short, informal first contact: you tell us about the planned submission, and GHGA lets you know whether it can be supported and assigns a Data Steward to guide you through the rest of the process.

@@ -22,10 +22,10 @@ The GHGA Connector uses a [Crypt4GH](https://crypt4gh.readthedocs.io/latest/) ke
 
 Once a <general:Data Steward> has granted you access to an upload box, generate an access token for it in your [User Account](https://data.ghga.de/account) by clicking **Create Token** in the "Research Data Upload" tab and entering your public Crypt4GH key.
 
-## Upload & Close Box
+## Upload & Submit Box
 
 Start the file deposition as outlined in the [GHGA Connector documentation](../../cli_tools/connector.md#file-upload), which supports two ways to deposit files: a TSV-driven [batch-upload](../../cli_tools/connector.md#1-batch-upload) for depositing many files at once, or an interactive [ubox shell](../../cli_tools/connector.md#2-ubox-upload) for uploading single files and managing the upload box. Once the submission is complete, click **Submit** in the [User Account](https://data.ghga.de/account) to close the box.
 
 !!! warning "Matching file aliases to metadata"
 
-    Each uploaded file's **alias** must exactly match the file alias in your metadata submission, so the two can be linked by the GHGA services. Depending on the upload method, this alias is either set explicitly (the second column of the `batch-upload` TSV) or, unless overridden with `--alias`, defaults to the file name itself (`ubox upload`). Mismatched aliases are a common causes of validation errors — please double-check them before closing the upload box.
+    Each uploaded file's **alias** must exactly match the file alias in your metadata submission, so the two can be linked by the GHGA services. Depending on the upload method, this alias is either set explicitly (the second column of the `batch-upload` TSV) or, unless overridden with `--alias`, defaults to the file name itself (`ubox upload`). Mismatched aliases are a common cause of validation errors — please double-check them before closing the upload box.
