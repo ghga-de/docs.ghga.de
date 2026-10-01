@@ -2,6 +2,10 @@
 
 The GHGA Metadata Model provides a structured approach to organising human omics data, ensuring FAIR principles (Findable, Accessible, Interoperable, Reusable) for data archiving and sharing. This documentation offers in-depth explanations of the metadata model, including its structure, captured metadata, standards, and ontologies.
 
+???+ info
+
+    This page explains the **structure and meaning of the GHGA Metadata Model**. For practical, step-by-step **instructions on preparing metadata**, completing the submission spreadsheet, and validating a submission, see the [Metadata Preparation Guide](../user_stories/submission/submitter_guide.md).
+
 ## Key Components: 
 
   ![Visual summary of the GHGA Metadata Model components with icons and labels: Introduction, Captured Metadata, Concepts & Standards, and Data Dictionary - as described in the text below.](../assets/img/Metadata_Model_Overview.png){ width="800" }

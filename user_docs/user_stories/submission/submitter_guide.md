@@ -1,6 +1,13 @@
 # Metadata Preparation Guide
 
-This guide covers metadata preparation and validation, the third of the four steps described in [Submitting Data](submitting_data.md). By this point, your Data Processing Contract should be signed and a Data Steward assigned to your submission — preparing the metadata itself can already have started in parallel, and is described here in three steps:
+This guide covers metadata preparation and validation, the third of the four steps described in [Submitting Data](submitting_data.md). 
+
+
+???+ info 
+
+    This guide focuses on the **practical workflow for preparing and validating a submission**. For a **conceptual description** of the entities, properties, standards, and relationships that make up the GHGA Metadata Model, see the [GHGA Metadata Model overview](../../metadata/overview.md).
+
+By this point, your Data Processing Contract should be signed and a Data Steward assigned to your submission — preparing the metadata itself can already have started in parallel, and is described here in three steps:
 
   ![Flowchart with icons showing the three steps described on this page: Prepare Research Metadata, Prepare Administrative Metadata, and Validate Metadata.](../../assets/img/Metadata_Preparation_Guide_Overview.png){ width="800" }
 
