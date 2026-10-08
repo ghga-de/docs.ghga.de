@@ -8,6 +8,8 @@
 
 A breakdown of each metadata element described in the different entities will provide more insight on what elements are required for the functionality of GHGA, mandatory properties and recommended or optional information that can be provided by the data submitters.
 
+Not every entity is required in every submission: *Analysis*, *Analysis Method* and *Process Data File* are only needed if a submission contains processed data, while supporting files and *Publication* are optional. An overview is given under [Which Entities Are Required?](../user_stories/submission/submitter_guide.md#which-entities-are-required) in the Metadata Preparation Guide.
+
 ## **Research Metadata**
 
 The Research Metadata focuses on the reusability and FAIRness of the data. The Research Metadata encapsulates a set of classes that shape the model in accordance to the performed experiment ensuring reproducibility and scalability. The classes include *Individual*, *Biospecimen/Sample*, *Experiment*, *Experiment Method*, *Analysis* and *Analysis Method*.

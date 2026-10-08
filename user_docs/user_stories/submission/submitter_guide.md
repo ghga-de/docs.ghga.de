@@ -35,7 +35,7 @@ A [**Research Data File**](../../metadata/entities.md#research-data-file) is lin
 
   ![Flowchart with icons, showing the data acquisition process. Samples are processed by an experiment method, producing research data files (FASTQ), as described in the text above.](../../assets/img/ExperimentMethod.png){ width="800" }
 
-The classes [**Analysis**](../../metadata/entities.md#analysis) and [**Analysis Method**](../../metadata/entities.md#analysis-method) function similar to Experiment and its methods to describe the process of data acquisition from a linked Research Data File by downstream processing. The analysis method has to be provided once for the analytical approach or used workflow, analysis describes the processing that was performed to generate a Process Data File.
+If your submission contains processed data, the classes [**Analysis**](../../metadata/entities.md#analysis) and [**Analysis Method**](../../metadata/entities.md#analysis-method) are required in addition. They function similar to Experiment and its methods to describe the process of data acquisition from a linked Research Data File by downstream processing. The analysis method has to be provided once for the analytical approach or used workflow, analysis describes the processing that was performed to generate a Process Data File.
 
 [**Process Data Files**](../../metadata/entities.md#process-data-file) are the output of an analysis and linked to it. The class functions similar to a Research Data File and requires submitters to define the matching file alias, type and analysis that generated them to link them to the remaining metadata.
 
@@ -55,6 +55,23 @@ For this, all submitted file types are linked to and presented in [**Datasets**]
 Each dataset is managed by a **Data Access Committee** that defines a [**Data Access Policy**](../../metadata/entities.md#data-access-policy-and-committee) to describe clear guidelines for data requesters to access the data. The Data Access Committee should consist of multiple members and provide a non-personal mail address that forwards mail to each member of the DAC to decrease the risks of abandoned or unresponsive DACs.
 
 Lastly, a [**Study**](../../metadata/entities.md#study) is defined to outline the research intent of the submission. For this, study title, abstract and affiliation are collected. An alias for the study has to be defined, to link the datasets of the submission. If present, also the [**Publication**](../../metadata/entities.md#publication) in which the data is referred can be described.
+
+#### Which Entities Are Required?
+
+Not every sheet of the submission spreadsheet has to be filled in. Which entities a submission needs depends on the files it contains:
+
+| Category | Entity | Required? |
+|---|---|---|
+| Research Metadata | Individual, Sample, Experiment, Experiment Method | Always |
+| Research Metadata | Research Data File | Always |
+| Research Metadata | Analysis, Analysis Method, Process Data File | Only if the submission contains processed data |
+| Research Metadata | Supporting files (Individual, Experiment Method, Analysis Method) | Optional |
+| Administrative Metadata | Dataset, Data Access Policy, Data Access Committee, Study | Always |
+| Administrative Metadata | Publication | Optional |
+
+**Research Data Files are always required**, so that data requesters can reconstruct the findings of a submission from the raw data onwards. Process Data Files, such as alignments or variant calls, can be submitted in addition, but never instead of the research data. Once a submission contains Process Data Files, the Analysis and Analysis Method that produced them become required as well. A Publication is optional, as the related paper is often not yet finalised at the time of submission.
+
+Within each entity you use, the submission spreadsheet marks every column as required, recommended or optional.
 
 #### Writing meaningful Metadata
 
