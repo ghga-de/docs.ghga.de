@@ -95,24 +95,37 @@ The GHGA metadata model enables submitters to represent a wide range of experime
 
 A complete example submission, including a filled-in spreadsheet and the resulting transpiled JSON, is available in the [GHGA example-data repository](https://github.com/ghga-de/example-data).
 
-The following tables show a set of common use-cases linearized to the long format for the submitted files for better readability:
+The following common use cases are each provided in three versions:
 
-##### Studies with case/control samples:
-[:material-file-excel: Table 1](../../assets/example_tables/case_control_samples.xlsx) - Case or control is an entity on the sample level and is linked to files via experiment.
+- a **readable table**, showing only the relevant parts of the metadata model linearized to the long format, so that the links between entities can be followed row by row,
+- the same example filled into the official **submission spreadsheet**, and
+- the **submission JSON** produced from it by the GHGA Transpiler.
+
+Both submission versions pass the GHGA Transpiler and Validator and can serve as a starting point for your own submission. Administrative metadata such as the study, data access policy and data access committee contain example values.
+
+##### Studies with case/control samples
+
+Case or control is an entity on the sample level and is linked to files via experiment.
+
+[:material-table: Readable table](../../assets/example_tables/case_control_samples.xlsx) · [:material-file-excel: Submission spreadsheet](../../assets/example_tables/case_control_samples_submission.xlsx) · [:material-code-json: Submission JSON](../../assets/example_tables/case_control_samples_submission.json)
 
 ##### Studies with technical and biological replicates
 
-[:material-file-excel: Table 2](../../assets/example_tables/technical_biological_replicates.xlsx) - Biological replicate information can be collected similarly on the sample level, technical replicates on file level.
+Biological replicate information can be collected similarly on the sample level, technical replicates on file level.
+
+[:material-table: Readable table](../../assets/example_tables/technical_biological_replicates.xlsx) · [:material-file-excel: Submission spreadsheet](../../assets/example_tables/technical_biological_replicates_submission.xlsx) · [:material-code-json: Submission JSON](../../assets/example_tables/technical_biological_replicates_submission.json)
 
 ##### Studies with composition of technical and biological replicates in a time series
 
-[:material-file-excel: Table 3](../../assets/example_tables/time_series_replicates.xlsx) - Different compositions between technical and biological replicates can be encoded on the research data file and sample level. Specific information like time series can be modeled by annotating the samples in name, description and attribute.
+Different compositions between technical and biological replicates can be encoded on the research data file and sample level. Specific information like time series can be modeled by annotating the samples in name, description and attribute.
+
+[:material-table: Readable table](../../assets/example_tables/time_series_replicates.xlsx) · [:material-file-excel: Submission spreadsheet](../../assets/example_tables/time_series_replicates_submission.xlsx) · [:material-code-json: Submission JSON](../../assets/example_tables/time_series_replicates_submission.json)
 
 ##### Study with research data, processed data and supplementary data files
 
-[:material-file-excel: Table 4](../../assets/example_tables/research_processed_supplementary_files.xlsx) - Processed files, such as for alignment and variant calling can be added and additional phenotypic information can be submitted alongside the research data/processed files in form of supplementary files. For individuals, it can be indicated that further supplementary information exists that is accessible upon decryption of data.
+Processed files, such as for alignment and variant calling can be added and additional phenotypic information can be submitted alongside the research data/processed files in form of supplementary files. For individuals, it can be indicated that further supplementary information exists that is accessible upon decryption of data. As an Analysis references Research Data Files, the variant calling lists the FASTQ files that the BAM files were aligned from.
 
-The shown examples show only the relevant parts of the metadata model in the long format, linking to samples, experiment, analysis via aliases has been inferred.
+[:material-table: Readable table](../../assets/example_tables/research_processed_supplementary_files.xlsx) · [:material-file-excel: Submission spreadsheet](../../assets/example_tables/research_processed_supplementary_files_submission.xlsx) · [:material-code-json: Submission JSON](../../assets/example_tables/research_processed_supplementary_files_submission.json)
 
 ### 3. Validate Metadata
 Once the metadata spreadsheet is finalized, it should be sent to the GHGA Helpdesk. Alternatively, since both tools are [publicly available](../../cli_tools/cli_overview.md), you can run the [**GHGA Transpiler**](../../cli_tools/transpiler.md) and [**GHGA Validator**](../../cli_tools/validator.md) yourself first and forward us either result:
