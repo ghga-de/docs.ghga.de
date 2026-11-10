@@ -15,7 +15,7 @@ Please visit the [GHGA Data Portal](https://data.ghga.de/browse) and find your d
 
 ### How to get data access?
 
-The GHGA Data Portal allows users to request access to data through the portal. Identify your dataset of interest using the browse and filter functions of the GHGA Data Portal. Click on the "Request access" button. This will direct you to a data access request form. Complete the form with the necessary information and submit it to request access to the dataset. The data access request will be sent to the <general:Research Data Controller (RDC)|Research Data Controller>, who will will review your request and respond accordingly. Please note that GHGA is not involved in the further process of negotiating the data access.
+The GHGA Data Portal allows users to request access to data through the portal. Identify your dataset of interest using the browse and filter functions of the GHGA Data Portal. Click on the "Request access" button. This will direct you to a data access request form. Complete the form with the necessary information and submit it to request access to the dataset. The data access request will be sent to the <general:Research Data Controller (RDC)|Research Data Controller>, who will review your request and respond accordingly. Please note that GHGA is not involved in the further process of negotiating the data access. For more details, please refer to our documentation on [Accessing data](https://docs.ghga.de/user_stories/accessing_data/).
 
 
 ### Where can I check the system status?
