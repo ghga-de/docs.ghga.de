@@ -3,36 +3,44 @@
 !!! abstract
     This page is a collection of common questions on the GHGA Data Portal. If you have further questions, please reach out to the [GHGA Helpdesk](mailto:helpdesk@ghga.de).
 
+## General
 
-## What are the functions of the GHGA Data Portal?
+### What are the functions of the GHGA Data Portal?
 
 The GHGA Data Portal allows users to browse, search, and download omics datasets submitted to the GHGA. It uses the [GHGA Metadata Model](metadata/overview.md).
 
-## What data can be found on GHGA Data Portal?
+### What data can be found on GHGA Data Portal?
 
 Please visit the [GHGA Data Portal](https://data.ghga.de/browse) and find your data of interest either by a keyword search or by using the selectors on the left side. Currently, we are only displaying datasets from GHGA partner institutions.
 
-## How to upload your data to the GHGA Data Portal?
+### How to get data access?
+
+The GHGA Data Portal allows users to request access to data through the portal. Identify your dataset of interest using the browse and filter functions of the GHGA Data Portal. Click on the "Request access" button. This will direct you to a data access request form. Complete the form with the necessary information and submit it to request access to the dataset. The data access request will be sent to the <general:Research Data Controller (RDC)|Research Data Controller>, who will review your request and respond accordingly. Please note that GHGA is not involved in the further process of negotiating the data access. For more details, please refer to our documentation on [Accessing data](https://docs.ghga.de/user_stories/accessing_data/).
+
+
+### Where can I check the system status?
+
+The [GHGA System Status Monitor](https://stats.uptimerobot.com/h8Vd5tALXR) provides real-time information about the availability and performance of GHGA services. Check this page if you're experiencing issues accessing the GHGA Data Portal.
+
+### Where can I find my Life Science ID (LS ID)?
+
+In order to ensure that only authorised people can access our systems, GHGA utilises [Life Science Login (LS Login)](https://lifescience-ri.eu/ls-login/) to authenticate users. **Creating a Life Science ID** is free and can usually be linked to your institutional account. For detailed instructions on creating and managing your LS ID, please refer to the [LS Login user documentation](https://lifescience-ri.eu/ls-login/documentation/user-documentation/user-documentation.html).
+
+## Before Submission
+
+### How to upload your data to the GHGA Data Portal?
 
 Currently GHGA is still in an early phase of the project. Therefore, submissions from external users outside the GHGA Consortium require some manual processing and cannot be fully supported at scale. If you would like to submit human omics data to GHGA, please contact the [GHGA Helpdesk](mailto:helpdesk@ghga.de). To stay informed on new feature releases and updates to GHGA, please sign up for our [GHGA Newsletter](https://tbaa572aa.emailsys1a.net/23/6075/28001ae512/subscribe/form.html?_g=1646818058). 
 
 To find out more about how to prepare for a submission, please visit the [respective user story](user_stories/submission/submitting_data.md).
 
-## How should I publicly reference my data deposition in GHGA?
+### Can the GHGA Data Processing Contract (DPC) be modified?
 
-Data depositions should be referenced via the Study Accession (e.g. `GHGAS12079965883832`). To unify how data is referenced, please always use the [recommended **data availability statement**](user_stories/submission/Citing_GHGA_Submissions.md/#data-availability-statement).
+The <general:Data Processing Contract (DPC)|DPC> is a standardised contract, and its terms should generally be considered non-negotiable. GHGA Central signs the same DPC with every institution that submits data, so all data in the archive are processed under the same transparent conditions and the infrastructure can be run consistently. In addition, the DPC establishes a controller–processor relationship and has been drafted to conform with Art. 28(3) GDPR.
 
-## Can reviewers access my data during the peer-review process anonymously?
+The DPC is available for review on the [DPC preparation page](user_stories/submission/dpc_preparation.md#downloads), which also explains the contract and its sections in detail. If you or your legal department have specific questions or concerns, please reach out to the [GHGA Helpdesk](mailto:helpdesk@ghga.de).
 
-No, this is not possible, see details [here](user_stories/submission/Citing_GHGA_Submissions.md#anonymous-reviewer-access).
 
-## How to get data access?
-
-The GHGA Data Portal allows users to request access to data through the portal. Identify your dataset of interest using the browse and filter functions of the GHGA Data Portal. Click on the "Request access" button. This will direct you to a data access request form. Complete the form with the necessary information and submit it to request access to the dataset. The data access request will be sent to the <general:Research Data Controller (RDC)|Research Data Controller>, who will will review your request and respond accordingly. Please note that GHGA is not involved in the further process of negotiating the data access.
-
-## Where can I find my Life Science ID (LS ID)?
-
-In order to ensure that only authorised people can access our systems, GHGA utilises [Life Science Login (LS Login)](https://lifescience-ri.eu/ls-login/) to authenticate users. **Creating a Life Science ID** is free and can usually be linked to your institutional account. For detailed instructions on creating and managing your LS ID, please refer to the [LS Login user documentation](https://lifescience-ri.eu/ls-login/documentation/user-documentation/user-documentation.html).
 
 **To lookup your LS ID** (e.g. `777xc437f725f58660456780tt01d5l999f9b123456@lifescience-ri.eu`) check your *[Life Science RI user profile](https://profile.aai.lifescience-ri.eu/profile)*. It can also be accessed via the [user account](https://data.ghga.de/account) in the GHGA Data Portal.
 
@@ -41,11 +49,18 @@ In order to ensure that only authorised people can access our systems, GHGA util
     ![Screenshot of profile page on Life Science Login showing name, LS ID, username, email, affiliations, and language – as described in the text above.](assets/img/lslogin-lsid.png)
     [Life Science RI user profile](https://profile.aai.lifescience-ri.eu/profile)
 
+## After Submission
 
-## My data access request got approved but I cannot download the data?
+### How should I publicly reference my data deposition in GHGA?
+
+Data depositions should be referenced via the Study Accession (e.g. `GHGAS12079965883832`). To unify how data is referenced, please always use the [recommended **data availability statement**](user_stories/submission/Citing_GHGA_Submissions.md/#data-availability-statement).
+
+### Can reviewers access my data during the peer-review process anonymously?
+
+No, this is not possible, see details [here](user_stories/submission/Citing_GHGA_Submissions.md#anonymous-reviewer-access).
+
+## Data Access
+
+### My data access request got approved but I cannot download the data?
 
 The GHGA Data Portal requires authentication of a user via an <general:Independent Verification Address (IVA)|Independent Verification Address (IVA)>, to ensure that the registered user is the person specified in the Data Transfer Agreement between <general:Research Data Controller (RDC)|Research Data Controller> and <general:Data Requester (DR)|Data Requester>. For more information about this process, please visit the [respective user story](user_stories/accessing_data.md). Please note that the verification process is currently manually supervised by GHGA <general:Data Steward|Data Stewards> and can take up to three working days.
-
-## Where can I check the system status?
-
-The [GHGA System Status Monitor](https://stats.uptimerobot.com/h8Vd5tALXR) provides real-time information about the availability and performance of GHGA services. Check this page if you're experiencing issues accessing the GHGA Data Portal.

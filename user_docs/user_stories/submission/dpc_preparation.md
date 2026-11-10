@@ -14,6 +14,7 @@ A <general:Data Processing Contract (DPC)> is signed by <general:GHGA Central> a
 
 - When intending to submit data to GHGA, the submitter should consult the [checklist below](#checklist-for-legal-pre-requisites-for-data-submission-to-ghga) and review the DPC, which is available [here for download :octicons-download-24:][GHGA Data Processing Contract].
 - The submitter then needs to complete the [GHGA-DPC-Information-Collection-Form] and send it to <general:GHGA Central> via the [Helpdesk](mailto:helpdesk@ghga.de). GHGA Central will then create a sign-ready version of the DPC and send it to you for signing. **Do not create the sign-ready version on your own!**
+- Please note that the DPC is a standardised contract and its terms are generally **non-negotiable**. For the reasons behind this, see the [FAQ](../../faq.md#can-the-ghga-data-processing-contract-dpc-be-modified).
 
 ### Data Submission to GHGA from DKFZ Scientists
 
