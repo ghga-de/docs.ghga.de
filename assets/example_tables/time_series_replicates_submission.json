@@ -1,0 +1,273 @@
+{
+    "analyses": [],
+    "analysis_methods": [],
+    "analysis_method_supporting_files": [],
+    "studies": [
+        {
+            "alias": "STUDY_1",
+            "title": "Example study: whole-genome sequencing of a bone cancer patient",
+            "description": "Illustrative example submission from the GHGA documentation. Tumour (case) and matched normal (control) samples of one patient with a bone tumour were whole-genome sequenced.",
+            "types": [
+                "CANCER_GENOMICS"
+            ],
+            "affiliations": [
+                "German Cancer Research Center (DKFZ)"
+            ]
+        }
+    ],
+    "individuals": [
+        {
+            "alias": "Patient_1",
+            "diagnosis_ids": [
+                "ICD-10: C40"
+            ],
+            "diagnosis_terms": [
+                "Malignant neoplasm of bone and articular cartilage of limbs"
+            ],
+            "sex": "MALE"
+        }
+    ],
+    "individual_supporting_files": [],
+    "samples": [
+        {
+            "alias": "Sample_15_T",
+            "individual": "Patient_1",
+            "name": "Sample_15_T",
+            "biological_replicate": 1,
+            "description": "Case sample for Patient_1 at 15days",
+            "disease_or_healthy": "DISEASE",
+            "case_control_status": "CASE",
+            "biospecimen_age_at_sampling": "UNKNOWN",
+            "attributes": [
+                {
+                    "key": "time_point",
+                    "value": "15days"
+                }
+            ]
+        },
+        {
+            "alias": "Sample_15_C",
+            "individual": "Patient_1",
+            "name": "Sample_15_C",
+            "biological_replicate": 1,
+            "description": "Control sample for Patient_1 at 15days",
+            "disease_or_healthy": "HEALTHY",
+            "case_control_status": "CONTROL",
+            "biospecimen_age_at_sampling": "UNKNOWN",
+            "attributes": [
+                {
+                    "key": "time_point",
+                    "value": "15days"
+                }
+            ]
+        },
+        {
+            "alias": "Sample_30_T",
+            "individual": "Patient_1",
+            "name": "Sample_30_T",
+            "biological_replicate": 2,
+            "description": "Case sample for Patient_1 at 30days",
+            "disease_or_healthy": "DISEASE",
+            "case_control_status": "CASE",
+            "biospecimen_age_at_sampling": "UNKNOWN",
+            "attributes": [
+                {
+                    "key": "time_point",
+                    "value": "30days"
+                }
+            ]
+        },
+        {
+            "alias": "Sample_30_C",
+            "individual": "Patient_1",
+            "name": "Sample_30_C",
+            "biological_replicate": 2,
+            "description": "Control sample for Patient_1 at 30days",
+            "disease_or_healthy": "HEALTHY",
+            "case_control_status": "CONTROL",
+            "biospecimen_age_at_sampling": "UNKNOWN",
+            "attributes": [
+                {
+                    "key": "time_point",
+                    "value": "30days"
+                }
+            ]
+        }
+    ],
+    "experiment_methods": [
+        {
+            "alias": "Method_1",
+            "name": "WGS on Illumina HiSeq X Ten",
+            "description": "WGS performed on Illumina HiSeq X Ten",
+            "type": "WGS",
+            "library_type": "WGS",
+            "library_selection_methods": [
+                "RANDOM_METHOD"
+            ],
+            "library_preparation": "PCR-free library preparation",
+            "instrument_model": "HISEQ_X_TEN",
+            "sequencing_layout": "SE"
+        }
+    ],
+    "experiment_method_supporting_files": [],
+    "experiments": [
+        {
+            "alias": "Exp_1",
+            "experiment_method": "Method_1",
+            "title": "WGS of Sample_15_T",
+            "description": "WGS performed on Illumina HiSeq X Ten",
+            "sample": "Sample_15_T"
+        },
+        {
+            "alias": "Exp_2",
+            "experiment_method": "Method_1",
+            "title": "WGS of Sample_15_C",
+            "description": "WGS performed on Illumina HiSeq X Ten",
+            "sample": "Sample_15_C"
+        },
+        {
+            "alias": "Exp_3",
+            "experiment_method": "Method_1",
+            "title": "WGS of Sample_30_T",
+            "description": "WGS performed on Illumina HiSeq X Ten",
+            "sample": "Sample_30_T"
+        },
+        {
+            "alias": "Exp_4",
+            "experiment_method": "Method_1",
+            "title": "WGS of Sample_30_C",
+            "description": "WGS performed on Illumina HiSeq X Ten",
+            "sample": "Sample_30_C"
+        }
+    ],
+    "research_data_files": [
+        {
+            "alias": "my_first_file.fastq.gz",
+            "format": "FASTQ",
+            "technical_replicate": 1,
+            "sequencing_lane_id": "4",
+            "experiments": [
+                "Exp_1"
+            ],
+            "name": "my_first_file.fastq.gz",
+            "dataset": "DS_WGS",
+            "included_in_submission": true
+        },
+        {
+            "alias": "my_second_file.fastq.gz",
+            "format": "FASTQ",
+            "technical_replicate": 2,
+            "sequencing_lane_id": "4",
+            "experiments": [
+                "Exp_1"
+            ],
+            "name": "my_second_file.fastq.gz",
+            "dataset": "DS_WGS",
+            "included_in_submission": true
+        },
+        {
+            "alias": "my_third_file.fastq.gz",
+            "format": "FASTQ",
+            "technical_replicate": 1,
+            "sequencing_lane_id": "5",
+            "experiments": [
+                "Exp_2"
+            ],
+            "name": "my_third_file.fastq.gz",
+            "dataset": "DS_WGS",
+            "included_in_submission": true
+        },
+        {
+            "alias": "my_fourth_file.fastq.gz",
+            "format": "FASTQ",
+            "technical_replicate": 2,
+            "sequencing_lane_id": "5",
+            "experiments": [
+                "Exp_2"
+            ],
+            "name": "my_fourth_file.fastq.gz",
+            "dataset": "DS_WGS",
+            "included_in_submission": true
+        },
+        {
+            "alias": "my_fifth_file.fastq.gz",
+            "format": "FASTQ",
+            "technical_replicate": 1,
+            "sequencing_lane_id": "2",
+            "experiments": [
+                "Exp_3"
+            ],
+            "name": "my_fifth_file.fastq.gz",
+            "dataset": "DS_WGS",
+            "included_in_submission": true
+        },
+        {
+            "alias": "my_sixth_file.fastq.gz",
+            "format": "FASTQ",
+            "technical_replicate": 2,
+            "sequencing_lane_id": "2",
+            "experiments": [
+                "Exp_3"
+            ],
+            "name": "my_sixth_file.fastq.gz",
+            "dataset": "DS_WGS",
+            "included_in_submission": true
+        },
+        {
+            "alias": "my_seventh_file.fastq.gz",
+            "format": "FASTQ",
+            "technical_replicate": 1,
+            "sequencing_lane_id": "6",
+            "experiments": [
+                "Exp_4"
+            ],
+            "name": "my_seventh_file.fastq.gz",
+            "dataset": "DS_WGS",
+            "included_in_submission": true
+        },
+        {
+            "alias": "my_eighth_file.fastq.gz",
+            "format": "FASTQ",
+            "technical_replicate": 2,
+            "sequencing_lane_id": "6",
+            "experiments": [
+                "Exp_4"
+            ],
+            "name": "my_eighth_file.fastq.gz",
+            "dataset": "DS_WGS",
+            "included_in_submission": true
+        }
+    ],
+    "process_data_files": [],
+    "datasets": [
+        {
+            "alias": "DS_WGS",
+            "title": "Bone cancer WGS dataset",
+            "description": "Whole-genome sequencing reads (FASTQ) of tumour and matched normal samples of one bone cancer patient.",
+            "types": [
+                "WGS"
+            ],
+            "data_access_policy": "DKFZ_DAP",
+            "study": "STUDY_1"
+        }
+    ],
+    "data_access_policies": [
+        {
+            "alias": "DKFZ_DAP",
+            "name": "Example data access policy",
+            "description": "Access for research on bone cancer, granted by the DKFZ Data Access Committee.",
+            "policy_text": "Data may only be used for research on bone cancer. Requests are reviewed by the Data Access Committee; a Data Transfer Agreement must be signed before access is granted.",
+            "data_use_permission_term": "DISEASE_SPECIFIC_RESEARCH",
+            "data_use_permission_id": "DUO:0000007",
+            "data_access_committee": "DKFZ_DAC"
+        }
+    ],
+    "data_access_committees": [
+        {
+            "alias": "DKFZ_DAC",
+            "email": "data-access-committee@example.org",
+            "institute": "German Cancer Research Center (DKFZ)"
+        }
+    ],
+    "publications": []
+}
