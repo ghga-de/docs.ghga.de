@@ -21,7 +21,7 @@ A Data Access Policy specifies under which circumstances, legal or otherwise, a 
 **required** : False<br>
 **data type** : string <br>
 ### ***data_use_permission_term***
-**description** : The Data Use Permission associated with this Data Use Policy. The used term should be a descendant of 'DUO:0000001: data use permission' (e.g., no restriction).<br>
+**description** : The Data Use Permission associated with this Data Access Policy. The used term should be a descendant of 'DUO:0000001: data use permission' (e.g., 'NO_RESTRICTION').<br>
 **required** : True<br>
 **data type** : Controlled Vocabulary <br>
 
@@ -36,11 +36,11 @@ A Data Access Policy specifies under which circumstances, legal or otherwise, a 
 ///
 
 ### ***data_use_permission_id***
-**description** : The DUO ID corresponding to the Data Use Permission term (e.g., DUO:0000004).<br>
+**description** : The DUO ID corresponding to the Data Use Permission term (e.g., 'DUO:0000004').<br>
 **required** : True<br>
 **data type** : string <br>
 ### ***data_use_modifier_terms***
-**description** : One or more Data Use Modifiers for the Data Use Permission associated with this Data Use Policy. The used terms should be descendants of 'DUO:0000017: data use modifier' (e.g., clinical care use). Please use 'USER_SPECIFIC_RESTRICTION' if no other modifier applies.<br>
+**description** : One or more Data Use Modifiers for the Data Use Permission associated with this Data Access Policy. The used terms should be descendants of 'DUO:0000017: data use modifier' (e.g., 'CLINICAL_CARE_USE'). Please use 'USER_SPECIFIC_RESTRICTION' if no other modifier applies.<br>
 **required** : False<br>
 **data type** : Controlled Vocabulary <br>
 
@@ -68,7 +68,7 @@ A Data Access Policy specifies under which circumstances, legal or otherwise, a 
 ///
 
 ### ***data_use_modifier_ids***
-**description** : The DUO IDs corresponding to the Data Use Modifier terms (e.g., DUO:0000043).<br>
+**description** : The DUO IDs corresponding to the Data Use Modifier terms (e.g., 'DUO:0000043').<br>
 **required** : False<br>
 **data type** : string <br>
 ### ***ega_accession***
@@ -76,7 +76,7 @@ A Data Access Policy specifies under which circumstances, legal or otherwise, a 
 **required** : False<br>
 **data type** : string <br>
 ### ***data_access_committee***
-**description** : The Data Access Committee linked to this Data Use Policy.<br>
+**description** : The Data Access Committee linked to this Data Access Policy.<br>
 **required** : True<br>
 **data type** : DataAccessCommittee <br>
 ### ***alias***

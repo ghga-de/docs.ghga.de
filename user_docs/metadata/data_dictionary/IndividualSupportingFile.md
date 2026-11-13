@@ -5,7 +5,7 @@ An Individual Supporting File is a File that contains additional information rel
 
 ## Fields
 ### ***format***
-**description** : The file format of the Supporting File (e.g., TXT, JSON).<br>
+**description** : The file format of the Supporting File (e.g., 'TXT').<br>
 **required** : True<br>
 **data type** : Controlled Vocabulary <br>
 
@@ -41,6 +41,10 @@ An Individual Supporting File is a File that contains additional information rel
 **description** : Whether a File is included in the Submission or not.<br>
 **required** : True<br>
 **data type** : boolean <br>
+### ***attributes***
+**description** : Semicolon-separated key=value pairs associated with the entity (e.g., key=value; key2=value2).<br>
+**required** : False<br>
+**data type** : Attribute <br>
 ### ***alias***
 **description** : The alias for an entity at the time of submission.<br>
 **required** : True<br>

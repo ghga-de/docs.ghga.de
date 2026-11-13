@@ -9,7 +9,7 @@ An Experiment is an investigation that consists of a coordinated set of actions 
 **required** : True<br>
 **data type** : ExperimentMethod <br>
 ### ***title***
-**description** : The title for this Experiment (e.g., GHGAE_PBMC_RNAseq).<br>
+**description** : The title for this Experiment (e.g., 'GHGAE_PBMC_RNAseq').<br>
 **required** : True<br>
 **data type** : string <br>
 ### ***description***
@@ -25,11 +25,11 @@ An Experiment is an investigation that consists of a coordinated set of actions 
 **required** : False<br>
 **data type** : string <br>
 ### ***sample***
-**description** : The alias of one or more Samples that are associated with this Experiment.<br>
+**description** : The alias of the Sample that is associated with this Experiment.<br>
 **required** : True<br>
 **data type** : Sample <br>
 ### ***attributes***
-**description** : Key/value pairs corresponding to an entity.<br>
+**description** : Semicolon-separated key=value pairs associated with the entity (e.g., key=value; key2=value2).<br>
 **required** : False<br>
 **data type** : Attribute <br>
 ### ***alias***

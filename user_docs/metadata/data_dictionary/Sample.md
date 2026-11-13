@@ -9,7 +9,7 @@ A Sample is a limited quantity of something to be used for testing, analysis, in
 **required** : True<br>
 **data type** : Individual <br>
 ### ***name***
-**description** : A descriptive name of this Sample (e.g., GHGAS_Blood_Sample1 or GHGAS_PBMC_RNAseq_S1). This property must not include any personally identifiable data.<br>
+**description** : A descriptive name of this Sample (e.g., 'GHGAS_Blood_Sample1'). This property must not include any personally identifiable data.<br>
 **required** : True<br>
 **data type** : string <br>
 ### ***type***
@@ -41,7 +41,7 @@ A Sample is a limited quantity of something to be used for testing, analysis, in
 **required** : None<br>
 **data type** : integer <br>
 ### ***description***
-**description** : A concise description about the Sample source, the collection method, and the protocol which was followed to process this Sample.<br>
+**description** : A concise description of the Sample source, the collection method, and the protocol which was followed to process this Sample.<br>
 **required** : True<br>
 **data type** : string <br>
 ### ***storage***
@@ -54,7 +54,7 @@ A Sample is a limited quantity of something to be used for testing, analysis, in
 | --- | --- |
 | `REFRIGERATOR` | `The sample / biospecimen was stored in a refrigerator at 2°C to 5°C.` |
 | `FREEZER` | `The sample / biospecimen was stored in a freezer at -20°C.` |
-| `ULTRA_LOW_FREEZER` | `The sample / biospecimen was stored in a ultra-low freezer at -80°C.` |
+| `ULTRA_LOW_FREEZER` | `The sample / biospecimen was stored in an ultra-low freezer at -80°C.` |
 | `CRYOGENIC_FREEZER` | `The sample / biospecimen was stored in a cryogenic freezer at -150°C to -190°C.` |
 | `FFPE` | `The sample / biospecimen was stored using formalin-fixed paraffin-embedding (FFPE).` |
 | `NONE` | `The sample / biospecimen was not stored.` |
@@ -63,7 +63,7 @@ A Sample is a limited quantity of something to be used for testing, analysis, in
 ///
 
 ### ***disease_or_healthy***
-**description** : Whether a Condition corresponds to a disease or a healthy state.<br>
+**description** : Whether the Sample reflects a disease or a healthy state.<br>
 **required** : False<br>
 **data type** : Controlled Vocabulary <br>
 
@@ -72,11 +72,11 @@ A Sample is a limited quantity of something to be used for testing, analysis, in
 | --- | --- |
 | `DISEASE` | `Disease state.` |
 | `HEALTHY` | `Healthy state.` |
-| `NOT_APPLICABLE` | `The distinction is not applicaple.` |
+| `NOT_APPLICABLE` | `The distinction is not applicable.` |
 ///
 
 ### ***case_control_status***
-**description** : Whether a Condition corresponds to a treatment or a control.<br>
+**description** : Whether the Sample comes from a case or a control in the Study.<br>
 **required** : True<br>
 **data type** : Controlled Vocabulary <br>
 
@@ -98,7 +98,7 @@ A Sample is a limited quantity of something to be used for testing, analysis, in
 **required** : False<br>
 **data type** : string <br>
 ### ***biospecimen_name***
-**description** : A descriptive name of this Biospecimen (e.g., GHGAB_caudate_nucleus_biospecimen). This property must not include any personally identifiable data.<br>
+**description** : A descriptive name of this Biospecimen (e.g., 'GHGAB_caudate_nucleus_biospecimen'). This property must not include any personally identifiable data.<br>
 **required** : False<br>
 **data type** : string <br>
 ### ***biospecimen_type***
@@ -106,11 +106,11 @@ A Sample is a limited quantity of something to be used for testing, analysis, in
 **required** : False<br>
 **data type** : string <br>
 ### ***biospecimen_description***
-**description** : A concise description about the Biospecimen source, the collection method, and the protocol which was followed to process this Biospecimen.<br>
+**description** : A concise description of the Biospecimen source, the collection method, and the protocol which was followed to process this Biospecimen.<br>
 **required** : False<br>
 **data type** : string <br>
 ### ***biospecimen_age_at_sampling***
-**description** : The age of the Individual at the time of isolating this biospecimen.<br>
+**description** : The age of the Individual at the time of isolating this Biospecimen.<br>
 **required** : True<br>
 **data type** : Controlled Vocabulary <br>
 
@@ -138,7 +138,7 @@ A Sample is a limited quantity of something to be used for testing, analysis, in
 ///
 
 ### ***biospecimen_vital_status_at_sampling***
-**description** : Vital Status of the Individual at the time of isolating this biospecimen (e.g., alive).<br>
+**description** : Vital status of the Individual at the time of isolating this Biospecimen (e.g., 'ALIVE').<br>
 **required** : False<br>
 **data type** : Controlled Vocabulary <br>
 
@@ -151,11 +151,11 @@ A Sample is a limited quantity of something to be used for testing, analysis, in
 ///
 
 ### ***biospecimen_tissue_term***
-**description** : The tissue this Biospecimen originated from. Should be a term from the BRENDA Tissue Ontology vocabulary (e.g., kidney, blood, melanoma cell).<br>
+**description** : The tissue this Biospecimen originated from. Should be a term from the BRENDA Tissue Ontology vocabulary (e.g., 'kidney').<br>
 **required** : False<br>
 **data type** : string <br>
 ### ***biospecimen_tissue_id***
-**description** : The corresponding ontology ID for the biospecimen_tissue_term (e.g., BTO:0000671, BTO:0000089, BTO:0000848).<br>
+**description** : The BTO ID corresponding to the biospecimen tissue term (e.g., 'BTO:0000671').<br>
 **required** : False<br>
 **data type** : string <br>
 ### ***biospecimen_isolation***
@@ -184,7 +184,7 @@ A Sample is a limited quantity of something to be used for testing, analysis, in
 | --- | --- |
 | `REFRIGERATOR` | `The sample / biospecimen was stored in a refrigerator at 2°C to 5°C.` |
 | `FREEZER` | `The sample / biospecimen was stored in a freezer at -20°C.` |
-| `ULTRA_LOW_FREEZER` | `The sample / biospecimen was stored in a ultra-low freezer at -80°C.` |
+| `ULTRA_LOW_FREEZER` | `The sample / biospecimen was stored in an ultra-low freezer at -80°C.` |
 | `CRYOGENIC_FREEZER` | `The sample / biospecimen was stored in a cryogenic freezer at -150°C to -190°C.` |
 | `FFPE` | `The sample / biospecimen was stored using formalin-fixed paraffin-embedding (FFPE).` |
 | `NONE` | `The sample / biospecimen was not stored.` |
@@ -193,7 +193,7 @@ A Sample is a limited quantity of something to be used for testing, analysis, in
 ///
 
 ### ***attributes***
-**description** : Key/value pairs corresponding to an entity.<br>
+**description** : Semicolon-separated key=value pairs associated with the entity (e.g., key=value; key2=value2).<br>
 **required** : False<br>
 **data type** : Attribute <br>
 ### ***alias***
