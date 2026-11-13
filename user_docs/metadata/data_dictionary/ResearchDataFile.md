@@ -5,7 +5,7 @@ A Research Data File is a File that contains raw data originating from an Experi
 
 ## Fields
 ### ***format***
-**description** : The file format of the Research Data File (e.g., FASTQ, uBAM, FASTA).<br>
+**description** : The file format of the Research Data File (e.g., 'FASTQ').<br>
 **required** : True<br>
 **data type** : Controlled Vocabulary <br>
 
@@ -31,6 +31,10 @@ A Research Data File is a File that contains raw data originating from an Experi
 **description** : An integer to indicate the technical replicate of this File.<br>
 **required** : True<br>
 **data type** : integer <br>
+### ***read_type***
+**description** : Designates the functional role or sequence orientation of a FASTQ file within a sequencing run (e.g., R1).<br>
+**required** : False<br>
+**data type** : string <br>
 ### ***sequencing_lane_id***
 **description** : The identifier of a sequencing lane.<br>
 **required** : False<br>
@@ -55,6 +59,10 @@ A Research Data File is a File that contains raw data originating from an Experi
 **description** : Whether a File is included in the Submission or not.<br>
 **required** : True<br>
 **data type** : boolean <br>
+### ***attributes***
+**description** : Semicolon-separated key=value pairs associated with the entity (e.g., key=value; key2=value2).<br>
+**required** : False<br>
+**data type** : Attribute <br>
 ### ***alias***
 **description** : The alias for an entity at the time of submission.<br>
 **required** : True<br>

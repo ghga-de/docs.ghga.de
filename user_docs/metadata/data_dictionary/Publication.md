@@ -13,7 +13,7 @@ A Publication represents an article that is published. The minimum expectation i
 **required** : False<br>
 **data type** : string <br>
 ### ***abstract***
-**description** : The study abstract that describes the goals. Can also hold abstract from a publication related to this Study.<br>
+**description** : The abstract of the Publication.<br>
 **required** : False<br>
 **data type** : string <br>
 ### ***author***
