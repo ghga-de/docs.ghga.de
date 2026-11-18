@@ -5,23 +5,23 @@ An Individual is a Person who is participating in a Study.
 
 ## Fields
 ### ***phenotypic_features_terms***
-**description** : The phenotypic feature concepts that the entity is associated with at the time of retrieval from the organism. The Phenotypic Feature is captured using a concept from the Human Phenotype Ontology (e.g., Lymph node hypoplasia, Cough, Hypotension).<br>
+**description** : The phenotypic feature concepts that the entity is associated with at the time of retrieval from the organism. The Phenotypic Feature is captured using a concept from the Human Phenotype Ontology (e.g., 'Lymph node hypoplasia; Cough').<br>
 **required** : False<br>
 **data type** : string <br>
 ### ***phenotypic_features_ids***
-**description** : The corresponding ID to the HPO vocabulary (e.g., HP:0002732, HP:0012735, HP:0002615).<br>
+**description** : The HPO IDs corresponding to the phenotypic feature terms (e.g., 'HP:0002732; HP:0012735').<br>
 **required** : False<br>
 **data type** : string <br>
 ### ***diagnosis_ids***
-**description** : One or more diagnoses that the entity is associated with at the time of retrieval from the organism. The diagnosis is captured using a code from ICD-10 (WHO version). Please restrict the ICD code to the chapter letter and two digits for the main diagnosis (e.g., E10, C01).<br>
+**description** : One or more diagnoses that the entity is associated with at the time of retrieval from the organism. The diagnosis is captured using a code from ICD-10 (WHO version). Please restrict the ICD code to the chapter letter and two digits for the main diagnosis (e.g., 'E10; C01').<br>
 **required** : False<br>
 **data type** : string <br>
 ### ***diagnosis_terms***
-**description** : The ICD-10 terms corresponding to the ICD-10 codes (e.g., Type 1 diabetes mellitus, Malignant neoplasm of base of tongue).<br>
+**description** : The ICD-10 terms corresponding to the ICD-10 codes (e.g., 'Type 1 diabetes mellitus; Malignant neoplasm of base of tongue').<br>
 **required** : False<br>
 **data type** : string <br>
 ### ***sex***
-**description** : The biological sex of the Individual (e.g., female).<br>
+**description** : The biological sex of the Individual (e.g., 'FEMALE').<br>
 **required** : True<br>
 **data type** : Controlled Vocabulary <br>
 
@@ -35,19 +35,19 @@ An Individual is a Person who is participating in a Study.
 ///
 
 ### ***geographical_region_term***
-**description** : The Individual's geographical region. The used terms should be descendants of 'NCIT:C25464: country' (e.g., Austria, Germany, Italy).<br>
+**description** : The Individual's geographical region. The used term should be a descendant of 'NCIT:C25464: country' (e.g., 'Germany').<br>
 **required** : False<br>
 **data type** : string <br>
 ### ***geographical_region_id***
-**description** : The corresponding ID to the NCIT vocabulary (e.g., NCIT:C16312, NCIT:C16636, NCIT:C16761).<br>
+**description** : The NCIT ID corresponding to the geographical region term (e.g., 'NCIT:C16636').<br>
 **required** : False<br>
 **data type** : string <br>
 ### ***ancestry_terms***
-**description** : A person's descent or lineage from a population. The used terms should be descendants of 'HANCESTRO:0004: ancestry category' (e.g., African, European, Oceanian).<br>
+**description** : A person's descent or lineage from a population. The used terms should be descendants of 'HANCESTRO:0004: ancestry category' (e.g., 'African; European').<br>
 **required** : False<br>
 **data type** : string <br>
 ### ***ancestry_ids***
-**description** : The corresponding ID to the HANCESTRO vocabulary (e.g., HANCESTRO:0010, HANCESTRO:0005, HANCESTRO:0017).<br>
+**description** : The HANCESTRO IDs corresponding to the ancestry terms (e.g., 'HANCESTRO:0010; HANCESTRO:0005').<br>
 **required** : False<br>
 **data type** : string <br>
 ### ***alias***
