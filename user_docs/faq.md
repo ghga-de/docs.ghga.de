@@ -59,6 +59,17 @@ Data depositions should be referenced via the Study Accession (e.g. `GHGAS120799
 
 No, this is not possible, see details [here](user_stories/submission/Citing_GHGA_Submissions.md#anonymous-reviewer-access).
 
+
+### Is GHGA an accepted repository for journal publications?
+
+Yes. GHGA is Germany's national node in the [Federated EGA (FEGA) network](https://ega-archive.org/about/projects-and-funders/federated-ega/). Several journals have accepted it as the sole repository for human omics data under controlled access, see a list [here](publications.md).
+
+If an editor asks for an EGA accession or for deposition in EGA, please note that GHGA accessions are not yet synchronised with the central EGA catalogue. GHGA metadata are also not yet discoverable through the EGA portal. This integration is planned but still under development. In the meantime, you can use or adapt the following wording:
+
+> "The data are / will be deposited in the German Human Genome-Phenome Archive (GHGA) for secure, long-term archival and controlled access by the research community and a suitable Data Access Committee has been installed at our institution. GHGA is Germany's national node within the Federated EGA network. Although integration with the central EGA catalogue is still under development, GHGA has previously been accepted by journals as the data repository for published studies. We therefore request confirmation that our GHGA deposition fulfils the journal's repository requirements."
+
+For citing your study and the recommended data availability statement, see [Citing GHGA & Journal Requirements](https://docs.ghga.de/user_stories/submission/Citing_GHGA_Submissions/).
+
 ## Data Access
 
 ### My data access request got approved but I cannot download the data?
