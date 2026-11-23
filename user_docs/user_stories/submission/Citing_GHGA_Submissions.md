@@ -15,9 +15,9 @@ This statement contains a stable URL to the study. This link and the study will 
 
 ## Federated EGA and GHGA as an Approved Data Repository
 
-The European Genome-phenome Archive (EGA) is the main repository approved by several journals for the deposition of human omics data. In order to better address some of the data protection and legal challenges that researchers have faced when depositing data there, the EGA has started to move to a federated model (FEGA), whereby national nodes will work with the central EGA to support the archival of omics data. GHGA is the national FEGA node for Germany as described here:  [Federated EGA - EGA European Genome-Phenome Archive](https://ega-archive.org/about/projects-and-funders/federated-ega/). 
+The European Genome-phenome Archive (EGA) is a repository widely accepted by journals for the deposition of human omics data. In order to better address some of the data protection and legal challenges that researchers have faced when depositing data there, the EGA has started to move to a federated model, the [Federated EGA (FEGA) network](https://ega-archive.org/about/projects-and-funders/federated-ega/), whereby national nodes work with the central EGA to support the archival of omics data. GHGA is Germany's national node in the FEGA network. Several journals have accepted GHGA as the sole repository for human omics data under controlled access, see a list [here](../../ghga-citations.md).
 
-In the future, metadata deposited in GHGA will be findeable in the EGA Data Portal. This functionality is currently being worked on.
+Please note that GHGA accessions are not yet synchronised with the central EGA catalogue, and GHGA metadata are not yet discoverable through the EGA portal. This integration is planned but still under development. If a journal editor asks for an EGA accession or for deposition in EGA, see the FAQ *[Is GHGA an accepted repository for journal publications?](../../faq.md#is-ghga-an-accepted-repository-for-journal-publications)* for suggested wording you can use in your reply.
 
 GHGA can also be found on [re3data.org](https://www.re3data.org/repository/r3d100014563) and [FAIRsharing.org](https://fairsharing.org/6353).
 
