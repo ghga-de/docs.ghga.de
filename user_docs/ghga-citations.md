@@ -1,7 +1,13 @@
 # Publications Citing GHGA
 
 The following publications use data deposited in GHGA, newest first. Preprints are marked as such.
-This list is maintained manually and may not be complete.
+This list is maintained manually and may not be complete. How to reference your GHGA study in a manuscript is described in [Citing GHGA & Journal Requirements](user_stories/submission/Citing_GHGA_Submissions.md).
+
+!!! question "Is your publication missing? => Please let us know!"
+
+    If you have published results based on data deposited in GHGA and your publication is not listed here, please let us know via the [GHGA Helpdesk](mailto:helpdesk@ghga.de).
+   
+
 
 ## 2026 (17)
 
@@ -105,7 +111,3 @@ This list is maintained manually and may not be complete.
 **Tumour-informed liquid biopsies to monitor advanced melanoma patients under immune checkpoint inhibition**<br>
 :material-book-open-variant: *Nature Communications* · 9 Oct 2024 · [:octicons-link-external-16: DOI](https://doi.org/10.1038/s41467-024-52923-0) · [:material-database-outline: GHGAS40406834890492](https://data.ghga.de/s/GHGAS40406834890492)
 
-!!! note "Is your publication missing?"
-
-    If you have published results based on data deposited in GHGA and your publication is not listed here, please let us know via the <general:GHGA Helpdesk>.
-    How to reference your GHGA study in a manuscript is described in [Citing GHGA & Journal Requirements](user_stories/submission/Citing_GHGA_Submissions.md).
