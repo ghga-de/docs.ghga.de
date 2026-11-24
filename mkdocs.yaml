@@ -147,5 +147,6 @@ nav:
       - "Data Dictionary": metadata/data_dictionary
   - "CLI Tools": cli_tools
   - "Other Documents": other
+  - "Publications Citing GHGA": ghga-citations.md
   - "FAQ": faq.md
   - "Glossary": glossary.md

@@ -53,11 +53,22 @@ The DPC is available for review on the [DPC preparation page](user_stories/submi
 
 ### How should I publicly reference my data deposition in GHGA?
 
-Data depositions should be referenced via the Study Accession (e.g. `GHGAS12079965883832`). To unify how data is referenced, please always use the [recommended **data availability statement**](user_stories/submission/Citing_GHGA_Submissions.md/#data-availability-statement).
+Data depositions should be referenced via the Study Accession (e.g. `GHGAS12079965883832`). To unify how data is referenced, please always use the [recommended **data availability statement**](user_stories/submission/Citing_GHGA_Submissions.md#data-availability-statement).
 
 ### Can reviewers access my data during the peer-review process anonymously?
 
 No, this is not possible, see details [here](user_stories/submission/Citing_GHGA_Submissions.md#anonymous-reviewer-access).
+
+
+### Is GHGA an accepted repository for journal publications?
+
+Yes. GHGA is Germany's national node in the [Federated EGA (FEGA) network](https://ega-archive.org/about/projects-and-funders/federated-ega/). Several journals have accepted it as the sole repository for human omics data under controlled access, see a list [here](ghga-citations.md).
+
+If an editor asks for an EGA accession or for deposition in EGA, please note that GHGA accessions are not yet synchronised with the central EGA catalogue. GHGA metadata are also not yet discoverable through the EGA portal. This integration is planned but still under development. In the meantime, you can use or adapt the following wording:
+
+> "The data are / will be deposited in the German Human Genome-Phenome Archive (GHGA) for secure, long-term archival and controlled access by the research community and a suitable Data Access Committee has been installed at our institution. GHGA is Germany's national node within the Federated EGA network. Although integration with the central EGA catalogue is still under development, GHGA has previously been accepted by journals as the data repository for published studies. We therefore request confirmation that our GHGA deposition fulfils the journal's repository requirements."
+
+For more background on GHGA within the FEGA network, citing your study and the recommended data availability statement, see [Citing GHGA & Journal Requirements](user_stories/submission/Citing_GHGA_Submissions.md#federated-ega-and-ghga-as-an-approved-data-repository).
 
 ## Data Access
 
