@@ -33,54 +33,54 @@ An Analysis Method captures the workflow steps that were performed to analyze da
 **required** : True<br>
 **data type** : string <br>
 ### ***workflow_tasks***
-**description** : Tasks performed by the workflow<br>
+**description** : Tasks performed by the workflow.<br>
 **required** : False<br>
 **data type** : string <br>
 ### ***parameters***
-**description** : Key/value pairs where key corresponds to a parameter name and value corresponds to a parameter value (e.g., 'aligner' = 'star_salmon',  'hisat2_build_memory' = '200.GB', 'split_fastq' = 50000000).<br>
+**description** : Semicolon-separated key=value pairs where key corresponds to a parameter name and value corresponds to a parameter value (e.g., 'aligner = star_salmon; hisat2_build_memory = 200.GB').<br>
 **required** : False<br>
 **data type** : Attribute <br>
 ### ***software_versions***
-**description** : key/value pairs where key corresponds to a software name and value corresponds to a version descriptor (e.g., `salmon` = '1.3.0', `trim-galore` = '0.6.6', `bedtools` = '2.29.2').<br>
+**description** : Semicolon-separated key=value pairs where key corresponds to a software name and value corresponds to a version descriptor (e.g., 'salmon = 1.3.0; trim-galore = 0.6.6').<br>
 **required** : False<br>
 **data type** : Attribute <br>
 ### ***reference_name***
-**description** : Name or identifier of the reference, e.g., "hg38", "dbSNP"<br>
+**description** : Name or identifier of the reference (e.g., 'hg38').<br>
 **required** : False<br>
 **data type** : string <br>
 ### ***reference_type***
-**description** : Type of reference data used<br>
+**description** : Type of reference data used.<br>
 **required** : False<br>
 **data type** : Controlled Vocabulary <br>
 
 /// details | Permissible Values
 | Permissible Values | Description |
 | --- | --- |
-| `GENOME` | `Reference genome sequence` |
-| `SNP` | `SNP reference database` |
-| `INDEL` | `Indel reference set` |
-| `TRANSCRIPTOME` | `Transcript sequences` |
-| `HAPLOTYPE` | `Haplotype panels` |
-| `VCF` | `Variant call format reference` |
-| `BED` | `BED-formatted genomic regions` |
-| `REPEATMASKER` | `RepeatMasker annotations` |
-| `OTHER` | `Other types of references` |
+| `GENOME` | `Reference genome sequence.` |
+| `SNP` | `SNP reference database.` |
+| `INDEL` | `Indel reference set.` |
+| `TRANSCRIPTOME` | `Transcript sequences.` |
+| `HAPLOTYPE` | `Haplotype panels.` |
+| `VCF` | `Variant call format reference.` |
+| `BED` | `BED-formatted genomic regions.` |
+| `REPEATMASKER` | `RepeatMasker annotations.` |
+| `OTHER` | `Other types of references.` |
 ///
 
 ### ***reference_source***
-**description** : Source or provider of the reference, e.g., "UCSC", "Ensembl"<br>
+**description** : Source or provider of the reference (e.g., 'UCSC').<br>
 **required** : False<br>
 **data type** : string <br>
 ### ***reference_link***
-**description** : URL to the reference<br>
+**description** : URL to the reference.<br>
 **required** : False<br>
 **data type** : string <br>
 ### ***reference_version***
-**description** : Version or release identifier of the reference data<br>
+**description** : Version or release identifier of the reference data.<br>
 **required** : False<br>
 **data type** : string <br>
 ### ***attributes***
-**description** : Key/value pairs corresponding to an entity.<br>
+**description** : Semicolon-separated key=value pairs associated with the entity (e.g., key=value; key2=value2).<br>
 **required** : False<br>
 **data type** : Attribute <br>
 ### ***alias***
